@@ -4,7 +4,7 @@ import { Building2, Globe, MapPin, Users } from "lucide-react";
 import { useParams } from "react-router-dom";
 
 export default function CompanyProfile() {
-  const { id } = useParams();
+  useParams();
 
   // Mock company data - in real app, fetch based on id
   const company = {

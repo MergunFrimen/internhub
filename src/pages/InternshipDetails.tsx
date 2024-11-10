@@ -4,7 +4,7 @@ import { Building2, MapPin, Calendar, BriefcaseIcon } from "lucide-react";
 import { useParams } from "react-router-dom";
 
 export default function InternshipDetails() {
-  const { id } = useParams();
+  useParams();
 
   // Mock data - in real app, fetch based on id
   const internship = {

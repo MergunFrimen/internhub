@@ -7,7 +7,6 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { useAuth } from "@/contexts/AuthContext";
 import {
   Bell,
   Briefcase,
@@ -20,7 +19,7 @@ import {
 } from "lucide-react";
 
 export default function Navbar() {
-  const { isAuthenticated, logout } = useAuth();
+  const isAuthenticated = true;
 
   return (
     <nav className="border-b">
@@ -86,7 +85,7 @@ export default function Navbar() {
                 </Button>
 
                 {/* Logout */}
-                <Button variant="ghost" size="icon" onClick={() => logout()}>
+                <Button variant="ghost" size="icon">
                   <LogOut className="w-5 h-5" />
                 </Button>
               </>

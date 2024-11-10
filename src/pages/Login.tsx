@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { useAuth } from "@/contexts/AuthContext";
 import { Github, Mail } from "lucide-react";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -20,14 +19,13 @@ export default function Login() {
   });
 
   const navigate = useNavigate();
-  const { login } = useAuth();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    login({
-      name: "John Doe",
-      email: formData.email,
-    });
+    // login({
+    //   name: "John Doe",
+    //   email: formData.email,
+    // });
     navigate("/");
   };
 

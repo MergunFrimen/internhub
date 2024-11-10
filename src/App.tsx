@@ -1,35 +1,95 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// App.jsx
+import {
+  Navigate,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from "react-router-dom";
+import { AuthProvider, useAuth } from "./contexts/AuthContext";
 
-function App() {
-  const [count, setCount] = useState(0)
+import { AuthLayout } from "./layouts/AuthLayout";
+import { MainLayout } from "./layouts/MainLayout";
 
+import Applications from "./pages/Applications";
+import CompanyDirectory from "./pages/CompanyDirectory";
+import CompanyProfile from "./pages/CompanyProfile";
+import Home from "./pages/Home";
+import InternshipDetails from "./pages/InternshipDetails";
+import Login from "./pages/Login";
+import Messages from "./pages/Messages";
+import NotFound from "./pages/NotFound";
+import Register from "./pages/Register";
+import Search from "./pages/Search";
+import UserProfile from "./pages/UserProfile";
+import { ReactNode } from "react";
+
+const ProtectedRoute = ({
+  children,
+}: {
+  children: ReactNode | ReactNode[];
+}) => {
+  const { isAuthenticated } = useAuth();
+
+  if (!isAuthenticated) {
+    return <Navigate to="/login" replace />;
+  }
+
+  return children;
+};
+
+// App Component with Routing
+export function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <AuthProvider>
+      <Router>
+        <Routes>
+          {/* Public Routes with Main Layout */}
+          <Route element={<MainLayout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/search" element={<Search />} />
+            <Route path="/internships/:id" element={<InternshipDetails />} />
+            <Route path="/companies" element={<CompanyDirectory />} />
+            <Route path="/companies/:id" element={<CompanyProfile />} />
+          </Route>
 
-export default App
+          {/* Protected Routes with Main Layout */}
+          <Route element={<MainLayout />}>
+            <Route
+              path="/profile"
+              element={
+                <ProtectedRoute>
+                  <UserProfile />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/applications"
+              element={
+                <ProtectedRoute>
+                  <Applications />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/messages"
+              element={
+                <ProtectedRoute>
+                  <Messages />
+                </ProtectedRoute>
+              }
+            />
+          </Route>
+
+          {/* Auth Routes with Auth Layout */}
+          <Route element={<AuthLayout />}>
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+          </Route>
+
+          {/* 404 Route */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
+    </AuthProvider>
+  );
+}

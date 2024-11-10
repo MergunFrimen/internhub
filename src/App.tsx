@@ -1,9 +1,4 @@
-// App.jsx
-import {
-  Route,
-  BrowserRouter as Router,
-  Routes
-} from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import { AuthLayout } from "./layouts/AuthLayout";
 import { MainLayout } from "./layouts/MainLayout";
@@ -38,7 +33,7 @@ const ProtectedRoute = ({
 export function App() {
   return (
     // <AuthProvider>
-    <Router>
+    <Router basename="/internhub">
       <Routes>
         {/* Public Routes with Main Layout */}
         <Route element={<MainLayout />}>

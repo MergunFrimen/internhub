@@ -26,8 +26,9 @@ export default function Navbar() {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="text-xl font-bold">
-            InternHub
+          <Link to="/" className="flex items-center space-x-2">
+            <img src="/internhub/favicon.svg" alt="Logo" className="w-8 h-8" />
+            <span className="text-xl font-bold">InternHub</span>
           </Link>
 
           {/* Main Navigation */}

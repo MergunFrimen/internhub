@@ -37,7 +37,6 @@ const ProtectedRoute = ({
   return children;
 };
 
-// App Component with Routing
 export function App() {
   return (
     <AuthProvider>

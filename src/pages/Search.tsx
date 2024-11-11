@@ -22,6 +22,7 @@ import {
   Filter,
   X,
   ArrowRight,
+  ArrowUpDown,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -158,14 +159,30 @@ export default function Search() {
         {/* Filters Sidebar */}
         <div className="space-y-6">
           <Card>
-            <CardHeader>
+            <CardContent className="space-y-6">
+              {/* Job Type */}
+              <CardTitle className="flex items-center gap-2 text-lg">
+                <ArrowUpDown className="w-4 h-4" />
+                Sort By
+              </CardTitle>
+
+              <Select>
+                <SelectTrigger className="w-[200px]">
+                  <SelectValue placeholder="Select sorting" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="relevance">Most Relevant</SelectItem>
+                  <SelectItem value="recent">Most Recent</SelectItem>
+                  <SelectItem value="deadline">Application Deadline</SelectItem>
+                  <SelectItem value="company">Company Name</SelectItem>
+                </SelectContent>
+              </Select>
+
               <CardTitle className="flex items-center gap-2 text-lg">
                 <Filter className="w-4 h-4" />
                 Filters
               </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              {/* Job Type */}
+
               <div className="space-y-2">
                 <Label>Job Type</Label>
                 <Select value={jobType} onValueChange={setJobType}>

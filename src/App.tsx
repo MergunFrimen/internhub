@@ -102,7 +102,9 @@ export function App() {
         <Route path="*" element={<NotFound />} />
 
         {/* Examples */}
-        <Route path="/profile/example/view" element={<PublicProfile />} />
+        <Route element={<MainLayout />}>
+          <Route path="/profile/example/view" element={<PublicProfile />} />
+        </Route>
       </Routes>
     </Router>
     // </AuthProvider>

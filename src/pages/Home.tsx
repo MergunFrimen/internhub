@@ -1,6 +1,6 @@
-// src/pages/Home.tsx
 import { useNavigate } from "react-router-dom";
-import { Search } from "lucide-react";
+import { Search, UserCircle, Building2, ArrowRight, GraduationCap } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -25,6 +25,14 @@ export default function Home() {
       location: "On-site",
     },
   ];
+
+  const exampleProfile = {
+    name: "John Doe",
+    title: "Computer Science Student",
+    university: "Slovak University of Technology",
+    skills: ["React", "TypeScript", "Node.js"],
+    imageUrl: "/api/placeholder/400/400",
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
@@ -72,6 +80,91 @@ export default function Home() {
               </p>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* Example Profile Section */}
+      <div className="container mx-auto px-4 py-12 border-t">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold mb-2">Stand Out to Companies</h2>
+            <p className="text-gray-600">
+              Create your professional profile and get noticed by top companies
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              {/* Profile Preview */}
+              <div className="flex-1 w-full md:w-auto">
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 space-y-4">
+                  <div className="flex items-center gap-4">
+                    <div className="bg-primary text-primary-foreground rounded-full p-6 text-xl font-bold">
+                      {exampleProfile.name
+                        .split(" ")
+                        .map((n) => n[0])
+                        .join("")}
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg">
+                        {exampleProfile.name}
+                      </h3>
+                      <p className="text-gray-600">{exampleProfile.title}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-600">
+                    <GraduationCap className="w-4 h-4" />
+                    <span>{exampleProfile.university}</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {exampleProfile.skills.map((skill, index) => (
+                      <span
+                        key={index}
+                        className="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Call to Action */}
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-xl font-bold mb-4">
+                  Create Your Professional Profile
+                </h3>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-center gap-2">
+                    <UserCircle className="w-5 h-5 text-blue-600" />
+                    <span>Showcase your skills and experience</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Building2 className="w-5 h-5 text-blue-600" />
+                    <span>Get discovered by top companies</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <ArrowRight className="w-5 h-5 text-blue-600" />
+                    <span>Stand out from other candidates</span>
+                  </li>
+                </ul>
+                <div className="space-x-4">
+                  <Button
+                    onClick={() => navigate("/profile/example/view")}
+                    variant="default"
+                  >
+                    View Example Profile
+                  </Button>
+                  <Button
+                    onClick={() => navigate("/register")}
+                    variant="outline"
+                  >
+                    Create Your Profile
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

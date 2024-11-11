@@ -15,6 +15,9 @@ import NotFound from "./pages/NotFound";
 import Register from "./pages/Register";
 import Search from "./pages/Search";
 import UserProfile from "./pages/UserProfile";
+import PublicProfile from "./pages/PublicProfile";
+import CompanyProfileManagement from "./pages/CompanyProfileManagement";
+import NotificationsPage from "./pages/NotificationsPage";
 
 const ProtectedRoute = ({
   children,
@@ -42,6 +45,7 @@ export function App() {
           <Route path="/internships/:id" element={<InternshipDetails />} />
           <Route path="/companies" element={<CompanyDirectory />} />
           <Route path="/companies/:id" element={<CompanyProfile />} />
+          <Route path="/profile/:id/view" element={<PublicProfile />} />
         </Route>
 
         {/* Protected Routes with Main Layout */}
@@ -67,6 +71,22 @@ export function App() {
             element={
               <ProtectedRoute>
                 <Messages />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/company/profile/manage"
+            element={
+              <ProtectedRoute>
+                <CompanyProfileManagement />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/notifications"
+            element={
+              <ProtectedRoute>
+                <NotificationsPage />
               </ProtectedRoute>
             }
           />

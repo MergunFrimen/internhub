@@ -20,6 +20,7 @@ import {
 
 export default function Navbar() {
   const isAuthenticated = true;
+  const unreadCount = 3;
 
   return (
     <nav className="border-b">
@@ -59,8 +60,13 @@ export default function Navbar() {
               <>
                 {/* Notifications */}
                 <Button variant="ghost" size="icon" asChild>
-                  <Link to="/notifications">
+                  <Link to="/notifications" className="relative">
                     <Bell className="w-5 h-5" />
+                    {unreadCount > 0 && (
+                      <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
+                        {unreadCount}
+                      </span>
+                    )}
                   </Link>
                 </Button>
 

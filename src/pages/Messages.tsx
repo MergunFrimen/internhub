@@ -91,13 +91,13 @@ export default function ChatView() {
     e.preventDefault();
     if (!newMessage.trim() || !selectedChat) return;
 
-    const message: Message = {
-      id: Date.now().toString(),
-      content: newMessage,
-      sender: "You",
-      timestamp: new Date().toISOString(),
-      isCurrentUser: true,
-    };
+    // const message: Message = {
+    //   id: Date.now().toString(),
+    //   content: newMessage,
+    //   sender: "You",
+    //   timestamp: new Date().toISOString(),
+    //   isCurrentUser: true,
+    // };
 
     // In a real app, this would be handled by a backend
     setNewMessage("");

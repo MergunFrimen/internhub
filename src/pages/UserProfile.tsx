@@ -1,25 +1,24 @@
-import { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
+  AlertCircle,
   Briefcase,
+  Download,
+  File,
+  FileText,
   GraduationCap,
   Mail,
   MapPin,
   Phone,
-  User,
-  Upload,
-  File,
-  X,
-  Download,
-  FileText,
   Trash2,
-  AlertCircle,
+  Upload,
+  User,
 } from "lucide-react";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { useState } from "react";
 
 interface CV {
   id: string;

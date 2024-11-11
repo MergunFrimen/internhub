@@ -1,20 +1,17 @@
-import { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Briefcase,
-  GraduationCap,
-  Link as LinkIcon,
+  Download,
+  ExternalLink,
+  Github,
+  Linkedin,
   Mail,
   MapPin,
   User,
-  Github,
-  Linkedin,
-  ExternalLink,
-  Eye,
-  Download,
 } from "lucide-react";
+import { useState } from "react";
 
 export default function PublicProfile() {
   const [activeSection, setActiveSection] = useState<string | null>(null);

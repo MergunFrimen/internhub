@@ -19,14 +19,14 @@ import {
   Search as SearchIcon,
   Clock,
   Briefcase,
-  GraduationCap,
   Filter,
   X,
+  ArrowRight,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Search() {
-  // Search state
+  // Search states
   const [searchQuery, setSearchQuery] = useState("");
   const [location, setLocation] = useState("");
   const [jobType, setJobType] = useState("");
@@ -35,7 +35,7 @@ export default function Search() {
   const [experienceLevel, setExperienceLevel] = useState([0]);
   const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
 
-  // Mock data - In a real app, this would come from an API
+  // Mock internship results data
   const results = [
     {
       id: 1,
@@ -47,7 +47,7 @@ export default function Search() {
       field: "Software Engineering",
       postedDate: "2024-03-15",
       description:
-        "Join our engineering team to work on cutting-edge projects...",
+        "Join our engineering team to work on cutting-edge projects using modern technologies...",
       requirements: ["React", "TypeScript", "Node.js"],
     },
     {
@@ -76,43 +76,90 @@ export default function Search() {
 
   return (
     <div className="container mx-auto py-8 px-4">
-      {/* Search Header */}
-      <div className="mb-8">
-        {/* <h1 className="text-3xl font-bold mb-4">
-          Find Your Perfect Internship
-        </h1> */}
-        <div className="flex flex-col md:flex-row gap-4">
-          <div className="flex-grow relative">
-            <SearchIcon className="absolute left-3 top-2 text-gray-400" />
-            <Input
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search for internships..."
-              className="pl-10"
-            />
+      {/* Search Section */}
+      <Card className="mb-6">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <SearchIcon className="w-5 h-5" />
+            Search Internships
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="grid gap-4">
+            <div className="flex flex-col md:flex-row gap-4">
+              {/* Search Query Input */}
+              <div className="flex-1 relative">
+                <Input
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search by title, company, or keyword..."
+                  className="pl-10"
+                />
+                <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground h-4 w-4" />
+              </div>
+
+              {/* Location Input */}
+              <div className="relative md:w-[260px]">
+                <Input
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
+                  placeholder="Location"
+                  className="pl-10"
+                />
+                <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground h-4 w-4" />
+              </div>
+
+              {/* Search Button */}
+              <Button className="md:w-[120px]">
+                <SearchIcon className="w-4 h-4 mr-2" />
+                Search
+              </Button>
+            </div>
+
+            {/* Quick Filters */}
+            <div className="flex flex-wrap items-center gap-2 pt-2">
+              <span className="text-sm text-muted-foreground">
+                Quick filters:
+              </span>
+              <Badge
+                variant="outline"
+                className="cursor-pointer hover:bg-primary hover:text-primary-foreground"
+                onClick={() => handleFilterAdd("Remote")}
+              >
+                Remote
+              </Badge>
+              <Badge
+                variant="outline"
+                className="cursor-pointer hover:bg-primary hover:text-primary-foreground"
+                onClick={() => handleFilterAdd("Full-time")}
+              >
+                Full-time
+              </Badge>
+              <Badge
+                variant="outline"
+                className="cursor-pointer hover:bg-primary hover:text-primary-foreground"
+                onClick={() => handleFilterAdd("3 months")}
+              >
+                3 months
+              </Badge>
+              <Badge
+                variant="outline"
+                className="cursor-pointer hover:bg-primary hover:text-primary-foreground"
+                onClick={() => handleFilterAdd("No experience")}
+              >
+                No experience
+              </Badge>
+            </div>
           </div>
-          <div className="relative">
-            <MapPin className="absolute left-3 top-2 text-gray-400" />
-            <Input
-              value={location}
-              onChange={(e) => setLocation(e.target.value)}
-              placeholder="Location..."
-              className="pl-10"
-            />
-          </div>
-          <Button className="whitespace-nowrap">
-            <SearchIcon className="w-4 h-4 mr-2" />
-            Search
-          </Button>
-        </div>
-      </div>
+        </CardContent>
+      </Card>
 
       <div className="grid md:grid-cols-4 gap-6">
         {/* Filters Sidebar */}
         <div className="space-y-6">
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg flex items-center gap-2">
+              <CardTitle className="flex items-center gap-2 text-lg">
                 <Filter className="w-4 h-4" />
                 Filters
               </CardTitle>
@@ -151,20 +198,6 @@ export default function Search() {
                 </Select>
               </div>
 
-              {/* Company */}
-              <div className="space-y-2">
-                <Label>Company</Label>
-                <Select value={field} onValueChange={setField}>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select field" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="data">Tech Corp</SelectItem>
-                    <SelectItem value="marketing">SecureNet</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-
               {/* Duration */}
               <div className="space-y-2">
                 <Label>Duration</Label>
@@ -176,7 +209,6 @@ export default function Search() {
                     <SelectItem value="3-months">3 months</SelectItem>
                     <SelectItem value="6-months">6 months</SelectItem>
                     <SelectItem value="12-months">12 months</SelectItem>
-                    <SelectItem value="12-months">More</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -207,51 +239,53 @@ export default function Search() {
         <div className="md:col-span-3 space-y-6">
           {/* Active Filters */}
           {selectedFilters.length > 0 && (
-            <div className="flex flex-wrap gap-2 mb-4">
-              {selectedFilters.map((filter) => (
-                <Badge
-                  key={filter}
-                  variant="secondary"
-                  className="flex items-center gap-1"
-                >
-                  {filter}
-                  <X
-                    className="w-3 h-3 cursor-pointer"
-                    onClick={() => handleFilterRemove(filter)}
-                  />
-                </Badge>
-              ))}
-            </div>
+            <Card>
+              <CardContent className="py-3">
+                <div className="flex flex-wrap gap-2">
+                  {selectedFilters.map((filter) => (
+                    <Badge
+                      key={filter}
+                      variant="secondary"
+                      className="flex items-center gap-1"
+                    >
+                      {filter}
+                      <X
+                        className="w-3 h-3 cursor-pointer"
+                        onClick={() => handleFilterRemove(filter)}
+                      />
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
           )}
 
           {/* Results */}
           {results.map((result) => (
             <Link key={result.id} to={`/internships/${result.id}`}>
               <Card className="hover:shadow-md transition-shadow">
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle className="text-xl mb-2">
-                        {result.role}
-                      </CardTitle>
-                      <div className="flex items-center gap-2 text-muted-foreground">
-                        <Building2 className="w-4 h-4" />
-                        <span>{result.company}</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-col items-end gap-2">
-                      <div className="flex items-center gap-2 text-muted-foreground">
-                        <Calendar className="w-4 h-4" />
-                        <span>{result.postedDate}</span>
-                      </div>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
+                <CardContent className="pt-6">
                   <div className="space-y-4">
+                    {/* Header */}
+                    <div className="flex justify-between items-start">
+                      <div className="space-y-1">
+                        <h3 className="text-xl font-semibold">{result.role}</h3>
+                        <div className="flex items-center gap-2 text-muted-foreground">
+                          <Building2 className="w-4 h-4" />
+                          <span>{result.company}</span>
+                        </div>
+                      </div>
+                      <Button variant="ghost" size="icon">
+                        <ArrowRight className="w-4 h-4" />
+                      </Button>
+                    </div>
+
+                    {/* Description */}
                     <p className="text-muted-foreground">
                       {result.description}
                     </p>
+
+                    {/* Details */}
                     <div className="flex flex-wrap gap-4">
                       <div className="flex items-center gap-2 text-muted-foreground">
                         <MapPin className="w-4 h-4" />
@@ -266,10 +300,12 @@ export default function Search() {
                         <span>{result.duration}</span>
                       </div>
                       <div className="flex items-center gap-2 text-muted-foreground">
-                        <GraduationCap className="w-4 h-4" />
-                        <span>{result.field}</span>
+                        <Calendar className="w-4 h-4" />
+                        <span>Posted {result.postedDate}</span>
                       </div>
                     </div>
+
+                    {/* Skills/Requirements */}
                     <div className="flex flex-wrap gap-2">
                       {result.requirements.map((req, index) => (
                         <Badge

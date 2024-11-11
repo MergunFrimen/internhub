@@ -11,7 +11,23 @@ import {
   MapPin,
   Phone,
   User,
+  Upload,
+  File,
+  X,
+  Download,
+  FileText,
+  Trash2,
+  AlertCircle,
 } from "lucide-react";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+
+interface CV {
+  id: string;
+  name: string;
+  size: number;
+  uploadDate: string;
+  isDefault: boolean;
+}
 
 export default function UserProfile() {
   const [userData] = useState({
@@ -34,16 +50,110 @@ export default function UserProfile() {
     },
   });
 
+  const [cvs, setCvs] = useState<CV[]>([
+    {
+      id: "1",
+      name: "John_Doe_CV_2024.pdf",
+      size: 1240000, // in bytes
+      uploadDate: "2024-03-15T10:00:00Z",
+      isDefault: true,
+    },
+    {
+      id: "2",
+      name: "John_Doe_Technical_CV.pdf",
+      size: 890000,
+      uploadDate: "2024-03-10T14:30:00Z",
+      isDefault: false,
+    },
+  ]);
+
+  const [dragActive, setDragActive] = useState(false);
+  const [uploadError, setUploadError] = useState<string | null>(null);
+
   const handlePersonalUpdate = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
-    console.log("Updated personal info");
   };
 
   const handleEducationUpdate = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
-    console.log("Updated education info");
+  };
+
+  const handleDrag = (e: React.DragEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (e.type === "dragenter" || e.type === "dragover") {
+      setDragActive(true);
+    } else if (e.type === "dragleave") {
+      setDragActive(false);
+    }
+  };
+
+  const handleDrop = (e: React.DragEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setDragActive(false);
+    const files = e.dataTransfer.files;
+    handleFiles(files);
+  };
+
+  const handleFileInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = e.target.files;
+    if (files) handleFiles(files);
+  };
+
+  const handleFiles = (files: FileList) => {
+    setUploadError(null);
+    const file = files[0];
+
+    // Validate file
+    if (!file.name.toLowerCase().endsWith(".pdf")) {
+      setUploadError("Only PDF files are allowed");
+      return;
+    }
+    if (file.size > 5 * 1024 * 1024) {
+      // 5MB limit
+      setUploadError("File size must be less than 5MB");
+      return;
+    }
+
+    // Add new CV to the list
+    const newCV: CV = {
+      id: Date.now().toString(),
+      name: file.name,
+      size: file.size,
+      uploadDate: new Date().toISOString(),
+      isDefault: false,
+    };
+    setCvs((prev) => [...prev, newCV]);
+  };
+
+  const formatFileSize = (bytes: number): string => {
+    if (bytes < 1024) return bytes + " B";
+    if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + " KB";
+    return (bytes / (1024 * 1024)).toFixed(1) + " MB";
+  };
+
+  const formatDate = (dateString: string): string => {
+    return new Date(dateString).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+  };
+
+  const setDefaultCV = (cvId: string) => {
+    setCvs((prev) =>
+      prev.map((cv) => ({
+        ...cv,
+        isDefault: cv.id === cvId,
+      }))
+    );
+  };
+
+  const deleteCV = (cvId: string) => {
+    setCvs((prev) => prev.filter((cv) => cv.id !== cvId));
   };
 
   return (
@@ -55,7 +165,10 @@ export default function UserProfile() {
           <TabsTrigger value="personal">Personal Info</TabsTrigger>
           <TabsTrigger value="education">Education</TabsTrigger>
           <TabsTrigger value="preferences">Preferences</TabsTrigger>
+          <TabsTrigger value="cv">CV Management</TabsTrigger>
         </TabsList>
+
+        {/* Existing tabs content remains the same */}
 
         <TabsContent value="personal">
           <Card>
@@ -225,6 +338,122 @@ export default function UserProfile() {
               </div>
             </CardContent>
           </Card>
+        </TabsContent>
+
+        <TabsContent value="cv">
+          <div className="space-y-6">
+            {/* Upload Section */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <FileText className="w-5 h-5" />
+                  Upload CV
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div
+                  className={`border-2 border-dashed rounded-lg p-8 text-center ${
+                    dragActive
+                      ? "border-primary bg-primary/5"
+                      : "border-gray-200"
+                  }`}
+                  onDragEnter={handleDrag}
+                  onDragLeave={handleDrag}
+                  onDragOver={handleDrag}
+                  onDrop={handleDrop}
+                >
+                  <div className="flex flex-col items-center gap-4">
+                    <Upload className="w-8 h-8 text-gray-400" />
+                    <div>
+                      <p className="text-lg font-medium">
+                        Drag and drop your CV here, or{" "}
+                        <label className="text-primary cursor-pointer hover:underline">
+                          browse
+                          <input
+                            type="file"
+                            className="hidden"
+                            accept=".pdf"
+                            onChange={handleFileInput}
+                          />
+                        </label>
+                      </p>
+                      <p className="text-sm text-gray-500 mt-1">
+                        Supports: PDF up to 5MB
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {uploadError && (
+                  <Alert variant="destructive" className="mt-4">
+                    <AlertCircle className="h-4 w-4" />
+                    <AlertTitle>Upload Error</AlertTitle>
+                    <AlertDescription>{uploadError}</AlertDescription>
+                  </Alert>
+                )}
+              </CardContent>
+            </Card>
+
+            {/* CV List */}
+            <Card>
+              <CardHeader>
+                <CardTitle>My CVs</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  {cvs.map((cv) => (
+                    <div
+                      key={cv.id}
+                      className="flex items-center justify-between p-4 rounded-lg border bg-card hover:shadow-sm transition-shadow"
+                    >
+                      <div className="flex items-center gap-4">
+                        <div className="p-2 bg-primary/10 rounded-lg">
+                          <File className="w-6 h-6 text-primary" />
+                        </div>
+                        <div>
+                          <p className="font-medium">{cv.name}</p>
+                          <p className="text-sm text-muted-foreground">
+                            {formatFileSize(cv.size)} • Uploaded{" "}
+                            {formatDate(cv.uploadDate)}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-4">
+                        <Button
+                          variant={cv.isDefault ? "default" : "outline"}
+                          size="sm"
+                          onClick={() => setDefaultCV(cv.id)}
+                        >
+                          {cv.isDefault ? "Default CV" : "Set as Default"}
+                        </Button>
+                        <Button
+                          variant="outline"
+                          size="icon"
+                          onClick={() => window.open("#")} // Replace with actual download link
+                        >
+                          <Download className="w-4 h-4" />
+                        </Button>
+                        <Button
+                          variant="ghost"
+                          size="icon"
+                          onClick={() => deleteCV(cv.id)}
+                          disabled={cv.isDefault}
+                        >
+                          <Trash2 className="w-4 h-4 text-destructive" />
+                        </Button>
+                      </div>
+                    </div>
+                  ))}
+
+                  {cvs.length === 0 && (
+                    <div className="text-center py-8 text-muted-foreground">
+                      No CVs uploaded yet. Upload your first CV above.
+                    </div>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </TabsContent>
       </Tabs>
     </div>

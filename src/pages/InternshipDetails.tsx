@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Building2, MapPin, Calendar, BriefcaseIcon } from "lucide-react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function InternshipDetails() {
   useParams();
@@ -9,7 +9,10 @@ export default function InternshipDetails() {
   // Mock data - in real app, fetch based on id
   const internship = {
     title: "Software Development Intern",
-    company: "TechCorp",
+    company: {
+      id: 1, // Added company ID for the link
+      name: "TechCorp",
+    },
     location: "Remote",
     type: "Full-time",
     duration: "3 months",
@@ -37,7 +40,12 @@ export default function InternshipDetails() {
           <div className="grid gap-4">
             <div className="flex items-center gap-2 text-gray-600">
               <Building2 className="w-5 h-5" />
-              <span>{internship.company}</span>
+              <Link
+                to={`/companies/${internship.company.id}`}
+                className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+              >
+                {internship.company.name}
+              </Link>
             </div>
             <div className="flex items-center gap-2 text-gray-600">
               <MapPin className="w-5 h-5" />

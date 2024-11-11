@@ -17,10 +17,8 @@ import {
 } from "lucide-react";
 
 export default function PublicProfile() {
-  // Animation state
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
-  // This would normally be fetched from an API based on the profile ID
   const profile = {
     name: "John Doe",
     title: "Computer Science Student",
@@ -126,11 +124,11 @@ export default function PublicProfile() {
         </div>
         <CardContent className="pt-20 pb-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <div>
-              <h1 className="text-3xl font-bold mb-2">{profile.name}</h1>
-              <p className="text-xl text-muted-foreground mb-4">
-                {profile.title}
-              </p>
+            <div className="space-y-4">
+              <div>
+                <h1 className="text-3xl font-bold mb-2">{profile.name}</h1>
+                <p className="text-xl text-muted-foreground">{profile.title}</p>
+              </div>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <MapPin className="w-4 h-4" />
@@ -139,6 +137,24 @@ export default function PublicProfile() {
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Mail className="w-4 h-4" />
                   <span>{profile.email}</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <a
+                    href={`https://${profile.links.github}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    <Github className="w-5 h-5" />
+                  </a>
+                  <a
+                    href={`https://${profile.links.linkedin}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -315,30 +331,6 @@ export default function PublicProfile() {
           ))}
         </CardContent>
       </Card>
-
-      {/* Social Links */}
-      <div className="flex justify-center gap-4">
-        <a
-          href={`https://${profile.links.github}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="transform transition-all duration-300 hover:scale-110"
-        >
-          <Button variant="outline" size="icon">
-            <Github className="w-5 h-5" />
-          </Button>
-        </a>
-        <a
-          href={`https://${profile.links.linkedin}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="transform transition-all duration-300 hover:scale-110"
-        >
-          <Button variant="outline" size="icon">
-            <Linkedin className="w-5 h-5" />
-          </Button>
-        </a>
-      </div>
     </div>
   );
 }

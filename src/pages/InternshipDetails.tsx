@@ -13,7 +13,8 @@ export default function InternshipDetails() {
     location: "Remote",
     type: "Full-time",
     duration: "3 months",
-    description: "Join our engineering team and work on cutting-edge projects...",
+    description:
+      "Join our engineering team and work on cutting-edge projects...",
     requirements: [
       "Currently pursuing a degree in Computer Science or related field",
       "Strong programming fundamentals",
@@ -51,7 +52,7 @@ export default function InternshipDetails() {
               <span>{internship.duration}</span>
             </div>
           </div>
-          <Button className="mt-6 w-full">Apply Now</Button>
+          <Button className="mt-6 w-fit">Apply Now</Button>
         </CardContent>
       </Card>
 

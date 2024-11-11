@@ -33,6 +33,7 @@ export default function Search() {
       </div>
 
       <div className="space-y-4">
+        <h1 className="text-6xl">TODO</h1>
         {results.map((result) => (
           <Link key={result.id} to={`/internships/${result.id}`}>
             <Card className="hover:shadow-md transition-shadow">

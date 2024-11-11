@@ -48,7 +48,7 @@ export default function Home() {
 
           {/* Search Bar */}
           <div className="relative max-w-2xl mx-auto">
-            <Search className="absolute left-3 top-3 text-gray-400" />
+            <Search className="absolute left-3 top-2 text-gray-400" />
             <input
               type="text"
               placeholder="Search for internships or companies..."

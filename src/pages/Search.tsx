@@ -78,12 +78,12 @@ export default function Search() {
     <div className="container mx-auto py-8 px-4">
       {/* Search Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold mb-4">
+        {/* <h1 className="text-3xl font-bold mb-4">
           Find Your Perfect Internship
-        </h1>
+        </h1> */}
         <div className="flex flex-col md:flex-row gap-4">
           <div className="flex-grow relative">
-            <SearchIcon className="absolute left-3 top-3 text-gray-400" />
+            <SearchIcon className="absolute left-3 top-2 text-gray-400" />
             <Input
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -92,7 +92,7 @@ export default function Search() {
             />
           </div>
           <div className="relative">
-            <MapPin className="absolute left-3 top-3 text-gray-400" />
+            <MapPin className="absolute left-3 top-2 text-gray-400" />
             <Input
               value={location}
               onChange={(e) => setLocation(e.target.value)}
@@ -133,6 +133,38 @@ export default function Search() {
                 </Select>
               </div>
 
+              {/* Industry */}
+              <div className="space-y-2">
+                <Label>Industry</Label>
+                <Select value={field} onValueChange={setField}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select field" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="software">
+                      Software Engineering
+                    </SelectItem>
+                    <SelectItem value="data">Data Science</SelectItem>
+                    <SelectItem value="design">UI/UX Design</SelectItem>
+                    <SelectItem value="marketing">Marketing</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* Company */}
+              <div className="space-y-2">
+                <Label>Company</Label>
+                <Select value={field} onValueChange={setField}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select field" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="data">Tech Corp</SelectItem>
+                    <SelectItem value="marketing">SecureNet</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
               {/* Duration */}
               <div className="space-y-2">
                 <Label>Duration</Label>
@@ -145,24 +177,6 @@ export default function Search() {
                     <SelectItem value="6-months">6 months</SelectItem>
                     <SelectItem value="12-months">12 months</SelectItem>
                     <SelectItem value="12-months">More</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-
-              {/* Field */}
-              <div className="space-y-2">
-                <Label>Field</Label>
-                <Select value={field} onValueChange={setField}>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select field" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="software">
-                      Software Engineering
-                    </SelectItem>
-                    <SelectItem value="data">Data Science</SelectItem>
-                    <SelectItem value="design">UI/UX Design</SelectItem>
-                    <SelectItem value="marketing">Marketing</SelectItem>
                   </SelectContent>
                 </Select>
               </div>

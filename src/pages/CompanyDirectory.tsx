@@ -8,7 +8,7 @@ export default function CompanyDirectory() {
     {
       id: 1,
       name: "TechCorp",
-      location: "Remote",
+      location: "Brno, Czech Republic",
       industry: "Software Development",
       openPositions: 5,
       description: "Leading technology company focused on innovation",
@@ -16,7 +16,7 @@ export default function CompanyDirectory() {
     {
       id: 2,
       name: "SecureNet",
-      location: "Bratislava",
+      location: "Bratislava, Slovakia",
       industry: "Cybersecurity",
       openPositions: 3,
       description: "Cybersecurity solutions provider",
@@ -25,7 +25,7 @@ export default function CompanyDirectory() {
 
   return (
     <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold mb-6">Company Directory</h1>
+      <h1 className="text-3xl font-bold mb-6">Companies</h1>
       <div className="grid md:grid-cols-2 gap-6">
         {companies.map((company) => (
           <Link key={company.id} to={`/companies/${company.id}`}>

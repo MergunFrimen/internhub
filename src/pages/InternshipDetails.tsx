@@ -10,7 +10,6 @@ import {
   GraduationCap,
   Users,
   CheckCircle,
-  DollarSign,
   BookOpen,
 } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -92,7 +91,7 @@ export default function InternshipDetails() {
                   <span>{internship.duration}</span>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
-                  <DollarSign className="w-4 h-4" />
+                  {/* <DollarSign className="w-4 h-4" /> */}
                   <span>{internship.salary}</span>
                 </div>
               </div>

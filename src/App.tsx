@@ -18,6 +18,7 @@ import UserProfile from "./pages/UserProfile";
 import PublicProfile from "./pages/PublicProfile";
 import CompanyProfileManagement from "./pages/CompanyProfileManagement";
 import NotificationsPage from "./pages/NotificationsPage";
+import ApplicationStatus from "./pages/ApplicationStatus";
 
 const ProtectedRoute = ({
   children,
@@ -87,6 +88,14 @@ export function App() {
             element={
               <ProtectedRoute>
                 <NotificationsPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/applications/:id"
+            element={
+              <ProtectedRoute>
+                <ApplicationStatus />
               </ProtectedRoute>
             }
           />

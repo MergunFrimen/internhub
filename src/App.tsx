@@ -100,6 +100,9 @@ export function App() {
 
         {/* 404 Route */}
         <Route path="*" element={<NotFound />} />
+
+        {/* Examples */}
+        <Route path="/profile/example/view" element={<PublicProfile />} />
       </Routes>
     </Router>
     // </AuthProvider>

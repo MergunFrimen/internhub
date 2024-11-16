@@ -299,7 +299,7 @@ function SearchResults({ results }: { results: any[] }) {
 
                 {/* Skills/Requirements */}
                 <div className="flex flex-wrap gap-2">
-                  {result.requirements.map((req, index) => (
+                  {result.requirements.map((req: any, index: number) => (
                     <Badge
                       key={index}
                       variant="secondary"

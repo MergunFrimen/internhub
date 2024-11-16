@@ -1,12 +1,5 @@
-import { Link } from "react-router-dom";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,6 +10,13 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
+import {
   Bell,
   Briefcase,
   Building2,
@@ -26,15 +26,13 @@ import {
   MessageSquare,
   Search,
   Settings,
-  User,
-  UserCircle,
+  UserCircle
 } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const isAuthenticated = true;
-  const unreadCount = 3;
 
   return (
     <nav className="border-b">

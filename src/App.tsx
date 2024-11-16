@@ -38,7 +38,7 @@ const ProtectedRoute = ({
 
 export function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="theme">
+    <ThemeProvider defaultTheme="light" storageKey="theme">
       <Router>
         <ScrollToTop />
         <Routes>

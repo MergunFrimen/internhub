@@ -99,7 +99,7 @@ export default function PublicProfile() {
       case "Intermediate":
         return "bg-blue-100 text-blue-800 border-blue-300";
       default:
-        return "bg-gray-100 text-gray-800 border-gray-300";
+        return "bg-gray-100 text-foreground border-gray-300";
     }
   };
 
@@ -124,14 +124,14 @@ export default function PublicProfile() {
             <div className="space-y-4">
               <div>
                 <h1 className="text-3xl font-bold mb-2">{profile.name}</h1>
-                <p className="text-xl text-muted-foreground">{profile.title}</p>
+                <p className="text-xl text-foreground">{profile.title}</p>
               </div>
               <div className="flex flex-wrap gap-4">
-                <div className="flex items-center gap-2 text-muted-foreground">
+                <div className="flex items-center gap-2 text-foreground">
                   <MapPin className="w-4 h-4" />
                   <span>{profile.location}</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
+                <div className="flex items-center gap-2 text-foreground">
                   <Mail className="w-4 h-4" />
                   <span>{profile.email}</span>
                 </div>
@@ -140,7 +140,7 @@ export default function PublicProfile() {
                     href={`https://${profile.links.github}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-foreground hover:text-foreground transition-colors"
                   >
                     <Github className="w-5 h-5" />
                   </a>
@@ -148,7 +148,7 @@ export default function PublicProfile() {
                     href={`https://${profile.links.linkedin}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-foreground hover:text-foreground transition-colors"
                   >
                     <Linkedin className="w-5 h-5" />
                   </a>
@@ -182,7 +182,7 @@ export default function PublicProfile() {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-foreground leading-relaxed">
             {profile.about}
           </p>
         </CardContent>
@@ -253,9 +253,7 @@ export default function PublicProfile() {
                     <ExternalLink className="w-5 h-5" />
                   </a>
                 </div>
-                <p className="text-muted-foreground mb-4">
-                  {project.description}
-                </p>
+                <p className="text-foreground mb-4">{project.description}</p>
                 <div className="space-y-3">
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
@@ -272,7 +270,7 @@ export default function PublicProfile() {
                     {project.highlights.map((highlight, i) => (
                       <li
                         key={i}
-                        className="flex items-center gap-2 text-sm text-muted-foreground"
+                        className="flex items-center gap-2 text-sm text-foreground"
                       >
                         <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
                         {highlight}
@@ -308,16 +306,16 @@ export default function PublicProfile() {
             >
               <div className="mb-4">
                 <h3 className="text-xl font-semibold mb-1">{exp.title}</h3>
-                <p className="text-muted-foreground">
+                <p className="text-foreground">
                   {exp.company} • {exp.period}
                 </p>
               </div>
-              <p className="text-muted-foreground mb-4">{exp.description}</p>
+              <p className="text-foreground mb-4">{exp.description}</p>
               <ul className="space-y-2">
                 {exp.achievements.map((achievement, i) => (
                   <li
                     key={i}
-                    className="flex items-center gap-2 text-sm text-muted-foreground"
+                    className="flex items-center gap-2 text-sm text-foreground"
                   >
                     <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
                     {achievement}

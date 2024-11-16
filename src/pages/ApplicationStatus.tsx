@@ -124,7 +124,7 @@ export default function ApplicationStatus() {
                   {application.status}
                 </div>
               </div>
-              <p className="text-muted-foreground">
+              <p className="text-foreground">
                 Application ID: {application.id}
               </p>
             </div>
@@ -161,24 +161,22 @@ export default function ApplicationStatus() {
               <div className="grid gap-4">
                 <div>
                   <h3 className="text-xl font-semibold">{application.role}</h3>
-                  <p className="text-muted-foreground">
-                    {application.company.name}
-                  </p>
+                  <p className="text-foreground">{application.company.name}</p>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="flex items-center gap-2 text-muted-foreground">
+                  <div className="flex items-center gap-2 text-foreground">
                     <MapPin className="w-4 h-4" />
                     <span>{application.location}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-muted-foreground">
+                  <div className="flex items-center gap-2 text-foreground">
                     <Clock className="w-4 h-4" />
                     <span>{application.type}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-muted-foreground">
+                  <div className="flex items-center gap-2 text-foreground">
                     <Calendar className="w-4 h-4" />
                     <span>{application.duration}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-muted-foreground">
+                  <div className="flex items-center gap-2 text-foreground">
                     <FileText className="w-4 h-4" />
                     <span>Applied {application.submittedDate}</span>
                   </div>
@@ -203,7 +201,7 @@ export default function ApplicationStatus() {
                       <h3 className="font-semibold">
                         {application.interviews[0].type}
                       </h3>
-                      <p className="text-muted-foreground">
+                      <p className="text-foreground">
                         {application.interviews[0].date} at{" "}
                         {application.interviews[0].time} ({" "}
                         {application.interviews[0].duration} )
@@ -211,7 +209,7 @@ export default function ApplicationStatus() {
                     </div>
                     <Button>Join Meeting</Button>
                   </div>
-                  <div className="flex items-center gap-2 text-muted-foreground">
+                  <div className="flex items-center gap-2 text-foreground">
                     <User className="w-4 h-4" />
                     <span>
                       Interviewer: {application.interviews[0].interviewer} (
@@ -225,7 +223,7 @@ export default function ApplicationStatus() {
                         (tip, index) => (
                           <li
                             key={index}
-                            className="flex items-start gap-2 text-muted-foreground"
+                            className="flex items-start gap-2 text-foreground"
                           >
                             <div className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2" />
                             {tip}
@@ -260,11 +258,11 @@ export default function ApplicationStatus() {
                     <div className="flex-1">
                       <div className="flex justify-between mb-1">
                         <span className="font-medium">{message.from}</span>
-                        <span className="text-sm text-muted-foreground">
+                        <span className="text-sm text-foreground">
                           {message.date}
                         </span>
                       </div>
-                      <p className="text-muted-foreground">{message.content}</p>
+                      <p className="text-foreground">{message.content}</p>
                     </div>
                   </div>
                 ))}
@@ -303,7 +301,7 @@ export default function ApplicationStatus() {
                     >
                       <CheckCircle2
                         className={`w-4 h-4 ${
-                          event.completed ? "text-green-600" : "text-gray-400"
+                          event.completed ? "text-green-600" : "text-foreground"
                         }`}
                       />
                     </div>
@@ -314,18 +312,18 @@ export default function ApplicationStatus() {
                         className={`font-medium ${
                           event.completed
                             ? "text-foreground"
-                            : "text-muted-foreground"
+                            : "text-foreground"
                         }`}
                       >
                         {event.status}
                       </h4>
                       {event.date && (
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-sm text-foreground">
                           {event.date} {event.time}
                         </p>
                       )}
                       {event.details && (
-                        <p className="text-sm text-muted-foreground mt-1">
+                        <p className="text-sm text-foreground mt-1">
                           {event.details}
                         </p>
                       )}
@@ -355,9 +353,7 @@ export default function ApplicationStatus() {
                       <FileText className="w-4 h-4 text-blue-600" />
                       <div>
                         <p className="font-medium">{doc.name}</p>
-                        <p className="text-sm text-muted-foreground">
-                          {doc.date}
-                        </p>
+                        <p className="text-sm text-foreground">{doc.date}</p>
                       </div>
                     </div>
                     <Button variant="ghost" size="sm">

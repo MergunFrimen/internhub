@@ -214,11 +214,11 @@ export default function NotificationsPage() {
                       <h3 className="font-semibold text-lg">
                         {notification.title}
                       </h3>
-                      <p className="text-gray-600 mt-1">
+                      <p className="text-foreground mt-1">
                         {notification.message}
                       </p>
                     </div>
-                    <span className="text-sm text-gray-500">
+                    <span className="text-sm text-foreground">
                       {formatTimestamp(notification.timestamp)}
                     </span>
                   </div>

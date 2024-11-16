@@ -96,7 +96,7 @@ export default function Search() {
                   placeholder="Search by title, company, or keyword..."
                   className="pl-10"
                 />
-                <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground h-4 w-4" />
+                <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-foreground h-4 w-4" />
               </div>
 
               {/* Location Input */}
@@ -107,7 +107,7 @@ export default function Search() {
                   placeholder="Location"
                   className="pl-10"
                 />
-                <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground h-4 w-4" />
+                <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 text-foreground h-4 w-4" />
               </div>
 
               {/* Search Button */}
@@ -119,9 +119,7 @@ export default function Search() {
 
             {/* Quick Filters */}
             <div className="flex flex-wrap items-center gap-2 pt-2">
-              <span className="text-sm text-muted-foreground">
-                Quick filters:
-              </span>
+              <span className="text-sm text-foreground">Quick filters:</span>
               <Badge
                 variant="outline"
                 className="cursor-pointer hover:bg-primary hover:text-primary-foreground"
@@ -240,7 +238,7 @@ export default function Search() {
                   step={1}
                   className="w-full"
                 />
-                <div className="text-sm text-muted-foreground">
+                <div className="text-sm text-foreground">
                   {experienceLevel[0] === 0 && "No experience required"}
                   {experienceLevel[0] === 1 && "Basic knowledge"}
                   {experienceLevel[0] === 2 && "Some experience"}
@@ -287,7 +285,7 @@ export default function Search() {
                     <div className="flex justify-between items-start">
                       <div className="space-y-1">
                         <h3 className="text-xl font-semibold">{result.role}</h3>
-                        <div className="flex items-center gap-2 text-muted-foreground">
+                        <div className="flex items-center gap-2 text-foreground">
                           <Building2 className="w-4 h-4" />
                           <span>{result.company}</span>
                         </div>
@@ -298,25 +296,23 @@ export default function Search() {
                     </div>
 
                     {/* Description */}
-                    <p className="text-muted-foreground">
-                      {result.description}
-                    </p>
+                    <p className="text-foreground">{result.description}</p>
 
                     {/* Details */}
                     <div className="flex flex-wrap gap-4">
-                      <div className="flex items-center gap-2 text-muted-foreground">
+                      <div className="flex items-center gap-2 text-foreground">
                         <MapPin className="w-4 h-4" />
                         <span>{result.location}</span>
                       </div>
-                      <div className="flex items-center gap-2 text-muted-foreground">
+                      <div className="flex items-center gap-2 text-foreground">
                         <Briefcase className="w-4 h-4" />
                         <span>{result.type}</span>
                       </div>
-                      <div className="flex items-center gap-2 text-muted-foreground">
+                      <div className="flex items-center gap-2 text-foreground">
                         <Clock className="w-4 h-4" />
                         <span>{result.duration}</span>
                       </div>
-                      <div className="flex items-center gap-2 text-muted-foreground">
+                      <div className="flex items-center gap-2 text-foreground">
                         <Calendar className="w-4 h-4" />
                         <span>Posted {result.postedDate}</span>
                       </div>

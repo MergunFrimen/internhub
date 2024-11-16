@@ -1,5 +1,11 @@
 import { useNavigate } from "react-router-dom";
-import { Search, UserCircle, Building2, ArrowRight, GraduationCap } from "lucide-react";
+import {
+  Search,
+  UserCircle,
+  Building2,
+  ArrowRight,
+  GraduationCap,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -39,16 +45,16 @@ export default function Home() {
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-32">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-5xl font-bold text-foreground mb-6">
             Find Your Perfect Internship
           </h1>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-foreground mb-8">
             Connect with leading companies and kickstart your career.
           </p>
 
           {/* Search Bar */}
           <div className="relative max-w-2xl mx-auto">
-            <Search className="absolute left-3 top-2 text-gray-400" />
+            <Search className="absolute left-3 top-2 text-foreground" />
             <input
               type="text"
               placeholder="Search for internships or companies..."
@@ -74,8 +80,8 @@ export default function Home() {
               onClick={() => navigate(`/internships/${internship.id}`)}
             >
               <h3 className="font-semibold mb-2">{internship.role}</h3>
-              <p className="text-gray-600">{internship.company}</p>
-              <p className="text-gray-500 text-sm mt-2">
+              <p className="text-foreground">{internship.company}</p>
+              <p className="text-foreground text-sm mt-2">
                 {internship.location}
               </p>
             </div>
@@ -88,7 +94,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold mb-2">Stand Out to Companies</h2>
-            <p className="text-gray-600">
+            <p className="text-foreground">
               Create your professional profile and get noticed by top companies
             </p>
           </div>
@@ -109,10 +115,10 @@ export default function Home() {
                       <h3 className="font-semibold text-lg">
                         {exampleProfile.name}
                       </h3>
-                      <p className="text-gray-600">{exampleProfile.title}</p>
+                      <p className="text-foreground">{exampleProfile.title}</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-2 text-gray-600">
+                  <div className="flex items-center gap-2 text-foreground">
                     <GraduationCap className="w-4 h-4" />
                     <span>{exampleProfile.university}</span>
                   </div>

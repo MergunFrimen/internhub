@@ -179,7 +179,7 @@ export default function UserProfile() {
                 <div className="space-y-2">
                   <Label htmlFor="fullName">Full Name</Label>
                   <div className="flex gap-2">
-                    <User className="w-5 h-5 text-gray-500" />
+                    <User className="w-5 h-5 text-foreground" />
                     <Input
                       id="fullName"
                       defaultValue={userData.personal.fullName}
@@ -190,7 +190,7 @@ export default function UserProfile() {
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
                   <div className="flex gap-2">
-                    <Mail className="w-5 h-5 text-gray-500" />
+                    <Mail className="w-5 h-5 text-foreground" />
                     <Input
                       id="email"
                       type="email"
@@ -202,7 +202,7 @@ export default function UserProfile() {
                 <div className="space-y-2">
                   <Label htmlFor="phone">Phone</Label>
                   <div className="flex gap-2">
-                    <Phone className="w-5 h-5 text-gray-500" />
+                    <Phone className="w-5 h-5 text-foreground" />
                     <Input
                       id="phone"
                       type="tel"
@@ -214,7 +214,7 @@ export default function UserProfile() {
                 <div className="space-y-2">
                   <Label htmlFor="location">Location</Label>
                   <div className="flex gap-2">
-                    <MapPin className="w-5 h-5 text-gray-500" />
+                    <MapPin className="w-5 h-5 text-foreground" />
                     <Input
                       id="location"
                       defaultValue={userData.personal.location}
@@ -238,7 +238,7 @@ export default function UserProfile() {
                 <div className="space-y-2">
                   <Label htmlFor="university">University</Label>
                   <div className="flex gap-2">
-                    <GraduationCap className="w-5 h-5 text-gray-500" />
+                    <GraduationCap className="w-5 h-5 text-foreground" />
                     <Input
                       id="university"
                       defaultValue={userData.education.university}
@@ -249,7 +249,7 @@ export default function UserProfile() {
                 <div className="space-y-2">
                   <Label htmlFor="degree">Degree</Label>
                   <div className="flex gap-2">
-                    <GraduationCap className="w-5 h-5 text-gray-500" />
+                    <GraduationCap className="w-5 h-5 text-foreground" />
                     <Input
                       id="degree"
                       defaultValue={userData.education.degree}
@@ -260,7 +260,7 @@ export default function UserProfile() {
                 <div className="space-y-2">
                   <Label htmlFor="field">Field of Study</Label>
                   <div className="flex gap-2">
-                    <Briefcase className="w-5 h-5 text-gray-500" />
+                    <Briefcase className="w-5 h-5 text-foreground" />
                     <Input id="field" defaultValue={userData.education.field} />
                   </div>
                 </div>
@@ -270,7 +270,7 @@ export default function UserProfile() {
                     Expected Graduation Year
                   </Label>
                   <div className="flex gap-2">
-                    <GraduationCap className="w-5 h-5 text-gray-500" />
+                    <GraduationCap className="w-5 h-5 text-foreground" />
                     <Input
                       id="graduationYear"
                       defaultValue={userData.education.graduationYear}
@@ -362,7 +362,7 @@ export default function UserProfile() {
                   onDrop={handleDrop}
                 >
                   <div className="flex flex-col items-center gap-4">
-                    <Upload className="w-8 h-8 text-gray-400" />
+                    <Upload className="w-8 h-8 text-foreground" />
                     <div>
                       <p className="text-lg font-medium">
                         Drag and drop your CV here, or{" "}
@@ -376,7 +376,7 @@ export default function UserProfile() {
                           />
                         </label>
                       </p>
-                      <p className="text-sm text-gray-500 mt-1">
+                      <p className="text-sm text-foreground mt-1">
                         Supports: PDF up to 5MB
                       </p>
                     </div>
@@ -411,7 +411,7 @@ export default function UserProfile() {
                         </div>
                         <div>
                           <p className="font-medium">{cv.name}</p>
-                          <p className="text-sm text-muted-foreground">
+                          <p className="text-sm text-foreground">
                             {formatFileSize(cv.size)} • Uploaded{" "}
                             {formatDate(cv.uploadDate)}
                           </p>
@@ -445,7 +445,7 @@ export default function UserProfile() {
                   ))}
 
                   {cvs.length === 0 && (
-                    <div className="text-center py-8 text-muted-foreground">
+                    <div className="text-center py-8 text-foreground">
                       No CVs uploaded yet. Upload your first CV above.
                     </div>
                   )}

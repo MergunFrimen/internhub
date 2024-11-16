@@ -35,12 +35,12 @@ export default function CompanyDirectory() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-2">
-                  <p className="text-gray-600">{company.description}</p>
-                  <div className="flex items-center gap-2 text-gray-600">
+                  <p className="text-foreground">{company.description}</p>
+                  <div className="flex items-center gap-2 text-foreground">
                     <Building2 className="w-4 h-4" />
                     <span>{company.industry}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-gray-600">
+                  <div className="flex items-center gap-2 text-foreground">
                     <MapPin className="w-4 h-4" />
                     <span>{company.location}</span>
                   </div>

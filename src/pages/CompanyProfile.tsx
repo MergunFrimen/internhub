@@ -39,18 +39,18 @@ export default function CompanyProfile() {
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
-            <p className="text-gray-600">{company.description}</p>
+            <p className="text-foreground">{company.description}</p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="flex items-center gap-2">
-                <Building2 className="w-5 h-5 text-gray-600" />
+                <Building2 className="w-5 h-5 text-foreground" />
                 <span>{company.industry}</span>
               </div>
               <div className="flex items-center gap-2">
-                <MapPin className="w-5 h-5 text-gray-600" />
+                <MapPin className="w-5 h-5 text-foreground" />
                 <span>{company.location}</span>
               </div>
               <div className="flex items-center gap-2">
-                <Globe className="w-5 h-5 text-gray-600" />
+                <Globe className="w-5 h-5 text-foreground" />
                 <a
                   href={company.website}
                   className="text-blue-600 hover:underline"
@@ -59,7 +59,7 @@ export default function CompanyProfile() {
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <Users className="w-5 h-5 text-gray-600" />
+                <Users className="w-5 h-5 text-foreground" />
                 <span>{company.employees} employees</span>
               </div>
             </div>
@@ -76,10 +76,10 @@ export default function CompanyProfile() {
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
-                <div className="text-gray-600">
+                <div className="text-foreground">
                   Department: {opening.department}
                 </div>
-                <div className="text-gray-600">Type: {opening.type}</div>
+                <div className="text-foreground">Type: {opening.type}</div>
               </div>
             </CardContent>
           </Card>

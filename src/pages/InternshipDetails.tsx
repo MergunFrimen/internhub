@@ -78,19 +78,19 @@ export default function InternshipDetails() {
               </div>
 
               <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
-                <div className="flex items-center gap-2 text-muted-foreground">
+                <div className="flex items-center gap-2 text-foreground">
                   <BriefcaseIcon className="w-4 h-4" />
                   <span>{internship.type}</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
+                <div className="flex items-center gap-2 text-foreground">
                   <MapPin className="w-4 h-4" />
                   <span>{internship.location}</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
+                <div className="flex items-center gap-2 text-foreground">
                   <Clock className="w-4 h-4" />
                   <span>{internship.duration}</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
+                <div className="flex items-center gap-2 text-foreground">
                   {/* <DollarSign className="w-4 h-4" /> */}
                   <span>{internship.salary}</span>
                 </div>
@@ -111,7 +111,7 @@ export default function InternshipDetails() {
                   <Calendar className="w-4 h-4" />
                   <span>Apply by {internship.applicationDeadline}</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
+                <div className="flex items-center gap-2 text-foreground">
                   <Users className="w-4 h-4" />
                   <span>
                     {internship.spots} positions • {internship.applicants}{" "}
@@ -138,7 +138,7 @@ export default function InternshipDetails() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-foreground leading-relaxed">
                 {internship.description}
               </p>
             </CardContent>
@@ -157,7 +157,7 @@ export default function InternshipDetails() {
                 {internship.requirements.map((req, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
-                    <span className="text-muted-foreground">{req}</span>
+                    <span className="text-foreground">{req}</span>
                   </li>
                 ))}
               </ul>
@@ -179,7 +179,7 @@ export default function InternshipDetails() {
                 {internship.responsibilities.map((resp, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5" />
-                    <span className="text-muted-foreground">{resp}</span>
+                    <span className="text-foreground">{resp}</span>
                   </li>
                 ))}
               </ul>

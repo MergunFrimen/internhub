@@ -8,7 +8,7 @@ export default function Footer() {
           {/* About Section */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">InternHub</h3>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-foreground">
               Connecting students with exciting internship opportunities in the
               tech industry.
             </p>
@@ -19,26 +19,17 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link
-                  to="/search"
-                  className="text-sm text-gray-600 hover:text-gray-900"
-                >
+                <Link to="/search" className="text-sm text-foreground">
                   Find Internships
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/companies"
-                  className="text-sm text-gray-600 hover:text-gray-900"
-                >
+                <Link to="/companies" className="text-sm text-foreground">
                   Browse Companies
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/resources"
-                  className="text-sm text-gray-600 hover:text-gray-900"
-                >
+                <Link to="/resources" className="text-sm text-foreground">
                   Resources
                 </Link>
               </li>
@@ -50,26 +41,17 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Support</h3>
             <ul className="space-y-2">
               <li>
-                <Link
-                  to="/help"
-                  className="text-sm text-gray-600 hover:text-gray-900"
-                >
+                <Link to="/help" className="text-sm text-foreground">
                   Help Center
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/contact"
-                  className="text-sm text-gray-600 hover:text-gray-900"
-                >
+                <Link to="/contact" className="text-sm text-foreground">
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/privacy"
-                  className="text-sm text-gray-600 hover:text-gray-900"
-                >
+                <Link to="/privacy" className="text-sm text-foreground">
                   Privacy Policy
                 </Link>
               </li>
@@ -84,7 +66,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-900"
+                className="text-foreground"
               >
                 {/* <Linkedin className="w-5 h-5" /> */}
               </a>
@@ -92,7 +74,7 @@ export default function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-900"
+                className="text-foreground"
               >
                 {/* <Twitter className="w-5 h-5" /> */}
               </a>
@@ -100,7 +82,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-900"
+                className="text-foreground"
               >
                 {/* <Facebook className="w-5 h-5" /> */}
               </a>
@@ -108,7 +90,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-900"
+                className="text-foreground"
               >
                 {/* <Instagram className="w-5 h-5" /> */}
               </a>
@@ -116,7 +98,7 @@ export default function Footer() {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-900"
+                className="text-foreground"
               >
                 {/* <Github className="w-5 h-5" /> */}
               </a>
@@ -125,8 +107,8 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 pt-8 border-t text-center text-sm text-gray-600">
-          <p>© {new Date().getFullYear()} InternHub. All rights reserved.</p>
+        <div className="mt-8 pt-8 border-t text-center text-sm text-foreground">
+          <p>© {new Date().getFullYear()} For education purposes only.</p>
         </div>
       </div>
     </footer>

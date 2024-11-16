@@ -41,7 +41,7 @@ export default function Applications() {
                 <div className="flex justify-between items-start">
                   <div className="space-y-1">
                     <h3 className="text-xl font-semibold">{app.role}</h3>
-                    <div className="flex items-center gap-2 text-muted-foreground">
+                    <div className="flex items-center gap-2 text-foreground">
                       <Building2 className="w-4 h-4" />
                       <span>{app.company}</span>
                     </div>
@@ -53,15 +53,15 @@ export default function Applications() {
               </CardHeader>
               <CardContent>
                 <div className="grid gap-2">
-                  <div className="flex items-center gap-2 text-gray-600">
+                  <div className="flex items-center gap-2 text-foreground">
                     <Building2 className="w-4 h-4" />
                     <span>{app.company}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-gray-600">
+                  <div className="flex items-center gap-2 text-foreground">
                     <MapPin className="w-4 h-4" />
                     <span>{app.location}</span>
                   </div>
-                  <div className="flex items-center gap-2 text-gray-600">
+                  <div className="flex items-center gap-2 text-foreground">
                     <Calendar className="w-4 h-4" />
                     <span>Applied on {app.appliedDate}</span>
                   </div>

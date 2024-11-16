@@ -44,14 +44,14 @@ export default function AuthHeader() {
           {location.pathname === "/login" ? (
             <>
               <h1 className="text-2xl font-bold mb-2">Welcome Back</h1>
-              <p className="text-gray-600">
+              <p className="text-foreground">
                 Sign in to access your internship applications and messages
               </p>
             </>
           ) : location.pathname === "/register" ? (
             <>
               <h1 className="text-2xl font-bold mb-2">Create an Account</h1>
-              <p className="text-gray-600">
+              <p className="text-foreground">
                 Join InternHub to discover exciting internship opportunities
               </p>
             </>
@@ -59,14 +59,14 @@ export default function AuthHeader() {
         </div>
 
         {/* Additional Navigation or Help Links */}
-        <div className="flex justify-center space-x-6 text-sm text-gray-600">
-          <Link to="/help" className="hover:text-gray-900">
+        <div className="flex justify-center space-x-6 text-sm text-foreground">
+          <Link to="/help" className="">
             Help Center
           </Link>
-          <Link to="/contact" className="hover:text-gray-900">
+          <Link to="/contact" className="">
             Contact Support
           </Link>
-          <Link to="/privacy" className="hover:text-gray-900">
+          <Link to="/privacy" className="">
             Privacy Policy
           </Link>
         </div>

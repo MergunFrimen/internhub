@@ -173,7 +173,7 @@ export default function ChatView() {
                     </Avatar>
                     <div>
                       <CardTitle>{selectedChat.name}</CardTitle>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-foreground">
                         {selectedChat.role}
                       </p>
                     </div>
@@ -226,7 +226,7 @@ export default function ChatView() {
                 </CardContent>
               </>
             ) : (
-              <CardContent className="h-full flex items-center justify-center text-muted-foreground">
+              <CardContent className="h-full flex items-center justify-center text-foreground">
                 Select a chat to start messaging
               </CardContent>
             )}

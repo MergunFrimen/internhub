@@ -8,15 +8,29 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import {
   Bell,
   Briefcase,
   Building2,
   LogIn,
   LogOut,
+  Menu,
   MessageSquare,
   Search,
+  Settings,
+  User,
   UserCircle,
 } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const isAuthenticated = true;
@@ -33,8 +47,8 @@ export default function Navbar() {
           </Link>
 
           {/* Main Navigation */}
-          <NavigationMenu>
-            <NavigationMenuList className="hidden md:flex">
+          <NavigationMenu className="hidden md:flex">
+            <NavigationMenuList>
               <NavigationMenuItem>
                 <Link to="/search">
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -54,50 +68,12 @@ export default function Navbar() {
             </NavigationMenuList>
           </NavigationMenu>
 
-          {/* Auth Section */}
           <div className="flex items-center gap-2">
+            <ThemeToggle />
             {isAuthenticated ? (
-              <>
-                {/* Notifications */}
-                <Button variant="ghost" size="icon" asChild>
-                  <Link to="/notifications" className="relative">
-                    <Bell className="w-5 h-5" />
-                    {unreadCount > 0 && (
-                      <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
-                        {unreadCount}
-                      </span>
-                    )}
-                  </Link>
-                </Button>
-
-                {/* Messages */}
-                <Button variant="ghost" size="icon" asChild>
-                  <Link to="/messages">
-                    <MessageSquare className="w-5 h-5" />
-                  </Link>
-                </Button>
-
-                {/* Applications */}
-                <Button variant="ghost" size="icon" asChild>
-                  <Link to="/applications">
-                    <Briefcase className="w-5 h-5" />
-                  </Link>
-                </Button>
-
-                {/* Profile */}
-                <Button variant="ghost" size="icon" asChild>
-                  <Link to="/profile">
-                    <UserCircle className="w-5 h-5" />
-                  </Link>
-                </Button>
-
-                {/* Logout */}
-                <Button variant="ghost" size="icon">
-                  <LogOut className="w-5 h-5" />
-                </Button>
-              </>
+              <ProfileBurgerMenu />
             ) : (
-              <>
+              <div>
                 <Button variant="ghost" asChild>
                   <Link to="/login">
                     <LogIn className="w-4 h-4 mr-2" />
@@ -107,11 +83,92 @@ export default function Navbar() {
                 <Button asChild>
                   <Link to="/register">Sign Up</Link>
                 </Button>
-              </>
+              </div>
             )}
           </div>
         </div>
       </div>
     </nav>
+  );
+}
+
+function ProfileBurgerMenu({}: {}) {
+  const unreadCount = 3;
+  const unreadMessages = 2;
+
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="ghost" size="icon" className="relative">
+          <Menu className="w-5 h-5" />
+          {(unreadCount > 0 || unreadMessages > 0) && (
+            <Badge
+              className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center"
+              variant="destructive"
+            >
+              {unreadCount + unreadMessages}
+            </Badge>
+          )}
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent className="w-56" align="end">
+        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <DropdownMenuGroup>
+          <DropdownMenuItem asChild>
+            <Link to="/profile" className="w-full cursor-pointer">
+              <UserCircle className="mr-2 h-4 w-4" />
+              Profile
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild>
+            <Link to="/applications" className="w-full cursor-pointer">
+              <Briefcase className="mr-2 h-4 w-4" />
+              Applications
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild>
+            <Link to="/messages" className="w-full cursor-pointer">
+              <div className="flex items-center">
+                <MessageSquare className="mr-2 h-4 w-4" />
+                Messages
+                {unreadMessages > 0 && (
+                  <Badge variant="secondary" className="ml-auto">
+                    {unreadMessages}
+                  </Badge>
+                )}
+              </div>
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild>
+            <Link to="/notifications" className="w-full cursor-pointer">
+              <div className="flex items-center">
+                <Bell className="mr-2 h-4 w-4" />
+                Notifications
+                {unreadCount > 0 && (
+                  <Badge variant="secondary" className="ml-auto">
+                    {unreadCount}
+                  </Badge>
+                )}
+              </div>
+            </Link>
+          </DropdownMenuItem>
+        </DropdownMenuGroup>
+        <DropdownMenuSeparator />
+        <DropdownMenuGroup>
+          <DropdownMenuItem asChild>
+            <Link to="/settings" className="w-full cursor-pointer">
+              <Settings className="mr-2 h-4 w-4" />
+              Settings
+            </Link>
+          </DropdownMenuItem>
+        </DropdownMenuGroup>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem className="text-red-600">
+          <LogOut className="mr-2 h-4 w-4" />
+          Log out
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }

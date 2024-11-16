@@ -109,10 +109,10 @@ function HeroSection({ profile }: { profile: any }) {
 
   return (
     <Card className="overflow-hidden">
-      <div className="relative h-32 bg-gradient-to-r from-blue-600 to-purple-600">
+      <div className="relative h-24">
         <div className="absolute -bottom-16 left-8">
           <div className="bg-white rounded-full p-1">
-            <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-full p-8 text-4xl font-bold text-white">
+            <div className="bg-primary rounded-full p-8 text-4xl font-bold text-white">
               {initials}
             </div>
           </div>

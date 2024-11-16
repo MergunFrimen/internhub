@@ -12,21 +12,19 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout
 
       - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20
+        uses: actions/setup-node
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm install
 
       - name: Build project
         run: npm run build
 
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact
         with:
           name: production-files
           path: ./dist
@@ -39,12 +37,14 @@ jobs:
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact
         with:
           name: production-files
           path: ./dist
 
-      - name: Deploy to surge
+      - name: Install dependencies
         run: npm install -g surge
+
+      - name: Deploy to surge
         run: surge dist ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
 

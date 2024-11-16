@@ -19,6 +19,7 @@ import PublicProfile from "./pages/PublicProfile";
 import CompanyProfileManagement from "./pages/CompanyProfileManagement";
 import NotificationsPage from "./pages/NotificationsPage";
 import ApplicationStatus from "./pages/ApplicationStatus";
+import ScrollToTop from "./components/ScrollToTop";
 
 const ProtectedRoute = ({
   children,
@@ -38,6 +39,7 @@ export function App() {
   return (
     // <AuthProvider>
     <Router>
+      <ScrollToTop />
       <Routes>
         {/* Public Routes with Main Layout */}
         <Route element={<MainLayout />}>

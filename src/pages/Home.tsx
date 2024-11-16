@@ -53,7 +53,7 @@ export default function Home() {
               type="text"
               placeholder="Search for internships or companies..."
               className="w-full pl-10 pr-4 py-2 rounded-lg border shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              onKeyPress={(e) => {
+              onKeyDown={(e) => {
                 if (e.key === "Enter") {
                   navigate("/search");
                 }

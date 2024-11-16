@@ -37,7 +37,7 @@ const ProtectedRoute = ({
 export function App() {
   return (
     // <AuthProvider>
-    <Router basename="/internhub">
+    <Router>
       <Routes>
         {/* Public Routes with Main Layout */}
         <Route element={<MainLayout />}>

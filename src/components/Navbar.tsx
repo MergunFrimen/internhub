@@ -28,7 +28,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src="/internhub/favicon.svg" alt="Logo" className="w-8 h-8" />
+            <img src="/logo.svg" alt="Logo" className="w-8 h-8" />
             <span className="text-xl font-bold">InternHub</span>
           </Link>
 

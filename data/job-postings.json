@@ -1,0 +1,2812 @@
+[
+  {
+    "_id": "6737229d946638310000a3a8",
+    "title": "Data Scientist",
+    "description": "Develop machine learning models to analyze large datasets, providing insights for business decisions.",
+    "tags": [
+      "Data Analytics",
+      "Machine Learning",
+      "Python",
+      "SQL",
+      "Statistics"
+    ],
+    "requirements": [
+      "Master’s degree in Data Science, Computer Science, or Statistics.",
+      "Proficiency in Python, R, and SQL.",
+      "Experience with machine learning frameworks (e.g., TensorFlow, PyTorch).",
+      "Strong statistical and analytical skills.",
+      "2+ years of relevant experience."
+    ],
+    "field": "Professional, scientific and technical activities"
+  },
+  {
+    "_id": "6737229d946638310000a3a9",
+    "title": "Environmental Consultant",
+    "description": "Advise clients on environmental regulations, sustainability practices, and risk assessments.",
+    "tags": [
+      "Environmental Science",
+      "Regulatory Compliance",
+      "Sustainability",
+      "Risk Analysis"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Environmental Science, Chemistry, or a related field.",
+      "Knowledge of environmental legislation and compliance standards.",
+      "Strong analytical and communication skills.",
+      "3+ years of experience in consultancy."
+    ],
+    "field": "Professional, scientific and technical activities"
+  },
+  {
+    "_id": "6737229d946638310000a3aa",
+    "title": "Structural Engineer",
+    "description": "Design, plan, and oversee construction projects, ensuring structural integrity and compliance.",
+    "tags": [
+      "Civil Engineering",
+      "Structural Analysis",
+      "AutoCAD",
+      "Construction"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Civil or Structural Engineering.",
+      "Proficiency in design software (e.g., AutoCAD, STAAD).",
+      "Strong understanding of materials and building codes.",
+      "Professional Engineer (PE) license preferred."
+    ],
+    "field": "Professional, scientific and technical activities"
+  },
+  {
+    "_id": "6737229d946638310000a3ab",
+    "title": "IT Business Analyst",
+    "description": "Bridge the gap between business needs and technology solutions by analyzing requirements and implementing software systems.",
+    "tags": [
+      "Business Analysis",
+      "Agile",
+      "Systems Analysis",
+      "Communication Skills"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Information Systems, Business, or related fields.",
+      "Knowledge of Agile methodologies and tools.",
+      "Strong communication and problem-solving skills.",
+      "Experience with requirement documentation and stakeholder management."
+    ],
+    "field": "Professional, scientific and technical activities"
+  },
+  {
+    "_id": "6737229d946638310000a3ac",
+    "title": "Biotechnologist",
+    "description": "Conduct research and experiments to develop new products and improve biological processes.",
+    "tags": [
+      "Biotechnology",
+      "Research",
+      "Laboratory Skills",
+      "Bioprocessing"
+    ],
+    "requirements": [
+      "Master’s degree in Biotechnology, Biology, or Biochemistry.",
+      "Hands-on experience with laboratory equipment and protocols.",
+      "Strong understanding of bioprocess engineering.",
+      "1-3 years of research experience preferred."
+    ],
+    "field": "Professional, scientific and technical activities"
+  },
+  {
+    "_id": "6737229d946638310000a3ad",
+    "title": "Financial Analyst",
+    "description": "Perform financial forecasting, analysis, and reporting to guide investment decisions and business planning.",
+    "tags": [
+      "Finance",
+      "Excel",
+      "Data Analysis",
+      "Budgeting"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Finance, Economics, or Accounting.",
+      "Proficiency in financial modeling and Excel.",
+      "Knowledge of ERP systems (e.g., SAP, Oracle).",
+      "2+ years of experience in finance or investment."
+    ],
+    "field": "Professional, scientific and technical activities"
+  },
+  {
+    "_id": "6737229d946638310000a3ae",
+    "title": "Scientific Illustrator",
+    "description": "Create accurate and visually appealing illustrations for scientific publications and presentations.",
+    "tags": [
+      "Graphic Design",
+      "Science Communication",
+      "Adobe Illustrator",
+      "Creativity"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Graphic Design, Biology, or a related field.",
+      "Strong artistic and technical drawing skills.",
+      "Experience with Adobe Creative Suite.",
+      "Knowledge of scientific terminology and processes."
+    ],
+    "field": "Professional, scientific and technical activities"
+  },
+  {
+    "_id": "6737229d946638310000a3af",
+    "title": "Patent Attorney",
+    "description": "Advise clients on intellectual property matters, draft patent applications, and manage patent disputes.",
+    "tags": [
+      "Intellectual Property",
+      "Legal Research",
+      "Patent Drafting",
+      "Client Management"
+    ],
+    "requirements": [
+      "Juris Doctor (JD) degree and membership in the Bar.",
+      "Certification as a Patent Attorney.",
+      "Strong knowledge of patent laws and regulations.",
+      "Excellent written and verbal communication skills."
+    ],
+    "field": "Professional, scientific and technical activities"
+  },
+  {
+    "_id": "6737229d946638310000a3b0",
+    "title": "Clinical Research Coordinator",
+    "description": "Manage and oversee clinical trials, ensuring compliance with regulations and protocols.",
+    "tags": [
+      "Clinical Trials",
+      "Research",
+      "FDA Compliance",
+      "Project Management"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Life Sciences or related fields.",
+      "Certification in clinical research (e.g., CCRC).",
+      "Knowledge of GCP and FDA regulations.",
+      "Strong organizational and problem-solving skills."
+    ],
+    "field": "Professional, scientific and technical activities"
+  },
+  {
+    "_id": "6737229d946638310000a3b1",
+    "title": "Forensic Scientist",
+    "description": "Analyze evidence in criminal investigations, using scientific methods to support law enforcement.",
+    "tags": [
+      "Forensics",
+      "Criminal Investigations",
+      "Lab Work",
+      "Analytical Skills"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Forensic Science, Chemistry, or Biology.",
+      "Experience with laboratory techniques and evidence handling.",
+      "Knowledge of criminal justice and legal procedures.",
+      "Strong attention to detail and critical thinking skills."
+    ],
+    "field": "Professional, scientific and technical activities"
+  },
+  {
+    "_id": "6737229d946638310000a3b2",
+    "title": "Construction Project Manager",
+    "description": "Oversee all phases of construction projects, ensuring timelines, budgets, and quality standards are met.",
+    "tags": [
+      "Project Management",
+      "Budgeting",
+      "Scheduling",
+      "Leadership"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Construction Management, Civil Engineering, or related fields.",
+      "Proficiency in project management software (e.g., Primavera, MS Project).",
+      "Strong organizational and leadership skills.",
+      "5+ years of construction management experience."
+    ],
+    "field": "Construction"
+  },
+  {
+    "_id": "6737229d946638310000a3b3",
+    "title": "Site Supervisor",
+    "description": "Supervise construction sites, ensuring safety standards and project specifications are adhered to.",
+    "tags": [
+      "Site Management",
+      "Safety Compliance",
+      "Team Leadership",
+      "Problem Solving"
+    ],
+    "requirements": [
+      "Diploma or degree in Construction or related field.",
+      "Strong knowledge of OSHA standards and safety protocols.",
+      "Excellent communication and team management skills.",
+      "3+ years of experience in site supervision."
+    ],
+    "field": "Construction"
+  },
+  {
+    "_id": "6737229d946638310000a3b4",
+    "title": "Civil Engineer",
+    "description": "Design and oversee construction of infrastructure projects such as roads, bridges, and buildings.",
+    "tags": [
+      "Civil Engineering",
+      "Design",
+      "Structural Analysis",
+      "AutoCAD"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Civil Engineering.",
+      "Proficiency in design software (e.g., AutoCAD, STAAD, Revit).",
+      "Strong understanding of construction materials and methods.",
+      "Professional Engineer (PE) license preferred."
+    ],
+    "field": "Construction"
+  },
+  {
+    "_id": "6737229d946638310000a3b5",
+    "title": "Estimator",
+    "description": "Prepare cost estimates and budgets for construction projects, ensuring accuracy and feasibility.",
+    "tags": [
+      "Cost Estimation",
+      "Budgeting",
+      "Analytical Skills",
+      "Construction Materials"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Construction Management or a related field.",
+      "Strong understanding of construction processes and materials.",
+      "Experience with estimation software (e.g., ProEst, Sage Estimating).",
+      "2+ years of experience as an estimator."
+    ],
+    "field": "Construction"
+  },
+  {
+    "_id": "6737229d946638310000a3b6",
+    "title": "Architect",
+    "description": "Design buildings and structures, ensuring they are functional, sustainable, and aesthetically pleasing.",
+    "tags": [
+      "Architecture",
+      "Design",
+      "Sustainability",
+      "3D Modeling"
+    ],
+    "requirements": [
+      "Bachelor’s or Master’s degree in Architecture.",
+      "Proficiency in design software (e.g., AutoCAD, SketchUp, Revit).",
+      "Knowledge of sustainable design practices.",
+      "Licensed Architect certification preferred."
+    ],
+    "field": "Construction"
+  },
+  {
+    "_id": "6737229d946638310000a3b7",
+    "title": "Surveyor",
+    "description": "Measure and map construction sites to determine land boundaries and prepare for development.",
+    "tags": [
+      "Surveying",
+      "GIS",
+      "Land Mapping",
+      "Attention to Detail"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Surveying, Geomatics, or related fields.",
+      "Experience with GPS and GIS systems.",
+      "Strong mathematical and analytical skills.",
+      "Professional Surveyor (PS) license preferred."
+    ],
+    "field": "Construction"
+  },
+  {
+    "_id": "6737229d946638310000a3b8",
+    "title": "Construction Safety Officer",
+    "description": "Ensure compliance with health and safety regulations on construction sites, conducting audits and training.",
+    "tags": [
+      "Safety Compliance",
+      "Risk Assessment",
+      "OSHA",
+      "Training"
+    ],
+    "requirements": [
+      "Certification in Occupational Health and Safety (e.g., OSHA, NEBOSH).",
+      "Strong knowledge of safety regulations and standards.",
+      "Excellent communication and training skills.",
+      "2+ years of experience in safety management."
+    ],
+    "field": "Construction"
+  },
+  {
+    "_id": "6737229d946638310000a3b9",
+    "title": "Heavy Equipment Operator",
+    "description": "Operate machinery such as bulldozers, excavators, and cranes to support construction projects.",
+    "tags": [
+      "Heavy Machinery",
+      "Excavation",
+      "Equipment Maintenance",
+      "Safety"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Certification to operate heavy machinery.",
+      "Strong knowledge of equipment maintenance.",
+      "Experience in operating specific machinery (e.g., cranes, bulldozers)."
+    ],
+    "field": "Construction"
+  },
+  {
+    "_id": "6737229d946638310000a3ba",
+    "title": "Electrical Engineer",
+    "description": "Design and oversee electrical systems for construction projects, ensuring safety and efficiency.",
+    "tags": [
+      "Electrical Design",
+      "Power Systems",
+      "AutoCAD Electrical",
+      "Problem Solving"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Electrical Engineering.",
+      "Proficiency in electrical design software (e.g., AutoCAD Electrical).",
+      "Knowledge of building codes and safety standards.",
+      "Professional Engineer (PE) license preferred."
+    ],
+    "field": "Construction"
+  },
+  {
+    "_id": "6737229d946638310000a3bb",
+    "title": "Plumbing Technician",
+    "description": "Install, repair, and maintain plumbing systems in residential and commercial buildings.",
+    "tags": [
+      "Plumbing",
+      "Installation",
+      "Maintenance",
+      "Problem Solving"
+    ],
+    "requirements": [
+      "Certification or diploma in plumbing.",
+      "Strong understanding of plumbing systems and tools.",
+      "Excellent problem-solving and technical skills.",
+      "2+ years of experience as a plumbing technician."
+    ],
+    "field": "Construction"
+  },
+  {
+    "_id": "6737229d946638310000a3bc",
+    "title": "Production Manager",
+    "description": "Oversee manufacturing processes, ensuring production efficiency, quality standards, and meeting deadlines.",
+    "tags": [
+      "Production Management",
+      "Leadership",
+      "Lean Manufacturing",
+      "Quality Control"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Manufacturing, Industrial Engineering, or related field.",
+      "Strong knowledge of production processes and lean methodologies.",
+      "Experience with ERP systems (e.g., SAP, Oracle).",
+      "5+ years of experience in a manufacturing leadership role."
+    ],
+    "field": "Manufacturing"
+  },
+  {
+    "_id": "6737229d946638310000a3bd",
+    "title": "Quality Assurance Specialist",
+    "description": "Inspect and ensure that products meet quality and safety standards through testing and auditing processes.",
+    "tags": [
+      "Quality Assurance",
+      "ISO Standards",
+      "Testing",
+      "Attention to Detail"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Quality Assurance, Engineering, or related fields.",
+      "Familiarity with ISO 9001 and other quality management systems.",
+      "Experience with quality control tools and methods.",
+      "2+ years of experience in quality assurance."
+    ],
+    "field": "Manufacturing"
+  },
+  {
+    "_id": "6737229d946638310000a3be",
+    "title": "Mechanical Engineer",
+    "description": "Design, develop, and maintain mechanical systems and equipment used in manufacturing processes.",
+    "tags": [
+      "Mechanical Engineering",
+      "CAD",
+      "Problem Solving",
+      "Product Design"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Mechanical Engineering.",
+      "Proficiency in CAD software (e.g., SolidWorks, AutoCAD).",
+      "Strong problem-solving and analytical skills.",
+      "2+ years of experience in manufacturing or product design."
+    ],
+    "field": "Manufacturing"
+  },
+  {
+    "_id": "6737229d946638310000a3bf",
+    "title": "Maintenance Technician",
+    "description": "Perform routine maintenance and repairs on manufacturing equipment to ensure optimal operation.",
+    "tags": [
+      "Maintenance",
+      "Equipment Repair",
+      "Troubleshooting",
+      "Electrical Systems"
+    ],
+    "requirements": [
+      "Certification or diploma in mechanical or electrical maintenance.",
+      "Experience with troubleshooting and repairing manufacturing equipment.",
+      "Knowledge of PLC systems is a plus.",
+      "3+ years of maintenance experience."
+    ],
+    "field": "Manufacturing"
+  },
+  {
+    "_id": "6737229d946638310000a3c0",
+    "title": "Industrial Engineer",
+    "description": "Improve production efficiency by designing systems and processes that reduce waste and maximize output.",
+    "tags": [
+      "Industrial Engineering",
+      "Process Improvement",
+      "Lean Manufacturing",
+      "Six Sigma"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Industrial Engineering or related fields.",
+      "Strong knowledge of lean and Six Sigma methodologies.",
+      "Experience with process optimization tools.",
+      "3+ years of experience in manufacturing environments."
+    ],
+    "field": "Manufacturing"
+  },
+  {
+    "_id": "6737229d946638310000a3c1",
+    "title": "Manufacturing Technician",
+    "description": "Operate and monitor manufacturing equipment, ensuring adherence to production guidelines and safety protocols.",
+    "tags": [
+      "Machine Operation",
+      "Safety Compliance",
+      "Production Monitoring",
+      "Technical Skills"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience with operating and maintaining manufacturing equipment.",
+      "Strong technical and troubleshooting skills.",
+      "1+ years of manufacturing experience preferred."
+    ],
+    "field": "Manufacturing"
+  },
+  {
+    "_id": "6737229d946638310000a3c2",
+    "title": "Supply Chain Analyst",
+    "description": "Analyze and optimize the supply chain process to improve efficiency and reduce costs in manufacturing operations.",
+    "tags": [
+      "Supply Chain",
+      "Data Analysis",
+      "Inventory Management",
+      "Logistics"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Supply Chain Management, Logistics, or related fields.",
+      "Proficiency in supply chain software (e.g., SAP, Oracle).",
+      "Strong analytical and problem-solving skills.",
+      "2+ years of experience in supply chain management."
+    ],
+    "field": "Manufacturing"
+  },
+  {
+    "_id": "6737229d946638310000a3c3",
+    "title": "CNC Machinist",
+    "description": "Set up, operate, and program CNC machines to produce precision parts for manufacturing processes.",
+    "tags": [
+      "CNC Machining",
+      "Blueprint Reading",
+      "Programming",
+      "Attention to Detail"
+    ],
+    "requirements": [
+      "Certification in CNC machining or related field.",
+      "Proficiency in reading blueprints and using measuring tools.",
+      "Experience with programming CNC machines.",
+      "2+ years of CNC machining experience."
+    ],
+    "field": "Manufacturing"
+  },
+  {
+    "_id": "6737229d946638310000a3c4",
+    "title": "Process Engineer",
+    "description": "Develop and implement manufacturing processes to improve efficiency, quality, and safety.",
+    "tags": [
+      "Process Engineering",
+      "Lean Manufacturing",
+      "Problem Solving",
+      "Technical Skills"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Engineering, Manufacturing, or related field.",
+      "Strong understanding of process optimization and lean principles.",
+      "Experience with manufacturing process design and improvement.",
+      "3+ years of experience in process engineering."
+    ],
+    "field": "Manufacturing"
+  },
+  {
+    "_id": "6737229d946638310000a3c5",
+    "title": "Electronics Technician",
+    "description": "Assemble, test, and repair electronic components and systems in manufacturing operations.",
+    "tags": [
+      "Electronics",
+      "Assembly",
+      "Troubleshooting",
+      "Soldering"
+    ],
+    "requirements": [
+      "Associate degree in Electronics or related field.",
+      "Experience with soldering and assembling electronic components.",
+      "Strong troubleshooting and diagnostic skills.",
+      "1+ years of experience in an electronics manufacturing environment."
+    ],
+    "field": "Manufacturing"
+  },
+  {
+    "_id": "6737229d946638310000a3c6",
+    "title": "Real Estate Agent",
+    "description": "Assist clients in buying, selling, and renting properties, providing guidance throughout the process.",
+    "tags": [
+      "Property Sales",
+      "Client Management",
+      "Negotiation",
+      "Market Analysis"
+    ],
+    "requirements": [
+      "Real estate license in the relevant state or country.",
+      "Strong communication and negotiation skills.",
+      "Knowledge of local real estate markets.",
+      "1+ years of experience in real estate sales preferred."
+    ],
+    "field": "Real estate"
+  },
+  {
+    "_id": "6737229d946638310000a3c7",
+    "title": "Property Manager",
+    "description": "Oversee the daily operations of residential and commercial properties, including maintenance and tenant relations.",
+    "tags": [
+      "Property Management",
+      "Tenant Relations",
+      "Maintenance Oversight",
+      "Budgeting"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Business, Real Estate, or related field preferred.",
+      "Experience with property management software (e.g., Yardi, AppFolio).",
+      "Strong problem-solving and organizational skills.",
+      "2+ years of experience in property management."
+    ],
+    "field": "Real estate"
+  },
+  {
+    "_id": "6737229d946638310000a3c8",
+    "title": "Real Estate Appraiser",
+    "description": "Assess property values by conducting research and site inspections to determine market worth.",
+    "tags": [
+      "Property Valuation",
+      "Market Research",
+      "Report Writing",
+      "Analytical Skills"
+    ],
+    "requirements": [
+      "State certification or licensure as a real estate appraiser.",
+      "Strong knowledge of appraisal techniques and market trends.",
+      "Attention to detail and analytical skills.",
+      "2+ years of appraisal experience."
+    ],
+    "field": "Real estate"
+  },
+  {
+    "_id": "6737229d946638310000a3c9",
+    "title": "Leasing Consultant",
+    "description": "Assist property owners and managers in finding tenants by marketing properties and screening applicants.",
+    "tags": [
+      "Leasing",
+      "Marketing",
+      "Customer Service",
+      "Sales"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Strong sales and interpersonal skills.",
+      "Experience with leasing software is a plus.",
+      "1+ years of experience in property leasing or customer service."
+    ],
+    "field": "Real estate"
+  },
+  {
+    "_id": "6737229d946638310000a3ca",
+    "title": "Real Estate Marketing Specialist",
+    "description": "Develop and execute marketing strategies to promote properties and attract clients.",
+    "tags": [
+      "Marketing",
+      "Digital Advertising",
+      "Social Media",
+      "SEO"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Marketing, Communications, or related field.",
+      "Proficiency in digital marketing tools and platforms.",
+      "Experience with real estate marketing campaigns.",
+      "2+ years of experience in marketing."
+    ],
+    "field": "Real estate"
+  },
+  {
+    "_id": "6737229d946638310000a3cb",
+    "title": "Real Estate Investment Analyst",
+    "description": "Evaluate potential real estate investments by analyzing market trends, property performance, and financial data.",
+    "tags": [
+      "Investment Analysis",
+      "Financial Modeling",
+      "Market Trends",
+      "Data Analysis"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Finance, Economics, or Real Estate.",
+      "Strong analytical and financial modeling skills.",
+      "Knowledge of real estate markets and investment strategies.",
+      "2+ years of experience in real estate investment analysis."
+    ],
+    "field": "Real estate"
+  },
+  {
+    "_id": "6737229d946638310000a3cc",
+    "title": "Commercial Real Estate Broker",
+    "description": "Facilitate transactions for commercial properties, helping clients buy, sell, or lease office, retail, or industrial spaces.",
+    "tags": [
+      "Commercial Real Estate",
+      "Sales",
+      "Client Management",
+      "Market Analysis"
+    ],
+    "requirements": [
+      "Commercial real estate license.",
+      "Strong negotiation and communication skills.",
+      "Knowledge of commercial property markets.",
+      "3+ years of experience in commercial real estate."
+    ],
+    "field": "Real estate"
+  },
+  {
+    "_id": "6737229d946638310000a3cd",
+    "title": "Real Estate Developer",
+    "description": "Oversee the planning, design, and construction of real estate projects from inception to completion.",
+    "tags": [
+      "Real Estate Development",
+      "Project Management",
+      "Budgeting",
+      "Construction"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Real Estate, Architecture, or Business.",
+      "Experience with project management software.",
+      "Knowledge of zoning laws and regulations.",
+      "5+ years of experience in real estate development."
+    ],
+    "field": "Real estate"
+  },
+  {
+    "_id": "6737229d946638310000a3ce",
+    "title": "Real Estate Lawyer",
+    "description": "Provide legal advice and representation in property transactions, disputes, and zoning matters.",
+    "tags": [
+      "Legal Advice",
+      "Contract Drafting",
+      "Negotiation",
+      "Real Estate Law"
+    ],
+    "requirements": [
+      "Juris Doctor (JD) degree and Bar membership.",
+      "Specialization in real estate law.",
+      "Strong negotiation and contract drafting skills.",
+      "3+ years of experience as a real estate attorney."
+    ],
+    "field": "Real estate"
+  },
+  {
+    "_id": "6737229d946638310000a3cf",
+    "title": "Real Estate Analyst",
+    "description": "Conduct market research and analysis to guide decisions in real estate acquisitions, developments, and investments.",
+    "tags": [
+      "Market Analysis",
+      "Data Interpretation",
+      "Financial Modeling",
+      "Reporting"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Real Estate, Finance, or Economics.",
+      "Proficiency in financial and market analysis tools.",
+      "Strong report writing and presentation skills.",
+      "2+ years of experience in real estate analysis."
+    ],
+    "field": "Real estate"
+  },
+  {
+    "_id": "6737229d946638310000a3d0",
+    "title": "Automotive Technician",
+    "description": "Inspect, repair, and maintain motor vehicles, ensuring safety and optimal performance.",
+    "tags": [
+      "Vehicle Repair",
+      "Diagnostics",
+      "Maintenance",
+      "Customer Service"
+    ],
+    "requirements": [
+      "Certification in Automotive Service Excellence (ASE) or equivalent.",
+      "Strong knowledge of vehicle systems and repair techniques.",
+      "Experience with diagnostic tools and equipment.",
+      "1-3 years of experience in automotive repair."
+    ],
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+  },
+  {
+    "_id": "6737229d946638310000a3d1",
+    "title": "Parts Sales Representative",
+    "description": "Sell automotive parts to retail and wholesale customers, providing excellent service and advice.",
+    "tags": [
+      "Sales",
+      "Customer Service",
+      "Automotive Knowledge",
+      "Inventory Management"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Knowledge of automotive parts and systems.",
+      "Strong communication and interpersonal skills.",
+      "Experience in sales or customer service preferred."
+    ],
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+  },
+  {
+    "_id": "6737229d946638310000a3d2",
+    "title": "Service Advisor",
+    "description": "Act as the main point of contact between customers and the service department, advising on repairs and costs.",
+    "tags": [
+      "Customer Relations",
+      "Automotive Repair",
+      "Sales",
+      "Scheduling"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Strong customer service and sales skills.",
+      "Knowledge of automotive repair processes.",
+      "Experience with service management software is a plus."
+    ],
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+  },
+  {
+    "_id": "6737229d946638310000a3d3",
+    "title": "Auto Body Technician",
+    "description": "Repair and restore the structural and cosmetic condition of vehicles after accidents.",
+    "tags": [
+      "Collision Repair",
+      "Painting",
+      "Welding",
+      "Attention to Detail"
+    ],
+    "requirements": [
+      "Certification in auto body repair or equivalent training.",
+      "Proficiency with tools for bodywork and painting.",
+      "Knowledge of safety and repair standards.",
+      "2+ years of experience in auto body repair."
+    ],
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+  },
+  {
+    "_id": "6737229d946638310000a3d4",
+    "title": "Wholesale Account Manager",
+    "description": "Manage relationships with wholesale clients, ensuring their automotive parts and accessories needs are met.",
+    "tags": [
+      "Account Management",
+      "Sales",
+      "Client Relations",
+      "Negotiation"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Business or related field preferred.",
+      "Experience in wholesale trade or automotive parts sales.",
+      "Strong negotiation and communication skills.",
+      "2+ years of experience in account management."
+    ],
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+  },
+  {
+    "_id": "6737229d946638310000a3d5",
+    "title": "Automotive Sales Associate",
+    "description": "Sell new and used vehicles to customers, providing exceptional service and meeting sales targets.",
+    "tags": [
+      "Sales",
+      "Customer Service",
+      "Automotive Knowledge",
+      "Negotiation"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Strong sales and customer service skills.",
+      "Knowledge of automotive features and benefits.",
+      "1+ years of experience in vehicle sales preferred."
+    ],
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+  },
+  {
+    "_id": "6737229d946638310000a3d6",
+    "title": "Vehicle Inspector",
+    "description": "Conduct thorough inspections of vehicles to ensure safety, compliance, and performance standards are met.",
+    "tags": [
+      "Inspection",
+      "Safety Standards",
+      "Diagnostics",
+      "Attention to Detail"
+    ],
+    "requirements": [
+      "Certification in vehicle inspection or equivalent training.",
+      "Strong knowledge of vehicle systems and safety regulations.",
+      "Attention to detail and problem-solving skills.",
+      "1-3 years of experience in vehicle inspections."
+    ],
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+  },
+  {
+    "_id": "6737229d946638310000a3d7",
+    "title": "Fleet Maintenance Manager",
+    "description": "Oversee the repair and maintenance of a fleet of vehicles, ensuring minimal downtime and cost efficiency.",
+    "tags": [
+      "Fleet Management",
+      "Maintenance",
+      "Scheduling",
+      "Budgeting"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Automotive Management or related field preferred.",
+      "Experience in fleet maintenance or vehicle management.",
+      "Strong organizational and leadership skills.",
+      "3+ years of experience in fleet maintenance."
+    ],
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+  },
+  {
+    "_id": "6737229d946638310000a3d8",
+    "title": "Tire Technician",
+    "description": "Inspect, repair, and replace vehicle tires, ensuring safety and proper alignment.",
+    "tags": [
+      "Tire Repair",
+      "Alignment",
+      "Maintenance",
+      "Customer Service"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience with tire installation and repair tools.",
+      "Knowledge of tire safety and maintenance standards.",
+      "1+ years of experience as a tire technician preferred."
+    ],
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+  },
+  {
+    "_id": "6737229d946638310000a3d9",
+    "title": "Retail Store Manager - Automotive Parts",
+    "description": "Manage daily operations of an automotive parts retail store, ensuring excellent customer service and inventory control.",
+    "tags": [
+      "Retail Management",
+      "Inventory Management",
+      "Sales",
+      "Team Leadership"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Business or related field preferred.",
+      "Experience in retail management, especially in automotive parts.",
+      "Strong leadership and organizational skills.",
+      "3+ years of experience in retail management."
+    ],
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+  },
+  {
+    "_id": "6737229d946638310000a3da",
+    "field": "Transportation and Storage",
+    "title": "Logistics Coordinator",
+    "description": "Plan and oversee transportation and storage of goods to ensure efficient supply chain operations.",
+    "tags": [
+      "Logistics",
+      "Supply Chain Management",
+      "Scheduling",
+      "Coordination"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Logistics, Business, or related field.",
+      "Experience with logistics software (e.g., SAP, Oracle).",
+      "Strong organizational and multitasking skills.",
+      "2+ years of experience in logistics."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3db",
+    "field": "Transportation and Storage",
+    "title": "Truck Driver",
+    "description": "Transport goods safely and efficiently while adhering to regulations and schedules.",
+    "tags": [
+      "Driving",
+      "Safety Compliance",
+      "Time Management",
+      "Long-Haul"
+    ],
+    "requirements": [
+      "Valid commercial driver’s license (CDL).",
+      "Clean driving record.",
+      "Experience with long-haul or local deliveries.",
+      "Strong understanding of traffic and safety regulations."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3dc",
+    "field": "Transportation and Storage",
+    "title": "Warehouse Manager",
+    "description": "Oversee warehouse operations, including inventory management, staff supervision, and logistics coordination.",
+    "tags": [
+      "Inventory Management",
+      "Team Leadership",
+      "Logistics",
+      "Problem Solving"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Business, Logistics, or related field.",
+      "Experience in warehouse management.",
+      "Strong leadership and organizational skills.",
+      "3+ years of experience in warehouse operations."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3dd",
+    "field": "Transportation and Storage",
+    "title": "Fleet Manager",
+    "description": "Manage a fleet of vehicles, ensuring proper maintenance, compliance, and cost efficiency.",
+    "tags": [
+      "Fleet Management",
+      "Maintenance",
+      "Scheduling",
+      "Regulatory Compliance"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Logistics or related field preferred.",
+      "Experience in fleet or transportation management.",
+      "Knowledge of maintenance protocols and regulations.",
+      "3+ years of experience in fleet management."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3de",
+    "field": "Transportation and Storage",
+    "title": "Cargo Handler",
+    "description": "Load, unload, and move cargo safely and efficiently in warehouses or transportation hubs.",
+    "tags": [
+      "Manual Labor",
+      "Safety Compliance",
+      "Teamwork",
+      "Efficiency"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience in cargo handling or warehouse work preferred.",
+      "Ability to lift heavy items and operate equipment.",
+      "Knowledge of safety standards is a plus."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3df",
+    "field": "Transportation and Storage",
+    "title": "Supply Chain Analyst",
+    "description": "Analyze supply chain processes and provide insights to improve efficiency and reduce costs.",
+    "tags": [
+      "Data Analysis",
+      "Supply Chain Management",
+      "Optimization",
+      "Problem Solving"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Supply Chain Management, Business, or related field.",
+      "Proficiency in data analysis tools (e.g., Excel, Tableau, SQL).",
+      "Experience with supply chain software is a plus.",
+      "2+ years of experience in supply chain or logistics analysis."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3e0",
+    "field": "Transportation and Storage",
+    "title": "Air Freight Specialist",
+    "description": "Coordinate and manage air freight shipments to ensure timely delivery and compliance with regulations.",
+    "tags": [
+      "Air Freight",
+      "Logistics",
+      "Customer Service",
+      "Regulatory Compliance"
+    ],
+    "requirements": [
+      "High school diploma or equivalent; Bachelor’s degree preferred.",
+      "Experience with air freight logistics and documentation.",
+      "Strong organizational and multitasking skills.",
+      "Knowledge of international shipping regulations."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3e1",
+    "field": "Transportation and Storage",
+    "title": "Customs Broker",
+    "description": "Ensure imported and exported goods comply with customs regulations and manage clearance processes.",
+    "tags": [
+      "Customs Compliance",
+      "International Trade",
+      "Documentation",
+      "Customer Service"
+    ],
+    "requirements": [
+      "Customs Broker License (if required in your region).",
+      "Knowledge of import/export regulations and procedures.",
+      "Strong attention to detail and documentation skills.",
+      "Experience in logistics or freight forwarding is a plus."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3e2",
+    "field": "Transportation and Storage",
+    "title": "Rail Operations Manager",
+    "description": "Oversee rail transport operations, ensuring safety, efficiency, and on-time delivery.",
+    "tags": [
+      "Rail Operations",
+      "Safety Compliance",
+      "Logistics",
+      "Team Management"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Transportation Management, Logistics, or related field.",
+      "Experience with rail transport and logistics operations.",
+      "Strong leadership and organizational skills.",
+      "3+ years of experience in rail operations management."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3e3",
+    "field": "Transportation and Storage",
+    "title": "Dispatch Coordinator",
+    "description": "Schedule and dispatch vehicles or personnel to fulfill transportation requests efficiently.",
+    "tags": [
+      "Dispatching",
+      "Scheduling",
+      "Communication",
+      "Problem Solving"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience in dispatching or transportation coordination.",
+      "Strong multitasking and communication skills.",
+      "Knowledge of dispatch software is a plus."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3e4",
+    "field": "Administrative and Support Activities",
+    "title": "Administrative Assistant",
+    "description": "Provide administrative support to ensure efficient operation of the office.",
+    "tags": [
+      "Organization",
+      "Scheduling",
+      "Communication",
+      "Office Management"
+    ],
+    "requirements": [
+      "High school diploma or equivalent; associate’s degree preferred.",
+      "Proficiency in office software (e.g., Microsoft Office Suite).",
+      "Strong organizational and multitasking skills.",
+      "1+ years of experience in an administrative role."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3e5",
+    "field": "Administrative and Support Activities",
+    "title": "Human Resources Coordinator",
+    "description": "Assist with HR processes, including recruitment, onboarding, and employee relations.",
+    "tags": [
+      "HR Support",
+      "Recruitment",
+      "Employee Relations",
+      "Documentation"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Human Resources, Business Administration, or related field.",
+      "Experience in HR or administrative roles.",
+      "Strong communication and interpersonal skills.",
+      "Proficiency in HR management software is a plus."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3e6",
+    "field": "Administrative and Support Activities",
+    "title": "Office Manager",
+    "description": "Oversee daily operations of the office, ensuring efficient workflows and smooth communication.",
+    "tags": [
+      "Office Management",
+      "Leadership",
+      "Budgeting",
+      "Problem Solving"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Business Administration or related field.",
+      "Experience in office management or administration.",
+      "Strong leadership and problem-solving skills.",
+      "2+ years of experience managing office operations."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3e7",
+    "field": "Administrative and Support Activities",
+    "title": "Call Center Supervisor",
+    "description": "Manage call center agents, monitor performance, and ensure excellent customer service.",
+    "tags": [
+      "Call Center Management",
+      "Customer Service",
+      "Team Leadership",
+      "Reporting"
+    ],
+    "requirements": [
+      "High school diploma or equivalent; associate’s degree preferred.",
+      "Experience in customer service or call center operations.",
+      "Strong leadership and organizational skills.",
+      "1+ years of supervisory experience."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3e8",
+    "field": "Administrative and Support Activities",
+    "title": "Receptionist",
+    "description": "Greet visitors, manage phone calls, and handle front desk operations in a professional manner.",
+    "tags": [
+      "Customer Service",
+      "Front Desk",
+      "Organization",
+      "Multitasking"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience in customer service or front desk roles preferred.",
+      "Proficiency in office software and phone systems.",
+      "Strong interpersonal and organizational skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3e9",
+    "field": "Finance and Insurance",
+    "title": "Financial Analyst",
+    "description": "Analyze financial data and provide insights to support decision-making and improve company performance.",
+    "tags": [
+      "Financial Analysis",
+      "Budgeting",
+      "Forecasting",
+      "Data Interpretation"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Finance, Accounting, or related field.",
+      "Proficiency in financial modeling and analysis tools (e.g., Excel, Tableau).",
+      "Strong analytical and problem-solving skills.",
+      "2+ years of experience in financial analysis."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3ea",
+    "field": "Finance and Insurance",
+    "title": "Insurance Underwriter",
+    "description": "Evaluate applications for insurance coverage and determine appropriate terms and premiums.",
+    "tags": [
+      "Risk Assessment",
+      "Insurance Policies",
+      "Decision Making",
+      "Attention to Detail"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Finance, Insurance, or related field.",
+      "Knowledge of underwriting principles and practices.",
+      "Strong analytical and communication skills.",
+      "Experience in insurance underwriting is preferred."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3eb",
+    "field": "Finance and Insurance",
+    "title": "Credit Analyst",
+    "description": "Assess creditworthiness of individuals or organizations and recommend loan approvals or denials.",
+    "tags": [
+      "Credit Analysis",
+      "Risk Assessment",
+      "Financial Reports",
+      "Decision Making"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Finance, Economics, or related field.",
+      "Experience in credit or risk analysis.",
+      "Proficiency in financial reporting tools.",
+      "Strong problem-solving and analytical skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3ec",
+    "field": "Finance and Insurance",
+    "title": "Investment Advisor",
+    "description": "Provide financial planning advice and investment recommendations to clients.",
+    "tags": [
+      "Investment Strategy",
+      "Client Relations",
+      "Market Research",
+      "Financial Planning"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Finance, Economics, or related field.",
+      "Certification as a Certified Financial Planner (CFP) or equivalent is preferred.",
+      "Strong knowledge of investment products and markets.",
+      "2+ years of experience in financial advising."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3ed",
+    "field": "Finance and Insurance",
+    "title": "Claims Adjuster",
+    "description": "Investigate insurance claims and determine fair settlements for policyholders.",
+    "tags": [
+      "Claims Investigation",
+      "Negotiation",
+      "Customer Service",
+      "Regulatory Compliance"
+    ],
+    "requirements": [
+      "High school diploma or equivalent; Bachelor’s degree preferred.",
+      "Knowledge of insurance claims processes.",
+      "Strong negotiation and communication skills.",
+      "Experience in claims adjustment is a plus."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3ee",
+    "field": "Finance and Insurance",
+    "title": "Tax Advisor",
+    "description": "Advise individuals and businesses on tax planning, preparation, and strategies to minimize tax liability.",
+    "tags": [
+      "Tax Planning",
+      "Financial Consulting",
+      "Regulations",
+      "Compliance"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Accounting, Finance, or related field.",
+      "Certified Public Accountant (CPA) certification preferred.",
+      "In-depth knowledge of tax laws and regulations.",
+      "2+ years of experience in tax advisory or preparation."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3ef",
+    "field": "Finance and Insurance",
+    "title": "Insurance Claims Examiner",
+    "description": "Examine insurance claims, evaluate the validity of claims, and process settlements for policyholders.",
+    "tags": [
+      "Claims Processing",
+      "Insurance",
+      "Risk Management",
+      "Documentation"
+    ],
+    "requirements": [
+      "High school diploma or equivalent; Bachelor’s degree preferred.",
+      "Experience in claims processing or insurance-related roles.",
+      "Strong attention to detail and analytical skills.",
+      "Knowledge of insurance policies and regulations."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3f0",
+    "field": "Finance and Insurance",
+    "title": "Mortgage Loan Officer",
+    "description": "Help clients obtain mortgage loans by advising on loan options, processing applications, and ensuring timely approvals.",
+    "tags": [
+      "Mortgage",
+      "Loan Processing",
+      "Client Relations",
+      "Real Estate"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Finance, Business, or related field.",
+      "Experience in mortgage lending or real estate finance.",
+      "Excellent communication and negotiation skills.",
+      "Knowledge of mortgage products and financial regulations."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3f1",
+    "field": "Finance and Insurance",
+    "title": "Risk Manager",
+    "description": "Identify, evaluate, and manage financial risks to ensure that the organization maintains a stable financial position.",
+    "tags": [
+      "Risk Assessment",
+      "Risk Mitigation",
+      "Insurance",
+      "Compliance"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Finance, Business, or Risk Management.",
+      "Experience in risk management or financial services.",
+      "Strong analytical and decision-making skills.",
+      "Knowledge of risk management tools and strategies."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3f2",
+    "field": "Finance and Insurance",
+    "title": "Actuary",
+    "description": "Analyze financial risks and uncertainties using mathematical models and statistics to help organizations make informed decisions.",
+    "tags": [
+      "Data Analysis",
+      "Risk Assessment",
+      "Mathematics",
+      "Statistical Modeling"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Actuarial Science, Mathematics, or related field.",
+      "Proficiency in actuarial software and statistical tools.",
+      "Strong problem-solving and analytical skills.",
+      "Completion of actuarial exams (or in progress) is required."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3f3",
+    "field": "Information and Communication",
+    "title": "Software Developer",
+    "description": "Design, develop, and maintain software applications tailored to client needs.",
+    "tags": [
+      "Software Development",
+      "Programming",
+      "Agile",
+      "Problem Solving"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Computer Science or related field.",
+      "Proficiency in programming languages (e.g., Python, Java, C#).",
+      "Experience with Agile methodologies.",
+      "2+ years of software development experience."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3f4",
+    "field": "Information and Communication",
+    "title": "Data Analyst",
+    "description": "Analyze data to help organizations make informed business decisions.",
+    "tags": [
+      "Data Analysis",
+      "SQL",
+      "Visualization",
+      "Problem Solving"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Data Science, Statistics, or related field.",
+      "Proficiency in data analysis tools (e.g., Excel, Tableau, R).",
+      "Experience with SQL and database management.",
+      "1+ years of experience in data analytics."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3f5",
+    "field": "Information and Communication",
+    "title": "Network Administrator",
+    "description": "Manage and maintain an organization's computer networks to ensure uptime and security.",
+    "tags": [
+      "Networking",
+      "IT Support",
+      "Security",
+      "Troubleshooting"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Information Technology or related field.",
+      "Experience with network hardware and software.",
+      "Strong troubleshooting and problem-solving skills.",
+      "2+ years of experience in network administration."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3f6",
+    "field": "Information and Communication",
+    "title": "Digital Marketing Specialist",
+    "description": "Develop and execute digital campaigns to increase online visibility and sales.",
+    "tags": [
+      "SEO",
+      "Social Media Marketing",
+      "Content Creation",
+      "Analytics"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Marketing, Communications, or related field.",
+      "Proficiency in digital marketing tools (e.g., Google Analytics, AdWords).",
+      "Experience with social media platforms and content creation.",
+      "2+ years of experience in digital marketing."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3f7",
+    "field": "Information and Communication",
+    "title": "Cybersecurity Specialist",
+    "description": "Protect an organization's systems and data from cyber threats.",
+    "tags": [
+      "Cybersecurity",
+      "Risk Management",
+      "IT Security",
+      "Ethical Hacking"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Cybersecurity or Information Technology.",
+      "Experience with firewalls, VPNs, and security protocols.",
+      "Relevant certifications (e.g., CISSP, CEH) preferred.",
+      "2+ years of experience in IT security."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3f8",
+    "field": "Accommodation and Hospitality",
+    "title": "Hotel Manager",
+    "description": "Oversee daily hotel operations, ensuring guest satisfaction and efficient service.",
+    "tags": [
+      "Management",
+      "Guest Relations",
+      "Operations",
+      "Budgeting"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Hospitality Management or related field.",
+      "Strong leadership and organizational skills.",
+      "Experience with hotel management software.",
+      "3+ years of experience in hospitality management."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3f9",
+    "field": "Accommodation and Hospitality",
+    "title": "Chef",
+    "description": "Plan and prepare high-quality meals while managing kitchen staff and inventory.",
+    "tags": [
+      "Cooking",
+      "Kitchen Management",
+      "Creativity",
+      "Food Safety"
+    ],
+    "requirements": [
+      "Culinary degree or equivalent training.",
+      "Experience in menu planning and inventory management.",
+      "Strong leadership and creative skills.",
+      "3+ years of experience as a chef."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3fa",
+    "field": "Accommodation and Hospitality",
+    "title": "Event Coordinator",
+    "description": "Plan and execute events, ensuring client satisfaction and seamless operations.",
+    "tags": [
+      "Event Planning",
+      "Budget Management",
+      "Logistics",
+      "Customer Service"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Event Management, Hospitality, or related field.",
+      "Strong organizational and communication skills.",
+      "Experience with event planning tools.",
+      "2+ years of experience in event coordination."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3fb",
+    "field": "Accommodation and Hospitality",
+    "title": "Housekeeping Supervisor",
+    "description": "Supervise housekeeping staff, ensuring rooms and public areas meet cleanliness standards.",
+    "tags": [
+      "Supervision",
+      "Quality Control",
+      "Time Management",
+      "Hospitality"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience in housekeeping or hospitality.",
+      "Strong organizational and leadership skills.",
+      "2+ years of experience in housekeeping management."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3fc",
+    "field": "Accommodation and Hospitality",
+    "title": "Front Desk Agent",
+    "description": "Handle guest check-ins and check-outs, answer inquiries, and provide exceptional customer service.",
+    "tags": [
+      "Customer Service",
+      "Problem Solving",
+      "Multitasking",
+      "Communication"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience in hospitality or customer service preferred.",
+      "Proficiency with reservation software is a plus.",
+      "Strong interpersonal skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3fd",
+    "field": "Information and Communication",
+    "title": "Software Developer",
+    "description": "Develop, test, and maintain software applications to meet business and user needs.",
+    "tags": [
+      "Software Development",
+      "Programming",
+      "Tech Skills",
+      "Problem Solving"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Computer Science, Information Technology, or related field.",
+      "Proficiency in programming languages (e.g., Java, Python, C++).",
+      "Experience with software development frameworks and tools.",
+      "Strong problem-solving skills and attention to detail."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3fe",
+    "field": "Information and Communication",
+    "title": "Network Administrator",
+    "description": "Manage and maintain the company’s computer networks to ensure smooth and secure operations.",
+    "tags": [
+      "Networking",
+      "IT Support",
+      "System Maintenance",
+      "Security"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Information Technology or related field.",
+      "Experience in network administration and troubleshooting.",
+      "Knowledge of networking protocols and security systems.",
+      "Certifications such as CCNA or CompTIA Network+ are a plus."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a3ff",
+    "field": "Information and Communication",
+    "title": "Content Writer",
+    "description": "Create engaging written content for websites, blogs, social media, and other digital platforms.",
+    "tags": [
+      "Writing",
+      "Content Creation",
+      "SEO",
+      "Creativity"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Journalism, Communications, or related field.",
+      "Experience in writing and content creation.",
+      "Familiarity with SEO best practices and keyword research.",
+      "Excellent writing, editing, and proofreading skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a400",
+    "field": "Information and Communication",
+    "title": "Digital Marketing Specialist",
+    "description": "Develop and implement online marketing strategies to drive traffic, engagement, and conversions.",
+    "tags": [
+      "Digital Marketing",
+      "SEO",
+      "PPC",
+      "Social Media"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Marketing, Communications, or related field.",
+      "Experience with digital marketing tools and platforms (e.g., Google Analytics, Facebook Ads).",
+      "Strong understanding of SEO and SEM.",
+      "Ability to analyze marketing data and adjust strategies accordingly."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a401",
+    "field": "Information and Communication",
+    "title": "IT Support Specialist",
+    "description": "Provide technical support to employees, troubleshooting hardware, software, and network issues.",
+    "tags": [
+      "IT Support",
+      "Troubleshooting",
+      "Customer Service",
+      "Technical Skills"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Information Technology or related field.",
+      "Experience in IT support or customer service.",
+      "Proficiency in diagnosing hardware and software issues.",
+      "Excellent communication skills and ability to work under pressure."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a402",
+    "field": "Accommodation and Hospitality",
+    "title": "Hotel Front Desk Manager",
+    "description": "Manage the front desk operations, ensuring excellent customer service and smooth check-in/check-out processes.",
+    "tags": [
+      "Customer Service",
+      "Hotel Management",
+      "Guest Relations",
+      "Leadership"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Hospitality Management or related field.",
+      "Experience in hotel or front desk management.",
+      "Strong communication and leadership skills.",
+      "Ability to manage a team and handle guest inquiries."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a403",
+    "field": "Accommodation and Hospitality",
+    "title": "Chef de Partie",
+    "description": "Oversee a specific section of the kitchen, preparing and cooking high-quality meals in a fast-paced environment.",
+    "tags": [
+      "Cooking",
+      "Kitchen Management",
+      "Food Preparation",
+      "Teamwork"
+    ],
+    "requirements": [
+      "Culinary school degree or equivalent experience.",
+      "Experience in a high-end or busy kitchen environment.",
+      "Excellent cooking skills and attention to detail.",
+      "Ability to work under pressure and in a team."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a404",
+    "field": "Accommodation and Hospitality",
+    "title": "Housekeeping Supervisor",
+    "description": "Oversee housekeeping staff to ensure cleanliness and maintenance of guest rooms and common areas.",
+    "tags": [
+      "Housekeeping",
+      "Team Management",
+      "Organization",
+      "Customer Service"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience in housekeeping or hospitality management.",
+      "Strong organizational and leadership skills.",
+      "Ability to train and supervise a team."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a405",
+    "field": "Accommodation and Hospitality",
+    "title": "Restaurant Host/Hostess",
+    "description": "Greet and seat guests, manage reservations, and ensure smooth seating flow in the restaurant.",
+    "tags": [
+      "Customer Service",
+      "Guest Relations",
+      "Hospitality",
+      "Organization"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Previous experience in a customer service or hospitality role.",
+      "Excellent interpersonal and communication skills.",
+      "Ability to stay organized in a busy environment."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a406",
+    "field": "Accommodation and Hospitality",
+    "title": "Event Coordinator",
+    "description": "Plan and coordinate events, ensuring all aspects such as venue, catering, and entertainment are in place for a seamless experience.",
+    "tags": [
+      "Event Planning",
+      "Client Relations",
+      "Logistics",
+      "Organization"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Hospitality, Event Management, or related field.",
+      "Experience in event planning or coordination.",
+      "Strong organizational and communication skills.",
+      "Ability to work under tight deadlines and manage multiple tasks."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a407",
+    "field": "Agriculture, Forestry, Fishing",
+    "title": "Agricultural Engineer",
+    "description": "Design and develop systems and equipment to improve agricultural production and efficiency.",
+    "tags": [
+      "Engineering",
+      "Agriculture",
+      "Sustainability",
+      "Technology"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Agricultural Engineering or related field.",
+      "Experience with agricultural technologies and machinery.",
+      "Strong problem-solving skills and innovation.",
+      "Knowledge of sustainability practices in agriculture."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a408",
+    "field": "Agriculture, Forestry, Fishing",
+    "title": "Forestry Technician",
+    "description": "Assist in managing and conserving forest resources by monitoring tree growth, health, and inventory.",
+    "tags": [
+      "Forestry",
+      "Conservation",
+      "Environmental Science",
+      "Field Work"
+    ],
+    "requirements": [
+      "Associate’s or Bachelor’s degree in Forestry or Environmental Science.",
+      "Experience in forestry management or land conservation.",
+      "Strong physical stamina for field work.",
+      "Knowledge of environmental regulations and forest health monitoring."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a409",
+    "field": "Agriculture, Forestry, Fishing",
+    "title": "Fisheries Biologist",
+    "description": "Conduct research on fish populations, ecosystems, and habitats to promote sustainable fishing practices.",
+    "tags": [
+      "Biology",
+      "Fisheries",
+      "Sustainability",
+      "Research"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Biology, Fisheries Science, or related field.",
+      "Experience in fisheries management or aquatic biology.",
+      "Strong data analysis and research skills.",
+      "Knowledge of conservation practices and aquatic ecosystems."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a40a",
+    "field": "Agriculture, Forestry, Fishing",
+    "title": "Farm Manager",
+    "description": "Oversee farm operations, manage crops, livestock, and personnel to ensure productivity and sustainability.",
+    "tags": [
+      "Farm Management",
+      "Agriculture",
+      "Sustainability",
+      "Team Management"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Agriculture, Horticulture, or related field.",
+      "Experience in farm management or agriculture operations.",
+      "Strong leadership and organizational skills.",
+      "Knowledge of sustainable farming practices and crop/livestock management."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a40b",
+    "field": "Agriculture, Forestry, Fishing",
+    "title": "Soil Scientist",
+    "description": "Study the properties of soil and its relationship to plant growth to develop sustainable farming practices.",
+    "tags": [
+      "Soil Science",
+      "Agriculture",
+      "Environmental Science",
+      "Research"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Soil Science, Agriculture, or related field.",
+      "Experience in soil analysis and sustainable land management.",
+      "Strong research and analytical skills.",
+      "Knowledge of soil conservation and fertility management techniques."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a40c",
+    "field": "Agriculture, Forestry, Fishing",
+    "title": "Irrigation Specialist",
+    "description": "Design and manage irrigation systems to optimize water usage and support sustainable agricultural practices.",
+    "tags": [
+      "Irrigation",
+      "Water Management",
+      "Agriculture",
+      "Sustainability"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Agricultural Engineering, Water Management, or related field.",
+      "Experience in designing and maintaining irrigation systems.",
+      "Knowledge of water conservation and irrigation technologies.",
+      "Strong problem-solving and project management skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a40d",
+    "field": "Agriculture, Forestry, Fishing",
+    "title": "Veterinarian (Livestock)",
+    "description": "Provide medical care and preventive services to farm animals, ensuring health and productivity.",
+    "tags": [
+      "Veterinary",
+      "Livestock",
+      "Animal Health",
+      "Care"
+    ],
+    "requirements": [
+      "Doctor of Veterinary Medicine (DVM) degree.",
+      "Experience in treating farm animals (e.g., cattle, sheep, poultry).",
+      "Strong diagnostic and problem-solving skills.",
+      "Ability to work in rural or field-based settings."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a40e",
+    "field": "Agriculture, Forestry, Fishing",
+    "title": "Agricultural Technician",
+    "description": "Support agricultural research and operations, collecting data, maintaining equipment, and assisting with field trials.",
+    "tags": [
+      "Agriculture",
+      "Research",
+      "Field Work",
+      "Data Collection"
+    ],
+    "requirements": [
+      "Associate’s degree in Agriculture or related field.",
+      "Experience with agricultural tools and equipment.",
+      "Strong organizational and record-keeping skills.",
+      "Willingness to work outdoors and in various weather conditions."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a40f",
+    "field": "Agriculture, Forestry, Fishing",
+    "title": "Crop Consultant",
+    "description": "Advise farmers on crop selection, pest control, and soil management to maximize yield and sustainability.",
+    "tags": [
+      "Consulting",
+      "Agriculture",
+      "Crop Management",
+      "Sustainability"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Agriculture, Agronomy, or related field.",
+      "Experience in crop management or agricultural consulting.",
+      "Strong problem-solving and communication skills.",
+      "Knowledge of sustainable farming practices and pest management."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a410",
+    "field": "Agriculture, Forestry, Fishing",
+    "title": "Horticulturist",
+    "description": "Manage the cultivation of plants, flowers, and trees for commercial, recreational, or conservation purposes.",
+    "tags": [
+      "Horticulture",
+      "Plant Care",
+      "Sustainability",
+      "Agriculture"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Horticulture, Botany, or related field.",
+      "Experience in plant cultivation or garden management.",
+      "Knowledge of plant species, soil types, and pest management.",
+      "Strong attention to detail and organizational skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a411",
+    "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
+    "title": "Water Treatment Plant Operator",
+    "description": "Operate and maintain water treatment facilities to ensure the safe and effective delivery of clean water.",
+    "tags": [
+      "Water Treatment",
+      "Utilities",
+      "Engineering",
+      "Maintenance"
+    ],
+    "requirements": [
+      "High school diploma or equivalent; certification in water treatment is preferred.",
+      "Experience in water treatment or utilities operations.",
+      "Knowledge of water treatment systems and safety protocols.",
+      "Ability to perform routine maintenance and troubleshooting tasks."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a412",
+    "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
+    "title": "Environmental Health Specialist",
+    "description": "Monitor and manage environmental health risks related to waste management and sanitation to ensure public safety.",
+    "tags": [
+      "Environmental Health",
+      "Waste Management",
+      "Public Safety",
+      "Compliance"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Environmental Science, Public Health, or related field.",
+      "Experience in waste management or environmental health.",
+      "Strong knowledge of public health regulations and sanitation practices.",
+      "Excellent communication and problem-solving skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a413",
+    "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
+    "title": "Wastewater Treatment Technician",
+    "description": "Monitor and maintain wastewater treatment processes to ensure compliance with environmental standards.",
+    "tags": [
+      "Wastewater",
+      "Environmental Compliance",
+      "Technician",
+      "Water Treatment"
+    ],
+    "requirements": [
+      "High school diploma or equivalent; certification in wastewater treatment preferred.",
+      "Experience in wastewater treatment or environmental services.",
+      "Strong knowledge of water quality standards and regulations.",
+      "Ability to operate and maintain wastewater treatment equipment."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a414",
+    "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
+    "title": "Sanitation Engineer",
+    "description": "Design and implement sanitation systems for urban or rural areas, ensuring efficient waste disposal and health safety.",
+    "tags": [
+      "Sanitation",
+      "Engineering",
+      "Waste Management",
+      "Public Health"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Environmental Engineering, Civil Engineering, or related field.",
+      "Experience in sanitation system design and management.",
+      "Knowledge of waste disposal regulations and public health safety.",
+      "Strong problem-solving and project management skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a415",
+    "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
+    "title": "Solid Waste Manager",
+    "description": "Oversee the collection, disposal, and recycling of solid waste to ensure proper waste management and environmental protection.",
+    "tags": [
+      "Waste Management",
+      "Environmental Protection",
+      "Recycling",
+      "Public Health"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Environmental Science, Waste Management, or related field.",
+      "Experience in solid waste management or municipal services.",
+      "Knowledge of waste disposal, recycling processes, and regulations.",
+      "Strong leadership and organizational skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a416",
+    "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
+    "title": "Sewage System Maintenance Worker",
+    "description": "Perform routine inspections and maintenance on sewage systems to ensure proper functioning and prevent system failures.",
+    "tags": [
+      "Sewage Systems",
+      "Maintenance",
+      "Wastewater",
+      "Public Health"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience in sewer system maintenance or related field.",
+      "Knowledge of sewage systems and plumbing techniques.",
+      "Ability to perform physical labor and work in confined spaces."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a417",
+    "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
+    "title": "Water Resources Specialist",
+    "description": "Monitor and manage water resources, ensuring sustainable use and compliance with environmental regulations.",
+    "tags": [
+      "Water Resources",
+      "Sustainability",
+      "Environmental Science",
+      "Regulations"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Environmental Science, Water Resources, or related field.",
+      "Experience in water resources management or environmental protection.",
+      "Strong analytical and problem-solving skills.",
+      "Knowledge of water use regulations and sustainability practices."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a418",
+    "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
+    "title": "Public Health Sanitarian",
+    "description": "Inspect and monitor sanitation practices in public areas, ensuring compliance with public health regulations and standards.",
+    "tags": [
+      "Public Health",
+      "Sanitation",
+      "Regulatory Compliance",
+      "Inspection"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Public Health, Environmental Health, or related field.",
+      "Experience in health inspections or sanitation monitoring.",
+      "Strong knowledge of sanitation regulations and public health standards.",
+      "Excellent communication and analytical skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a419",
+    "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
+    "title": "Hydrologist",
+    "description": "Study the distribution, movement, and properties of water in the environment to support water management and conservation efforts.",
+    "tags": [
+      "Hydrology",
+      "Water Resources",
+      "Research",
+      "Environmental Science"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Hydrology, Environmental Science, or related field.",
+      "Experience in water resources management or hydrological research.",
+      "Strong analytical and research skills.",
+      "Knowledge of water conservation techniques and environmental regulations."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a41a",
+    "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
+    "title": "Recycling Coordinator",
+    "description": "Oversee and implement recycling programs for waste materials, ensuring compliance with environmental and safety regulations.",
+    "tags": [
+      "Recycling",
+      "Waste Management",
+      "Environmental Compliance",
+      "Sustainability"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Environmental Science, Sustainability, or related field.",
+      "Experience in recycling programs or waste management.",
+      "Strong knowledge of waste segregation and recycling processes.",
+      "Excellent organizational and communication skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a41b",
+    "field": "Health and Social Care",
+    "title": "Registered Nurse",
+    "description": "Provide medical care and support to patients, ensuring their comfort, safety, and recovery.",
+    "tags": [
+      "Nursing",
+      "Patient Care",
+      "Healthcare",
+      "Medical"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Nursing or equivalent qualification.",
+      "Registered nurse with a valid license.",
+      "Strong clinical skills and attention to detail.",
+      "Ability to work in high-pressure environments."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a41c",
+    "field": "Health and Social Care",
+    "title": "Social Worker",
+    "description": "Support individuals and families in need of social assistance by assessing and providing resources to improve their quality of life.",
+    "tags": [
+      "Social Work",
+      "Counseling",
+      "Support Services",
+      "Case Management"
+    ],
+    "requirements": [
+      "Bachelor’s or Master’s degree in Social Work.",
+      "Experience in case management or social services.",
+      "Strong communication and empathetic skills.",
+      "Knowledge of local community resources and programs."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a41d",
+    "field": "Health and Social Care",
+    "title": "Occupational Therapist",
+    "description": "Assist patients in developing or regaining the skills necessary for daily living and working after illness, injury, or surgery.",
+    "tags": [
+      "Occupational Therapy",
+      "Patient Care",
+      "Healthcare",
+      "Rehabilitation"
+    ],
+    "requirements": [
+      "Bachelor’s or Master’s degree in Occupational Therapy.",
+      "Licensure as an Occupational Therapist.",
+      "Experience in clinical or rehabilitation settings.",
+      "Strong interpersonal and communication skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a41e",
+    "field": "Health and Social Care",
+    "title": "Caregiver",
+    "description": "Provide personal care and assistance to individuals with physical or mental disabilities, helping them with daily activities.",
+    "tags": [
+      "Caregiving",
+      "Personal Care",
+      "Elderly Care",
+      "Assistance"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience in caregiving or healthcare roles.",
+      "Compassionate, patient, and reliable.",
+      "Ability to handle physical tasks such as lifting or assisting with mobility."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a41f",
+    "field": "Health and Social Care",
+    "title": "Mental Health Counselor",
+    "description": "Provide therapy and counseling services to individuals dealing with mental health issues, such as anxiety, depression, and trauma.",
+    "tags": [
+      "Mental Health",
+      "Counseling",
+      "Therapy",
+      "Well-being"
+    ],
+    "requirements": [
+      "Master’s degree in Counseling, Psychology, or related field.",
+      "Licensure as a professional counselor.",
+      "Experience with individual and group therapy.",
+      "Strong empathy, communication, and listening skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a420",
+    "field": "Electricity, Gas, Steam and Air Conditioning Supply and Distribution",
+    "title": "Electrical Engineer",
+    "description": "Design, develop, and maintain electrical systems and equipment used for power generation, transmission, and distribution.",
+    "tags": [
+      "Electrical Engineering",
+      "Power Systems",
+      "Engineering",
+      "Utilities"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Electrical Engineering or related field.",
+      "Experience in electrical power systems design and analysis.",
+      "Knowledge of electrical codes and safety regulations.",
+      "Strong problem-solving and technical skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a421",
+    "field": "Electricity, Gas, Steam and Air Conditioning Supply and Distribution",
+    "title": "Energy Auditor",
+    "description": "Conduct assessments of buildings and facilities to evaluate energy consumption and recommend improvements for energy efficiency.",
+    "tags": [
+      "Energy Audit",
+      "Efficiency",
+      "Sustainability",
+      "Engineering"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Environmental Engineering, Energy Management, or related field.",
+      "Experience with energy auditing and analysis.",
+      "Knowledge of energy-efficient technologies and practices.",
+      "Strong analytical and communication skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a422",
+    "field": "Electricity, Gas, Steam and Air Conditioning Supply and Distribution",
+    "title": "Gas Plant Operator",
+    "description": "Operate and monitor the systems that control the distribution of natural gas, ensuring safe and efficient operations.",
+    "tags": [
+      "Gas Operations",
+      "Plant Management",
+      "Safety",
+      "Utilities"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience in gas plant operations or similar industrial settings.",
+      "Knowledge of safety standards and regulations.",
+      "Ability to monitor and control complex systems."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a423",
+    "field": "Electricity, Gas, Steam and Air Conditioning Supply and Distribution",
+    "title": "HVAC Technician",
+    "description": "Install, repair, and maintain heating, ventilation, and air conditioning (HVAC) systems in residential, commercial, and industrial buildings.",
+    "tags": [
+      "HVAC",
+      "Heating",
+      "Air Conditioning",
+      "Maintenance"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Certification in HVAC or relevant technical field.",
+      "Experience with HVAC systems installation and troubleshooting.",
+      "Strong technical and mechanical skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a424",
+    "field": "Electricity, Gas, Steam and Air Conditioning Supply and Distribution",
+    "title": "Power Systems Technician",
+    "description": "Install, maintain, and repair electrical equipment used for power generation, transmission, and distribution.",
+    "tags": [
+      "Power Systems",
+      "Electrical",
+      "Utilities",
+      "Maintenance"
+    ],
+    "requirements": [
+      "Associate’s degree in Electrical Engineering Technology or related field.",
+      "Experience in power systems maintenance or similar field.",
+      "Knowledge of electrical systems and safety protocols.",
+      "Strong troubleshooting and repair skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a425",
+    "field": "Electricity, Gas, Steam and Air Conditioning Supply and Distribution",
+    "title": "Renewable Energy Technician",
+    "description": "Install and maintain renewable energy systems such as solar, wind, and geothermal energy for residential and commercial use.",
+    "tags": [
+      "Renewable Energy",
+      "Sustainability",
+      "Energy Systems",
+      "Green Technology"
+    ],
+    "requirements": [
+      "High school diploma or equivalent; certification in renewable energy is a plus.",
+      "Experience with solar, wind, or geothermal system installation.",
+      "Knowledge of renewable energy technologies and their applications.",
+      "Ability to work at heights and with electrical systems safely."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a426",
+    "field": "Other",
+    "title": "Project Manager",
+    "description": "Lead and coordinate various projects across departments to ensure timely and successful completion.",
+    "tags": [
+      "Project Management",
+      "Coordination",
+      "Leadership",
+      "Teamwork"
+    ],
+    "requirements": [
+      "Bachelor's degree in Business Administration, Management, or related field.",
+      "Proven experience in project management.",
+      "Strong organizational and leadership skills.",
+      "Excellent communication and problem-solving abilities."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a427",
+    "field": "Other",
+    "title": "Data Analyst",
+    "description": "Analyze and interpret complex data sets to provide actionable insights for business decision-making.",
+    "tags": [
+      "Data Analysis",
+      "Statistics",
+      "Business Intelligence",
+      "Research"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Data Science, Statistics, or related field.",
+      "Experience with data analysis tools like Excel, SQL, or Python.",
+      "Strong analytical and problem-solving skills.",
+      "Ability to communicate complex data to non-technical stakeholders."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a428",
+    "field": "Other",
+    "title": "Marketing Manager",
+    "description": "Develop and execute marketing strategies to promote products and services and drive business growth.",
+    "tags": [
+      "Marketing",
+      "Brand Strategy",
+      "Sales",
+      "Creative"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Marketing, Business, or related field.",
+      "Proven experience in marketing strategy and campaign management.",
+      "Excellent leadership, communication, and project management skills.",
+      "Strong understanding of digital marketing tools and trends."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a429",
+    "field": "Other",
+    "title": "Human Resources Specialist",
+    "description": "Oversee recruiting, employee relations, training, and other HR functions to ensure a productive and compliant workforce.",
+    "tags": [
+      "Human Resources",
+      "Recruiting",
+      "Employee Relations",
+      "Compliance"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Human Resources, Business Administration, or related field.",
+      "Experience in human resources management and talent acquisition.",
+      "Strong knowledge of labor laws and employee relations.",
+      "Excellent communication and interpersonal skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a42a",
+    "field": "Other",
+    "title": "Financial Analyst",
+    "description": "Analyze financial data and trends to help businesses make informed investment and budgeting decisions.",
+    "tags": [
+      "Finance",
+      "Analysis",
+      "Budgeting",
+      "Reporting"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Finance, Economics, or related field.",
+      "Experience with financial modeling and reporting.",
+      "Strong attention to detail and analytical skills.",
+      "Proficiency in Microsoft Excel or financial software."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a42b",
+    "field": "Cultural, Entertainment and Leisure Activities",
+    "title": "Event Coordinator",
+    "description": "Plan, organize, and execute events, ensuring that every detail is arranged and the event runs smoothly.",
+    "tags": [
+      "Event Planning",
+      "Coordination",
+      "Entertainment",
+      "Management"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Event Management, Hospitality, or related field.",
+      "Experience in planning and coordinating events.",
+      "Excellent organizational and multitasking skills.",
+      "Strong communication and vendor management skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a42c",
+    "field": "Cultural, Entertainment and Leisure Activities",
+    "title": "Museum Curator",
+    "description": "Manage and oversee collections, exhibitions, and educational programs at a museum or cultural institution.",
+    "tags": [
+      "Curation",
+      "Museums",
+      "Arts",
+      "Education"
+    ],
+    "requirements": [
+      "Master’s degree in Art History, Museum Studies, or related field.",
+      "Experience in curating exhibits or managing museum collections.",
+      "Strong knowledge of art history and cultural heritage.",
+      "Ability to work with museum staff and engage visitors."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a42d",
+    "field": "Cultural, Entertainment and Leisure Activities",
+    "title": "Fitness Trainer",
+    "description": "Design and deliver fitness programs tailored to individuals or groups to help them achieve their health and wellness goals.",
+    "tags": [
+      "Fitness",
+      "Health",
+      "Personal Training",
+      "Exercise"
+    ],
+    "requirements": [
+      "Certification in Personal Training or Fitness Instruction.",
+      "Experience in conducting fitness assessments and designing programs.",
+      "Knowledge of exercise techniques, nutrition, and wellness.",
+      "Excellent communication and motivation skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a42e",
+    "field": "Cultural, Entertainment and Leisure Activities",
+    "title": "Tour Guide",
+    "description": "Lead groups of tourists on excursions, providing information on landmarks, history, and culture.",
+    "tags": [
+      "Tourism",
+      "Guiding",
+      "Culture",
+      "History"
+    ],
+    "requirements": [
+      "High school diploma or equivalent; relevant certifications are a plus.",
+      "Experience in guiding tours or working in the tourism industry.",
+      "Strong knowledge of local history and landmarks.",
+      "Excellent public speaking and interpersonal skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a42f",
+    "field": "Cultural, Entertainment and Leisure Activities",
+    "title": "Animator",
+    "description": "Create and perform entertainment activities for guests in resorts, hotels, or cruise ships, ensuring an enjoyable experience.",
+    "tags": [
+      "Entertainment",
+      "Performing Arts",
+      "Animation",
+      "Leisure"
+    ],
+    "requirements": [
+      "Experience in performance arts, animation, or event planning.",
+      "Ability to engage and entertain diverse groups of people.",
+      "Excellent communication and improvisational skills.",
+      "Flexible schedule and ability to work evenings and weekends."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a430",
+    "field": "Other",
+    "title": "Content Writer",
+    "description": "Create engaging written content for websites, blogs, social media, and marketing materials.",
+    "tags": [
+      "Writing",
+      "Content Creation",
+      "Marketing",
+      "SEO"
+    ],
+    "requirements": [
+      "Bachelor’s degree in English, Journalism, Marketing, or related field.",
+      "Experience in writing for web and digital platforms.",
+      "Strong knowledge of SEO principles and content strategies.",
+      "Excellent writing, editing, and proofreading skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a431",
+    "field": "Other",
+    "title": "Graphic Designer",
+    "description": "Design visual content for marketing campaigns, websites, and branding projects.",
+    "tags": [
+      "Design",
+      "Graphics",
+      "Branding",
+      "Creative"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Graphic Design, Visual Arts, or related field.",
+      "Proficiency in design software such as Adobe Creative Suite (Photoshop, Illustrator, InDesign).",
+      "Strong creativity and attention to detail.",
+      "Excellent communication skills and the ability to work in a team."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a432",
+    "field": "Other",
+    "title": "Business Analyst",
+    "description": "Analyze business needs and recommend solutions to improve processes and efficiency.",
+    "tags": [
+      "Analysis",
+      "Business Solutions",
+      "Strategy",
+      "Consulting"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Business Administration, Economics, or related field.",
+      "Experience in business analysis or consulting.",
+      "Strong problem-solving and strategic thinking abilities.",
+      "Proficiency in data analysis tools such as Excel or Tableau."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a433",
+    "field": "Other",
+    "title": "IT Support Specialist",
+    "description": "Provide technical support and troubleshooting assistance to employees and clients regarding software and hardware issues.",
+    "tags": [
+      "IT Support",
+      "Technology",
+      "Troubleshooting",
+      "Customer Service"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Computer Science, Information Technology, or related field.",
+      "Experience in IT support or technical troubleshooting.",
+      "Strong knowledge of computer systems and networking.",
+      "Excellent communication and customer service skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a434",
+    "field": "Other",
+    "title": "Operations Manager",
+    "description": "Manage day-to-day operations of a company or department, ensuring processes are efficient and goals are met.",
+    "tags": [
+      "Operations",
+      "Management",
+      "Efficiency",
+      "Leadership"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Business Administration or related field.",
+      "Proven experience in operations management.",
+      "Strong leadership and organizational skills.",
+      "Ability to solve problems quickly and make decisions under pressure."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a435",
+    "field": "Other",
+    "title": "Customer Success Manager",
+    "description": "Ensure customers are satisfied with products or services and help them achieve their goals through product use.",
+    "tags": [
+      "Customer Success",
+      "Support",
+      "Relationship Management",
+      "Customer Retention"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Business, Marketing, or related field.",
+      "Experience in customer success or account management.",
+      "Strong problem-solving and communication skills.",
+      "Ability to build relationships with customers and internal teams."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a436",
+    "field": "Other",
+    "title": "Supply Chain Coordinator",
+    "description": "Manage the flow of goods and services, ensuring that the supply chain is efficient and cost-effective.",
+    "tags": [
+      "Supply Chain",
+      "Logistics",
+      "Operations",
+      "Inventory Management"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Supply Chain Management, Logistics, or related field.",
+      "Experience in supply chain coordination or logistics.",
+      "Strong organizational and analytical skills.",
+      "Proficiency in supply chain software and tools."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a437",
+    "field": "Other",
+    "title": "Quality Assurance Specialist",
+    "description": "Monitor and ensure the quality of products and services meets company and industry standards.",
+    "tags": [
+      "Quality Assurance",
+      "Testing",
+      "Standards",
+      "Compliance"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Quality Assurance, Engineering, or related field.",
+      "Experience in quality control or testing environments.",
+      "Strong attention to detail and problem-solving skills.",
+      "Knowledge of industry standards and regulatory requirements."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a438",
+    "field": "Other",
+    "title": "Digital Marketing Specialist",
+    "description": "Develop and execute digital marketing campaigns to increase brand awareness and drive traffic and sales.",
+    "tags": [
+      "Digital Marketing",
+      "SEO",
+      "Social Media",
+      "Content Marketing"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Marketing, Business, or related field.",
+      "Experience in digital marketing or social media marketing.",
+      "Strong understanding of SEO and paid advertising strategies.",
+      "Proficiency with digital marketing tools and analytics platforms."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a439",
+    "field": "Other",
+    "title": "Legal Assistant",
+    "description": "Support legal teams by managing case files, conducting research, and preparing legal documents.",
+    "tags": [
+      "Legal",
+      "Assistance",
+      "Research",
+      "Documentation"
+    ],
+    "requirements": [
+      "Associate’s degree in Paralegal Studies or related field.",
+      "Experience in a legal or law firm environment.",
+      "Strong organizational and research skills.",
+      "Proficiency with legal documentation and case management systems."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a43a",
+    "field": "Public administration and defense; compulsory social security",
+    "title": "Policy Advisor",
+    "description": "Provide strategic advice to government bodies on public policy issues, ensuring alignment with current legislation and public interests.",
+    "tags": [
+      "Policy",
+      "Government",
+      "Advisory",
+      "Public Administration"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Political Science, Public Policy, or related field.",
+      "Experience in policy analysis or government advisory roles.",
+      "Strong understanding of public administration and legislative processes.",
+      "Excellent communication, research, and analytical skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a43b",
+    "field": "Public administration and defense; compulsory social security",
+    "title": "Public Health Administrator",
+    "description": "Manage public health programs and services, ensuring effective delivery of health care services to the community.",
+    "tags": [
+      "Public Health",
+      "Administration",
+      "Healthcare",
+      "Government"
+    ],
+    "requirements": [
+      "Bachelor’s or Master’s degree in Public Health, Healthcare Administration, or related field.",
+      "Experience in managing healthcare services or public health programs.",
+      "Strong leadership, organizational, and budget management skills.",
+      "Knowledge of healthcare policies and regulatory requirements."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a43c",
+    "field": "Public administration and defense; compulsory social security",
+    "title": "Social Security Officer",
+    "description": "Assist citizens in understanding and accessing their social security benefits, ensuring compliance with policies and regulations.",
+    "tags": [
+      "Social Security",
+      "Public Services",
+      "Government",
+      "Support"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Social Sciences, Public Administration, or related field.",
+      "Experience in social services or public sector roles.",
+      "Strong interpersonal and communication skills.",
+      "Knowledge of social security systems and regulations."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a43d",
+    "field": "Public administration and defense; compulsory social security",
+    "title": "Government Compliance Officer",
+    "description": "Ensure government departments adhere to all regulatory and compliance requirements, conducting audits and assessments as needed.",
+    "tags": [
+      "Compliance",
+      "Government",
+      "Audit",
+      "Regulations"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Law, Public Administration, or related field.",
+      "Experience in compliance monitoring or regulatory roles.",
+      "Strong knowledge of governmental policies and legal frameworks.",
+      "Excellent attention to detail and communication skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a43e",
+    "field": "Public administration and defense; compulsory social security",
+    "title": "Defense Analyst",
+    "description": "Provide strategic analysis and recommendations related to defense policies and programs, supporting national security objectives.",
+    "tags": [
+      "Defense",
+      "Analysis",
+      "Security",
+      "Government"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Political Science, International Relations, or related field.",
+      "Experience in defense policy analysis or security studies.",
+      "Strong analytical and research skills.",
+      "Knowledge of military systems and defense strategies."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a43f",
+    "field": "Mining and quarrying",
+    "title": "Mining Engineer",
+    "description": "Design and manage mining operations, ensuring efficient extraction of minerals and overseeing the safety of operations.",
+    "tags": [
+      "Mining",
+      "Engineering",
+      "Safety",
+      "Operations"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Mining Engineering or related field.",
+      "Experience in mining operations and management.",
+      "Strong knowledge of mining techniques, safety regulations, and environmental concerns.",
+      "Ability to work in challenging environments and oversee large teams."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a440",
+    "field": "Mining and quarrying",
+    "title": "Geologist",
+    "description": "Conduct geological surveys and research to evaluate mineral deposits and support mining operations.",
+    "tags": [
+      "Geology",
+      "Mining",
+      "Research",
+      "Environmental Science"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Geology or related field.",
+      "Experience in geological surveying and mineral exploration.",
+      "Strong analytical and research skills.",
+      "Knowledge of environmental impact assessments and mining regulations."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a441",
+    "field": "Mining and quarrying",
+    "title": "Safety Officer (Mining)",
+    "description": "Oversee safety protocols and risk management in mining operations, ensuring the well-being of workers and compliance with safety standards.",
+    "tags": [
+      "Safety",
+      "Mining",
+      "Regulations",
+      "Compliance"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Occupational Health and Safety or related field.",
+      "Experience in mining safety or industrial safety roles.",
+      "Knowledge of mining safety regulations and risk assessment techniques.",
+      "Strong communication and training skills."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a442",
+    "field": "Mining and quarrying",
+    "title": "Mining Technician",
+    "description": "Support mining engineers and geologists by performing technical tasks related to the operation and maintenance of mining equipment.",
+    "tags": [
+      "Mining",
+      "Technology",
+      "Maintenance",
+      "Operations"
+    ],
+    "requirements": [
+      "Associate’s degree in Mining Technology or related field.",
+      "Experience with mining equipment and technology.",
+      "Strong technical and mechanical skills.",
+      "Ability to work in a physically demanding environment."
+    ]
+  },
+  {
+    "_id": "6737229d946638310000a443",
+    "field": "Mining and quarrying",
+    "title": "Blasting Supervisor",
+    "description": "Supervise and oversee blasting operations in mining and quarrying projects, ensuring compliance with safety and environmental standards.",
+    "tags": [
+      "Blasting",
+      "Mining",
+      "Operations",
+      "Safety"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Mining Engineering, Geology, or related field.",
+      "Experience in managing blasting operations in mining environments.",
+      "Knowledge of explosives handling, safety protocols, and regulatory requirements.",
+      "Strong leadership and problem-solving skills."
+    ]
+  }
+]

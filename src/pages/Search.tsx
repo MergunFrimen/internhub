@@ -1,10 +1,7 @@
-import { useState } from "react";
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Badge } from "@/components/ui/badge";
-import { Slider } from "@/components/ui/slider";
 import {
   Select,
   SelectContent,
@@ -12,69 +9,83 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Slider } from "@/components/ui/slider";
 import {
-  Building2,
-  MapPin,
-  Calendar,
-  Search as SearchIcon,
-  Clock,
-  Briefcase,
-  Filter,
-  X,
+  JobPosting,
+  JobPostingsFilters,
+  PaginationParams,
+  SortingParams,
+  useJobPostings,
+} from "@/hooks/use-postings";
+import {
   ArrowRight,
   ArrowUpDown,
+  Building2,
+  Calendar,
+  Filter,
+  MapPin,
+  Search as SearchIcon,
 } from "lucide-react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Search() {
-  const selectedFilters = ["Remote", "No experience"];
+  const [filters, setFilters] = useState<JobPostingsFilters>({});
+  const [pagination, setPagination] = useState<PaginationParams>({
+    page: 0,
+    pageSize: 10,
+  });
+  const [sorting, setSorting] = useState<SortingParams>({
+    field: "created_at",
+    direction: "descending",
+  });
 
-  // Mock internship results data
-  const results = [
-    {
-      id: 1,
-      role: "Software Development Intern",
-      company: "TechCorp",
-      location: "Remote",
-      type: "Full-time",
-      duration: "3 months",
-      field: "Software Engineering",
-      postedDate: "2024-03-15",
-      description:
-        "Join our engineering team to work on cutting-edge projects using modern technologies...",
-      requirements: ["React", "TypeScript", "Node.js"],
-    },
-    {
-      id: 2,
-      role: "Data Science Intern",
-      company: "DataTech",
-      location: "Hybrid",
-      type: "Part-time",
-      duration: "6 months",
-      field: "Data Science",
-      postedDate: "2024-03-14",
-      description: "Help us analyze and interpret complex datasets...",
-      requirements: ["Python", "SQL", "Machine Learning"],
-    },
-  ];
+  const {
+    data: jobPostingsResponse,
+    isLoading,
+    error,
+  } = useJobPostings({
+    filters: filters,
+    pagination: pagination,
+    sorting: sorting,
+  });
+
+  if (error) {
+    return (
+      <div className="container mx-auto py-8 px-4">
+        <Card className="bg-destructive/10 text-destructive">
+          <CardContent className="pt-6">
+            <p>Error loading internships. Please try again later.</p>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
 
   return (
     <div className="container mx-auto py-8 px-4">
-      <SearchSection />
+      <SearchSection filters={filters} />
       <div className="grid md:grid-cols-4 gap-6">
         <FiltersSection />
         <div className="md:col-span-3 gap-y-6">
-          <SelectedFilters selectedFilters={selectedFilters} />
-          <SearchResults results={results} />
+          {isLoading ? (
+            <div className="space-y-4">
+              {[1, 2, 3].map((i) => (
+                <Card key={i} className="animate-pulse">
+                  <CardContent className="h-48" />
+                </Card>
+              ))}
+            </div>
+          ) : (
+            <SearchResults results={jobPostingsResponse?.data || []} />
+          )}
         </div>
       </div>
     </div>
   );
 }
 
-function SearchSection({}: {}) {
-  const quickFilters = ["Remote", "No experience", "6 months"];
-
+function SearchSection({ filters }: { filters: JobPostingsFilters }) {
   return (
     <Card className="mb-6">
       <CardHeader>
@@ -90,33 +101,19 @@ function SearchSection({}: {}) {
               <Input
                 placeholder="Search by title, company, or keyword..."
                 className="pl-10"
+                value={filters.search}
               />
               <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-foreground h-4 w-4" />
             </div>
 
             <div className="relative md:w-[260px]">
-              <Input placeholder="Location" className="pl-10" />
+              <Input
+                placeholder="Location"
+                className="pl-10"
+                value={filters.location}
+              />
               <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 text-foreground h-4 w-4" />
             </div>
-
-            <Button className="md:w-[120px]">
-              <SearchIcon className="w-4 h-4 mr-2" />
-              Search
-            </Button>
-          </div>
-
-          {/* Quick Filters */}
-          <div className="flex flex-wrap items-center gap-2 pt-2">
-            <span className="text-sm text-foreground">Quick filters:</span>
-            {quickFilters.map((filter, index) => (
-              <Badge
-                key={index}
-                variant="outline"
-                className="cursor-pointer hover:bg-primary hover:text-primary-foreground"
-              >
-                {filter}
-              </Badge>
-            ))}
           </div>
         </div>
       </CardContent>
@@ -124,7 +121,7 @@ function SearchSection({}: {}) {
   );
 }
 
-function FiltersSection({}: {}) {
+function FiltersSection() {
   const [jobType, setJobType] = useState("");
   const [duration, setDuration] = useState("");
   const [field, setField] = useState("");
@@ -229,44 +226,21 @@ function FiltersSection({}: {}) {
   );
 }
 
-function SelectedFilters({ selectedFilters }: { selectedFilters: string[] }) {
+function SearchResults({ results }: { results: JobPosting[] }) {
+  console.log(results);
   return (
-    <>
-      {selectedFilters.length > 0 && (
-        <div className="py-3">
-          <div className="flex flex-wrap gap-2">
-            {selectedFilters.map((filter) => (
-              <Badge
-                key={filter}
-                variant="secondary"
-                className="flex items-center gap-1"
-              >
-                {filter}
-                <X className="w-3 h-3 cursor-pointer" />
-              </Badge>
-            ))}
-          </div>
-        </div>
-      )}
-    </>
-  );
-}
-
-function SearchResults({ results }: { results: any[] }) {
-  return (
-    <>
-      {results.map((result: any) => (
+    <div className="space-y-4">
+      {results.map((result) => (
         <Link key={result.id} to={`/internships/${result.id}`}>
           <Card className="hover:shadow-md transition-shadow">
             <CardContent className="pt-6">
               <div className="space-y-4">
-                {/* Header */}
                 <div className="flex justify-between items-start">
                   <div className="space-y-1">
-                    <h3 className="text-xl font-semibold">{result.role}</h3>
+                    <h3 className="text-xl font-semibold">{result.title}</h3>
                     <div className="flex items-center gap-2 text-foreground">
                       <Building2 className="w-4 h-4" />
-                      <span>{result.company}</span>
+                      <span>{result.field}</span>
                     </div>
                   </div>
                   <Button variant="ghost" size="icon">
@@ -274,46 +248,21 @@ function SearchResults({ results }: { results: any[] }) {
                   </Button>
                 </div>
 
-                {/* Description */}
                 <p className="text-foreground">{result.description}</p>
 
-                {/* Details */}
                 <div className="flex flex-wrap gap-4">
                   <div className="flex items-center gap-2 text-foreground">
-                    <MapPin className="w-4 h-4" />
-                    <span>{result.location}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-foreground">
-                    <Briefcase className="w-4 h-4" />
-                    <span>{result.type}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-foreground">
-                    <Clock className="w-4 h-4" />
-                    <span>{result.duration}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-foreground">
                     <Calendar className="w-4 h-4" />
-                    <span>Posted {result.postedDate}</span>
+                    <span>
+                      Posted {new Date(result.created_at).toLocaleDateString()}
+                    </span>
                   </div>
-                </div>
-
-                {/* Skills/Requirements */}
-                <div className="flex flex-wrap gap-2">
-                  {result.requirements.map((req: any, index: number) => (
-                    <Badge
-                      key={index}
-                      variant="secondary"
-                      className="cursor-pointer"
-                    >
-                      {req}
-                    </Badge>
-                  ))}
                 </div>
               </div>
             </CardContent>
           </Card>
         </Link>
       ))}
-    </>
+    </div>
   );
 }

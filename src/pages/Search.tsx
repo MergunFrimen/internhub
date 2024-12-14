@@ -9,7 +9,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Slider } from "@/components/ui/slider";
+import { Skeleton } from "@/components/ui/skeleton";
 import {
   JobPosting,
   JobPostingsFilters,
@@ -23,11 +23,11 @@ import {
   Building2,
   Calendar,
   Filter,
-  MapPin,
   Search as SearchIcon,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { toast } from "sonner";
 
 export default function Search() {
   const [filters, setFilters] = useState<JobPostingsFilters>({});
@@ -44,40 +44,79 @@ export default function Search() {
     data: jobPostingsResponse,
     isLoading,
     error,
+    refetch,
+    isError,
   } = useJobPostings({
-    filters: filters,
-    pagination: pagination,
-    sorting: sorting,
+    filters,
+    pagination,
+    sorting,
   });
 
+  console.log("error", error);
+  console.log("isError", isError);
+
   if (error) {
-    return (
-      <div className="container mx-auto py-8 px-4">
-        <Card className="bg-destructive/10 text-destructive">
-          <CardContent className="pt-6">
-            <p>Error loading internships. Please try again later.</p>
-          </CardContent>
-        </Card>
-      </div>
-    );
+    toast.error("Error loading internships");
   }
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFilters((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleFilterChange = (field: string, value: string) => {
+    setFilters((prev) => ({
+      ...prev,
+      [field]: value,
+    }));
+    // Reset pagination when filters change
+    setPagination((prev) => ({
+      ...prev,
+      page: 0,
+    }));
+  };
+
+  const handleSortChange = (value: string) => {
+    const [field, direction] = value.split("-");
+    setSorting({
+      field: field as SortingParams["field"],
+      direction: direction as SortingParams["direction"],
+    });
+  };
+
+  // Debounce search
+  useEffect(() => {
+    const timer = setTimeout(async () => {
+      await refetch();
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, [filters, sorting, pagination, refetch]);
 
   return (
     <div className="container mx-auto py-8 px-4">
-      <SearchSection filters={filters} />
+      <SearchSection filters={filters} onSearchChange={handleSearchChange} />
       <div className="grid md:grid-cols-4 gap-6">
-        <FiltersSection />
-        <div className="md:col-span-3 gap-y-6">
+        <FiltersSection
+          filters={filters}
+          onFilterChange={handleFilterChange}
+          sorting={sorting}
+          onSortChange={handleSortChange}
+        />
+        <div className="md:col-span-3">
           {isLoading ? (
             <div className="space-y-4">
               {[1, 2, 3].map((i) => (
-                <Card key={i} className="animate-pulse">
-                  <CardContent className="h-48" />
+                <Card key={i}>
+                  <Skeleton className="h-48" />
                 </Card>
               ))}
             </div>
           ) : (
-            <SearchResults results={jobPostingsResponse?.data || []} />
+            <SearchResults postings={jobPostingsResponse?.data || []} />
           )}
         </div>
       </div>
@@ -85,7 +124,13 @@ export default function Search() {
   );
 }
 
-function SearchSection({ filters }: { filters: JobPostingsFilters }) {
+function SearchSection({
+  filters,
+  onSearchChange,
+}: {
+  filters: JobPostingsFilters;
+  onSearchChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}) {
   return (
     <Card className="mb-6">
       <CardHeader>
@@ -101,18 +146,11 @@ function SearchSection({ filters }: { filters: JobPostingsFilters }) {
               <Input
                 placeholder="Search by title, company, or keyword..."
                 className="pl-10"
-                value={filters.search}
+                name="search"
+                value={filters.search || ""}
+                onChange={onSearchChange}
               />
               <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-foreground h-4 w-4" />
-            </div>
-
-            <div className="relative md:w-[260px]">
-              <Input
-                placeholder="Location"
-                className="pl-10"
-                value={filters.location}
-              />
-              <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 text-foreground h-4 w-4" />
             </div>
           </div>
         </div>
@@ -121,11 +159,22 @@ function SearchSection({ filters }: { filters: JobPostingsFilters }) {
   );
 }
 
-function FiltersSection() {
-  const [jobType, setJobType] = useState("");
-  const [duration, setDuration] = useState("");
-  const [field, setField] = useState("");
-  const [experienceLevel, setExperienceLevel] = useState([0]);
+function FiltersSection({
+  filters,
+  onFilterChange,
+  sorting,
+  onSortChange,
+}: {
+  filters: JobPostingsFilters;
+  onFilterChange: (field: string, value: string) => void;
+  sorting: SortingParams;
+  onSortChange: (value: string) => void;
+}) {
+  const mapping = {
+    all: "",
+    finance: "Finance and Insurance",
+    other: "Other",
+  };
 
   return (
     <div className="flex flex-col space-y-3">
@@ -137,15 +186,18 @@ function FiltersSection() {
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-3">
-          <Select>
+          <Select
+            value={`${sorting.field}-${sorting.direction}`}
+            onValueChange={onSortChange}
+          >
             <SelectTrigger>
               <SelectValue placeholder="Select sorting" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="relevance">Most Relevant</SelectItem>
-              <SelectItem value="recent">Most Recent</SelectItem>
-              <SelectItem value="deadline">Application Deadline</SelectItem>
-              <SelectItem value="company">Company Name</SelectItem>
+              <SelectItem value="created_at-descending">Most Recent</SelectItem>
+              <SelectItem value="created_at-ascending">Oldest First</SelectItem>
+              <SelectItem value="title-ascending">Title A-Z</SelectItem>
+              <SelectItem value="title-descending">Title Z-A</SelectItem>
             </SelectContent>
           </Select>
         </CardContent>
@@ -161,64 +213,20 @@ function FiltersSection() {
 
         <CardContent className="space-y-3">
           <div className="space-y-2">
-            <Label>Job Type</Label>
-            <Select value={jobType} onValueChange={setJobType}>
-              <SelectTrigger>
-                <SelectValue placeholder="Select type" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="full-time">Full-time</SelectItem>
-                <SelectItem value="part-time">Part-time</SelectItem>
-                <SelectItem value="flexible">Flexible</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-
-          <div className="space-y-2">
-            <Label>Industry</Label>
-            <Select value={field} onValueChange={setField}>
+            <Label>Field</Label>
+            <Select
+              value={filters.field || ""}
+              onValueChange={(value) => onFilterChange("field", mapping[value])}
+            >
               <SelectTrigger>
                 <SelectValue placeholder="Select field" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="software">Software Engineering</SelectItem>
-                <SelectItem value="data">Data Science</SelectItem>
-                <SelectItem value="design">UI/UX Design</SelectItem>
-                <SelectItem value="marketing">Marketing</SelectItem>
+                <SelectItem value="all">All Industries</SelectItem>
+                <SelectItem value="finance">Finance and Insurance</SelectItem>
+                <SelectItem value="other">Other</SelectItem>
               </SelectContent>
             </Select>
-          </div>
-
-          <div className="space-y-2">
-            <Label>Duration</Label>
-            <Select value={duration} onValueChange={setDuration}>
-              <SelectTrigger>
-                <SelectValue placeholder="Select duration" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="3-months">3 months</SelectItem>
-                <SelectItem value="6-months">6 months</SelectItem>
-                <SelectItem value="12-months">12 months</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-
-          <div className="space-y-4">
-            <Label>Experience Level</Label>
-            <Slider
-              value={experienceLevel}
-              onValueChange={setExperienceLevel}
-              max={4}
-              step={1}
-              className="w-full"
-            />
-            <div className="text-sm text-foreground">
-              {experienceLevel[0] === 0 && "No experience required"}
-              {experienceLevel[0] === 1 && "Basic knowledge"}
-              {experienceLevel[0] === 2 && "Some experience"}
-              {experienceLevel[0] === 3 && "Intermediate"}
-              {experienceLevel[0] === 4 && "Advanced"}
-            </div>
           </div>
         </CardContent>
       </Card>
@@ -226,43 +234,48 @@ function FiltersSection() {
   );
 }
 
-function SearchResults({ results }: { results: JobPosting[] }) {
-  console.log(results);
+function SearchResults({ postings }: { postings: JobPosting[] }) {
   return (
     <div className="space-y-4">
-      {results.map((result) => (
-        <Link key={result.id} to={`/internships/${result.id}`}>
-          <Card className="hover:shadow-md transition-shadow">
-            <CardContent className="pt-6">
-              <div className="space-y-4">
-                <div className="flex justify-between items-start">
-                  <div className="space-y-1">
-                    <h3 className="text-xl font-semibold">{result.title}</h3>
-                    <div className="flex items-center gap-2 text-foreground">
-                      <Building2 className="w-4 h-4" />
-                      <span>{result.field}</span>
-                    </div>
-                  </div>
-                  <Button variant="ghost" size="icon">
-                    <ArrowRight className="w-4 h-4" />
-                  </Button>
-                </div>
-
-                <p className="text-foreground">{result.description}</p>
-
-                <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center gap-2 text-foreground">
-                    <Calendar className="w-4 h-4" />
-                    <span>
-                      Posted {new Date(result.created_at).toLocaleDateString()}
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </Link>
+      {postings.map((posting: JobPosting) => (
+        <JobPostingPreview key={posting.id} posting={posting} />
       ))}
     </div>
+  );
+}
+
+function JobPostingPreview({ posting }: { posting: JobPosting }) {
+  return (
+    <Link key={posting.id} to={`/internships/${posting.id}`}>
+      <Card className="hover:shadow-md transition-shadow">
+        <CardContent className="pt-6">
+          <div className="space-y-4">
+            <div className="flex justify-between items-start">
+              <div className="space-y-1">
+                <h3 className="text-xl font-semibold">{posting.title}</h3>
+                <div className="flex items-center gap-2 text-foreground">
+                  <Building2 className="w-4 h-4" />
+                  <span>{posting.field}</span>
+                </div>
+              </div>
+              <Button variant="ghost" size="icon">
+                <ArrowRight className="w-4 h-4" />
+              </Button>
+            </div>
+
+            <p className="text-foreground">{posting.description}</p>
+
+            <div className="flex flex-wrap gap-4">
+              <div className="flex items-center gap-2 text-foreground">
+                <Calendar className="w-4 h-4" />
+                <span>
+                  Posted {new Date(posting.created_at).toLocaleDateString()}
+                </span>
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </Link>
   );
 }

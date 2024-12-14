@@ -20,7 +20,6 @@ import CompanyProfileManagement from "./pages/CompanyProfileManagement";
 import NotificationsPage from "./pages/NotificationsPage";
 import ApplicationStatus from "./pages/ApplicationStatus";
 import ScrollToTop from "./components/ScrollToTop";
-import { ThemeProvider } from "./components/ThemeProvider";
 
 const ProtectedRoute = ({
   children,
@@ -38,87 +37,85 @@ const ProtectedRoute = ({
 
 export function App() {
   return (
-    <ThemeProvider defaultTheme="light" storageKey="theme">
-      <Router>
-        <ScrollToTop />
-        <Routes>
-          {/* Public Routes with Main Layout */}
-          <Route element={<MainLayout />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/search" element={<Search />} />
-            <Route path="/internships/:id" element={<InternshipDetails />} />
-            <Route path="/companies" element={<CompanyDirectory />} />
-            <Route path="/companies/:id" element={<CompanyProfile />} />
-            <Route path="/profile/:id/view" element={<PublicProfile />} />
-          </Route>
+    <Router>
+      <ScrollToTop />
+      <Routes>
+        {/* Public Routes with Main Layout */}
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/internships/:id" element={<InternshipDetails />} />
+          <Route path="/companies" element={<CompanyDirectory />} />
+          <Route path="/companies/:id" element={<CompanyProfile />} />
+          <Route path="/profile/:id/view" element={<PublicProfile />} />
+        </Route>
 
-          {/* Protected Routes with Main Layout */}
-          <Route element={<MainLayout />}>
-            <Route
-              path="/profile"
-              element={
-                <ProtectedRoute>
-                  <UserProfile />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/applications"
-              element={
-                <ProtectedRoute>
-                  <Applications />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/messages"
-              element={
-                <ProtectedRoute>
-                  <Messages />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/company/profile/manage"
-              element={
-                <ProtectedRoute>
-                  <CompanyProfileManagement />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/notifications"
-              element={
-                <ProtectedRoute>
-                  <NotificationsPage />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/applications/:id"
-              element={
-                <ProtectedRoute>
-                  <ApplicationStatus />
-                </ProtectedRoute>
-              }
-            />
-          </Route>
+        {/* Protected Routes with Main Layout */}
+        <Route element={<MainLayout />}>
+          <Route
+            path="/profile"
+            element={
+              <ProtectedRoute>
+                <UserProfile />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/applications"
+            element={
+              <ProtectedRoute>
+                <Applications />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/messages"
+            element={
+              <ProtectedRoute>
+                <Messages />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/company/profile/manage"
+            element={
+              <ProtectedRoute>
+                <CompanyProfileManagement />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/notifications"
+            element={
+              <ProtectedRoute>
+                <NotificationsPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/applications/:id"
+            element={
+              <ProtectedRoute>
+                <ApplicationStatus />
+              </ProtectedRoute>
+            }
+          />
+        </Route>
 
-          {/* Auth Routes with Auth Layout */}
-          <Route element={<AuthLayout />}>
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-          </Route>
+        {/* Auth Routes with Auth Layout */}
+        <Route element={<AuthLayout />}>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Route>
 
-          {/* 404 Route */}
-          <Route path="*" element={<NotFound />} />
+        {/* 404 Route */}
+        <Route path="*" element={<NotFound />} />
 
-          {/* Examples */}
-          <Route element={<MainLayout />}>
-            <Route path="/profile/example/view" element={<PublicProfile />} />
-          </Route>
-        </Routes>
-      </Router>
-    </ThemeProvider>
+        {/* Examples */}
+        <Route element={<MainLayout />}>
+          <Route path="/profile/example/view" element={<PublicProfile />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }

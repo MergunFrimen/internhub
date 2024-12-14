@@ -1,4 +1,4 @@
-import { supabase } from "@/lib/supabase";
+import { supabaseClient } from "@/lib/supabase-client";
 import { useQuery } from "@tanstack/react-query";
 import { type PostgrestError } from "@supabase/supabase-js";
 import { Database } from "@/types/supabase";
@@ -14,11 +14,6 @@ export type SortDirection = (typeof sortDirections)[number];
 export interface JobPostingsFilters {
   field?: string;
   type?: string;
-  location?: string;
-  experience_level?: string;
-  salary_min?: number;
-  salary_max?: number;
-  tags?: string[];
   search?: string;
 }
 
@@ -53,7 +48,7 @@ export function useJobPostings({
     queryKey: ["jobPostings", filters, pagination, sorting],
     queryFn: async () => {
       try {
-        let query = supabase
+        let query = supabaseClient
           .from("job_postings")
           .select("*", { count: "exact" })
           .is("deleted_at", null);
@@ -64,21 +59,6 @@ export function useJobPostings({
           }
           if (filters.type) {
             query = query.eq("type", filters.type);
-          }
-          if (filters.location) {
-            query = query.ilike("location", `%${filters.location}%`);
-          }
-          if (filters.experience_level) {
-            query = query.eq("experience_level", filters.experience_level);
-          }
-          if (filters.salary_min) {
-            query = query.gte("salary_min", filters.salary_min);
-          }
-          if (filters.salary_max) {
-            query = query.lte("salary_max", filters.salary_max);
-          }
-          if (filters.tags && filters.tags.length > 0) {
-            query = query.contains("tags", filters.tags);
           }
           if (filters.search) {
             query = query.or(

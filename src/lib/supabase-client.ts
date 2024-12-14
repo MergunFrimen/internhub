@@ -1,4 +1,3 @@
-// src/lib/supabase.ts
 import { Database } from '@/types/supabase'
 import { createClient } from '@supabase/supabase-js'
 
@@ -9,4 +8,4 @@ if (!supabaseUrl || !supabaseAnonKey) {
   throw new Error('Missing Supabase environment variables')
 }
 
-export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey)
+export const supabaseClient = createClient<Database>(supabaseUrl, supabaseAnonKey)

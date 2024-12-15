@@ -1,3 +1,4 @@
+import Pagination from "@/components/Pagination";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -116,7 +117,14 @@ export default function Search() {
               ))}
             </div>
           ) : (
-            <SearchResults postings={jobPostingsResponse?.data || []} />
+            <SearchResults
+              postings={jobPostingsResponse?.data || []}
+              pagination={pagination}
+              totalCount={jobPostingsResponse?.count || 0}
+              onPageChange={(page) =>
+                setPagination((prev) => ({ ...prev, page }))
+              }
+            />
           )}
         </div>
       </div>
@@ -233,12 +241,32 @@ function FiltersSection({
   );
 }
 
-function SearchResults({ postings }: { postings: JobPosting[] }) {
+function SearchResults({
+  postings,
+  pagination,
+  totalCount,
+  onPageChange,
+}: {
+  postings: JobPosting[];
+  pagination: PaginationParams;
+  totalCount: number;
+  onPageChange: (page: number) => void;
+}) {
+  const totalPages = Math.ceil(totalCount / pagination.pageSize);
+
   return (
-    <div className="space-y-4">
-      {postings.map((posting: JobPosting) => (
-        <JobPostingPreview key={posting.id} posting={posting} />
-      ))}
+    <div className="space-y-6">
+      <div className="space-y-4">
+        {postings.map((posting: JobPosting) => (
+          <JobPostingPreview key={posting.id} posting={posting} />
+        ))}
+      </div>
+
+      <Pagination
+        currentPage={pagination.page}
+        totalPages={totalPages}
+        onPageChange={onPageChange}
+      />
     </div>
   );
 }

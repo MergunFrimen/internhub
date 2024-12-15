@@ -55,13 +55,6 @@ export default function InternshipDetails() {
 }
 
 function HeaderSection({ internship }: { internship: JobPosting }) {
-  function hoursPerWeek() {
-    if (internship.hours === 80) {
-      return "Full-time";
-    }
-    return "Part-time";
-  }
-
   return (
     <Card className="border-2 border-primary/10">
       <CardContent className="pt-6">

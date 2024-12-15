@@ -1,4 +1,3 @@
-import Background3D from "@/components/Background3d";
 import Pagination from "@/components/Pagination";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";

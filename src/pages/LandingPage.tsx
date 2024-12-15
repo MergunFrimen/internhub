@@ -43,7 +43,7 @@ function HeroSection() {
           </p>
         </div>
 
-        <div className="relative max-w-2xl mx-auto">
+        <div className="relative max-w-2xl mx-auto bg-background">
           <Search className="absolute w-5 h-5 left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
           <Input
             type="text"

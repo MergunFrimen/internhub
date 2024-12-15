@@ -116,7 +116,7 @@ function Layout() {
   const [selectedPosting, setSelectedPosting] = useState<JobPosting | null>(
     null
   );
-  const [isDetailsPanelOpen, setIsDetailsPanelOpen] = useState(true);
+  const [isDetailsPanelOpen, setIsDetailsPanelOpen] = useState(false);
 
   if (error) {
     toast.error("Error loading internships");
@@ -129,7 +129,7 @@ function Layout() {
 
   const handleCloseDetails = () => {
     setSelectedPosting(null);
-    // setIsDetailsPanelOpen(false);
+    setIsDetailsPanelOpen(false);
   };
 
   const sharedProps = {
@@ -260,7 +260,7 @@ export function DesktopSearchLayout({
       <div
         className={cn(
           "flex-1 min-w-0",
-          isDetailsPanelOpen ? "max-w-[60%]" : "w-full"
+          isDetailsPanelOpen ? "max-w-[40%]" : "w-full"
         )}
       >
         <div className="mb-6">
@@ -276,10 +276,14 @@ export function DesktopSearchLayout({
 
         {/* Results */}
         {isLoading ? (
-          <div className="grid grid-cols-1 gap-4">
-            {[1, 2, 3, 4].map((i) => (
-              <Skeleton key={i} className="h-48 bg-muted" />
-            ))}
+          <div className="flex flex-col space-y-6">
+            <Skeleton className="h-5 bg-muted w-36" />
+
+            <div className="grid grid-cols-2 gap-4">
+              {[1, 2, 3, 4].map((i) => (
+                <Skeleton key={i} className="h-36 bg-muted" />
+              ))}
+            </div>
           </div>
         ) : (
           <div className="space-y-6">
@@ -289,7 +293,12 @@ export function DesktopSearchLayout({
             </div>
 
             {/* Grid container for cards */}
-            <div className="grid grid-cols-2 gap-4">
+            <div
+              className={cn(
+                "grid grid-cols-2 gap-4",
+                isDetailsPanelOpen && "grid-cols-1"
+              )}
+            >
               {jobPostingsResponse?.data.map((posting) => (
                 <JobPostingCard
                   key={posting.id}
@@ -315,7 +324,7 @@ export function DesktopSearchLayout({
 
       {/* Details Panel */}
       {isDetailsPanelOpen && (
-        <div className="w-[40%] pl-6">
+        <div className="w-[60%] pl-6">
           <div className="sticky top-6">
             <div className="relative">
               <ScrollArea className="h-[calc(100vh-6rem)]">
@@ -334,9 +343,11 @@ export function DesktopSearchLayout({
                     <JobDetails posting={selectedPosting} />
                   </div>
                 ) : (
-                  <div className="flex items-center justify-center h-full text-muted-foreground">
-                    Select a job posting to view details
-                  </div>
+                  jobPostingsResponse?.count !== 0 && (
+                    <div className="flex items-center justify-center h-full text-muted-foreground">
+                      Select a job posting to view details
+                    </div>
+                  )
                 )}
               </ScrollArea>
             </div>
@@ -377,13 +388,8 @@ export function JobPostingCard({
                   {posting.companies?.name || "Company name unavailable"}
                 </span>
               </div>
-              <div className="text-sm text-muted-foreground">
-                {posting.field}
-              </div>
             </div>
           </div>
-
-          <p className="text-foreground line-clamp-2">{posting.description}</p>
 
           <div className="flex flex-wrap gap-4">
             <div className="flex items-center gap-2 text-muted-foreground">
@@ -392,15 +398,6 @@ export function JobPostingCard({
                 Posted {new Date(posting.created_at).toLocaleDateString()}
               </span>
             </div>
-            {posting.tags && posting.tags.length > 0 && (
-              <div className="flex flex-wrap gap-2">
-                {posting.tags.map((tag) => (
-                  <Badge key={tag} variant="secondary">
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
-            )}
           </div>
         </div>
       </CardContent>
@@ -515,21 +512,26 @@ export function JobDetails({ posting }: { posting: JobPosting }) {
             <div className="flex-grow space-y-4">
               <div className="space-y-2">
                 <h2 className="text-2xl font-bold">{posting.title}</h2>
-                <div className="flex items-center gap-x-3">
-                  <Building2 className="w-6 h-6 shrink-0" />
-                  <span className="text-lg">{posting.field}</span>
+                <div className="flex flex-col gap-2">
+                  <div className="flex items-center gap-x-3">
+                    <Building2 className="w-6 h-6 shrink-0" />
+                    <span className="text-lg">
+                      {posting.companies?.name || "Company name unavailable"}
+                    </span>
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {posting.field}
+                  </div>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 gap-y-2">
-                {posting.hours && (
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <Clock className="w-4 h-4" />
-                    <span>
-                      {posting.hours === 80 ? "Full-time" : "Part-time"}
-                    </span>
-                  </div>
-                )}
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <Clock className="w-4 h-4" />
+                  <span>
+                    {posting.hours === 80 ? "Full-time" : "Part-time"}
+                  </span>
+                </div>
                 {posting.home_office && (
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <MapPin className="w-4 h-4 shrink-0" />

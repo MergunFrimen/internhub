@@ -4,7 +4,7 @@ import { PaginationParams } from "./useJobPostings";
 export function usePagination() {
   const [pagination, setPagination] = useState<PaginationParams>({
     page: 0,
-    pageSize: 10,
+    pageSize: 12,
   });
 
   const handlePageChange = (page: number) => {

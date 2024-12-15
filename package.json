@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc -b && vite build",
+    "dev": "vite",
+    "deploy": "npm run build && npx surge ./dist/ internhub.surge.sh",
     "lint": "eslint .",
     "preview": "vite preview",
     "repopack": "npx repomix --ignore \"src/components/ui/*,data/*\" --copy --output repopack.txt && rm -rf repopack.txt"

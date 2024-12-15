@@ -86,10 +86,10 @@ export default function Pagination({
             <SelectValue placeholder={pageSize} />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="4">4</SelectItem>
-            <SelectItem value="10">10</SelectItem>
-            <SelectItem value="20">20</SelectItem>
-            <SelectItem value="50">50</SelectItem>
+            <SelectItem value="12">12</SelectItem>
+            <SelectItem value="24">24</SelectItem>
+            <SelectItem value="36">36</SelectItem>
+            <SelectItem value="64">64</SelectItem>
           </SelectContent>
         </Select>
       </div>

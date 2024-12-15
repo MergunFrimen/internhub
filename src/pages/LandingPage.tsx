@@ -1,16 +1,17 @@
-import { useNavigate } from "react-router-dom";
-import {
-  Search,
-  UserCircle,
-  Building2,
-  ArrowRight,
-  GraduationCap,
-  MapPin,
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Background3D from "@/components/Background3d";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
+import { useInternshipDetails } from "@/hooks/useInternshipDetails";
+import { cn } from "@/lib/utils";
+import {
+  ArrowRight,
+  Building2,
+  Calendar,
+  GraduationCap,
+  UserCircle
+} from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function LandingPage() {
   return (
@@ -38,19 +39,6 @@ function HeroSection() {
           </p>
         </div>
 
-        <div className="relative max-w-2xl mx-auto bg-background">
-          <Search className="absolute w-5 h-5 left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
-          <Input
-            type="text"
-            placeholder="Search for internships..."
-            className="w-full pl-10 py-4 md:py-6 text-base md:text-lg ring-4 focus-visible:ring-4"
-            onKeyDown={(e) => {
-              if (e.key === "Enter") {
-                navigate("/search");
-              }
-            }}
-          />
-        </div>
         <Button
           size="lg"
           className="px-8 py-6 text-lg"
@@ -99,7 +87,7 @@ function FeaturedInternshipsSection() {
 
         <div className="grid md:grid-cols-3 gap-4 md:gap-8">
           {featuredInternships.map((internship) => (
-            <FeaturedInternship key={internship.id} {...internship} />
+            <FeaturedInternship key={internship.id} id={internship.id} />
           ))}
         </div>
       </div>
@@ -107,38 +95,42 @@ function FeaturedInternshipsSection() {
   );
 }
 
-function FeaturedInternship({
-  id,
-  role,
-  company,
-  location,
-}: {
-  id: string;
-  role: string;
-  company: string;
-  location: string;
-}) {
+function FeaturedInternship({ id }: { id: string }) {
   const navigate = useNavigate();
+  const { data: internship, isLoading, error } = useInternshipDetails(id);
+
+  if (error || !internship) return <>Error</>;
+
+  if (isLoading) return <Skeleton className="h-48 bg-muted" />;
 
   return (
     <Card
-      className="bg-primary-foreground hover:ring-4 transition-shadow cursor-pointer"
+      className={cn(
+        "bg-primary-foreground hover:ring-4 hover:shadow-md transition-shadow cursor-pointer"
+      )}
       onClick={() => navigate(`/internships/${id}`)}
     >
-      <CardHeader className="pb-3">
-        <CardTitle className="text-lg md:text-xl leading-tight">
-          {role}
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        <div className="space-y-3">
-          <div className="flex items-center gap-2 text-muted-foreground">
-            <Building2 className="w-4 h-4 shrink-0" />
-            <span className="text-sm md:text-base">{company}</span>
+      <CardContent className="pt-6">
+        <div className="space-y-4">
+          <div className="flex justify-between items-start">
+            <div className="space-y-1">
+              <h3 className="text-xl font-semibold">{internship.title}</h3>
+              <div className="flex items-center gap-2 text-foreground">
+                <Building2 className="w-4 h-4 min-w-4" />
+                <span>
+                  {internship.companies?.name || "Company name unavailable"}
+                </span>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center gap-2 text-muted-foreground">
-            <MapPin className="w-4 h-4 shrink-0" />
-            <span className="text-sm md:text-base">{location}</span>
+
+          <div className="flex flex-wrap gap-4">
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Calendar className="w-4 h-4" />
+              <span>
+                Posted {new Date(internship.created_at).toLocaleDateString()}
+              </span>
+            </div>
           </div>
         </div>
       </CardContent>

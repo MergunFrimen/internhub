@@ -8,14 +8,13 @@ import {
   Calendar,
   CheckCircle,
   Clock,
+  Globe,
   Loader2,
   MapPin,
 } from "lucide-react";
 import { useParams } from "react-router-dom";
 import { toast } from "sonner";
-import { Database } from "@/types/supabase";
-
-type JobPosting = Database["public"]["Tables"]["job_postings"]["Row"];
+import { JobPosting } from "@/hooks/useJobPostings";
 
 export default function InternshipDetails() {
   const { id } = useParams<{ id: string }>();
@@ -62,13 +61,36 @@ function HeaderSection({ internship }: { internship: JobPosting }) {
           <div className="flex-grow space-y-4">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold">{internship.title}</h1>
-              <CustomLink
-                to={`/companies/${internship.id}`}
-                className="flex items-center gap-x-3"
-              >
-                <Building2 className="w-6 h-6 shrink-0" />
-                <span className="text-lg">{internship.field}</span>
-              </CustomLink>
+              <div className="flex flex-col gap-2">
+                <CustomLink
+                  to={`/companies/${internship.company_id}`}
+                  className="flex items-center gap-x-3"
+                >
+                  <Building2 className="w-6 h-6 shrink-0" />
+                  <span className="text-lg">
+                    {internship.companies?.name || "Company name unavailable"}
+                  </span>
+                </CustomLink>
+                {internship.companies?.website && (
+                  <div className="flex items-center gap-x-3 text-muted-foreground">
+                    <Globe className="w-4 h-4 shrink-0" />
+                    <a
+                      href={internship.companies.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      {internship.companies.website}
+                    </a>
+                  </div>
+                )}
+                {internship.companies?.city && (
+                  <div className="flex items-center gap-x-3 text-muted-foreground">
+                    <MapPin className="w-4 h-4 shrink-0" />
+                    <span>{internship.companies.city}</span>
+                  </div>
+                )}
+              </div>
             </div>
 
             <div className="grid grid-cols-1 gap-y-2">

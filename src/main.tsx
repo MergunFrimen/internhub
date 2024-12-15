@@ -10,7 +10,7 @@ const queryClient = new QueryClient();
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ThemeProvider defaultTheme="light" storageKey="theme">
+    <ThemeProvider defaultTheme="dark" storageKey="theme">
       <QueryClientProvider client={queryClient}>
         {/* todo remove in prod */}
         {/* <ReactQueryDevtools /> */}

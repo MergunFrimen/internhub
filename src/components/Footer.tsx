@@ -2,7 +2,7 @@ import GithubIcon from "./icons/GithubIcon";
 
 export default function Footer() {
   return (
-    <footer className="bg-background flex flex-row justify-center items-center gap-x-4 p-4">
+    <footer className="bg-background flex flex-row justify-center items-center gap-x-4 p-4 mt-16">
       <span className="text-sm text-foreground">
         For educational purposes only
       </span>

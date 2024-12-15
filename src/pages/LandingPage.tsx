@@ -13,47 +13,47 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
 export default function LandingPage() {
-  const navigate = useNavigate();
-
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <div className="container mx-auto px-4 py-16 md:py-40">
-        <div className="max-w-3xl mx-auto text-center space-y-6 md:space-y-8">
-          <div className="space-y-4 md:space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-              Find Your Perfect Internship
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground">
-              Connect with leading companies and kickstart your career.
-            </p>
-          </div>
-
-          {/* Search Bar */}
-          <div className="relative max-w-2xl mx-auto">
-            <Search className="absolute w-5 h-5 left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
-            <Input
-              type="text"
-              placeholder="Search for internships..."
-              className="w-full pl-10 py-4 md:py-6 text-base md:text-lg ring-4 focus-visible:ring-4"
-              onKeyDown={(e) => {
-                if (e.key === "Enter") {
-                  navigate("/search");
-                }
-              }}
-            />
-          </div>
-        </div>
-      </div>
-
+      <HeroSection />
       <FeaturedInternshipsSection />
-
       <Separator
         orientation="horizontal"
         className="container mx-auto border-2"
       />
-
       <ProfileExampleSection />
+    </div>
+  );
+}
+
+function HeroSection() {
+  const navigate = useNavigate();
+
+  return (
+    <div className="container mx-auto px-4 py-16 md:py-40 md:pb-32 max-w-3xl text-center space-y-6 md:space-y-10">
+      <div className="space-y-4 md:space-y-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-foreground">
+          Find Your Perfect Internship
+        </h1>
+        <p className="text-lg md:text-xl text-muted-foreground">
+          Connect with leading companies and kickstart your career.
+        </p>
+      </div>
+
+      {/* Search Bar */}
+      <div className="relative max-w-2xl mx-auto">
+        <Search className="absolute w-5 h-5 left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+        <Input
+          type="text"
+          placeholder="Search for internships..."
+          className="w-full pl-10 py-4 md:py-6 text-base md:text-lg ring-4 focus-visible:ring-4"
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              navigate("/search");
+            }
+          }}
+        />
+      </div>
     </div>
   );
 }
@@ -82,7 +82,7 @@ function FeaturedInternshipsSection() {
 
   return (
     <div className="container mx-auto px-4 py-12 md:py-24">
-      <div className="space-y-8 md:space-y-12">
+      <div className="max-w-5xl mx-auto space-y-8 md:space-y-12">
         <div className="space-y-2">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground">
             Featured Internships
@@ -244,18 +244,18 @@ function ProfileExample() {
               </ul>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button
-                  onClick={() => navigate("/profile/example/view")}
-                  variant="outline"
-                  className="w-full md:flex-1"
-                >
-                  View Example Profile
-                </Button>
-                <Button
                   onClick={() => navigate("/register")}
                   variant="default"
                   className="w-full md:flex-1"
                 >
                   Create Your Profile
+                </Button>
+                <Button
+                  onClick={() => navigate("/profile/example/view")}
+                  variant="outline"
+                  className="w-full md:flex-1"
+                >
+                  View Example Profile
                 </Button>
               </div>
             </div>

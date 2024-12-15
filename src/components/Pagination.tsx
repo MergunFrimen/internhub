@@ -7,6 +7,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface PaginationProps {
   currentPage: number;
@@ -23,13 +24,32 @@ export default function Pagination({
   onPageChange,
   onPageSizeChange,
 }: PaginationProps) {
+  const isMobile = useIsMobile();
+
   if (totalPages <= 0) return null;
 
   const getPageNumbers = () => {
     const pages = [];
     const showEllipsis = totalPages > 7;
 
-    if (showEllipsis) {
+    if (isMobile) {
+      // Simplified mobile view: show current page +/- 1 page
+      const start = Math.max(0, currentPage - 1);
+      const end = Math.min(totalPages - 1, currentPage + 1);
+
+      if (start > 0) {
+        pages.push(0);
+        if (start > 1) pages.push("...");
+      }
+
+      for (let i = start; i <= end; i++) pages.push(i);
+
+      if (end < totalPages - 1) {
+        if (end < totalPages - 2) pages.push("...");
+        pages.push(totalPages - 1);
+      }
+    } else if (showEllipsis) {
+      // Desktop view with ellipsis
       if (currentPage <= 3) {
         for (let i = 0; i < 5; i++) pages.push(i);
         pages.push("...");
@@ -53,14 +73,16 @@ export default function Pagination({
   };
 
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
       <div className="flex items-center gap-2">
-        <span className="text-sm text-muted-foreground">Items per page</span>
+        <span className="text-sm text-muted-foreground whitespace-nowrap">
+          Items per page
+        </span>
         <Select
           value={pageSize.toString()}
           onValueChange={(value) => onPageSizeChange(Number(value))}
         >
-          <SelectTrigger className="w-20">
+          <SelectTrigger className="w-16">
             <SelectValue placeholder={pageSize} />
           </SelectTrigger>
           <SelectContent>
@@ -72,20 +94,21 @@ export default function Pagination({
         </Select>
       </div>
 
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center gap-1 sm:gap-2">
         <Button
           variant="outline"
           size="icon"
           onClick={() => onPageChange(currentPage - 1)}
           disabled={currentPage === 0}
+          className="h-8 w-8"
         >
           <ChevronLeft className="h-4 w-4" />
         </Button>
 
-        <div className="flex space-x-2">
+        <div className="flex gap-1 sm:gap-2">
           {getPageNumbers().map((pageNum, idx) =>
             pageNum === "..." ? (
-              <div key={`ellipsis-${idx}`} className="flex items-center px-4">
+              <div key={`ellipsis-${idx}`} className="flex items-center px-2">
                 ...
               </div>
             ) : (
@@ -93,7 +116,7 @@ export default function Pagination({
                 key={pageNum}
                 variant={pageNum === currentPage ? "default" : "outline"}
                 onClick={() => onPageChange(pageNum as number)}
-                className="w-10"
+                className="h-8 w-8 p-0 sm:w-10"
               >
                 {(pageNum as number) + 1}
               </Button>
@@ -106,6 +129,7 @@ export default function Pagination({
           size="icon"
           onClick={() => onPageChange(currentPage + 1)}
           disabled={currentPage === totalPages - 1}
+          className="h-8 w-8"
         >
           <ChevronRight className="h-4 w-4" />
         </Button>

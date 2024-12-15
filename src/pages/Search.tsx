@@ -48,6 +48,7 @@ import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import PaginationControls from "@/components/Pagination";
 import Background3D from "@/components/Background3d";
+import Pagination from "@/components/Pagination";
 
 export default function SearchPage() {
   return (
@@ -159,13 +160,13 @@ export function MobileSearchLayout({
   sorting,
   jobPostingsResponse,
   isLoading,
-  // pagination,
+  pagination,
   selectedPosting,
   handleSearchChange,
   handleFilterChange,
   handleSortChange,
-  // handlePageChange,
-  // handlePageSizeChange,
+  handlePageChange,
+  handlePageSizeChange,
   handlePostingClick,
   handleCloseDetails,
 }: LayoutProps) {
@@ -222,7 +223,7 @@ export function MobileSearchLayout({
             </SheetContent>
           </Sheet>
 
-          {/* <PaginationControls
+          <Pagination
             currentPage={pagination.page}
             totalPages={Math.ceil(
               (jobPostingsResponse?.count || 0) / pagination.pageSize
@@ -230,7 +231,7 @@ export function MobileSearchLayout({
             pageSize={pagination.pageSize}
             onPageChange={handlePageChange}
             onPageSizeChange={handlePageSizeChange}
-          /> */}
+          />
         </div>
       )}
     </div>

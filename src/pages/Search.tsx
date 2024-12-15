@@ -77,7 +77,7 @@ export default function SearchPage() {
   const [selectedPosting, setSelectedPosting] = useState<JobPosting | null>(
     null
   );
-  const [isDetailsPanelOpen, setIsDetailsPanelOpen] = useState(false);
+  const [isDetailsPanelOpen, setIsDetailsPanelOpen] = useState(true);
 
   const handlePostingClick = (posting: JobPosting) => {
     if (selectedPosting?.id === posting.id) {

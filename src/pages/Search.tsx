@@ -1,3 +1,4 @@
+import Background3D from "@/components/Background3d";
 import Pagination from "@/components/Pagination";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -92,6 +93,8 @@ export default function SearchPage() {
 
   return (
     <div className="container mx-auto py-8">
+      <Background3D />
+
       {/* Header */}
       <div className="mb-6">
         <h1 className="text-3xl font-bold mb-2">Search Internships</h1>
@@ -124,7 +127,7 @@ export default function SearchPage() {
               <div
                 className={cn(
                   "grid grid-cols-1 md:grid-cols-2 gap-4",
-                  !!isDetailsPanelOpen && ""
+                  !!isDetailsPanelOpen && "md:grid-cols-1"
                 )}
               >
                 {[1, 2, 3, 4].map((i) => (
@@ -142,7 +145,7 @@ export default function SearchPage() {
                 <div
                   className={cn(
                     "grid grid-cols-1 md:grid-cols-2 gap-4",
-                    !!isDetailsPanelOpen && ""
+                    !!isDetailsPanelOpen && "md:grid-cols-1 lg:grid-cols-2"
                   )}
                 >
                   {jobPostingsResponse?.data.map((posting) => (

@@ -73,7 +73,7 @@ export default function Pagination({
   };
 
   return (
-    <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+    <div className="flex flex-col-reverse items-center justify-center gap-4 sm:flex-row sm:justify-between">
       <div className="flex items-center gap-2">
         <span className="text-sm text-muted-foreground whitespace-nowrap">
           Items per page
@@ -96,7 +96,7 @@ export default function Pagination({
 
       <div className="flex items-center gap-1 sm:gap-2">
         <Button
-          variant="outline"
+          variant="secondary"
           size="icon"
           onClick={() => onPageChange(currentPage - 1)}
           disabled={currentPage === 0}
@@ -105,7 +105,7 @@ export default function Pagination({
           <ChevronLeft className="h-4 w-4" />
         </Button>
 
-        <div className="flex gap-1 sm:gap-2">
+        <div className="flex gap-1">
           {getPageNumbers().map((pageNum, idx) =>
             pageNum === "..." ? (
               <div key={`ellipsis-${idx}`} className="flex items-center px-2">
@@ -125,7 +125,7 @@ export default function Pagination({
         </div>
 
         <Button
-          variant="outline"
+          variant="secondary"
           size="icon"
           onClick={() => onPageChange(currentPage + 1)}
           disabled={currentPage === totalPages - 1}

@@ -88,6 +88,13 @@ export default function Search() {
     });
   };
 
+  const handlePageSizeChange = (newSize: number) => {
+    setPagination({
+      page: 0, // Reset to first page when changing page size
+      pageSize: newSize,
+    });
+  };
+
   // Debounce search
   useEffect(() => {
     const timer = setTimeout(async () => {
@@ -124,6 +131,7 @@ export default function Search() {
               onPageChange={(page) =>
                 setPagination((prev) => ({ ...prev, page }))
               }
+              onPageSizeChange={handlePageSizeChange}
             />
           )}
         </div>
@@ -246,11 +254,13 @@ function SearchResults({
   pagination,
   totalCount,
   onPageChange,
+  onPageSizeChange,
 }: {
   postings: JobPosting[];
   pagination: PaginationParams;
   totalCount: number;
   onPageChange: (page: number) => void;
+  onPageSizeChange: (size: number) => void;
 }) {
   const totalPages = Math.ceil(totalCount / pagination.pageSize);
 
@@ -265,7 +275,9 @@ function SearchResults({
       <Pagination
         currentPage={pagination.page}
         totalPages={totalPages}
+        pageSize={pagination.pageSize}
         onPageChange={onPageChange}
+        onPageSizeChange={onPageSizeChange}
       />
     </div>
   );

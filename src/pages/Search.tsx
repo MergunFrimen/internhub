@@ -36,7 +36,7 @@ import {
   SquareArrowOutUpRightIcon,
   X,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
 import {
@@ -111,12 +111,23 @@ function Layout() {
     sorting,
   });
 
-  useSearchResults(filters, pagination, sorting, refetch);
-
   const [selectedPosting, setSelectedPosting] = useState<JobPosting | null>(
     null
   );
   const [isDetailsPanelOpen, setIsDetailsPanelOpen] = useState(true);
+
+  // Add this effect to select the first result when data loads
+  useEffect(() => {
+    if (
+      jobPostingsResponse?.data &&
+      jobPostingsResponse.data.length > 0 &&
+      !selectedPosting
+    ) {
+      setSelectedPosting(jobPostingsResponse.data[0]);
+    }
+  }, [jobPostingsResponse?.data]);
+
+  useSearchResults(filters, pagination, sorting, refetch);
 
   if (error) {
     toast.error("Error loading internships");
@@ -129,7 +140,6 @@ function Layout() {
 
   const handleCloseDetails = () => {
     setSelectedPosting(null);
-    // setIsDetailsPanelOpen(false);
   };
 
   const sharedProps = {

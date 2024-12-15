@@ -14,7 +14,7 @@ createRoot(document.getElementById("root")!).render(
     <ThemeProvider defaultTheme="light" storageKey="theme">
       <QueryClientProvider client={queryClient}>
         {/* todo remove in prod */}
-        <ReactQueryDevtools />
+        {/* <ReactQueryDevtools /> */}
         <Toaster />
         <App />
       </QueryClientProvider>

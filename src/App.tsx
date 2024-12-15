@@ -1,120 +1,60 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
-import { AuthLayout } from "./layouts/AuthLayout";
-import { MainLayout } from "./layouts/MainLayout";
+import AuthLayout from "./layouts/AuthLayout";
+import MainLayout from "./layouts/MainLayout";
 
-import { ReactNode } from "react";
-import Applications from "./pages/Applications";
-import CompanyDirectory from "./pages/CompanyDirectory";
-import CompanyProfile from "./pages/CompanyProfile";
-import Home from "./pages/Home";
-import InternshipDetails from "./pages/InternshipDetails";
-import Login from "./pages/Login";
-import Messages from "./pages/Messages";
-import NotFound from "./pages/NotFound";
-import Register from "./pages/Register";
-import Search from "./pages/Search";
-import UserProfile from "./pages/UserProfile";
-import PublicProfile from "./pages/PublicProfile";
-import CompanyProfileManagement from "./pages/CompanyProfileManagement";
-import NotificationsPage from "./pages/NotificationsPage";
-import ApplicationStatus from "./pages/ApplicationStatus";
 import ScrollToTop from "./components/ScrollToTop";
 
-const ProtectedRoute = ({
-  children,
-}: {
-  children: ReactNode | ReactNode[];
-}) => {
-  // const { isAuthenticated } = useAuth();
-
-  // if (!isAuthenticated) {
-  //   return <Navigate to="/login" replace />;
-  // }
-
-  return children;
-};
+import ProtectedPageTest from "./pages/Auth/ProtectedPageTest";
+import ProtectedRoute from "./pages/Auth/ProtectedRoute";
+import CompanyProfile from "./pages/CompanyProfile";
+import InternshipDetails from "./pages/InternshipDetails";
+import LandingPage from "./pages/LandingPage";
+import NotFound from "./pages/NotFound";
+import Search from "./pages/Search";
+import UserProfile from "./pages/UserProfile";
+import Logout from "./pages/Auth/Logout";
+import WorkInProgress from "./pages/WorkInProgress";
+import { Login } from "./pages/Auth/Login";
+import { Register } from "./pages/Auth/Register";
 
 export function App() {
   return (
     <Router>
       <ScrollToTop />
+
       <Routes>
-        {/* Public Routes with Main Layout */}
         <Route element={<MainLayout />}>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="/search" element={<Search />} />
           <Route path="/internships/:id" element={<InternshipDetails />} />
-          <Route path="/companies" element={<CompanyDirectory />} />
           <Route path="/companies/:id" element={<CompanyProfile />} />
-          <Route path="/profile/:id/view" element={<PublicProfile />} />
+          <Route path="/profiles/:id" element={<UserProfile />} />
         </Route>
 
-        {/* Protected Routes with Main Layout */}
         <Route element={<MainLayout />}>
           <Route
-            path="/profile"
+            path="/auth-test"
             element={
               <ProtectedRoute>
-                <UserProfile />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/applications"
-            element={
-              <ProtectedRoute>
-                <Applications />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/messages"
-            element={
-              <ProtectedRoute>
-                <Messages />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/company/profile/manage"
-            element={
-              <ProtectedRoute>
-                <CompanyProfileManagement />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/notifications"
-            element={
-              <ProtectedRoute>
-                <NotificationsPage />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/applications/:id"
-            element={
-              <ProtectedRoute>
-                <ApplicationStatus />
+                <ProtectedPageTest />
               </ProtectedRoute>
             }
           />
         </Route>
 
-        {/* Auth Routes with Auth Layout */}
         <Route element={<AuthLayout />}>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/logout" element={<Logout />} />
         </Route>
 
-        {/* 404 Route */}
-        <Route path="*" element={<NotFound />} />
-
-        {/* Examples */}
         <Route element={<MainLayout />}>
-          <Route path="/profile/example/view" element={<PublicProfile />} />
+          <Route path="/profile/example/view" element={<UserProfile />} />
         </Route>
+
+        <Route path="/wip" element={<WorkInProgress />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

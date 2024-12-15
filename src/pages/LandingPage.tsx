@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export default function Home() {
+export default function LandingPage() {
   const navigate = useNavigate();
 
   const featuredInternships = [

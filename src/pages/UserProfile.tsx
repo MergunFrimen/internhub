@@ -1,460 +1,303 @@
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
-  AlertCircle,
-  Briefcase,
   Download,
-  File,
-  FileText,
-  GraduationCap,
+  ExternalLink,
+  Github,
+  Linkedin,
   Mail,
   MapPin,
-  Phone,
-  Trash2,
-  Upload,
-  User,
 } from "lucide-react";
-import { useState } from "react";
-
-interface CV {
-  id: string;
-  name: string;
-  size: number;
-  uploadDate: string;
-  isDefault: boolean;
-}
+import { useMemo } from "react";
 
 export default function UserProfile() {
-  const [userData] = useState({
-    personal: {
-      fullName: "John Doe",
-      email: "john.doe@example.com",
-      phone: "+421 900 123 456",
-      location: "Bratislava, Slovakia",
-    },
+  const profile = {
+    firstName: "John",
+    lastName: "Doe",
+    title: "Computer Science Student",
+    location: "Bratislava, Slovakia",
+    email: "john.doe@example.com",
+    about:
+      "Final year Computer Science student at Slovak University of Technology with a passion for software development and machine learning. Looking for opportunities to apply my skills in a real-world environment.",
     education: {
       university: "Slovak University of Technology",
       degree: "Bachelor of Science",
       field: "Computer Science",
       graduationYear: "2025",
+      gpa: "3.8",
+      relevantCourses: [
+        "Data Structures and Algorithms",
+        "Machine Learning",
+        "Web Development",
+        "Database Systems",
+      ],
     },
-    preferences: {
-      jobTypes: ["Full-time", "Part-time"],
-      locations: ["Remote", "Bratislava"],
-      industries: ["Software Development", "Data Science"],
+    skills: [
+      { name: "JavaScript", level: "Advanced", years: 3 },
+      { name: "React", level: "Advanced", years: 2 },
+      { name: "Python", level: "Intermediate", years: 2 },
+      { name: "Node.js", level: "Intermediate", years: 2 },
+      { name: "SQL", level: "Intermediate", years: 1 },
+      { name: "Git", level: "Advanced", years: 3 },
+      { name: "TypeScript", level: "Intermediate", years: 1 },
+      { name: "TailwindCSS", level: "Advanced", years: 2 },
+    ],
+    projects: [
+      {
+        name: "E-commerce Platform",
+        description:
+          "Built a full-stack e-commerce platform using React and Node.js",
+        technologies: ["React", "Node.js", "MongoDB"],
+        link: "github.com/johndoe/ecommerce",
+        highlights: [
+          "Implemented secure payment processing",
+          "Achieved 98% test coverage",
+          "Reduced load time by 40%",
+        ],
+      },
+      {
+        name: "Machine Learning Model",
+        description:
+          "Developed a sentiment analysis model using Python and scikit-learn",
+        technologies: ["Python", "scikit-learn", "NLTK"],
+        link: "github.com/johndoe/sentiment-analysis",
+        highlights: [
+          "Achieved 92% accuracy",
+          "Processed 1M+ tweets",
+          "Implemented real-time analysis",
+        ],
+      },
+    ],
+    experience: [
+      {
+        title: "Web Development Intern",
+        company: "TechStart",
+        period: "June 2023 - August 2023",
+        description:
+          "Developed and maintained web applications using React and Node.js",
+        achievements: [
+          "Reduced bug backlog by 45%",
+          "Implemented 3 major features",
+          "Mentored 2 junior developers",
+        ],
+      },
+    ],
+    links: {
+      github: "github.com/johndoe",
+      linkedin: "linkedin.com/in/johndoe",
     },
-  });
-
-  const [cvs, setCvs] = useState<CV[]>([
-    {
-      id: "1",
-      name: "John_Doe_CV_2024.pdf",
-      size: 1240000, // in bytes
-      uploadDate: "2024-03-15T10:00:00Z",
-      isDefault: true,
-    },
-    {
-      id: "2",
-      name: "John_Doe_Technical_CV.pdf",
-      size: 890000,
-      uploadDate: "2024-03-10T14:30:00Z",
-      isDefault: false,
-    },
-  ]);
-
-  const [dragActive, setDragActive] = useState(false);
-  const [uploadError, setUploadError] = useState<string | null>(null);
-
-  const handlePersonalUpdate = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-  };
-
-  const handleEducationUpdate = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-  };
-
-  const handleDrag = (e: React.DragEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    if (e.type === "dragenter" || e.type === "dragover") {
-      setDragActive(true);
-    } else if (e.type === "dragleave") {
-      setDragActive(false);
-    }
-  };
-
-  const handleDrop = (e: React.DragEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setDragActive(false);
-    const files = e.dataTransfer.files;
-    handleFiles(files);
-  };
-
-  const handleFileInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = e.target.files;
-    if (files) handleFiles(files);
-  };
-
-  const handleFiles = (files: FileList) => {
-    setUploadError(null);
-    const file = files[0];
-
-    // Validate file
-    if (!file.name.toLowerCase().endsWith(".pdf")) {
-      setUploadError("Only PDF files are allowed");
-      return;
-    }
-    if (file.size > 5 * 1024 * 1024) {
-      // 5MB limit
-      setUploadError("File size must be less than 5MB");
-      return;
-    }
-
-    // Add new CV to the list
-    const newCV: CV = {
-      id: Date.now().toString(),
-      name: file.name,
-      size: file.size,
-      uploadDate: new Date().toISOString(),
-      isDefault: false,
-    };
-    setCvs((prev) => [...prev, newCV]);
-  };
-
-  const formatFileSize = (bytes: number): string => {
-    if (bytes < 1024) return bytes + " B";
-    if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + " KB";
-    return (bytes / (1024 * 1024)).toFixed(1) + " MB";
-  };
-
-  const formatDate = (dateString: string): string => {
-    return new Date(dateString).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-    });
-  };
-
-  const setDefaultCV = (cvId: string) => {
-    setCvs((prev) =>
-      prev.map((cv) => ({
-        ...cv,
-        isDefault: cv.id === cvId,
-      }))
-    );
-  };
-
-  const deleteCV = (cvId: string) => {
-    setCvs((prev) => prev.filter((cv) => cv.id !== cvId));
   };
 
   return (
-    <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold mb-6">My Profile</h1>
-
-      <Tabs defaultValue="personal" className="space-y-6">
-        <TabsList>
-          <TabsTrigger value="personal">Personal Info</TabsTrigger>
-          <TabsTrigger value="education">Education</TabsTrigger>
-          <TabsTrigger value="preferences">Preferences</TabsTrigger>
-          <TabsTrigger value="cv">CV Management</TabsTrigger>
-        </TabsList>
-
-        {/* Existing tabs content remains the same */}
-
-        <TabsContent value="personal">
-          <Card>
-            <CardHeader>
-              <CardTitle>Personal Information</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handlePersonalUpdate} className="space-y-4">
-                <div className="space-y-2">
-                  <Label htmlFor="fullName">Full Name</Label>
-                  <div className="flex gap-2">
-                    <User className="w-5 h-5 text-foreground" />
-                    <Input
-                      id="fullName"
-                      defaultValue={userData.personal.fullName}
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <div className="flex gap-2">
-                    <Mail className="w-5 h-5 text-foreground" />
-                    <Input
-                      id="email"
-                      type="email"
-                      defaultValue={userData.personal.email}
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Phone</Label>
-                  <div className="flex gap-2">
-                    <Phone className="w-5 h-5 text-foreground" />
-                    <Input
-                      id="phone"
-                      type="tel"
-                      defaultValue={userData.personal.phone}
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="location">Location</Label>
-                  <div className="flex gap-2">
-                    <MapPin className="w-5 h-5 text-foreground" />
-                    <Input
-                      id="location"
-                      defaultValue={userData.personal.location}
-                    />
-                  </div>
-                </div>
-
-                <Button type="submit">Update Personal Info</Button>
-              </form>
-            </CardContent>
-          </Card>
-        </TabsContent>
-
-        <TabsContent value="education">
-          <Card>
-            <CardHeader>
-              <CardTitle>Education Details</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleEducationUpdate} className="space-y-4">
-                <div className="space-y-2">
-                  <Label htmlFor="university">University</Label>
-                  <div className="flex gap-2">
-                    <GraduationCap className="w-5 h-5 text-foreground" />
-                    <Input
-                      id="university"
-                      defaultValue={userData.education.university}
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="degree">Degree</Label>
-                  <div className="flex gap-2">
-                    <GraduationCap className="w-5 h-5 text-foreground" />
-                    <Input
-                      id="degree"
-                      defaultValue={userData.education.degree}
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="field">Field of Study</Label>
-                  <div className="flex gap-2">
-                    <Briefcase className="w-5 h-5 text-foreground" />
-                    <Input id="field" defaultValue={userData.education.field} />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="graduationYear">
-                    Expected Graduation Year
-                  </Label>
-                  <div className="flex gap-2">
-                    <GraduationCap className="w-5 h-5 text-foreground" />
-                    <Input
-                      id="graduationYear"
-                      defaultValue={userData.education.graduationYear}
-                    />
-                  </div>
-                </div>
-
-                <Button type="submit">Update Education Info</Button>
-              </form>
-            </CardContent>
-          </Card>
-        </TabsContent>
-
-        <TabsContent value="preferences">
-          <Card>
-            <CardHeader>
-              <CardTitle>Job Preferences</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-6">
-                <div>
-                  <h3 className="font-medium mb-2">Preferred Job Types</h3>
-                  <div className="flex gap-2 flex-wrap">
-                    {userData.preferences.jobTypes.map((type) => (
-                      <div
-                        key={type}
-                        className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm"
-                      >
-                        {type}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="font-medium mb-2">Preferred Locations</h3>
-                  <div className="flex gap-2 flex-wrap">
-                    {userData.preferences.locations.map((location) => (
-                      <div
-                        key={location}
-                        className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm"
-                      >
-                        {location}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="font-medium mb-2">Preferred Industries</h3>
-                  <div className="flex gap-2 flex-wrap">
-                    {userData.preferences.industries.map((industry) => (
-                      <div
-                        key={industry}
-                        className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm"
-                      >
-                        {industry}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <Button>Edit Preferences</Button>
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-
-        <TabsContent value="cv">
-          <div className="space-y-6">
-            {/* Upload Section */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <FileText className="w-5 h-5" />
-                  Upload CV
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div
-                  className={`border-2 border-dashed rounded-lg p-8 text-center ${
-                    dragActive
-                      ? "border-primary bg-primary/5"
-                      : "border-gray-200"
-                  }`}
-                  onDragEnter={handleDrag}
-                  onDragLeave={handleDrag}
-                  onDragOver={handleDrag}
-                  onDrop={handleDrop}
-                >
-                  <div className="flex flex-col items-center gap-4">
-                    <Upload className="w-8 h-8 text-foreground" />
-                    <div>
-                      <p className="text-lg font-medium">
-                        Drag and drop your CV here, or{" "}
-                        <label className="text-primary cursor-pointer hover:underline">
-                          browse
-                          <input
-                            type="file"
-                            className="hidden"
-                            accept=".pdf"
-                            onChange={handleFileInput}
-                          />
-                        </label>
-                      </p>
-                      <p className="text-sm text-foreground mt-1">
-                        Supports: PDF up to 5MB
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {uploadError && (
-                  <Alert variant="destructive" className="mt-4">
-                    <AlertCircle className="h-4 w-4" />
-                    <AlertTitle>Upload Error</AlertTitle>
-                    <AlertDescription>{uploadError}</AlertDescription>
-                  </Alert>
-                )}
-              </CardContent>
-            </Card>
-
-            {/* CV List */}
-            <Card>
-              <CardHeader>
-                <CardTitle>My CVs</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {cvs.map((cv) => (
-                    <div
-                      key={cv.id}
-                      className="flex items-center justify-between p-4 rounded-lg border bg-card hover:shadow-sm transition-shadow"
-                    >
-                      <div className="flex items-center gap-4">
-                        <div className="p-2 bg-primary/10 rounded-lg">
-                          <File className="w-6 h-6 text-primary" />
-                        </div>
-                        <div>
-                          <p className="font-medium">{cv.name}</p>
-                          <p className="text-sm text-foreground">
-                            {formatFileSize(cv.size)} • Uploaded{" "}
-                            {formatDate(cv.uploadDate)}
-                          </p>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-4">
-                        <Button
-                          variant={cv.isDefault ? "default" : "outline"}
-                          size="sm"
-                          onClick={() => setDefaultCV(cv.id)}
-                        >
-                          {cv.isDefault ? "Default CV" : "Set as Default"}
-                        </Button>
-                        <Button
-                          variant="outline"
-                          size="icon"
-                          onClick={() => window.open("#")} // Replace with actual download link
-                        >
-                          <Download className="w-4 h-4" />
-                        </Button>
-                        <Button
-                          variant="ghost"
-                          size="icon"
-                          onClick={() => deleteCV(cv.id)}
-                          disabled={cv.isDefault}
-                        >
-                          <Trash2 className="w-4 h-4 text-destructive" />
-                        </Button>
-                      </div>
-                    </div>
-                  ))}
-
-                  {cvs.length === 0 && (
-                    <div className="text-center py-8 text-foreground">
-                      No CVs uploaded yet. Upload your first CV above.
-                    </div>
-                  )}
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </TabsContent>
-      </Tabs>
+    <div className="container mx-auto py-8 flex flex-col gap-y-8">
+      <HeroSection profile={profile} />
+      <AbouSection profile={profile} />
+      <SkillsSection profile={profile} />
+      <ProjectsSection profile={profile} />
+      <ExperienceSection profile={profile} />
     </div>
+  );
+}
+
+function HeroSection({ profile }: { profile: any }) {
+  const initials = useMemo(
+    () => `${profile.firstName[0]}${profile.lastName[0]}`,
+    []
+  );
+  const fullname = useMemo(() => `${profile.firstName}${profile.lastName}`, []);
+
+  return (
+    <Card className="overflow-hidden">
+      <div className="relative h-24">
+        <div className="absolute -bottom-16 left-8">
+          <div className="bg-white rounded-full p-1">
+            <div className="bg-primary rounded-full p-8 text-4xl font-bold text-white">
+              {initials}
+            </div>
+          </div>
+        </div>
+      </div>
+      <CardContent className="pt-20 pb-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+          <div className="space-y-4">
+            <div>
+              <h1 className="text-3xl font-bold mb-2">{fullname}</h1>
+              <p className="text-xl text-foreground">{profile.title}</p>
+            </div>
+            <div className="flex flex-col flex-wrap gap-4">
+              <div className="flex items-center gap-2 text-foreground">
+                <MapPin className="w-4 h-4" />
+                <span>{profile.location}</span>
+              </div>
+              <div className="flex items-center gap-2 text-foreground">
+                <Mail className="w-4 h-4" />
+                <span>{profile.email}</span>
+              </div>
+              <div className="flex items-center gap-4">
+                <a
+                  href={`https://${profile.links.github}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground transition-colors"
+                >
+                  <Github className="w-5 h-5" />
+                </a>
+                <a
+                  href={`https://${profile.links.linkedin}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground transition-colors"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="flex gap-4">
+            <Button variant="outline" className="gap-2">
+              <Download className="w-4 h-4" /> Download CV
+            </Button>
+            <Button variant="default" className="gap-2">
+              <Mail className="w-4 h-4" /> Contact
+            </Button>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+
+function AbouSection({ profile }: { profile: any }) {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>About</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <p className="text-lg text-foreground leading-relaxed">
+          {profile.about}
+        </p>
+      </CardContent>
+    </Card>
+  );
+}
+
+function SkillsSection({ profile }: { profile: any }) {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>Technical Skills</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {profile.skills.map((skill: any, index: number) => (
+            <div key={index} className="p-4 rounded-lg border">
+              <h3 className="font-semibold mb-2">{skill.name}</h3>
+              <div className="flex justify-between text-sm">
+                <span>{skill.level}</span>
+                <span>
+                  {skill.years} {skill.years === 1 ? "year" : "years"}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+
+function ProjectsSection({ profile }: { profile: any }) {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>Featured Projects</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="grid md:grid-cols-2 gap-6">
+          {profile.projects.map((project: any, index: number) => (
+            <div
+              key={index}
+              className="p-6 rounded-xl border bg-gradient-to-br from-white to-gray-50 transition-all duration-300"
+            >
+              <div className="flex justify-between items-start mb-4">
+                <h3 className="text-xl font-semibold">{project.name}</h3>
+                <a
+                  href={`https://${project.link}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 transition-colors"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                </a>
+              </div>
+              <p className="text-foreground mb-4">{project.description}</p>
+              <div className="space-y-3">
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech: any, techIndex: number) => (
+                    <Badge
+                      key={techIndex}
+                      variant="secondary"
+                      className="px-3 py-1"
+                    >
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+                <ul className="space-y-2">
+                  {project.highlights.map((highlight: any, i: number) => (
+                    <li
+                      key={i}
+                      className="flex items-center gap-2 text-sm text-foreground"
+                    >
+                      <div className="w-1.5 h-1.5 rounded-full bg-foreground" />
+                      {highlight}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+
+function ExperienceSection({ profile }: { profile: any }) {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>Experience</CardTitle>
+      </CardHeader>
+      <CardContent>
+        {profile.experience.map((exp: any, index: number) => (
+          <div
+            key={index}
+            className="p-6 rounded-xl border bg-gradient-to-br transition-all duration-300"
+          >
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold mb-1">{exp.title}</h3>
+              <p className="text-foreground">
+                {exp.company} • {exp.period}
+              </p>
+            </div>
+            <p className="text-foreground mb-4">{exp.description}</p>
+            <ul className="space-y-2">
+              {exp.achievements.map((achievement: any, i: number) => (
+                <li
+                  key={i}
+                  className="flex items-center gap-2 text-sm text-foreground"
+                >
+                  <div className="w-1.5 h-1.5 rounded-full bg-foreground" />
+                  {achievement}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </CardContent>
+    </Card>
   );
 }

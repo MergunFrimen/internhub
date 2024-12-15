@@ -1,13 +1,11 @@
 import { Outlet } from "react-router-dom";
-import AuthHeader from "../components/AuthHeader";
 
-export function AuthLayout() {
+export default function AuthLayout() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <AuthHeader />
-      <main className="container mx-auto px-4 py-8">
+    <div className="flex min-h-svh flex-col items-center justify-center bg-muted p-6 md:p-10">
+      <div className="w-full max-w-sm md:max-w-3xl">
         <Outlet />
-      </main>
+      </div>
     </div>
   );
 }

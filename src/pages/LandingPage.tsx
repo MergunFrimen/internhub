@@ -5,9 +5,11 @@ import {
   Building2,
   ArrowRight,
   GraduationCap,
+  MapPin,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function LandingPage() {
   const navigate = useNavigate();
@@ -72,24 +74,34 @@ export default function LandingPage() {
 
       {/* Featured Internships */}
       <div className="container mx-auto px-4 py-12">
-        <h2 className="text-2xl font-bold mb-6 text-foreground">
-          Featured Internships
-        </h2>
+        <div className="text-center mb-8">
+          <h2 className="text-2xl font-bold mb-2 text-foreground">
+            Featured Internships
+          </h2>
+        </div>
         <div className="grid md:grid-cols-3 gap-6">
           {featuredInternships.map((internship) => (
-            <div
+            <Card
               key={internship.id}
-              className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border"
+              className="hover:shadow-md transition-shadow cursor-pointer"
               onClick={() => navigate(`/internships/${internship.id}`)}
             >
-              <h3 className="font-semibold mb-2 text-foreground">
-                {internship.role}
-              </h3>
-              <p className="text-muted-foreground">{internship.company}</p>
-              <p className="text-muted-foreground text-sm mt-2">
-                {internship.location}
-              </p>
-            </div>
+              <CardHeader>
+                <CardTitle className="text-xl">{internship.role}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <Building2 className="w-4 h-4" />
+                    <span>{internship.company}</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <MapPin className="w-4 h-4" />
+                    <span>{internship.location}</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>
@@ -106,83 +118,90 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="bg-card rounded-xl shadow-lg p-6 md:p-8">
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              {/* Profile Preview */}
-              <div className="flex-1 w-full md:w-auto">
-                <div className="bg-background rounded-lg p-6 space-y-4 border">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-primary text-primary-foreground rounded-full p-6 text-xl font-bold">
-                      {exampleProfile.name
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")}
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-lg text-foreground">
-                        {exampleProfile.name}
-                      </h3>
-                      <p className="text-muted-foreground">
-                        {exampleProfile.title}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <GraduationCap className="w-4 h-4" />
-                    <span>{exampleProfile.university}</span>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {exampleProfile.skills.map((skill, index) => (
-                      <span
-                        key={index}
-                        className="bg-secondary text-secondary-foreground text-sm px-3 py-1 rounded-full"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
+          <Card>
+            <CardContent className="p-6 md:p-8">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                {/* Profile Preview */}
+                <div className="flex-1 w-full md:w-auto">
+                  <Card>
+                    <CardContent className="p-6 space-y-4">
+                      <div className="flex items-center gap-4">
+                        <div className="bg-primary text-primary-foreground rounded-full p-6 text-xl font-bold">
+                          {exampleProfile.name
+                            .split(" ")
+                            .map((n) => n[0])
+                            .join("")}
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-lg text-foreground">
+                            {exampleProfile.name}
+                          </h3>
+                          <p className="text-muted-foreground">
+                            {exampleProfile.title}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-2 text-muted-foreground">
+                        <GraduationCap className="w-4 h-4" />
+                        <span>{exampleProfile.university}</span>
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {exampleProfile.skills.map((skill, index) => (
+                          <span
+                            key={index}
+                            className="bg-secondary text-secondary-foreground text-sm px-3 py-1 rounded-full"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
                 </div>
-              </div>
 
-              {/* Call to Action */}
-              <div className="flex-1 text-center md:text-left">
-                <h3 className="text-xl font-bold mb-4 text-foreground">
-                  Create Your Professional Profile
-                </h3>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-center gap-2">
-                    <UserCircle className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">
-                      Showcase your skills and experience
-                    </span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Building2 className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">
-                      Get discovered by top companies
-                    </span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">
-                      Stand out from other candidates
-                    </span>
-                  </li>
-                </ul>
-                <div className="space-x-4">
-                  <Button
-                    onClick={() => navigate("/profile/example/view")}
-                    variant="outline"
-                  >
-                    View Example Profile
-                  </Button>
-                  <Button onClick={() => navigate("/wip")} variant="default">
-                    Create Your Profile
-                  </Button>
+                {/* Call to Action */}
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-xl font-bold mb-4 text-foreground">
+                    Create Your Professional Profile
+                  </h3>
+                  <ul className="space-y-3 mb-6">
+                    <li className="flex items-center gap-2">
+                      <UserCircle className="w-5 h-5 text-primary" />
+                      <span className="text-muted-foreground">
+                        Showcase your skills and experience
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Building2 className="w-5 h-5 text-primary" />
+                      <span className="text-muted-foreground">
+                        Get discovered by top companies
+                      </span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <ArrowRight className="w-5 h-5 text-primary" />
+                      <span className="text-muted-foreground">
+                        Stand out from other candidates
+                      </span>
+                    </li>
+                  </ul>
+                  <div className="space-x-4">
+                    <Button
+                      onClick={() => navigate("/profile/example/view")}
+                      variant="default"
+                    >
+                      View Example Profile
+                    </Button>
+                    <Button
+                      onClick={() => navigate("/register")}
+                      variant="outline"
+                    >
+                      Create Your Profile
+                    </Button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>

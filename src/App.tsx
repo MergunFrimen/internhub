@@ -7,7 +7,6 @@ import ScrollToTop from "./components/ScrollToTop";
 
 import ProtectedPageTest from "./pages/Auth/ProtectedPageTest";
 import ProtectedRoute from "./pages/Auth/ProtectedRoute";
-import CompanyProfile from "./pages/CompanyProfile";
 import InternshipDetails from "./pages/InternshipDetails";
 import LandingPage from "./pages/LandingPage";
 import NotFound from "./pages/NotFound";
@@ -26,9 +25,8 @@ export function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/search" element={<SearchPage />} />
+          <Route path="/internships" element={<SearchPage />} />
           <Route path="/internships/:id" element={<InternshipDetails />} />
-          <Route path="/companies/:id" element={<CompanyProfile />} />
           <Route path="/profiles/:id" element={<UserProfile />} />
         </Route>
 

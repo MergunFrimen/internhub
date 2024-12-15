@@ -14,7 +14,7 @@ createRoot(document.getElementById("root")!).render(
       <QueryClientProvider client={queryClient}>
         {/* todo remove in prod */}
         {/* <ReactQueryDevtools /> */}
-        <Toaster position="top-right" />
+        <Toaster />
         <App />
       </QueryClientProvider>
     </ThemeProvider>

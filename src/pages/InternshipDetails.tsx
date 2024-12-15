@@ -1,7 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CustomLink } from "@/components/ui/link";
 import { useInternshipDetails } from "@/hooks/useInternshipDetails";
 import {
   Building2,
@@ -62,15 +61,12 @@ function HeaderSection({ internship }: { internship: JobPosting }) {
             <div className="space-y-2">
               <h1 className="text-3xl font-bold">{internship.title}</h1>
               <div className="flex flex-col gap-2">
-                <CustomLink
-                  to={`/companies/${internship.company_id}`}
-                  className="flex items-center gap-x-3"
-                >
+                <div className="flex items-center gap-x-3">
                   <Building2 className="w-6 h-6 shrink-0" />
                   <span className="text-lg">
                     {internship.companies?.name || "Company name unavailable"}
                   </span>
-                </CustomLink>
+                </div>
                 {internship.companies?.website && (
                   <div className="flex items-center gap-x-3 text-muted-foreground">
                     <Globe className="w-4 h-4 shrink-0" />
@@ -126,8 +122,12 @@ function HeaderSection({ internship }: { internship: JobPosting }) {
           </div>
 
           <div className="flex flex-col gap-4 md:items-end">
-            <Button size="lg" className="w-full md:w-auto">
-              Apply Now
+            <Button
+              size="lg"
+              className="w-full md:w-auto"
+              onClick={() => toast.success("Applied!")}
+            >
+              Apply
             </Button>
           </div>
         </div>

@@ -9,7 +9,7 @@ import {
   Building2,
   Calendar,
   GraduationCap,
-  UserCircle
+  UserCircle,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -42,7 +42,7 @@ function HeroSection() {
         <Button
           size="lg"
           className="px-8 py-6 text-lg"
-          onClick={() => navigate("/search")}
+          onClick={() => navigate("/internships")}
         >
           Browse Internships
         </Button>

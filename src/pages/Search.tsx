@@ -116,7 +116,7 @@ function Layout() {
   const [selectedPosting, setSelectedPosting] = useState<JobPosting | null>(
     null
   );
-  const [isDetailsPanelOpen, setIsDetailsPanelOpen] = useState(false);
+  const [isDetailsPanelOpen, setIsDetailsPanelOpen] = useState(true);
 
   if (error) {
     toast.error("Error loading internships");
@@ -129,7 +129,7 @@ function Layout() {
 
   const handleCloseDetails = () => {
     setSelectedPosting(null);
-    setIsDetailsPanelOpen(false);
+    // setIsDetailsPanelOpen(false);
   };
 
   const sharedProps = {
@@ -295,7 +295,7 @@ export function DesktopSearchLayout({
             {/* Grid container for cards */}
             <div
               className={cn(
-                "grid grid-cols-2 gap-4",
+                "grid grid-cols-1 gap-4",
                 isDetailsPanelOpen && "grid-cols-1"
               )}
             >

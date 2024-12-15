@@ -99,6 +99,7 @@ function Layout() {
   const { pagination, handlePageChange, handlePageSizeChange } =
     usePagination();
   const { sorting, handleSortChange } = useSorting();
+  const isMobile = useIsMobile();
 
   const {
     data: jobPostingsResponse,
@@ -111,23 +112,41 @@ function Layout() {
     sorting,
   });
 
+  useSearchResults(filters, pagination, sorting, refetch);
+
   const [selectedPosting, setSelectedPosting] = useState<JobPosting | null>(
     null
   );
   const [isDetailsPanelOpen, setIsDetailsPanelOpen] = useState(true);
 
-  // Add this effect to select the first result when data loads
+  // // Add this effect to select the first result when data loads
+  // useEffect(() => {
+  //   if (
+  //     jobPostingsResponse?.data &&
+  //     jobPostingsResponse.data.length > 0 &&
+  //     !selectedPosting
+  //   ) {
+  //     setSelectedPosting(jobPostingsResponse.data[0]);
+  //   }
+  //   // Hide details panel when there are no results
+  //   if (jobPostingsResponse?.data && jobPostingsResponse.data.length === 0) {
+  //     setSelectedPosting(null);
+  //     setIsDetailsPanelOpen(false);
+  //   }
+  // }, [jobPostingsResponse?.data]);
+
+  // Auto-select first result on desktop
   useEffect(() => {
     if (
-      jobPostingsResponse?.data &&
-      jobPostingsResponse.data.length > 0 &&
+      !isMobile &&
+      !isLoading &&
+      jobPostingsResponse?.data?.length > 0 &&
       !selectedPosting
     ) {
       setSelectedPosting(jobPostingsResponse.data[0]);
+      setIsDetailsPanelOpen(true);
     }
-  }, [jobPostingsResponse?.data]);
-
-  useSearchResults(filters, pagination, sorting, refetch);
+  }, [isMobile, isLoading, jobPostingsResponse?.data]);
 
   if (error) {
     toast.error("Error loading internships");
@@ -140,6 +159,7 @@ function Layout() {
 
   const handleCloseDetails = () => {
     setSelectedPosting(null);
+    // Don't need to set isDetailsPanelOpen to false here as it will be handled by the effect
   };
 
   const sharedProps = {
@@ -158,8 +178,6 @@ function Layout() {
     handlePostingClick,
     handleCloseDetails,
   };
-
-  const isMobile = useIsMobile();
 
   if (isMobile) return <MobileSearchLayout {...sharedProps} />;
   return <DesktopSearchLayout {...sharedProps} />;
@@ -264,13 +282,16 @@ export function DesktopSearchLayout({
   handlePostingClick,
   handleCloseDetails,
 }: LayoutProps) {
+  const hasResults =
+    jobPostingsResponse?.data && jobPostingsResponse.data.length > 0;
+
   return (
     <div className="flex">
       {/* Main content area */}
       <div
         className={cn(
           "flex-1 min-w-0",
-          isDetailsPanelOpen ? "max-w-[40%]" : "w-full"
+          isDetailsPanelOpen && hasResults ? "max-w-[40%]" : "w-full"
         )}
       >
         <div className="mb-6">
@@ -333,25 +354,13 @@ export function DesktopSearchLayout({
       </div>
 
       {/* Details Panel */}
-      {isDetailsPanelOpen && (
+      {isDetailsPanelOpen && hasResults && (
         <div className="w-[60%] pl-6">
           <div className="sticky top-6">
             <div className="relative">
               <ScrollArea className="h-[calc(100vh-6rem)]">
                 {selectedPosting ? (
-                  <div className="pr-6">
-                    <div className="flex justify-end items-start mb-4">
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        onClick={handleCloseDetails}
-                      >
-                        <X className="w-4 h-4" />
-                      </Button>
-                    </div>
-
                     <JobDetails posting={selectedPosting} />
-                  </div>
                 ) : (
                   jobPostingsResponse?.count !== 0 && (
                     <div className="flex items-center justify-center h-full text-muted-foreground">

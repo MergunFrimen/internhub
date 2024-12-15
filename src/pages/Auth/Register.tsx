@@ -15,10 +15,7 @@ export function Register() {
           <form className="p-6 md:p-8">
             <div className="flex flex-col gap-6">
               <div className="flex flex-col items-center text-center">
-                <h1 className="text-2xl font-bold">Welcome back</h1>
-                <p className="text-balance text-muted-foreground">
-                  Join InternHub to find your perfect internship
-                </p>
+                <h1 className="text-2xl font-bold">Create an account</h1>
               </div>
 
               <div className="grid gap-2">

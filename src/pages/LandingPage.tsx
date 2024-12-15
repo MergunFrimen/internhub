@@ -7,6 +7,7 @@ import {
   GraduationCap,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 export default function LandingPage() {
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ export default function LandingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-32">
         <div className="max-w-3xl mx-auto text-center">
@@ -54,11 +55,11 @@ export default function LandingPage() {
 
           {/* Search Bar */}
           <div className="relative max-w-2xl mx-auto">
-            <Search className="absolute left-3 top-2 text-foreground" />
-            <input
+            <Search className="absolute w-5 h-5 left-2 top-2 text-foreground" />
+            <Input
               type="text"
-              placeholder="Search for internships or companies..."
-              className="w-full pl-10 pr-4 py-2 rounded-lg border shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              placeholder="Search for internships..."
+              className="w-full pl-10 ring-4 focus-visible:ring-4"
               onKeyDown={(e) => {
                 if (e.key === "Enter") {
                   navigate("/search");

@@ -373,7 +373,12 @@ export function JobPostingCard({
               <h3 className="text-xl font-semibold">{posting.title}</h3>
               <div className="flex items-center gap-2 text-foreground">
                 <Building2 className="w-4 h-4 min-w-4" />
-                <span>{posting.field}</span>
+                <span>
+                  {posting.companies?.name || "Company name unavailable"}
+                </span>
+              </div>
+              <div className="text-sm text-muted-foreground">
+                {posting.field}
               </div>
             </div>
           </div>
@@ -387,6 +392,15 @@ export function JobPostingCard({
                 Posted {new Date(posting.created_at).toLocaleDateString()}
               </span>
             </div>
+            {posting.tags && posting.tags.length > 0 && (
+              <div className="flex flex-wrap gap-2">
+                {posting.tags.map((tag) => (
+                  <Badge key={tag} variant="secondary">
+                    {tag}
+                  </Badge>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </CardContent>

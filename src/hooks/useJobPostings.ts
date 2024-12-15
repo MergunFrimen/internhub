@@ -4,7 +4,9 @@ import { type PostgrestError } from "@supabase/supabase-js";
 import { useEffect } from "react";
 import { Database } from "@/types/supabase";
 
-export type JobPosting = Database["public"]["Tables"]["job_postings"]["Row"];
+export type JobPosting = Database["public"]["Tables"]["job_postings"]["Row"] & {
+  companies?: Database["public"]["Tables"]["companies"]["Row"];
+};
 
 export const sortFields = ["created_at", "title", "salary_min"] as const;
 export const sortDirections = ["ascending", "descending"] as const;
@@ -48,7 +50,7 @@ async function fetchJobPostings({
   try {
     let query = supabaseClient
       .from("job_postings")
-      .select("*", { count: "exact" })
+      .select("*, companies(*)", { count: "exact" })
       .is("deleted_at", null);
 
     if (filters) {

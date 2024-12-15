@@ -11,10 +11,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import Background3D from "@/components/Background3d";
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <HeroSection />
       <FeaturedInternshipsSection />
       <Separator
@@ -30,31 +31,33 @@ function HeroSection() {
   const navigate = useNavigate();
 
   return (
-    <div className="container mx-auto px-4 py-16 md:py-40 md:pb-32 max-w-3xl text-center space-y-6 md:space-y-10">
-      <div className="space-y-4 md:space-y-6">
-        <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-          Find Your Perfect Internship
-        </h1>
-        <p className="text-lg md:text-xl text-muted-foreground">
-          Connect with leading companies and kickstart your career.
-        </p>
-      </div>
+    <>
+      <Background3D />
+      <div className="container mx-auto px-4 py-16 md:py-40 md:pb-32 max-w-3xl text-center space-y-6 md:space-y-10">
+        <div className="space-y-4 md:space-y-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground">
+            Find Your Perfect Internship
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground">
+            Connect with leading companies and kickstart your career.
+          </p>
+        </div>
 
-      {/* Search Bar */}
-      <div className="relative max-w-2xl mx-auto">
-        <Search className="absolute w-5 h-5 left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
-        <Input
-          type="text"
-          placeholder="Search for internships..."
-          className="w-full pl-10 py-4 md:py-6 text-base md:text-lg ring-4 focus-visible:ring-4"
-          onKeyDown={(e) => {
-            if (e.key === "Enter") {
-              navigate("/search");
-            }
-          }}
-        />
+        <div className="relative max-w-2xl mx-auto">
+          <Search className="absolute w-5 h-5 left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+          <Input
+            type="text"
+            placeholder="Search for internships..."
+            className="w-full pl-10 py-4 md:py-6 text-base md:text-lg ring-4 focus-visible:ring-4"
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                navigate("/search");
+              }
+            }}
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -544,9 +544,9 @@ export function JobDetails({ posting }: { posting: JobPosting }) {
                 variant="default"
                 size="lg"
                 className="w-full md:w-auto"
-                asChild
+                onClick={() => toast.success("Applied!")}
               >
-                <Link to={`/internships/${posting.id}`}>Apply Now</Link>
+                Apply Now
               </Button>
               <Button
                 variant="outline"

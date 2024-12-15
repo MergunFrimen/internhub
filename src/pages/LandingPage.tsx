@@ -185,7 +185,7 @@ function ProfileExample() {
           <div className="flex-1 w-full">
             <Card className="bg-primary-foreground">
               <CardContent className="p-4 md:p-8 space-y-4 md:space-y-6">
-                <div className="flex items-center gap-4 md:gap-6">
+                <div className="flex flex-row items-center gap-4 lg:gap-6">
                   <div className="bg-primary text-primary-foreground rounded-full p-6 md:p-8 text-xl md:text-2xl font-bold">
                     {exampleProfile.name
                       .split(" ")

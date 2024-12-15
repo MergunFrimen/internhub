@@ -161,7 +161,6 @@ function SearchSection({
 
 function FiltersSection({
   filters,
-  onFilterChange,
   sorting,
   onSortChange,
 }: {
@@ -170,11 +169,11 @@ function FiltersSection({
   sorting: SortingParams;
   onSortChange: (value: string) => void;
 }) {
-  const mapping = {
-    all: "",
-    finance: "Finance and Insurance",
-    other: "Other",
-  };
+  // const mapping = {
+  //   all: "",
+  //   finance: "Finance and Insurance",
+  //   other: "Other",
+  // };
 
   return (
     <div className="flex flex-col space-y-3">
@@ -216,7 +215,7 @@ function FiltersSection({
             <Label>Field</Label>
             <Select
               value={filters.field || ""}
-              onValueChange={(value) => onFilterChange("field", mapping[value])}
+              // onValueChange={(value) => onFilterChange("field", mapping[value])}
             >
               <SelectTrigger>
                 <SelectValue placeholder="Select field" />

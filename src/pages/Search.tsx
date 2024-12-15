@@ -25,7 +25,6 @@ import { useSearchResults } from "@/hooks/useSearchResults";
 import { useSorting } from "@/hooks/useSorting";
 import { cn } from "@/lib/utils";
 import {
-  ArrowRight,
   ArrowUpDown,
   Building2,
   Calendar,
@@ -52,10 +51,12 @@ import Background3D from "@/components/Background3d";
 
 export default function SearchPage() {
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto px-4 py-6 md:py-8">
       <Background3D />
-      <div className="mb-6">
-        <h1 className="text-3xl font-bold mb-2">Search Internships</h1>
+      <div className="mb-4 md:mb-6">
+        <h1 className="text-2xl md:text-3xl font-bold mb-2">
+          Search Internships
+        </h1>
         <p className="text-muted-foreground">
           Find the perfect internship opportunity
         </p>
@@ -63,6 +64,32 @@ export default function SearchPage() {
       <Layout />
     </div>
   );
+}
+
+interface LayoutProps {
+  filters: JobPostingsFilters;
+  sorting: SortingParams;
+  jobPostingsResponse:
+    | {
+        data: JobPosting[];
+        count: number;
+      }
+    | null
+    | undefined;
+  isLoading: boolean;
+  pagination: {
+    page: number;
+    pageSize: number;
+  };
+  selectedPosting: JobPosting | null;
+  isDetailsPanelOpen?: boolean;
+  handleSearchChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  handleFilterChange: (field: string, value: string) => void;
+  handleSortChange: (value: string) => void;
+  handlePageChange: (page: number) => void;
+  handlePageSizeChange: (size: number) => void;
+  handlePostingClick: (posting: JobPosting) => void;
+  handleCloseDetails: () => void;
 }
 
 function Layout() {
@@ -132,13 +159,13 @@ export function MobileSearchLayout({
   sorting,
   jobPostingsResponse,
   isLoading,
-  pagination,
+  // pagination,
   selectedPosting,
   handleSearchChange,
   handleFilterChange,
   handleSortChange,
-  handlePageChange,
-  handlePageSizeChange,
+  // handlePageChange,
+  // handlePageSizeChange,
   handlePostingClick,
   handleCloseDetails,
 }: LayoutProps) {
@@ -189,36 +216,13 @@ export function MobileSearchLayout({
             modal
           >
             <SheetContent side="bottom" className="h-[90vh]">
-              <ScrollArea className="h-full">
-                {selectedPosting && (
-                  <div className="space-y-6">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <h2 className="text-2xl font-bold mb-2">
-                          {selectedPosting.title}
-                        </h2>
-                        <div className="flex items-center gap-2 text-muted-foreground">
-                          <Building2 className="w-4 h-4" />
-                          <span>{selectedPosting.field}</span>
-                        </div>
-                      </div>
-                      {/* <Button
-                        variant="ghost"
-                        size="icon"
-                        onClick={handleCloseDetails}
-                      >
-                        <X className="w-4 h-4" />
-                      </Button> */}
-                    </div>
-
-                    <JobDetails posting={selectedPosting} />
-                  </div>
-                )}
+              <ScrollArea className="h-full py-5">
+                {selectedPosting && <JobDetails posting={selectedPosting} />}
               </ScrollArea>
             </SheetContent>
           </Sheet>
 
-          <PaginationControls
+          {/* <PaginationControls
             currentPage={pagination.page}
             totalPages={Math.ceil(
               (jobPostingsResponse?.count || 0) / pagination.pageSize
@@ -226,7 +230,7 @@ export function MobileSearchLayout({
             pageSize={pagination.pageSize}
             onPageChange={handlePageChange}
             onPageSizeChange={handlePageSizeChange}
-          />
+          /> */}
         </div>
       )}
     </div>
@@ -367,15 +371,10 @@ export function JobPostingCard({
             <div className="space-y-1">
               <h3 className="text-xl font-semibold">{posting.title}</h3>
               <div className="flex items-center gap-2 text-foreground">
-                <Building2 className="w-4 h-4" />
+                <Building2 className="w-4 h-4 min-w-4" />
                 <span>{posting.field}</span>
               </div>
             </div>
-            {/* <Button variant="secondary" size="icon" asChild>
-              <Link to={`/internships/${posting.id}`} className="min-w-9">
-                <ArrowRight className="w-4 h-4 min-w-4" />
-              </Link>
-            </Button> */}
           </div>
 
           <p className="text-foreground line-clamp-2">{posting.description}</p>
@@ -596,30 +595,4 @@ export function JobDetails({ posting }: { posting: JobPosting }) {
       )}
     </div>
   );
-}
-
-export interface LayoutProps {
-  filters: JobPostingsFilters;
-  sorting: SortingParams;
-  jobPostingsResponse:
-    | {
-        data: JobPosting[];
-        count: number;
-      }
-    | null
-    | undefined;
-  isLoading: boolean;
-  pagination: {
-    page: number;
-    pageSize: number;
-  };
-  selectedPosting: JobPosting | null;
-  isDetailsPanelOpen?: boolean;
-  handleSearchChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  handleFilterChange: (field: string, value: string) => void;
-  handleSortChange: (value: string) => void;
-  handlePageChange: (page: number) => void;
-  handlePageSizeChange: (size: number) => void;
-  handlePostingClick: (posting: JobPosting) => void;
-  handleCloseDetails: () => void;
 }

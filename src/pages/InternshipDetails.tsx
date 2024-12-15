@@ -8,11 +8,10 @@ import {
   Calendar,
   CheckCircle,
   Clock,
-  CornerUpLeft,
   Loader2,
   MapPin,
 } from "lucide-react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { toast } from "sonner";
 import { Database } from "@/types/supabase";
 
@@ -46,12 +45,6 @@ export default function InternshipDetails() {
 
   return (
     <div className="container mx-auto py-8 px-4 space-y-6">
-      <Button variant="secondary" className="w-full md:w-auto" asChild>
-        <Link to="/search">
-          <CornerUpLeft className="w-4 h-4" />
-          <span>Back to search</span>
-        </Link>
-      </Button>
       <HeaderSection internship={internship} />
       <DescriptionSection internship={internship} />
       {internship.requirements && internship.requirements.length > 0 && (

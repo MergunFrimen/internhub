@@ -113,7 +113,7 @@ function FeaturedInternship({
   company,
   location,
 }: {
-  id: number;
+  id: string;
   role: string;
   company: string;
   location: string;

@@ -216,8 +216,8 @@ export function MobileSearchLayout({
             onOpenChange={(open) => !open && handleCloseDetails()}
             modal
           >
-            <SheetContent side="bottom" className="h-[90vh]">
-              <ScrollArea className="h-full py-5">
+            <SheetContent side="bottom" className="h-[90vh] px-2">
+              <ScrollArea className="h-full pb-5 mt-6">
                 {selectedPosting && <JobDetails posting={selectedPosting} />}
               </ScrollArea>
             </SheetContent>
@@ -505,8 +505,8 @@ function SearchFiltersSheet({
 
 export function JobDetails({ posting }: { posting: JobPosting }) {
   return (
-    <div className="space-y-6">
-      <Card className="border-2 border-primary/10">
+    <div className="space-y-6 ">
+      <Card className="border-2 border-primary/10 bg-primary-foreground">
         <CardContent className="pt-6">
           <div className="flex flex-col gap-6">
             <div className="flex-grow space-y-4">
@@ -582,7 +582,7 @@ export function JobDetails({ posting }: { posting: JobPosting }) {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card className="bg-primary-foreground">
         <CardHeader>
           <CardTitle>Description</CardTitle>
         </CardHeader>
@@ -594,7 +594,7 @@ export function JobDetails({ posting }: { posting: JobPosting }) {
       </Card>
 
       {posting.requirements && posting.requirements.length > 0 && (
-        <Card>
+        <Card className="bg-primary-foreground">
           <CardHeader>
             <CardTitle>Requirements</CardTitle>
           </CardHeader>

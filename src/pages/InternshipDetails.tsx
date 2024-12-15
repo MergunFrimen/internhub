@@ -54,7 +54,7 @@ export default function InternshipDetails() {
 
 function HeaderSection({ internship }: { internship: JobPosting }) {
   return (
-    <Card className="border-2 border-primary/10">
+    <Card className="border-2 border-primary/10 bg-primary-foreground">
       <CardContent className="pt-6">
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex-grow space-y-4">
@@ -138,7 +138,7 @@ function HeaderSection({ internship }: { internship: JobPosting }) {
 
 function DescriptionSection({ internship }: { internship: JobPosting }) {
   return (
-    <Card>
+    <Card className="bg-primary-foreground">
       <CardHeader>
         <CardTitle>Description</CardTitle>
       </CardHeader>
@@ -153,7 +153,7 @@ function DescriptionSection({ internship }: { internship: JobPosting }) {
 
 function RequirementsSection({ internship }: { internship: JobPosting }) {
   return (
-    <Card>
+    <Card className="bg-primary-foreground">
       <CardHeader>
         <CardTitle>Requirements</CardTitle>
       </CardHeader>

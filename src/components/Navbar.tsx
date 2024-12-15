@@ -5,7 +5,6 @@ import {
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { LogIn, LogOut, Menu, UserCircle } from "lucide-react";
@@ -18,24 +17,22 @@ export default function Navbar() {
   const isAuthenticated = true;
 
   return (
-    <nav className="border-b bg-primary-foreground">
-      <div className="container mx-auto px-4 py-3">
-        <div className="flex flex-row items-center justify-between">
-          <LogoLink />
+    <nav className="container mx-auto px-4 py-3">
+      <div className="flex flex-row items-center justify-between">
+        <LogoLink />
 
-          <div className="flex items-center gap-2">
-            <ThemeToggle />
-            {isAuthenticated ? (
-              <AccountMenu />
-            ) : (
-              <Button variant="default" asChild>
-                <Link to="/login">
-                  <LogIn className="w-4 h-4" />
-                  Log In
-                </Link>
-              </Button>
-            )}
-          </div>
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          {isAuthenticated ? (
+            <AccountMenu />
+          ) : (
+            <Button variant="default" asChild>
+              <Link to="/login">
+                <LogIn className="w-4 h-4" />
+                Log In
+              </Link>
+            </Button>
+          )}
         </div>
       </div>
     </nav>
@@ -50,9 +47,8 @@ function AccountMenu() {
           <Menu className="w-4 h-4" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56" align="end">
+      <DropdownMenuContent className="w-56 bg-primary-foreground" align="end">
         <DropdownMenuLabel>My Account</DropdownMenuLabel>
-        <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem asChild>
             {/* todo: change to actual user profile */}
@@ -62,7 +58,6 @@ function AccountMenu() {
             </Link>
           </DropdownMenuItem>
         </DropdownMenuGroup>
-        <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem asChild>
             <Link

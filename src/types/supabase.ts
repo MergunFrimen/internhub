@@ -116,6 +116,8 @@ export type Database = {
           description: string
           external_id: string
           field: string
+          home_office: boolean | null
+          hours: number | null
           id: string
           requirements: string[] | null
           tags: string[] | null
@@ -128,6 +130,8 @@ export type Database = {
           description: string
           external_id?: string
           field: string
+          home_office?: boolean | null
+          hours?: number | null
           id?: string
           requirements?: string[] | null
           tags?: string[] | null
@@ -140,6 +144,8 @@ export type Database = {
           description?: string
           external_id?: string
           field?: string
+          home_office?: boolean | null
+          hours?: number | null
           id?: string
           requirements?: string[] | null
           tags?: string[] | null

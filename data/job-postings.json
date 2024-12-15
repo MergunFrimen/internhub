@@ -1,6 +1,6 @@
 [
   {
-    "_id": "6737229d946638310000a3a8",
+    "_id": "6756b9369466383100024fa4",
     "title": "Data Scientist",
     "description": "Develop machine learning models to analyze large datasets, providing insights for business decisions.",
     "tags": [
@@ -17,10 +17,19 @@
       "Strong statistical and analytical skills.",
       "2+ years of relevant experience."
     ],
-    "field": "Professional, scientific and technical activities"
+    "field": "Professional, scientific and technical activities",
+    "hourlyMin": 600,
+    "hourlyMax": 1000,
+    "monthlyMin": 48000,
+    "monthlyMax": 80000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1182553506000
   },
   {
-    "_id": "6737229d946638310000a3a9",
+    "_id": "6756b9369466383100024fa5",
     "title": "Environmental Consultant",
     "description": "Advise clients on environmental regulations, sustainability practices, and risk assessments.",
     "tags": [
@@ -35,10 +44,19 @@
       "Strong analytical and communication skills.",
       "3+ years of experience in consultancy."
     ],
-    "field": "Professional, scientific and technical activities"
+    "field": "Professional, scientific and technical activities",
+    "hourlyMin": 400,
+    "hourlyMax": 800,
+    "monthlyMin": 64000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1378537697000
   },
   {
-    "_id": "6737229d946638310000a3aa",
+    "_id": "6756b9369466383100024fa6",
     "title": "Structural Engineer",
     "description": "Design, plan, and oversee construction projects, ensuring structural integrity and compliance.",
     "tags": [
@@ -53,10 +71,19 @@
       "Strong understanding of materials and building codes.",
       "Professional Engineer (PE) license preferred."
     ],
-    "field": "Professional, scientific and technical activities"
+    "field": "Professional, scientific and technical activities",
+    "hourlyMin": 800,
+    "hourlyMax": 900,
+    "monthlyMin": 128000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1452814582000
   },
   {
-    "_id": "6737229d946638310000a3ab",
+    "_id": "6756b9369466383100024fa7",
     "title": "IT Business Analyst",
     "description": "Bridge the gap between business needs and technology solutions by analyzing requirements and implementing software systems.",
     "tags": [
@@ -71,10 +98,19 @@
       "Strong communication and problem-solving skills.",
       "Experience with requirement documentation and stakeholder management."
     ],
-    "field": "Professional, scientific and technical activities"
+    "field": "Professional, scientific and technical activities",
+    "hourlyMin": 600,
+    "hourlyMax": 1200,
+    "monthlyMin": 84000,
+    "monthlyMax": 168000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": 1071802190000
   },
   {
-    "_id": "6737229d946638310000a3ac",
+    "_id": "6756b9369466383100024fa8",
     "title": "Biotechnologist",
     "description": "Conduct research and experiments to develop new products and improve biological processes.",
     "tags": [
@@ -89,10 +125,19 @@
       "Strong understanding of bioprocess engineering.",
       "1-3 years of research experience preferred."
     ],
-    "field": "Professional, scientific and technical activities"
+    "field": "Professional, scientific and technical activities",
+    "hourlyMin": 800,
+    "hourlyMax": 800,
+    "monthlyMin": 128000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": 1316499372000
   },
   {
-    "_id": "6737229d946638310000a3ad",
+    "_id": "6756b9369466383100024fa9",
     "title": "Financial Analyst",
     "description": "Perform financial forecasting, analysis, and reporting to guide investment decisions and business planning.",
     "tags": [
@@ -107,10 +152,19 @@
       "Knowledge of ERP systems (e.g., SAP, Oracle).",
       "2+ years of experience in finance or investment."
     ],
-    "field": "Professional, scientific and technical activities"
+    "field": "Professional, scientific and technical activities",
+    "hourlyMin": 800,
+    "hourlyMax": 1100,
+    "monthlyMin": 128000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1140715937000
   },
   {
-    "_id": "6737229d946638310000a3ae",
+    "_id": "6756b9369466383100024faa",
     "title": "Scientific Illustrator",
     "description": "Create accurate and visually appealing illustrations for scientific publications and presentations.",
     "tags": [
@@ -125,10 +179,19 @@
       "Experience with Adobe Creative Suite.",
       "Knowledge of scientific terminology and processes."
     ],
-    "field": "Professional, scientific and technical activities"
+    "field": "Professional, scientific and technical activities",
+    "hourlyMin": 400,
+    "hourlyMax": 800,
+    "monthlyMin": 32000,
+    "monthlyMax": 64000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": 1131961526000
   },
   {
-    "_id": "6737229d946638310000a3af",
+    "_id": "6756b9369466383100024fab",
     "title": "Patent Attorney",
     "description": "Advise clients on intellectual property matters, draft patent applications, and manage patent disputes.",
     "tags": [
@@ -143,10 +206,19 @@
       "Strong knowledge of patent laws and regulations.",
       "Excellent written and verbal communication skills."
     ],
-    "field": "Professional, scientific and technical activities"
+    "field": "Professional, scientific and technical activities",
+    "hourlyMin": 400,
+    "hourlyMax": 800,
+    "monthlyMin": 64000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1258631290000
   },
   {
-    "_id": "6737229d946638310000a3b0",
+    "_id": "6756b9369466383100024fac",
     "title": "Clinical Research Coordinator",
     "description": "Manage and oversee clinical trials, ensuring compliance with regulations and protocols.",
     "tags": [
@@ -161,10 +233,19 @@
       "Knowledge of GCP and FDA regulations.",
       "Strong organizational and problem-solving skills."
     ],
-    "field": "Professional, scientific and technical activities"
+    "field": "Professional, scientific and technical activities",
+    "hourlyMin": 400,
+    "hourlyMax": 1100,
+    "monthlyMin": 56000,
+    "monthlyMax": 154000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1268721808000
   },
   {
-    "_id": "6737229d946638310000a3b1",
+    "_id": "6756b9369466383100024fad",
     "title": "Forensic Scientist",
     "description": "Analyze evidence in criminal investigations, using scientific methods to support law enforcement.",
     "tags": [
@@ -179,10 +260,19 @@
       "Knowledge of criminal justice and legal procedures.",
       "Strong attention to detail and critical thinking skills."
     ],
-    "field": "Professional, scientific and technical activities"
+    "field": "Professional, scientific and technical activities",
+    "hourlyMin": 600,
+    "hourlyMax": 1200,
+    "monthlyMin": 84000,
+    "monthlyMax": 168000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1642766845000
   },
   {
-    "_id": "6737229d946638310000a3b2",
+    "_id": "6756b9369466383100024fae",
     "title": "Construction Project Manager",
     "description": "Oversee all phases of construction projects, ensuring timelines, budgets, and quality standards are met.",
     "tags": [
@@ -197,10 +287,19 @@
       "Strong organizational and leadership skills.",
       "5+ years of construction management experience."
     ],
-    "field": "Construction"
+    "field": "Construction",
+    "hourlyMin": 800,
+    "hourlyMax": 800,
+    "monthlyMin": 112000,
+    "monthlyMax": 112000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1037962701000
   },
   {
-    "_id": "6737229d946638310000a3b3",
+    "_id": "6756b9369466383100024faf",
     "title": "Site Supervisor",
     "description": "Supervise construction sites, ensuring safety standards and project specifications are adhered to.",
     "tags": [
@@ -215,10 +314,19 @@
       "Excellent communication and team management skills.",
       "3+ years of experience in site supervision."
     ],
-    "field": "Construction"
+    "field": "Construction",
+    "hourlyMin": 400,
+    "hourlyMax": 1200,
+    "monthlyMin": 64000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": 1185622656000
   },
   {
-    "_id": "6737229d946638310000a3b4",
+    "_id": "6756b9369466383100024fb0",
     "title": "Civil Engineer",
     "description": "Design and oversee construction of infrastructure projects such as roads, bridges, and buildings.",
     "tags": [
@@ -233,10 +341,19 @@
       "Strong understanding of construction materials and methods.",
       "Professional Engineer (PE) license preferred."
     ],
-    "field": "Construction"
+    "field": "Construction",
+    "hourlyMin": 800,
+    "hourlyMax": 1100,
+    "monthlyMin": 128000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": 1176868704000
   },
   {
-    "_id": "6737229d946638310000a3b5",
+    "_id": "6756b9369466383100024fb1",
     "title": "Estimator",
     "description": "Prepare cost estimates and budgets for construction projects, ensuring accuracy and feasibility.",
     "tags": [
@@ -251,10 +368,19 @@
       "Experience with estimation software (e.g., ProEst, Sage Estimating).",
       "2+ years of experience as an estimator."
     ],
-    "field": "Construction"
+    "field": "Construction",
+    "hourlyMin": 700,
+    "hourlyMax": 1100,
+    "monthlyMin": 112000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1714978473000
   },
   {
-    "_id": "6737229d946638310000a3b6",
+    "_id": "6756b9369466383100024fb2",
     "title": "Architect",
     "description": "Design buildings and structures, ensuring they are functional, sustainable, and aesthetically pleasing.",
     "tags": [
@@ -269,10 +395,19 @@
       "Knowledge of sustainable design practices.",
       "Licensed Architect certification preferred."
     ],
-    "field": "Construction"
+    "field": "Construction",
+    "hourlyMin": 400,
+    "hourlyMax": 800,
+    "monthlyMin": 56000,
+    "monthlyMax": 112000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1092653878000
   },
   {
-    "_id": "6737229d946638310000a3b7",
+    "_id": "6756b9369466383100024fb3",
     "title": "Surveyor",
     "description": "Measure and map construction sites to determine land boundaries and prepare for development.",
     "tags": [
@@ -287,10 +422,19 @@
       "Strong mathematical and analytical skills.",
       "Professional Surveyor (PS) license preferred."
     ],
-    "field": "Construction"
+    "field": "Construction",
+    "hourlyMin": 500,
+    "hourlyMax": 1000,
+    "monthlyMin": 70000,
+    "monthlyMax": 140000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1730113331000
   },
   {
-    "_id": "6737229d946638310000a3b8",
+    "_id": "6756b9369466383100024fb4",
     "title": "Construction Safety Officer",
     "description": "Ensure compliance with health and safety regulations on construction sites, conducting audits and training.",
     "tags": [
@@ -305,10 +449,19 @@
       "Excellent communication and training skills.",
       "2+ years of experience in safety management."
     ],
-    "field": "Construction"
+    "field": "Construction",
+    "hourlyMin": 400,
+    "hourlyMax": 1000,
+    "monthlyMin": 32000,
+    "monthlyMax": 80000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": false,
+    "dateAdded": 1497691999000
   },
   {
-    "_id": "6737229d946638310000a3b9",
+    "_id": "6756b9369466383100024fb5",
     "title": "Heavy Equipment Operator",
     "description": "Operate machinery such as bulldozers, excavators, and cranes to support construction projects.",
     "tags": [
@@ -323,10 +476,19 @@
       "Strong knowledge of equipment maintenance.",
       "Experience in operating specific machinery (e.g., cranes, bulldozers)."
     ],
-    "field": "Construction"
+    "field": "Construction",
+    "hourlyMin": 700,
+    "hourlyMax": 1100,
+    "monthlyMin": 112000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 1457847242000
   },
   {
-    "_id": "6737229d946638310000a3ba",
+    "_id": "6756b9369466383100024fb6",
     "title": "Electrical Engineer",
     "description": "Design and oversee electrical systems for construction projects, ensuring safety and efficiency.",
     "tags": [
@@ -341,10 +503,19 @@
       "Knowledge of building codes and safety standards.",
       "Professional Engineer (PE) license preferred."
     ],
-    "field": "Construction"
+    "field": "Construction",
+    "hourlyMin": 800,
+    "hourlyMax": 1000,
+    "monthlyMin": 128000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1184927298000
   },
   {
-    "_id": "6737229d946638310000a3bb",
+    "_id": "6756b9369466383100024fb7",
     "title": "Plumbing Technician",
     "description": "Install, repair, and maintain plumbing systems in residential and commercial buildings.",
     "tags": [
@@ -359,10 +530,19 @@
       "Excellent problem-solving and technical skills.",
       "2+ years of experience as a plumbing technician."
     ],
-    "field": "Construction"
+    "field": "Construction",
+    "hourlyMin": 800,
+    "hourlyMax": 1100,
+    "monthlyMin": 128000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": 1159661750000
   },
   {
-    "_id": "6737229d946638310000a3bc",
+    "_id": "6756b9369466383100024fb8",
     "title": "Production Manager",
     "description": "Oversee manufacturing processes, ensuring production efficiency, quality standards, and meeting deadlines.",
     "tags": [
@@ -377,10 +557,19 @@
       "Experience with ERP systems (e.g., SAP, Oracle).",
       "5+ years of experience in a manufacturing leadership role."
     ],
-    "field": "Manufacturing"
+    "field": "Manufacturing",
+    "hourlyMin": 400,
+    "hourlyMax": 1100,
+    "monthlyMin": 64000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 5,
+    "internship": true,
+    "dateAdded": 984879394000
   },
   {
-    "_id": "6737229d946638310000a3bd",
+    "_id": "6756b9369466383100024fb9",
     "title": "Quality Assurance Specialist",
     "description": "Inspect and ensure that products meet quality and safety standards through testing and auditing processes.",
     "tags": [
@@ -395,10 +584,19 @@
       "Experience with quality control tools and methods.",
       "2+ years of experience in quality assurance."
     ],
-    "field": "Manufacturing"
+    "field": "Manufacturing",
+    "hourlyMin": 700,
+    "hourlyMax": 1000,
+    "monthlyMin": 112000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": 1352298153000
   },
   {
-    "_id": "6737229d946638310000a3be",
+    "_id": "6756b9369466383100024fba",
     "title": "Mechanical Engineer",
     "description": "Design, develop, and maintain mechanical systems and equipment used in manufacturing processes.",
     "tags": [
@@ -413,10 +611,19 @@
       "Strong problem-solving and analytical skills.",
       "2+ years of experience in manufacturing or product design."
     ],
-    "field": "Manufacturing"
+    "field": "Manufacturing",
+    "hourlyMin": 400,
+    "hourlyMax": 1200,
+    "monthlyMin": 32000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1107568101000
   },
   {
-    "_id": "6737229d946638310000a3bf",
+    "_id": "6756b9369466383100024fbb",
     "title": "Maintenance Technician",
     "description": "Perform routine maintenance and repairs on manufacturing equipment to ensure optimal operation.",
     "tags": [
@@ -431,10 +638,19 @@
       "Knowledge of PLC systems is a plus.",
       "3+ years of maintenance experience."
     ],
-    "field": "Manufacturing"
+    "field": "Manufacturing",
+    "hourlyMin": 800,
+    "hourlyMax": 800,
+    "monthlyMin": 64000,
+    "monthlyMax": 64000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1210801780000
   },
   {
-    "_id": "6737229d946638310000a3c0",
+    "_id": "6756b9369466383100024fbc",
     "title": "Industrial Engineer",
     "description": "Improve production efficiency by designing systems and processes that reduce waste and maximize output.",
     "tags": [
@@ -449,10 +665,19 @@
       "Experience with process optimization tools.",
       "3+ years of experience in manufacturing environments."
     ],
-    "field": "Manufacturing"
+    "field": "Manufacturing",
+    "hourlyMin": 700,
+    "hourlyMax": 1100,
+    "monthlyMin": 98000,
+    "monthlyMax": 154000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 5,
+    "internship": true,
+    "dateAdded": 1731787978000
   },
   {
-    "_id": "6737229d946638310000a3c1",
+    "_id": "6756b9369466383100024fbd",
     "title": "Manufacturing Technician",
     "description": "Operate and monitor manufacturing equipment, ensuring adherence to production guidelines and safety protocols.",
     "tags": [
@@ -467,10 +692,19 @@
       "Strong technical and troubleshooting skills.",
       "1+ years of manufacturing experience preferred."
     ],
-    "field": "Manufacturing"
+    "field": "Manufacturing",
+    "hourlyMin": 500,
+    "hourlyMax": 1200,
+    "monthlyMin": 40000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 968127151000
   },
   {
-    "_id": "6737229d946638310000a3c2",
+    "_id": "6756b9369466383100024fbe",
     "title": "Supply Chain Analyst",
     "description": "Analyze and optimize the supply chain process to improve efficiency and reduce costs in manufacturing operations.",
     "tags": [
@@ -485,10 +719,19 @@
       "Strong analytical and problem-solving skills.",
       "2+ years of experience in supply chain management."
     ],
-    "field": "Manufacturing"
+    "field": "Manufacturing",
+    "hourlyMin": 600,
+    "hourlyMax": 800,
+    "monthlyMin": 84000,
+    "monthlyMax": 112000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 986084417000
   },
   {
-    "_id": "6737229d946638310000a3c3",
+    "_id": "6756b9369466383100024fbf",
     "title": "CNC Machinist",
     "description": "Set up, operate, and program CNC machines to produce precision parts for manufacturing processes.",
     "tags": [
@@ -503,10 +746,19 @@
       "Experience with programming CNC machines.",
       "2+ years of CNC machining experience."
     ],
-    "field": "Manufacturing"
+    "field": "Manufacturing",
+    "hourlyMin": 700,
+    "hourlyMax": 900,
+    "monthlyMin": 112000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1534813946000
   },
   {
-    "_id": "6737229d946638310000a3c4",
+    "_id": "6756b9369466383100024fc0",
     "title": "Process Engineer",
     "description": "Develop and implement manufacturing processes to improve efficiency, quality, and safety.",
     "tags": [
@@ -521,10 +773,19 @@
       "Experience with manufacturing process design and improvement.",
       "3+ years of experience in process engineering."
     ],
-    "field": "Manufacturing"
+    "field": "Manufacturing",
+    "hourlyMin": 400,
+    "hourlyMax": 900,
+    "monthlyMin": 32000,
+    "monthlyMax": 72000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 5,
+    "internship": true,
+    "dateAdded": 978899261000
   },
   {
-    "_id": "6737229d946638310000a3c5",
+    "_id": "6756b9369466383100024fc1",
     "title": "Electronics Technician",
     "description": "Assemble, test, and repair electronic components and systems in manufacturing operations.",
     "tags": [
@@ -539,10 +800,19 @@
       "Strong troubleshooting and diagnostic skills.",
       "1+ years of experience in an electronics manufacturing environment."
     ],
-    "field": "Manufacturing"
+    "field": "Manufacturing",
+    "hourlyMin": 700,
+    "hourlyMax": 800,
+    "monthlyMin": 56000,
+    "monthlyMax": 64000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": 1158443536000
   },
   {
-    "_id": "6737229d946638310000a3c6",
+    "_id": "6756b9369466383100024fc2",
     "title": "Real Estate Agent",
     "description": "Assist clients in buying, selling, and renting properties, providing guidance throughout the process.",
     "tags": [
@@ -557,10 +827,19 @@
       "Knowledge of local real estate markets.",
       "1+ years of experience in real estate sales preferred."
     ],
-    "field": "Real estate"
+    "field": "Real estate",
+    "hourlyMin": 400,
+    "hourlyMax": 1100,
+    "monthlyMin": 64000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 4,
+    "internship": false,
+    "dateAdded": 1222669176000
   },
   {
-    "_id": "6737229d946638310000a3c7",
+    "_id": "6756b9369466383100024fc3",
     "title": "Property Manager",
     "description": "Oversee the daily operations of residential and commercial properties, including maintenance and tenant relations.",
     "tags": [
@@ -575,10 +854,19 @@
       "Strong problem-solving and organizational skills.",
       "2+ years of experience in property management."
     ],
-    "field": "Real estate"
+    "field": "Real estate",
+    "hourlyMin": 500,
+    "hourlyMax": 900,
+    "monthlyMin": 40000,
+    "monthlyMax": 72000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": false,
+    "dateAdded": 1572334775000
   },
   {
-    "_id": "6737229d946638310000a3c8",
+    "_id": "6756b9369466383100024fc4",
     "title": "Real Estate Appraiser",
     "description": "Assess property values by conducting research and site inspections to determine market worth.",
     "tags": [
@@ -593,10 +881,19 @@
       "Attention to detail and analytical skills.",
       "2+ years of appraisal experience."
     ],
-    "field": "Real estate"
+    "field": "Real estate",
+    "hourlyMin": 400,
+    "hourlyMax": 800,
+    "monthlyMin": 64000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 1612414738000
   },
   {
-    "_id": "6737229d946638310000a3c9",
+    "_id": "6756b9369466383100024fc5",
     "title": "Leasing Consultant",
     "description": "Assist property owners and managers in finding tenants by marketing properties and screening applicants.",
     "tags": [
@@ -611,10 +908,19 @@
       "Experience with leasing software is a plus.",
       "1+ years of experience in property leasing or customer service."
     ],
-    "field": "Real estate"
+    "field": "Real estate",
+    "hourlyMin": 400,
+    "hourlyMax": 800,
+    "monthlyMin": 32000,
+    "monthlyMax": 64000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1068053643000
   },
   {
-    "_id": "6737229d946638310000a3ca",
+    "_id": "6756b9369466383100024fc6",
     "title": "Real Estate Marketing Specialist",
     "description": "Develop and execute marketing strategies to promote properties and attract clients.",
     "tags": [
@@ -629,10 +935,19 @@
       "Experience with real estate marketing campaigns.",
       "2+ years of experience in marketing."
     ],
-    "field": "Real estate"
+    "field": "Real estate",
+    "hourlyMin": 400,
+    "hourlyMax": 900,
+    "monthlyMin": 32000,
+    "monthlyMax": 72000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 1672583498000
   },
   {
-    "_id": "6737229d946638310000a3cb",
+    "_id": "6756b9369466383100024fc7",
     "title": "Real Estate Investment Analyst",
     "description": "Evaluate potential real estate investments by analyzing market trends, property performance, and financial data.",
     "tags": [
@@ -647,10 +962,19 @@
       "Knowledge of real estate markets and investment strategies.",
       "2+ years of experience in real estate investment analysis."
     ],
-    "field": "Real estate"
+    "field": "Real estate",
+    "hourlyMin": 700,
+    "hourlyMax": 800,
+    "monthlyMin": 112000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": 1223392282000
   },
   {
-    "_id": "6737229d946638310000a3cc",
+    "_id": "6756b9369466383100024fc8",
     "title": "Commercial Real Estate Broker",
     "description": "Facilitate transactions for commercial properties, helping clients buy, sell, or lease office, retail, or industrial spaces.",
     "tags": [
@@ -665,10 +989,19 @@
       "Knowledge of commercial property markets.",
       "3+ years of experience in commercial real estate."
     ],
-    "field": "Real estate"
+    "field": "Real estate",
+    "hourlyMin": 800,
+    "hourlyMax": 1200,
+    "monthlyMin": 64000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 4,
+    "internship": false,
+    "dateAdded": 1725668862000
   },
   {
-    "_id": "6737229d946638310000a3cd",
+    "_id": "6756b9369466383100024fc9",
     "title": "Real Estate Developer",
     "description": "Oversee the planning, design, and construction of real estate projects from inception to completion.",
     "tags": [
@@ -683,10 +1016,19 @@
       "Knowledge of zoning laws and regulations.",
       "5+ years of experience in real estate development."
     ],
-    "field": "Real estate"
+    "field": "Real estate",
+    "hourlyMin": 400,
+    "hourlyMax": 1200,
+    "monthlyMin": 32000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": false,
+    "dateAdded": 1071924639000
   },
   {
-    "_id": "6737229d946638310000a3ce",
+    "_id": "6756b9369466383100024fca",
     "title": "Real Estate Lawyer",
     "description": "Provide legal advice and representation in property transactions, disputes, and zoning matters.",
     "tags": [
@@ -701,10 +1043,19 @@
       "Strong negotiation and contract drafting skills.",
       "3+ years of experience as a real estate attorney."
     ],
-    "field": "Real estate"
+    "field": "Real estate",
+    "hourlyMin": 700,
+    "hourlyMax": 1000,
+    "monthlyMin": 56000,
+    "monthlyMax": 80000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": false,
+    "dateAdded": 1193308891000
   },
   {
-    "_id": "6737229d946638310000a3cf",
+    "_id": "6756b9369466383100024fcb",
     "title": "Real Estate Analyst",
     "description": "Conduct market research and analysis to guide decisions in real estate acquisitions, developments, and investments.",
     "tags": [
@@ -719,10 +1070,19 @@
       "Strong report writing and presentation skills.",
       "2+ years of experience in real estate analysis."
     ],
-    "field": "Real estate"
+    "field": "Real estate",
+    "hourlyMin": 800,
+    "hourlyMax": 1200,
+    "monthlyMin": 112000,
+    "monthlyMax": 168000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1510499556000
   },
   {
-    "_id": "6737229d946638310000a3d0",
+    "_id": "6756b9369466383100024fcc",
     "title": "Automotive Technician",
     "description": "Inspect, repair, and maintain motor vehicles, ensuring safety and optimal performance.",
     "tags": [
@@ -737,10 +1097,19 @@
       "Experience with diagnostic tools and equipment.",
       "1-3 years of experience in automotive repair."
     ],
-    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles",
+    "hourlyMin": 600,
+    "hourlyMax": 1200,
+    "monthlyMin": 84000,
+    "monthlyMax": 168000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": 949457061000
   },
   {
-    "_id": "6737229d946638310000a3d1",
+    "_id": "6756b9369466383100024fcd",
     "title": "Parts Sales Representative",
     "description": "Sell automotive parts to retail and wholesale customers, providing excellent service and advice.",
     "tags": [
@@ -755,10 +1124,19 @@
       "Strong communication and interpersonal skills.",
       "Experience in sales or customer service preferred."
     ],
-    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles",
+    "hourlyMin": 400,
+    "hourlyMax": 800,
+    "monthlyMin": 32000,
+    "monthlyMax": 64000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": 1356962512000
   },
   {
-    "_id": "6737229d946638310000a3d2",
+    "_id": "6756b9369466383100024fce",
     "title": "Service Advisor",
     "description": "Act as the main point of contact between customers and the service department, advising on repairs and costs.",
     "tags": [
@@ -773,10 +1151,19 @@
       "Knowledge of automotive repair processes.",
       "Experience with service management software is a plus."
     ],
-    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles",
+    "hourlyMin": 500,
+    "hourlyMax": 900,
+    "monthlyMin": 80000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1674534516000
   },
   {
-    "_id": "6737229d946638310000a3d3",
+    "_id": "6756b9369466383100024fcf",
     "title": "Auto Body Technician",
     "description": "Repair and restore the structural and cosmetic condition of vehicles after accidents.",
     "tags": [
@@ -791,10 +1178,19 @@
       "Knowledge of safety and repair standards.",
       "2+ years of experience in auto body repair."
     ],
-    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles",
+    "hourlyMin": 800,
+    "hourlyMax": 1100,
+    "monthlyMin": 128000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1328469893000
   },
   {
-    "_id": "6737229d946638310000a3d4",
+    "_id": "6756b9369466383100024fd0",
     "title": "Wholesale Account Manager",
     "description": "Manage relationships with wholesale clients, ensuring their automotive parts and accessories needs are met.",
     "tags": [
@@ -809,10 +1205,19 @@
       "Strong negotiation and communication skills.",
       "2+ years of experience in account management."
     ],
-    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles",
+    "hourlyMin": 600,
+    "hourlyMax": 900,
+    "monthlyMin": 96000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1514615432000
   },
   {
-    "_id": "6737229d946638310000a3d5",
+    "_id": "6756b9369466383100024fd1",
     "title": "Automotive Sales Associate",
     "description": "Sell new and used vehicles to customers, providing exceptional service and meeting sales targets.",
     "tags": [
@@ -827,10 +1232,19 @@
       "Knowledge of automotive features and benefits.",
       "1+ years of experience in vehicle sales preferred."
     ],
-    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles",
+    "hourlyMin": 800,
+    "hourlyMax": 1100,
+    "monthlyMin": 112000,
+    "monthlyMax": 154000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1724894717000
   },
   {
-    "_id": "6737229d946638310000a3d6",
+    "_id": "6756b9369466383100024fd2",
     "title": "Vehicle Inspector",
     "description": "Conduct thorough inspections of vehicles to ensure safety, compliance, and performance standards are met.",
     "tags": [
@@ -845,10 +1259,19 @@
       "Attention to detail and problem-solving skills.",
       "1-3 years of experience in vehicle inspections."
     ],
-    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles",
+    "hourlyMin": 600,
+    "hourlyMax": 900,
+    "monthlyMin": 48000,
+    "monthlyMax": 72000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1061260582000
   },
   {
-    "_id": "6737229d946638310000a3d7",
+    "_id": "6756b9369466383100024fd3",
     "title": "Fleet Maintenance Manager",
     "description": "Oversee the repair and maintenance of a fleet of vehicles, ensuring minimal downtime and cost efficiency.",
     "tags": [
@@ -863,10 +1286,19 @@
       "Strong organizational and leadership skills.",
       "3+ years of experience in fleet maintenance."
     ],
-    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles",
+    "hourlyMin": 700,
+    "hourlyMax": 800,
+    "monthlyMin": 112000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": false,
+    "dateAdded": 1007161944000
   },
   {
-    "_id": "6737229d946638310000a3d8",
+    "_id": "6756b9369466383100024fd4",
     "title": "Tire Technician",
     "description": "Inspect, repair, and replace vehicle tires, ensuring safety and proper alignment.",
     "tags": [
@@ -881,10 +1313,19 @@
       "Knowledge of tire safety and maintenance standards.",
       "1+ years of experience as a tire technician preferred."
     ],
-    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles",
+    "hourlyMin": 600,
+    "hourlyMax": 800,
+    "monthlyMin": 96000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1061186187000
   },
   {
-    "_id": "6737229d946638310000a3d9",
+    "_id": "6756b9369466383100024fd5",
     "title": "Retail Store Manager - Automotive Parts",
     "description": "Manage daily operations of an automotive parts retail store, ensuring excellent customer service and inventory control.",
     "tags": [
@@ -899,10 +1340,19 @@
       "Strong leadership and organizational skills.",
       "3+ years of experience in retail management."
     ],
-    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles"
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles",
+    "hourlyMin": 600,
+    "hourlyMax": 1000,
+    "monthlyMin": 96000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 1382323237000
   },
   {
-    "_id": "6737229d946638310000a3da",
+    "_id": "6756b9369466383100024fd6",
     "field": "Transportation and Storage",
     "title": "Logistics Coordinator",
     "description": "Plan and oversee transportation and storage of goods to ensure efficient supply chain operations.",
@@ -917,10 +1367,19 @@
       "Experience with logistics software (e.g., SAP, Oracle).",
       "Strong organizational and multitasking skills.",
       "2+ years of experience in logistics."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 1000,
+    "monthlyMin": 56000,
+    "monthlyMax": 140000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 1050834927000
   },
   {
-    "_id": "6737229d946638310000a3db",
+    "_id": "6756b9369466383100024fd7",
     "field": "Transportation and Storage",
     "title": "Truck Driver",
     "description": "Transport goods safely and efficiently while adhering to regulations and schedules.",
@@ -935,10 +1394,19 @@
       "Clean driving record.",
       "Experience with long-haul or local deliveries.",
       "Strong understanding of traffic and safety regulations."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 900,
+    "monthlyMin": 80000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1562822972000
   },
   {
-    "_id": "6737229d946638310000a3dc",
+    "_id": "6756b9369466383100024fd8",
     "field": "Transportation and Storage",
     "title": "Warehouse Manager",
     "description": "Oversee warehouse operations, including inventory management, staff supervision, and logistics coordination.",
@@ -953,10 +1421,19 @@
       "Experience in warehouse management.",
       "Strong leadership and organizational skills.",
       "3+ years of experience in warehouse operations."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1000,
+    "monthlyMin": 84000,
+    "monthlyMax": 140000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1447224615000
   },
   {
-    "_id": "6737229d946638310000a3dd",
+    "_id": "6756b9369466383100024fd9",
     "field": "Transportation and Storage",
     "title": "Fleet Manager",
     "description": "Manage a fleet of vehicles, ensuring proper maintenance, compliance, and cost efficiency.",
@@ -971,10 +1448,19 @@
       "Experience in fleet or transportation management.",
       "Knowledge of maintenance protocols and regulations.",
       "3+ years of experience in fleet management."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 1200,
+    "monthlyMin": 40000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": 1527578178000
   },
   {
-    "_id": "6737229d946638310000a3de",
+    "_id": "6756b9369466383100024fda",
     "field": "Transportation and Storage",
     "title": "Cargo Handler",
     "description": "Load, unload, and move cargo safely and efficiently in warehouses or transportation hubs.",
@@ -989,10 +1475,19 @@
       "Experience in cargo handling or warehouse work preferred.",
       "Ability to lift heavy items and operate equipment.",
       "Knowledge of safety standards is a plus."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 1000,
+    "monthlyMin": 64000,
+    "monthlyMax": 80000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 1191934242000
   },
   {
-    "_id": "6737229d946638310000a3df",
+    "_id": "6756b9369466383100024fdb",
     "field": "Transportation and Storage",
     "title": "Supply Chain Analyst",
     "description": "Analyze supply chain processes and provide insights to improve efficiency and reduce costs.",
@@ -1007,10 +1502,19 @@
       "Proficiency in data analysis tools (e.g., Excel, Tableau, SQL).",
       "Experience with supply chain software is a plus.",
       "2+ years of experience in supply chain or logistics analysis."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 800,
+    "monthlyMin": 64000,
+    "monthlyMax": 64000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1013514805000
   },
   {
-    "_id": "6737229d946638310000a3e0",
+    "_id": "6756b9369466383100024fdc",
     "field": "Transportation and Storage",
     "title": "Air Freight Specialist",
     "description": "Coordinate and manage air freight shipments to ensure timely delivery and compliance with regulations.",
@@ -1025,10 +1529,19 @@
       "Experience with air freight logistics and documentation.",
       "Strong organizational and multitasking skills.",
       "Knowledge of international shipping regulations."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1000,
+    "monthlyMin": 96000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": 1615447775000
   },
   {
-    "_id": "6737229d946638310000a3e1",
+    "_id": "6756b9369466383100024fdd",
     "field": "Transportation and Storage",
     "title": "Customs Broker",
     "description": "Ensure imported and exported goods comply with customs regulations and manage clearance processes.",
@@ -1043,10 +1556,19 @@
       "Knowledge of import/export regulations and procedures.",
       "Strong attention to detail and documentation skills.",
       "Experience in logistics or freight forwarding is a plus."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 1000,
+    "monthlyMin": 80000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": false,
+    "dateAdded": 1459074296000
   },
   {
-    "_id": "6737229d946638310000a3e2",
+    "_id": "6756b9369466383100024fde",
     "field": "Transportation and Storage",
     "title": "Rail Operations Manager",
     "description": "Oversee rail transport operations, ensuring safety, efficiency, and on-time delivery.",
@@ -1061,10 +1583,19 @@
       "Experience with rail transport and logistics operations.",
       "Strong leadership and organizational skills.",
       "3+ years of experience in rail operations management."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 1100,
+    "monthlyMin": 112000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 948260952000
   },
   {
-    "_id": "6737229d946638310000a3e3",
+    "_id": "6756b9369466383100024fdf",
     "field": "Transportation and Storage",
     "title": "Dispatch Coordinator",
     "description": "Schedule and dispatch vehicles or personnel to fulfill transportation requests efficiently.",
@@ -1079,10 +1610,19 @@
       "Experience in dispatching or transportation coordination.",
       "Strong multitasking and communication skills.",
       "Knowledge of dispatch software is a plus."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 1100,
+    "monthlyMin": 80000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 5,
+    "internship": false,
+    "dateAdded": 1723026105000
   },
   {
-    "_id": "6737229d946638310000a3e4",
+    "_id": "6756b9369466383100024fe0",
     "field": "Administrative and Support Activities",
     "title": "Administrative Assistant",
     "description": "Provide administrative support to ensure efficient operation of the office.",
@@ -1097,10 +1637,19 @@
       "Proficiency in office software (e.g., Microsoft Office Suite).",
       "Strong organizational and multitasking skills.",
       "1+ years of experience in an administrative role."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 1000,
+    "monthlyMin": 32000,
+    "monthlyMax": 80000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1512618973000
   },
   {
-    "_id": "6737229d946638310000a3e5",
+    "_id": "6756b9369466383100024fe1",
     "field": "Administrative and Support Activities",
     "title": "Human Resources Coordinator",
     "description": "Assist with HR processes, including recruitment, onboarding, and employee relations.",
@@ -1115,10 +1664,19 @@
       "Experience in HR or administrative roles.",
       "Strong communication and interpersonal skills.",
       "Proficiency in HR management software is a plus."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 1200,
+    "monthlyMin": 112000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1000384253000
   },
   {
-    "_id": "6737229d946638310000a3e6",
+    "_id": "6756b9369466383100024fe2",
     "field": "Administrative and Support Activities",
     "title": "Office Manager",
     "description": "Oversee daily operations of the office, ensuring efficient workflows and smooth communication.",
@@ -1133,10 +1691,19 @@
       "Experience in office management or administration.",
       "Strong leadership and problem-solving skills.",
       "2+ years of experience managing office operations."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 1100,
+    "monthlyMin": 64000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 949977472000
   },
   {
-    "_id": "6737229d946638310000a3e7",
+    "_id": "6756b9369466383100024fe3",
     "field": "Administrative and Support Activities",
     "title": "Call Center Supervisor",
     "description": "Manage call center agents, monitor performance, and ensure excellent customer service.",
@@ -1151,10 +1718,19 @@
       "Experience in customer service or call center operations.",
       "Strong leadership and organizational skills.",
       "1+ years of supervisory experience."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 800,
+    "monthlyMin": 112000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 999370548000
   },
   {
-    "_id": "6737229d946638310000a3e8",
+    "_id": "6756b9369466383100024fe4",
     "field": "Administrative and Support Activities",
     "title": "Receptionist",
     "description": "Greet visitors, manage phone calls, and handle front desk operations in a professional manner.",
@@ -1169,10 +1745,19 @@
       "Experience in customer service or front desk roles preferred.",
       "Proficiency in office software and phone systems.",
       "Strong interpersonal and organizational skills."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 800,
+    "monthlyMin": 64000,
+    "monthlyMax": 64000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": 1455313368000
   },
   {
-    "_id": "6737229d946638310000a3e9",
+    "_id": "6756b9369466383100024fe5",
     "field": "Finance and Insurance",
     "title": "Financial Analyst",
     "description": "Analyze financial data and provide insights to support decision-making and improve company performance.",
@@ -1187,10 +1772,19 @@
       "Proficiency in financial modeling and analysis tools (e.g., Excel, Tableau).",
       "Strong analytical and problem-solving skills.",
       "2+ years of experience in financial analysis."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1100,
+    "monthlyMin": 84000,
+    "monthlyMax": 154000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": false,
+    "dateAdded": 1153660901000
   },
   {
-    "_id": "6737229d946638310000a3ea",
+    "_id": "6756b9369466383100024fe6",
     "field": "Finance and Insurance",
     "title": "Insurance Underwriter",
     "description": "Evaluate applications for insurance coverage and determine appropriate terms and premiums.",
@@ -1205,10 +1799,19 @@
       "Knowledge of underwriting principles and practices.",
       "Strong analytical and communication skills.",
       "Experience in insurance underwriting is preferred."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 900,
+    "monthlyMin": 98000,
+    "monthlyMax": 126000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1537541313000
   },
   {
-    "_id": "6737229d946638310000a3eb",
+    "_id": "6756b9369466383100024fe7",
     "field": "Finance and Insurance",
     "title": "Credit Analyst",
     "description": "Assess creditworthiness of individuals or organizations and recommend loan approvals or denials.",
@@ -1223,10 +1826,19 @@
       "Experience in credit or risk analysis.",
       "Proficiency in financial reporting tools.",
       "Strong problem-solving and analytical skills."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1200,
+    "monthlyMin": 48000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1284209412000
   },
   {
-    "_id": "6737229d946638310000a3ec",
+    "_id": "6756b9369466383100024fe8",
     "field": "Finance and Insurance",
     "title": "Investment Advisor",
     "description": "Provide financial planning advice and investment recommendations to clients.",
@@ -1241,10 +1853,19 @@
       "Certification as a Certified Financial Planner (CFP) or equivalent is preferred.",
       "Strong knowledge of investment products and markets.",
       "2+ years of experience in financial advising."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 1200,
+    "monthlyMin": 112000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 5,
+    "internship": false,
+    "dateAdded": 1714580565000
   },
   {
-    "_id": "6737229d946638310000a3ed",
+    "_id": "6756b9369466383100024fe9",
     "field": "Finance and Insurance",
     "title": "Claims Adjuster",
     "description": "Investigate insurance claims and determine fair settlements for policyholders.",
@@ -1259,10 +1880,19 @@
       "Knowledge of insurance claims processes.",
       "Strong negotiation and communication skills.",
       "Experience in claims adjustment is a plus."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 900,
+    "monthlyMin": 70000,
+    "monthlyMax": 126000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1307607279000
   },
   {
-    "_id": "6737229d946638310000a3ee",
+    "_id": "6756b9369466383100024fea",
     "field": "Finance and Insurance",
     "title": "Tax Advisor",
     "description": "Advise individuals and businesses on tax planning, preparation, and strategies to minimize tax liability.",
@@ -1277,10 +1907,19 @@
       "Certified Public Accountant (CPA) certification preferred.",
       "In-depth knowledge of tax laws and regulations.",
       "2+ years of experience in tax advisory or preparation."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 800,
+    "monthlyMin": 128000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1541400742000
   },
   {
-    "_id": "6737229d946638310000a3ef",
+    "_id": "6756b9369466383100024feb",
     "field": "Finance and Insurance",
     "title": "Insurance Claims Examiner",
     "description": "Examine insurance claims, evaluate the validity of claims, and process settlements for policyholders.",
@@ -1295,10 +1934,19 @@
       "Experience in claims processing or insurance-related roles.",
       "Strong attention to detail and analytical skills.",
       "Knowledge of insurance policies and regulations."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1000,
+    "monthlyMin": 96000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": false,
+    "dateAdded": 1653091816000
   },
   {
-    "_id": "6737229d946638310000a3f0",
+    "_id": "6756b9369466383100024fec",
     "field": "Finance and Insurance",
     "title": "Mortgage Loan Officer",
     "description": "Help clients obtain mortgage loans by advising on loan options, processing applications, and ensuring timely approvals.",
@@ -1313,10 +1961,19 @@
       "Experience in mortgage lending or real estate finance.",
       "Excellent communication and negotiation skills.",
       "Knowledge of mortgage products and financial regulations."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 1200,
+    "monthlyMin": 56000,
+    "monthlyMax": 168000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": 1210377688000
   },
   {
-    "_id": "6737229d946638310000a3f1",
+    "_id": "6756b9369466383100024fed",
     "field": "Finance and Insurance",
     "title": "Risk Manager",
     "description": "Identify, evaluate, and manage financial risks to ensure that the organization maintains a stable financial position.",
@@ -1331,10 +1988,19 @@
       "Experience in risk management or financial services.",
       "Strong analytical and decision-making skills.",
       "Knowledge of risk management tools and strategies."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 800,
+    "monthlyMin": 56000,
+    "monthlyMax": 112000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1165757861000
   },
   {
-    "_id": "6737229d946638310000a3f2",
+    "_id": "6756b9369466383100024fee",
     "field": "Finance and Insurance",
     "title": "Actuary",
     "description": "Analyze financial risks and uncertainties using mathematical models and statistics to help organizations make informed decisions.",
@@ -1349,10 +2015,19 @@
       "Proficiency in actuarial software and statistical tools.",
       "Strong problem-solving and analytical skills.",
       "Completion of actuarial exams (or in progress) is required."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1000,
+    "monthlyMin": 96000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 973835085000
   },
   {
-    "_id": "6737229d946638310000a3f3",
+    "_id": "6756b9369466383100024fef",
     "field": "Information and Communication",
     "title": "Software Developer",
     "description": "Design, develop, and maintain software applications tailored to client needs.",
@@ -1367,10 +2042,19 @@
       "Proficiency in programming languages (e.g., Python, Java, C#).",
       "Experience with Agile methodologies.",
       "2+ years of software development experience."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 1100,
+    "monthlyMin": 64000,
+    "monthlyMax": 88000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 1127048548000
   },
   {
-    "_id": "6737229d946638310000a3f4",
+    "_id": "6756b9369466383100024ff0",
     "field": "Information and Communication",
     "title": "Data Analyst",
     "description": "Analyze data to help organizations make informed business decisions.",
@@ -1385,10 +2069,19 @@
       "Proficiency in data analysis tools (e.g., Excel, Tableau, R).",
       "Experience with SQL and database management.",
       "1+ years of experience in data analytics."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 1000,
+    "monthlyMin": 80000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 1608642450000
   },
   {
-    "_id": "6737229d946638310000a3f5",
+    "_id": "6756b9369466383100024ff1",
     "field": "Information and Communication",
     "title": "Network Administrator",
     "description": "Manage and maintain an organization's computer networks to ensure uptime and security.",
@@ -1403,10 +2096,19 @@
       "Experience with network hardware and software.",
       "Strong troubleshooting and problem-solving skills.",
       "2+ years of experience in network administration."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 1100,
+    "monthlyMin": 64000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": 1170308123000
   },
   {
-    "_id": "6737229d946638310000a3f6",
+    "_id": "6756b9369466383100024ff2",
     "field": "Information and Communication",
     "title": "Digital Marketing Specialist",
     "description": "Develop and execute digital campaigns to increase online visibility and sales.",
@@ -1421,10 +2123,19 @@
       "Proficiency in digital marketing tools (e.g., Google Analytics, AdWords).",
       "Experience with social media platforms and content creation.",
       "2+ years of experience in digital marketing."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 900,
+    "monthlyMin": 80000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 1271654669000
   },
   {
-    "_id": "6737229d946638310000a3f7",
+    "_id": "6756b9369466383100024ff3",
     "field": "Information and Communication",
     "title": "Cybersecurity Specialist",
     "description": "Protect an organization's systems and data from cyber threats.",
@@ -1439,10 +2150,19 @@
       "Experience with firewalls, VPNs, and security protocols.",
       "Relevant certifications (e.g., CISSP, CEH) preferred.",
       "2+ years of experience in IT security."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 1000,
+    "monthlyMin": 80000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1088593342000
   },
   {
-    "_id": "6737229d946638310000a3f8",
+    "_id": "6756b9369466383100024ff4",
     "field": "Accommodation and Hospitality",
     "title": "Hotel Manager",
     "description": "Oversee daily hotel operations, ensuring guest satisfaction and efficient service.",
@@ -1457,10 +2177,19 @@
       "Strong leadership and organizational skills.",
       "Experience with hotel management software.",
       "3+ years of experience in hospitality management."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 1000,
+    "monthlyMin": 112000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": 1478571442000
   },
   {
-    "_id": "6737229d946638310000a3f9",
+    "_id": "6756b9369466383100024ff5",
     "field": "Accommodation and Hospitality",
     "title": "Chef",
     "description": "Plan and prepare high-quality meals while managing kitchen staff and inventory.",
@@ -1475,10 +2204,19 @@
       "Experience in menu planning and inventory management.",
       "Strong leadership and creative skills.",
       "3+ years of experience as a chef."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 1100,
+    "monthlyMin": 112000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": 1436891597000
   },
   {
-    "_id": "6737229d946638310000a3fa",
+    "_id": "6756b9369466383100024ff6",
     "field": "Accommodation and Hospitality",
     "title": "Event Coordinator",
     "description": "Plan and execute events, ensuring client satisfaction and seamless operations.",
@@ -1493,10 +2231,19 @@
       "Strong organizational and communication skills.",
       "Experience with event planning tools.",
       "2+ years of experience in event coordination."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 1000,
+    "monthlyMin": 64000,
+    "monthlyMax": 80000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1676204143000
   },
   {
-    "_id": "6737229d946638310000a3fb",
+    "_id": "6756b9369466383100024ff7",
     "field": "Accommodation and Hospitality",
     "title": "Housekeeping Supervisor",
     "description": "Supervise housekeeping staff, ensuring rooms and public areas meet cleanliness standards.",
@@ -1511,10 +2258,19 @@
       "Experience in housekeeping or hospitality.",
       "Strong organizational and leadership skills.",
       "2+ years of experience in housekeeping management."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1200,
+    "monthlyMin": 96000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1224962741000
   },
   {
-    "_id": "6737229d946638310000a3fc",
+    "_id": "6756b9369466383100024ff8",
     "field": "Accommodation and Hospitality",
     "title": "Front Desk Agent",
     "description": "Handle guest check-ins and check-outs, answer inquiries, and provide exceptional customer service.",
@@ -1529,10 +2285,19 @@
       "Experience in hospitality or customer service preferred.",
       "Proficiency with reservation software is a plus.",
       "Strong interpersonal skills."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 1200,
+    "monthlyMin": 80000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": 1551277718000
   },
   {
-    "_id": "6737229d946638310000a3fd",
+    "_id": "6756b9369466383100024ff9",
     "field": "Information and Communication",
     "title": "Software Developer",
     "description": "Develop, test, and maintain software applications to meet business and user needs.",
@@ -1547,10 +2312,19 @@
       "Proficiency in programming languages (e.g., Java, Python, C++).",
       "Experience with software development frameworks and tools.",
       "Strong problem-solving skills and attention to detail."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 900,
+    "monthlyMin": 64000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1546516193000
   },
   {
-    "_id": "6737229d946638310000a3fe",
+    "_id": "6756b9369466383100024ffa",
     "field": "Information and Communication",
     "title": "Network Administrator",
     "description": "Manage and maintain the company’s computer networks to ensure smooth and secure operations.",
@@ -1565,10 +2339,19 @@
       "Experience in network administration and troubleshooting.",
       "Knowledge of networking protocols and security systems.",
       "Certifications such as CCNA or CompTIA Network+ are a plus."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 800,
+    "monthlyMin": 128000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 4,
+    "internship": true,
+    "dateAdded": 1733543062000
   },
   {
-    "_id": "6737229d946638310000a3ff",
+    "_id": "6756b9369466383100024ffb",
     "field": "Information and Communication",
     "title": "Content Writer",
     "description": "Create engaging written content for websites, blogs, social media, and other digital platforms.",
@@ -1583,10 +2366,19 @@
       "Experience in writing and content creation.",
       "Familiarity with SEO best practices and keyword research.",
       "Excellent writing, editing, and proofreading skills."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 800,
+    "monthlyMin": 112000,
+    "monthlyMax": 112000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": 1341181933000
   },
   {
-    "_id": "6737229d946638310000a400",
+    "_id": "6756b9369466383100024ffc",
     "field": "Information and Communication",
     "title": "Digital Marketing Specialist",
     "description": "Develop and implement online marketing strategies to drive traffic, engagement, and conversions.",
@@ -1601,10 +2393,19 @@
       "Experience with digital marketing tools and platforms (e.g., Google Analytics, Facebook Ads).",
       "Strong understanding of SEO and SEM.",
       "Ability to analyze marketing data and adjust strategies accordingly."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1000,
+    "monthlyMin": 84000,
+    "monthlyMax": 140000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 4,
+    "internship": true,
+    "dateAdded": 1489282588000
   },
   {
-    "_id": "6737229d946638310000a401",
+    "_id": "6756b9369466383100024ffd",
     "field": "Information and Communication",
     "title": "IT Support Specialist",
     "description": "Provide technical support to employees, troubleshooting hardware, software, and network issues.",
@@ -1619,10 +2420,19 @@
       "Experience in IT support or customer service.",
       "Proficiency in diagnosing hardware and software issues.",
       "Excellent communication skills and ability to work under pressure."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1000,
+    "monthlyMin": 48000,
+    "monthlyMax": 80000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1427129596000
   },
   {
-    "_id": "6737229d946638310000a402",
+    "_id": "6756b9369466383100024ffe",
     "field": "Accommodation and Hospitality",
     "title": "Hotel Front Desk Manager",
     "description": "Manage the front desk operations, ensuring excellent customer service and smooth check-in/check-out processes.",
@@ -1637,10 +2447,19 @@
       "Experience in hotel or front desk management.",
       "Strong communication and leadership skills.",
       "Ability to manage a team and handle guest inquiries."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 1100,
+    "monthlyMin": 80000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": 1546949126000
   },
   {
-    "_id": "6737229d946638310000a403",
+    "_id": "6756b9369466383100024fff",
     "field": "Accommodation and Hospitality",
     "title": "Chef de Partie",
     "description": "Oversee a specific section of the kitchen, preparing and cooking high-quality meals in a fast-paced environment.",
@@ -1655,10 +2474,19 @@
       "Experience in a high-end or busy kitchen environment.",
       "Excellent cooking skills and attention to detail.",
       "Ability to work under pressure and in a team."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 800,
+    "monthlyMin": 56000,
+    "monthlyMax": 112000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1541592830000
   },
   {
-    "_id": "6737229d946638310000a404",
+    "_id": "6756b9369466383100025000",
     "field": "Accommodation and Hospitality",
     "title": "Housekeeping Supervisor",
     "description": "Oversee housekeeping staff to ensure cleanliness and maintenance of guest rooms and common areas.",
@@ -1673,10 +2501,19 @@
       "Experience in housekeeping or hospitality management.",
       "Strong organizational and leadership skills.",
       "Ability to train and supervise a team."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 1200,
+    "monthlyMin": 128000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": false,
+    "dateAdded": 1057307326000
   },
   {
-    "_id": "6737229d946638310000a405",
+    "_id": "6756b9369466383100025001",
     "field": "Accommodation and Hospitality",
     "title": "Restaurant Host/Hostess",
     "description": "Greet and seat guests, manage reservations, and ensure smooth seating flow in the restaurant.",
@@ -1691,10 +2528,19 @@
       "Previous experience in a customer service or hospitality role.",
       "Excellent interpersonal and communication skills.",
       "Ability to stay organized in a busy environment."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 900,
+    "monthlyMin": 48000,
+    "monthlyMax": 72000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1593511298000
   },
   {
-    "_id": "6737229d946638310000a406",
+    "_id": "6756b9369466383100025002",
     "field": "Accommodation and Hospitality",
     "title": "Event Coordinator",
     "description": "Plan and coordinate events, ensuring all aspects such as venue, catering, and entertainment are in place for a seamless experience.",
@@ -1709,10 +2555,19 @@
       "Experience in event planning or coordination.",
       "Strong organizational and communication skills.",
       "Ability to work under tight deadlines and manage multiple tasks."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1100,
+    "monthlyMin": 84000,
+    "monthlyMax": 154000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": 1132711206000
   },
   {
-    "_id": "6737229d946638310000a407",
+    "_id": "6756b9369466383100025003",
     "field": "Agriculture, Forestry, Fishing",
     "title": "Agricultural Engineer",
     "description": "Design and develop systems and equipment to improve agricultural production and efficiency.",
@@ -1727,10 +2582,19 @@
       "Experience with agricultural technologies and machinery.",
       "Strong problem-solving skills and innovation.",
       "Knowledge of sustainability practices in agriculture."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 1200,
+    "monthlyMin": 40000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1404538828000
   },
   {
-    "_id": "6737229d946638310000a408",
+    "_id": "6756b9369466383100025004",
     "field": "Agriculture, Forestry, Fishing",
     "title": "Forestry Technician",
     "description": "Assist in managing and conserving forest resources by monitoring tree growth, health, and inventory.",
@@ -1745,10 +2609,19 @@
       "Experience in forestry management or land conservation.",
       "Strong physical stamina for field work.",
       "Knowledge of environmental regulations and forest health monitoring."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 800,
+    "monthlyMin": 64000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1628244260000
   },
   {
-    "_id": "6737229d946638310000a409",
+    "_id": "6756b9369466383100025005",
     "field": "Agriculture, Forestry, Fishing",
     "title": "Fisheries Biologist",
     "description": "Conduct research on fish populations, ecosystems, and habitats to promote sustainable fishing practices.",
@@ -1763,10 +2636,19 @@
       "Experience in fisheries management or aquatic biology.",
       "Strong data analysis and research skills.",
       "Knowledge of conservation practices and aquatic ecosystems."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 900,
+    "monthlyMin": 56000,
+    "monthlyMax": 126000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1700280594000
   },
   {
-    "_id": "6737229d946638310000a40a",
+    "_id": "6756b9369466383100025006",
     "field": "Agriculture, Forestry, Fishing",
     "title": "Farm Manager",
     "description": "Oversee farm operations, manage crops, livestock, and personnel to ensure productivity and sustainability.",
@@ -1781,10 +2663,19 @@
       "Experience in farm management or agriculture operations.",
       "Strong leadership and organizational skills.",
       "Knowledge of sustainable farming practices and crop/livestock management."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 1200,
+    "monthlyMin": 40000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": 1367764334000
   },
   {
-    "_id": "6737229d946638310000a40b",
+    "_id": "6756b9369466383100025007",
     "field": "Agriculture, Forestry, Fishing",
     "title": "Soil Scientist",
     "description": "Study the properties of soil and its relationship to plant growth to develop sustainable farming practices.",
@@ -1799,10 +2690,19 @@
       "Experience in soil analysis and sustainable land management.",
       "Strong research and analytical skills.",
       "Knowledge of soil conservation and fertility management techniques."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 1000,
+    "monthlyMin": 80000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": 1274624432000
   },
   {
-    "_id": "6737229d946638310000a40c",
+    "_id": "6756b9369466383100025008",
     "field": "Agriculture, Forestry, Fishing",
     "title": "Irrigation Specialist",
     "description": "Design and manage irrigation systems to optimize water usage and support sustainable agricultural practices.",
@@ -1817,10 +2717,19 @@
       "Experience in designing and maintaining irrigation systems.",
       "Knowledge of water conservation and irrigation technologies.",
       "Strong problem-solving and project management skills."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 1200,
+    "monthlyMin": 56000,
+    "monthlyMax": 168000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": 1485381838000
   },
   {
-    "_id": "6737229d946638310000a40d",
+    "_id": "6756b9369466383100025009",
     "field": "Agriculture, Forestry, Fishing",
     "title": "Veterinarian (Livestock)",
     "description": "Provide medical care and preventive services to farm animals, ensuring health and productivity.",
@@ -1835,10 +2744,19 @@
       "Experience in treating farm animals (e.g., cattle, sheep, poultry).",
       "Strong diagnostic and problem-solving skills.",
       "Ability to work in rural or field-based settings."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 800,
+    "monthlyMin": 128000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1150555440000
   },
   {
-    "_id": "6737229d946638310000a40e",
+    "_id": "6756b936946638310002500a",
     "field": "Agriculture, Forestry, Fishing",
     "title": "Agricultural Technician",
     "description": "Support agricultural research and operations, collecting data, maintaining equipment, and assisting with field trials.",
@@ -1853,10 +2771,19 @@
       "Experience with agricultural tools and equipment.",
       "Strong organizational and record-keeping skills.",
       "Willingness to work outdoors and in various weather conditions."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 1100,
+    "monthlyMin": 64000,
+    "monthlyMax": 88000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1598813240000
   },
   {
-    "_id": "6737229d946638310000a40f",
+    "_id": "6756b936946638310002500b",
     "field": "Agriculture, Forestry, Fishing",
     "title": "Crop Consultant",
     "description": "Advise farmers on crop selection, pest control, and soil management to maximize yield and sustainability.",
@@ -1871,10 +2798,19 @@
       "Experience in crop management or agricultural consulting.",
       "Strong problem-solving and communication skills.",
       "Knowledge of sustainable farming practices and pest management."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 1000,
+    "monthlyMin": 98000,
+    "monthlyMax": 140000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1287414935000
   },
   {
-    "_id": "6737229d946638310000a410",
+    "_id": "6756b936946638310002500c",
     "field": "Agriculture, Forestry, Fishing",
     "title": "Horticulturist",
     "description": "Manage the cultivation of plants, flowers, and trees for commercial, recreational, or conservation purposes.",
@@ -1889,10 +2825,19 @@
       "Experience in plant cultivation or garden management.",
       "Knowledge of plant species, soil types, and pest management.",
       "Strong attention to detail and organizational skills."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1200,
+    "monthlyMin": 96000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1607417940000
   },
   {
-    "_id": "6737229d946638310000a411",
+    "_id": "6756b936946638310002500d",
     "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
     "title": "Water Treatment Plant Operator",
     "description": "Operate and maintain water treatment facilities to ensure the safe and effective delivery of clean water.",
@@ -1907,10 +2852,19 @@
       "Experience in water treatment or utilities operations.",
       "Knowledge of water treatment systems and safety protocols.",
       "Ability to perform routine maintenance and troubleshooting tasks."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 800,
+    "monthlyMin": 64000,
+    "monthlyMax": 64000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1225287877000
   },
   {
-    "_id": "6737229d946638310000a412",
+    "_id": "6756b936946638310002500e",
     "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
     "title": "Environmental Health Specialist",
     "description": "Monitor and manage environmental health risks related to waste management and sanitation to ensure public safety.",
@@ -1925,10 +2879,19 @@
       "Experience in waste management or environmental health.",
       "Strong knowledge of public health regulations and sanitation practices.",
       "Excellent communication and problem-solving skills."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1200,
+    "monthlyMin": 84000,
+    "monthlyMax": 168000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1448957932000
   },
   {
-    "_id": "6737229d946638310000a413",
+    "_id": "6756b936946638310002500f",
     "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
     "title": "Wastewater Treatment Technician",
     "description": "Monitor and maintain wastewater treatment processes to ensure compliance with environmental standards.",
@@ -1943,10 +2906,19 @@
       "Experience in wastewater treatment or environmental services.",
       "Strong knowledge of water quality standards and regulations.",
       "Ability to operate and maintain wastewater treatment equipment."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 900,
+    "monthlyMin": 112000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 1305827367000
   },
   {
-    "_id": "6737229d946638310000a414",
+    "_id": "6756b9369466383100025010",
     "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
     "title": "Sanitation Engineer",
     "description": "Design and implement sanitation systems for urban or rural areas, ensuring efficient waste disposal and health safety.",
@@ -1961,10 +2933,19 @@
       "Experience in sanitation system design and management.",
       "Knowledge of waste disposal regulations and public health safety.",
       "Strong problem-solving and project management skills."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 900,
+    "monthlyMin": 32000,
+    "monthlyMax": 72000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1704341929000
   },
   {
-    "_id": "6737229d946638310000a415",
+    "_id": "6756b9369466383100025011",
     "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
     "title": "Solid Waste Manager",
     "description": "Oversee the collection, disposal, and recycling of solid waste to ensure proper waste management and environmental protection.",
@@ -1979,10 +2960,19 @@
       "Experience in solid waste management or municipal services.",
       "Knowledge of waste disposal, recycling processes, and regulations.",
       "Strong leadership and organizational skills."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1200,
+    "monthlyMin": 48000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 1433626886000
   },
   {
-    "_id": "6737229d946638310000a416",
+    "_id": "6756b9369466383100025012",
     "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
     "title": "Sewage System Maintenance Worker",
     "description": "Perform routine inspections and maintenance on sewage systems to ensure proper functioning and prevent system failures.",
@@ -1997,10 +2987,19 @@
       "Experience in sewer system maintenance or related field.",
       "Knowledge of sewage systems and plumbing techniques.",
       "Ability to perform physical labor and work in confined spaces."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1200,
+    "monthlyMin": 48000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1194268397000
   },
   {
-    "_id": "6737229d946638310000a417",
+    "_id": "6756b9369466383100025013",
     "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
     "title": "Water Resources Specialist",
     "description": "Monitor and manage water resources, ensuring sustainable use and compliance with environmental regulations.",
@@ -2015,10 +3014,19 @@
       "Experience in water resources management or environmental protection.",
       "Strong analytical and problem-solving skills.",
       "Knowledge of water use regulations and sustainability practices."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 900,
+    "monthlyMin": 32000,
+    "monthlyMax": 72000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 990297294000
   },
   {
-    "_id": "6737229d946638310000a418",
+    "_id": "6756b9369466383100025014",
     "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
     "title": "Public Health Sanitarian",
     "description": "Inspect and monitor sanitation practices in public areas, ensuring compliance with public health regulations and standards.",
@@ -2033,10 +3041,19 @@
       "Experience in health inspections or sanitation monitoring.",
       "Strong knowledge of sanitation regulations and public health standards.",
       "Excellent communication and analytical skills."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 800,
+    "monthlyMin": 64000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1103872100000
   },
   {
-    "_id": "6737229d946638310000a419",
+    "_id": "6756b9369466383100025015",
     "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
     "title": "Hydrologist",
     "description": "Study the distribution, movement, and properties of water in the environment to support water management and conservation efforts.",
@@ -2051,10 +3068,19 @@
       "Experience in water resources management or hydrological research.",
       "Strong analytical and research skills.",
       "Knowledge of water conservation techniques and environmental regulations."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 1200,
+    "monthlyMin": 112000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": 1449555915000
   },
   {
-    "_id": "6737229d946638310000a41a",
+    "_id": "6756b9369466383100025016",
     "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
     "title": "Recycling Coordinator",
     "description": "Oversee and implement recycling programs for waste materials, ensuring compliance with environmental and safety regulations.",
@@ -2069,10 +3095,19 @@
       "Experience in recycling programs or waste management.",
       "Strong knowledge of waste segregation and recycling processes.",
       "Excellent organizational and communication skills."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 800,
+    "monthlyMin": 56000,
+    "monthlyMax": 64000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1510410221000
   },
   {
-    "_id": "6737229d946638310000a41b",
+    "_id": "6756b9369466383100025017",
     "field": "Health and Social Care",
     "title": "Registered Nurse",
     "description": "Provide medical care and support to patients, ensuring their comfort, safety, and recovery.",
@@ -2087,10 +3122,19 @@
       "Registered nurse with a valid license.",
       "Strong clinical skills and attention to detail.",
       "Ability to work in high-pressure environments."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 900,
+    "monthlyMin": 128000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1175661728000
   },
   {
-    "_id": "6737229d946638310000a41c",
+    "_id": "6756b9369466383100025018",
     "field": "Health and Social Care",
     "title": "Social Worker",
     "description": "Support individuals and families in need of social assistance by assessing and providing resources to improve their quality of life.",
@@ -2105,10 +3149,19 @@
       "Experience in case management or social services.",
       "Strong communication and empathetic skills.",
       "Knowledge of local community resources and programs."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 900,
+    "monthlyMin": 80000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 966009772000
   },
   {
-    "_id": "6737229d946638310000a41d",
+    "_id": "6756b9369466383100025019",
     "field": "Health and Social Care",
     "title": "Occupational Therapist",
     "description": "Assist patients in developing or regaining the skills necessary for daily living and working after illness, injury, or surgery.",
@@ -2123,10 +3176,19 @@
       "Licensure as an Occupational Therapist.",
       "Experience in clinical or rehabilitation settings.",
       "Strong interpersonal and communication skills."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 900,
+    "monthlyMin": 70000,
+    "monthlyMax": 126000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": 1582067996000
   },
   {
-    "_id": "6737229d946638310000a41e",
+    "_id": "6756b936946638310002501a",
     "field": "Health and Social Care",
     "title": "Caregiver",
     "description": "Provide personal care and assistance to individuals with physical or mental disabilities, helping them with daily activities.",
@@ -2141,10 +3203,19 @@
       "Experience in caregiving or healthcare roles.",
       "Compassionate, patient, and reliable.",
       "Ability to handle physical tasks such as lifting or assisting with mobility."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 900,
+    "monthlyMin": 98000,
+    "monthlyMax": 126000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": 1416725035000
   },
   {
-    "_id": "6737229d946638310000a41f",
+    "_id": "6756b936946638310002501b",
     "field": "Health and Social Care",
     "title": "Mental Health Counselor",
     "description": "Provide therapy and counseling services to individuals dealing with mental health issues, such as anxiety, depression, and trauma.",
@@ -2159,10 +3230,19 @@
       "Licensure as a professional counselor.",
       "Experience with individual and group therapy.",
       "Strong empathy, communication, and listening skills."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 1200,
+    "monthlyMin": 56000,
+    "monthlyMax": 168000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1423240052000
   },
   {
-    "_id": "6737229d946638310000a420",
+    "_id": "6756b936946638310002501c",
     "field": "Electricity, Gas, Steam and Air Conditioning Supply and Distribution",
     "title": "Electrical Engineer",
     "description": "Design, develop, and maintain electrical systems and equipment used for power generation, transmission, and distribution.",
@@ -2177,10 +3257,19 @@
       "Experience in electrical power systems design and analysis.",
       "Knowledge of electrical codes and safety regulations.",
       "Strong problem-solving and technical skills."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 1000,
+    "monthlyMin": 98000,
+    "monthlyMax": 140000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1699468589000
   },
   {
-    "_id": "6737229d946638310000a421",
+    "_id": "6756b936946638310002501d",
     "field": "Electricity, Gas, Steam and Air Conditioning Supply and Distribution",
     "title": "Energy Auditor",
     "description": "Conduct assessments of buildings and facilities to evaluate energy consumption and recommend improvements for energy efficiency.",
@@ -2195,10 +3284,19 @@
       "Experience with energy auditing and analysis.",
       "Knowledge of energy-efficient technologies and practices.",
       "Strong analytical and communication skills."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 900,
+    "monthlyMin": 48000,
+    "monthlyMax": 72000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 1417883603000
   },
   {
-    "_id": "6737229d946638310000a422",
+    "_id": "6756b936946638310002501e",
     "field": "Electricity, Gas, Steam and Air Conditioning Supply and Distribution",
     "title": "Gas Plant Operator",
     "description": "Operate and monitor the systems that control the distribution of natural gas, ensuring safe and efficient operations.",
@@ -2213,10 +3311,19 @@
       "Experience in gas plant operations or similar industrial settings.",
       "Knowledge of safety standards and regulations.",
       "Ability to monitor and control complex systems."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 1100,
+    "monthlyMin": 32000,
+    "monthlyMax": 88000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": 1673996688000
   },
   {
-    "_id": "6737229d946638310000a423",
+    "_id": "6756b936946638310002501f",
     "field": "Electricity, Gas, Steam and Air Conditioning Supply and Distribution",
     "title": "HVAC Technician",
     "description": "Install, repair, and maintain heating, ventilation, and air conditioning (HVAC) systems in residential, commercial, and industrial buildings.",
@@ -2231,10 +3338,19 @@
       "Certification in HVAC or relevant technical field.",
       "Experience with HVAC systems installation and troubleshooting.",
       "Strong technical and mechanical skills."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1000,
+    "monthlyMin": 48000,
+    "monthlyMax": 80000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 958232968000
   },
   {
-    "_id": "6737229d946638310000a424",
+    "_id": "6756b9369466383100025020",
     "field": "Electricity, Gas, Steam and Air Conditioning Supply and Distribution",
     "title": "Power Systems Technician",
     "description": "Install, maintain, and repair electrical equipment used for power generation, transmission, and distribution.",
@@ -2249,10 +3365,19 @@
       "Experience in power systems maintenance or similar field.",
       "Knowledge of electrical systems and safety protocols.",
       "Strong troubleshooting and repair skills."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 900,
+    "monthlyMin": 56000,
+    "monthlyMax": 126000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 1654704392000
   },
   {
-    "_id": "6737229d946638310000a425",
+    "_id": "6756b9369466383100025021",
     "field": "Electricity, Gas, Steam and Air Conditioning Supply and Distribution",
     "title": "Renewable Energy Technician",
     "description": "Install and maintain renewable energy systems such as solar, wind, and geothermal energy for residential and commercial use.",
@@ -2267,10 +3392,19 @@
       "Experience with solar, wind, or geothermal system installation.",
       "Knowledge of renewable energy technologies and their applications.",
       "Ability to work at heights and with electrical systems safely."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 900,
+    "monthlyMin": 64000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1398486426000
   },
   {
-    "_id": "6737229d946638310000a426",
+    "_id": "6756b9369466383100025022",
     "field": "Other",
     "title": "Project Manager",
     "description": "Lead and coordinate various projects across departments to ensure timely and successful completion.",
@@ -2285,10 +3419,19 @@
       "Proven experience in project management.",
       "Strong organizational and leadership skills.",
       "Excellent communication and problem-solving abilities."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 1000,
+    "monthlyMin": 64000,
+    "monthlyMax": 80000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1357782214000
   },
   {
-    "_id": "6737229d946638310000a427",
+    "_id": "6756b9369466383100025023",
     "field": "Other",
     "title": "Data Analyst",
     "description": "Analyze and interpret complex data sets to provide actionable insights for business decision-making.",
@@ -2303,10 +3446,19 @@
       "Experience with data analysis tools like Excel, SQL, or Python.",
       "Strong analytical and problem-solving skills.",
       "Ability to communicate complex data to non-technical stakeholders."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 1200,
+    "monthlyMin": 98000,
+    "monthlyMax": 168000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": 1561630592000
   },
   {
-    "_id": "6737229d946638310000a428",
+    "_id": "6756b9369466383100025024",
     "field": "Other",
     "title": "Marketing Manager",
     "description": "Develop and execute marketing strategies to promote products and services and drive business growth.",
@@ -2321,10 +3473,19 @@
       "Proven experience in marketing strategy and campaign management.",
       "Excellent leadership, communication, and project management skills.",
       "Strong understanding of digital marketing tools and trends."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 1200,
+    "monthlyMin": 128000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1393747863000
   },
   {
-    "_id": "6737229d946638310000a429",
+    "_id": "6756b9369466383100025025",
     "field": "Other",
     "title": "Human Resources Specialist",
     "description": "Oversee recruiting, employee relations, training, and other HR functions to ensure a productive and compliant workforce.",
@@ -2339,10 +3500,19 @@
       "Experience in human resources management and talent acquisition.",
       "Strong knowledge of labor laws and employee relations.",
       "Excellent communication and interpersonal skills."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 800,
+    "monthlyMin": 98000,
+    "monthlyMax": 112000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1588985213000
   },
   {
-    "_id": "6737229d946638310000a42a",
+    "_id": "6756b9369466383100025026",
     "field": "Other",
     "title": "Financial Analyst",
     "description": "Analyze financial data and trends to help businesses make informed investment and budgeting decisions.",
@@ -2357,10 +3527,19 @@
       "Experience with financial modeling and reporting.",
       "Strong attention to detail and analytical skills.",
       "Proficiency in Microsoft Excel or financial software."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1200,
+    "monthlyMin": 48000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1395003802000
   },
   {
-    "_id": "6737229d946638310000a42b",
+    "_id": "6756b9369466383100025027",
     "field": "Cultural, Entertainment and Leisure Activities",
     "title": "Event Coordinator",
     "description": "Plan, organize, and execute events, ensuring that every detail is arranged and the event runs smoothly.",
@@ -2375,10 +3554,19 @@
       "Experience in planning and coordinating events.",
       "Excellent organizational and multitasking skills.",
       "Strong communication and vendor management skills."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 1100,
+    "monthlyMin": 98000,
+    "monthlyMax": 154000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1670857830000
   },
   {
-    "_id": "6737229d946638310000a42c",
+    "_id": "6756b9369466383100025028",
     "field": "Cultural, Entertainment and Leisure Activities",
     "title": "Museum Curator",
     "description": "Manage and oversee collections, exhibitions, and educational programs at a museum or cultural institution.",
@@ -2393,10 +3581,19 @@
       "Experience in curating exhibits or managing museum collections.",
       "Strong knowledge of art history and cultural heritage.",
       "Ability to work with museum staff and engage visitors."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 1200,
+    "monthlyMin": 80000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": 1460486555000
   },
   {
-    "_id": "6737229d946638310000a42d",
+    "_id": "6756b9369466383100025029",
     "field": "Cultural, Entertainment and Leisure Activities",
     "title": "Fitness Trainer",
     "description": "Design and deliver fitness programs tailored to individuals or groups to help them achieve their health and wellness goals.",
@@ -2411,10 +3608,19 @@
       "Experience in conducting fitness assessments and designing programs.",
       "Knowledge of exercise techniques, nutrition, and wellness.",
       "Excellent communication and motivation skills."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1200,
+    "monthlyMin": 48000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1655130381000
   },
   {
-    "_id": "6737229d946638310000a42e",
+    "_id": "6756b936946638310002502a",
     "field": "Cultural, Entertainment and Leisure Activities",
     "title": "Tour Guide",
     "description": "Lead groups of tourists on excursions, providing information on landmarks, history, and culture.",
@@ -2429,10 +3635,19 @@
       "Experience in guiding tours or working in the tourism industry.",
       "Strong knowledge of local history and landmarks.",
       "Excellent public speaking and interpersonal skills."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 1200,
+    "monthlyMin": 64000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1376753012000
   },
   {
-    "_id": "6737229d946638310000a42f",
+    "_id": "6756b936946638310002502b",
     "field": "Cultural, Entertainment and Leisure Activities",
     "title": "Animator",
     "description": "Create and perform entertainment activities for guests in resorts, hotels, or cruise ships, ensuring an enjoyable experience.",
@@ -2447,10 +3662,19 @@
       "Ability to engage and entertain diverse groups of people.",
       "Excellent communication and improvisational skills.",
       "Flexible schedule and ability to work evenings and weekends."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 1200,
+    "monthlyMin": 112000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1245764574000
   },
   {
-    "_id": "6737229d946638310000a430",
+    "_id": "6756b936946638310002502c",
     "field": "Other",
     "title": "Content Writer",
     "description": "Create engaging written content for websites, blogs, social media, and marketing materials.",
@@ -2465,10 +3689,19 @@
       "Experience in writing for web and digital platforms.",
       "Strong knowledge of SEO principles and content strategies.",
       "Excellent writing, editing, and proofreading skills."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1000,
+    "monthlyMin": 48000,
+    "monthlyMax": 80000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1672156619000
   },
   {
-    "_id": "6737229d946638310000a431",
+    "_id": "6756b936946638310002502d",
     "field": "Other",
     "title": "Graphic Designer",
     "description": "Design visual content for marketing campaigns, websites, and branding projects.",
@@ -2483,10 +3716,19 @@
       "Proficiency in design software such as Adobe Creative Suite (Photoshop, Illustrator, InDesign).",
       "Strong creativity and attention to detail.",
       "Excellent communication skills and the ability to work in a team."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 1200,
+    "monthlyMin": 64000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1332395369000
   },
   {
-    "_id": "6737229d946638310000a432",
+    "_id": "6756b936946638310002502e",
     "field": "Other",
     "title": "Business Analyst",
     "description": "Analyze business needs and recommend solutions to improve processes and efficiency.",
@@ -2501,10 +3743,19 @@
       "Experience in business analysis or consulting.",
       "Strong problem-solving and strategic thinking abilities.",
       "Proficiency in data analysis tools such as Excel or Tableau."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 1000,
+    "monthlyMin": 98000,
+    "monthlyMax": 140000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1254323418000
   },
   {
-    "_id": "6737229d946638310000a433",
+    "_id": "6756b936946638310002502f",
     "field": "Other",
     "title": "IT Support Specialist",
     "description": "Provide technical support and troubleshooting assistance to employees and clients regarding software and hardware issues.",
@@ -2519,10 +3770,19 @@
       "Experience in IT support or technical troubleshooting.",
       "Strong knowledge of computer systems and networking.",
       "Excellent communication and customer service skills."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 1000,
+    "monthlyMin": 64000,
+    "monthlyMax": 80000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": 1475815933000
   },
   {
-    "_id": "6737229d946638310000a434",
+    "_id": "6756b9369466383100025030",
     "field": "Other",
     "title": "Operations Manager",
     "description": "Manage day-to-day operations of a company or department, ensuring processes are efficient and goals are met.",
@@ -2537,10 +3797,19 @@
       "Proven experience in operations management.",
       "Strong leadership and organizational skills.",
       "Ability to solve problems quickly and make decisions under pressure."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 1000,
+    "monthlyMin": 112000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 5,
+    "internship": false,
+    "dateAdded": 1661245759000
   },
   {
-    "_id": "6737229d946638310000a435",
+    "_id": "6756b9369466383100025031",
     "field": "Other",
     "title": "Customer Success Manager",
     "description": "Ensure customers are satisfied with products or services and help them achieve their goals through product use.",
@@ -2555,10 +3824,19 @@
       "Experience in customer success or account management.",
       "Strong problem-solving and communication skills.",
       "Ability to build relationships with customers and internal teams."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 1100,
+    "monthlyMin": 70000,
+    "monthlyMax": 154000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 998556985000
   },
   {
-    "_id": "6737229d946638310000a436",
+    "_id": "6756b9369466383100025032",
     "field": "Other",
     "title": "Supply Chain Coordinator",
     "description": "Manage the flow of goods and services, ensuring that the supply chain is efficient and cost-effective.",
@@ -2573,10 +3851,19 @@
       "Experience in supply chain coordination or logistics.",
       "Strong organizational and analytical skills.",
       "Proficiency in supply chain software and tools."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1100,
+    "monthlyMin": 96000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1476717597000
   },
   {
-    "_id": "6737229d946638310000a437",
+    "_id": "6756b9369466383100025033",
     "field": "Other",
     "title": "Quality Assurance Specialist",
     "description": "Monitor and ensure the quality of products and services meets company and industry standards.",
@@ -2591,10 +3878,19 @@
       "Experience in quality control or testing environments.",
       "Strong attention to detail and problem-solving skills.",
       "Knowledge of industry standards and regulatory requirements."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 1000,
+    "monthlyMin": 32000,
+    "monthlyMax": 80000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1703648223000
   },
   {
-    "_id": "6737229d946638310000a438",
+    "_id": "6756b9369466383100025034",
     "field": "Other",
     "title": "Digital Marketing Specialist",
     "description": "Develop and execute digital marketing campaigns to increase brand awareness and drive traffic and sales.",
@@ -2609,10 +3905,19 @@
       "Experience in digital marketing or social media marketing.",
       "Strong understanding of SEO and paid advertising strategies.",
       "Proficiency with digital marketing tools and analytics platforms."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 800,
+    "monthlyMin": 80000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1378130748000
   },
   {
-    "_id": "6737229d946638310000a439",
+    "_id": "6756b9369466383100025035",
     "field": "Other",
     "title": "Legal Assistant",
     "description": "Support legal teams by managing case files, conducting research, and preparing legal documents.",
@@ -2627,10 +3932,19 @@
       "Experience in a legal or law firm environment.",
       "Strong organizational and research skills.",
       "Proficiency with legal documentation and case management systems."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 800,
+    "monthlyMin": 64000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 1555466220000
   },
   {
-    "_id": "6737229d946638310000a43a",
+    "_id": "6756b9369466383100025036",
     "field": "Public administration and defense; compulsory social security",
     "title": "Policy Advisor",
     "description": "Provide strategic advice to government bodies on public policy issues, ensuring alignment with current legislation and public interests.",
@@ -2645,10 +3959,19 @@
       "Experience in policy analysis or government advisory roles.",
       "Strong understanding of public administration and legislative processes.",
       "Excellent communication, research, and analytical skills."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 1200,
+    "monthlyMin": 98000,
+    "monthlyMax": 168000,
+    "hours": 140,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": true,
+    "dateAdded": 1446969767000
   },
   {
-    "_id": "6737229d946638310000a43b",
+    "_id": "6756b9369466383100025037",
     "field": "Public administration and defense; compulsory social security",
     "title": "Public Health Administrator",
     "description": "Manage public health programs and services, ensuring effective delivery of health care services to the community.",
@@ -2663,10 +3986,19 @@
       "Experience in managing healthcare services or public health programs.",
       "Strong leadership, organizational, and budget management skills.",
       "Knowledge of healthcare policies and regulatory requirements."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 1100,
+    "monthlyMin": 64000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 4,
+    "internship": true,
+    "dateAdded": 1522906290000
   },
   {
-    "_id": "6737229d946638310000a43c",
+    "_id": "6756b9369466383100025038",
     "field": "Public administration and defense; compulsory social security",
     "title": "Social Security Officer",
     "description": "Assist citizens in understanding and accessing their social security benefits, ensuring compliance with policies and regulations.",
@@ -2681,10 +4013,19 @@
       "Experience in social services or public sector roles.",
       "Strong interpersonal and communication skills.",
       "Knowledge of social security systems and regulations."
-    ]
+    ],
+    "hourlyMin": 500,
+    "hourlyMax": 800,
+    "monthlyMin": 70000,
+    "monthlyMax": 112000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": 1279890585000
   },
   {
-    "_id": "6737229d946638310000a43d",
+    "_id": "6756b9369466383100025039",
     "field": "Public administration and defense; compulsory social security",
     "title": "Government Compliance Officer",
     "description": "Ensure government departments adhere to all regulatory and compliance requirements, conducting audits and assessments as needed.",
@@ -2699,10 +4040,19 @@
       "Experience in compliance monitoring or regulatory roles.",
       "Strong knowledge of governmental policies and legal frameworks.",
       "Excellent attention to detail and communication skills."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 900,
+    "monthlyMin": 128000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": 1581522663000
   },
   {
-    "_id": "6737229d946638310000a43e",
+    "_id": "6756b936946638310002503a",
     "field": "Public administration and defense; compulsory social security",
     "title": "Defense Analyst",
     "description": "Provide strategic analysis and recommendations related to defense policies and programs, supporting national security objectives.",
@@ -2717,10 +4067,19 @@
       "Experience in defense policy analysis or security studies.",
       "Strong analytical and research skills.",
       "Knowledge of military systems and defense strategies."
-    ]
+    ],
+    "hourlyMin": 700,
+    "hourlyMax": 1200,
+    "monthlyMin": 56000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1679084064000
   },
   {
-    "_id": "6737229d946638310000a43f",
+    "_id": "6756b936946638310002503b",
     "field": "Mining and quarrying",
     "title": "Mining Engineer",
     "description": "Design and manage mining operations, ensuring efficient extraction of minerals and overseeing the safety of operations.",
@@ -2735,10 +4094,19 @@
       "Experience in mining operations and management.",
       "Strong knowledge of mining techniques, safety regulations, and environmental concerns.",
       "Ability to work in challenging environments and oversee large teams."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 1100,
+    "monthlyMin": 64000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": false,
+    "homeOfficeCount": null,
+    "internship": false,
+    "dateAdded": 1428258418000
   },
   {
-    "_id": "6737229d946638310000a440",
+    "_id": "6756b936946638310002503c",
     "field": "Mining and quarrying",
     "title": "Geologist",
     "description": "Conduct geological surveys and research to evaluate mineral deposits and support mining operations.",
@@ -2753,10 +4121,19 @@
       "Experience in geological surveying and mineral exploration.",
       "Strong analytical and research skills.",
       "Knowledge of environmental impact assessments and mining regulations."
-    ]
+    ],
+    "hourlyMin": 400,
+    "hourlyMax": 1000,
+    "monthlyMin": 64000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": false,
+    "dateAdded": 1229295832000
   },
   {
-    "_id": "6737229d946638310000a441",
+    "_id": "6756b936946638310002503d",
     "field": "Mining and quarrying",
     "title": "Safety Officer (Mining)",
     "description": "Oversee safety protocols and risk management in mining operations, ensuring the well-being of workers and compliance with safety standards.",
@@ -2771,10 +4148,19 @@
       "Experience in mining safety or industrial safety roles.",
       "Knowledge of mining safety regulations and risk assessment techniques.",
       "Strong communication and training skills."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 1100,
+    "monthlyMin": 48000,
+    "monthlyMax": 88000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": 1338283760000
   },
   {
-    "_id": "6737229d946638310000a442",
+    "_id": "6756b936946638310002503e",
     "field": "Mining and quarrying",
     "title": "Mining Technician",
     "description": "Support mining engineers and geologists by performing technical tasks related to the operation and maintenance of mining equipment.",
@@ -2789,10 +4175,19 @@
       "Experience with mining equipment and technology.",
       "Strong technical and mechanical skills.",
       "Ability to work in a physically demanding environment."
-    ]
+    ],
+    "hourlyMin": 600,
+    "hourlyMax": 900,
+    "monthlyMin": 96000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": 1386676202000
   },
   {
-    "_id": "6737229d946638310000a443",
+    "_id": "6756b936946638310002503f",
     "field": "Mining and quarrying",
     "title": "Blasting Supervisor",
     "description": "Supervise and oversee blasting operations in mining and quarrying projects, ensuring compliance with safety and environmental standards.",
@@ -2807,6 +4202,2013 @@
       "Experience in managing blasting operations in mining environments.",
       "Knowledge of explosives handling, safety protocols, and regulatory requirements.",
       "Strong leadership and problem-solving skills."
-    ]
+    ],
+    "hourlyMin": 800,
+    "hourlyMax": 800,
+    "monthlyMin": 64000,
+    "monthlyMax": 64000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": 1195348742000
+  },
+  {
+    "_id": "6756b991946638310002504c",
+    "title": "IT Business Analyst",
+    "description": "Bridge the gap between business needs and technology solutions by analyzing requirements and implementing software systems.",
+    "tags": [
+      "Business Analysis",
+      "Agile",
+      "Systems Analysis",
+      "Communication Skills"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Information Systems, Business, or related fields.",
+      "Knowledge of Agile methodologies and tools.",
+      "Strong communication and problem-solving skills.",
+      "Experience with requirement documentation and stakeholder management."
+    ],
+    "field": "Professional, scientific and technical activities",
+    "hourlyMin": 600,
+    "hourlyMax": 1200,
+    "monthlyMin": 84000,
+    "monthlyMax": 168000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": "2003-12-19T02:49:50.000Z"
+  },
+  {
+    "_id": "6756b991946638310002504d",
+    "title": "Biotechnologist",
+    "description": "Conduct research and experiments to develop new products and improve biological processes.",
+    "tags": [
+      "Biotechnology",
+      "Research",
+      "Laboratory Skills",
+      "Bioprocessing"
+    ],
+    "requirements": [
+      "Master’s degree in Biotechnology, Biology, or Biochemistry.",
+      "Hands-on experience with laboratory equipment and protocols.",
+      "Strong understanding of bioprocess engineering.",
+      "1-3 years of research experience preferred."
+    ],
+    "field": "Professional, scientific and technical activities",
+    "hourlyMin": 800,
+    "hourlyMax": 800,
+    "monthlyMin": 128000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": "2011-09-20T06:16:12.000Z"
+  },
+  {
+    "_id": "6756b991946638310002504e",
+    "title": "Scientific Illustrator",
+    "description": "Create accurate and visually appealing illustrations for scientific publications and presentations.",
+    "tags": [
+      "Graphic Design",
+      "Science Communication",
+      "Adobe Illustrator",
+      "Creativity"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Graphic Design, Biology, or a related field.",
+      "Strong artistic and technical drawing skills.",
+      "Experience with Adobe Creative Suite.",
+      "Knowledge of scientific terminology and processes."
+    ],
+    "field": "Professional, scientific and technical activities",
+    "hourlyMin": 400,
+    "hourlyMax": 800,
+    "monthlyMin": 32000,
+    "monthlyMax": 64000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": "2005-11-14T09:45:26.000Z"
+  },
+  {
+    "_id": "6756b991946638310002504f",
+    "title": "Site Supervisor",
+    "description": "Supervise construction sites, ensuring safety standards and project specifications are adhered to.",
+    "tags": [
+      "Site Management",
+      "Safety Compliance",
+      "Team Leadership",
+      "Problem Solving"
+    ],
+    "requirements": [
+      "Diploma or degree in Construction or related field.",
+      "Strong knowledge of OSHA standards and safety protocols.",
+      "Excellent communication and team management skills.",
+      "3+ years of experience in site supervision."
+    ],
+    "field": "Construction",
+    "hourlyMin": 400,
+    "hourlyMax": 1200,
+    "monthlyMin": 64000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": "2007-07-28T11:37:36.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025050",
+    "title": "Civil Engineer",
+    "description": "Design and oversee construction of infrastructure projects such as roads, bridges, and buildings.",
+    "tags": [
+      "Civil Engineering",
+      "Design",
+      "Structural Analysis",
+      "AutoCAD"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Civil Engineering.",
+      "Proficiency in design software (e.g., AutoCAD, STAAD, Revit).",
+      "Strong understanding of construction materials and methods.",
+      "Professional Engineer (PE) license preferred."
+    ],
+    "field": "Construction",
+    "hourlyMin": 800,
+    "hourlyMax": 1100,
+    "monthlyMin": 128000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": "2007-04-18T03:58:24.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025051",
+    "title": "Construction Safety Officer",
+    "description": "Ensure compliance with health and safety regulations on construction sites, conducting audits and training.",
+    "tags": [
+      "Safety Compliance",
+      "Risk Assessment",
+      "OSHA",
+      "Training"
+    ],
+    "requirements": [
+      "Certification in Occupational Health and Safety (e.g., OSHA, NEBOSH).",
+      "Strong knowledge of safety regulations and standards.",
+      "Excellent communication and training skills.",
+      "2+ years of experience in safety management."
+    ],
+    "field": "Construction",
+    "hourlyMin": 400,
+    "hourlyMax": 1000,
+    "monthlyMin": 32000,
+    "monthlyMax": 80000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": false,
+    "dateAdded": "2017-06-17T09:33:19.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025052",
+    "title": "Heavy Equipment Operator",
+    "description": "Operate machinery such as bulldozers, excavators, and cranes to support construction projects.",
+    "tags": [
+      "Heavy Machinery",
+      "Excavation",
+      "Equipment Maintenance",
+      "Safety"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Certification to operate heavy machinery.",
+      "Strong knowledge of equipment maintenance.",
+      "Experience in operating specific machinery (e.g., cranes, bulldozers)."
+    ],
+    "field": "Construction",
+    "hourlyMin": 700,
+    "hourlyMax": 1100,
+    "monthlyMin": 112000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2016-03-13T05:34:02.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025053",
+    "title": "Plumbing Technician",
+    "description": "Install, repair, and maintain plumbing systems in residential and commercial buildings.",
+    "tags": [
+      "Plumbing",
+      "Installation",
+      "Maintenance",
+      "Problem Solving"
+    ],
+    "requirements": [
+      "Certification or diploma in plumbing.",
+      "Strong understanding of plumbing systems and tools.",
+      "Excellent problem-solving and technical skills.",
+      "2+ years of experience as a plumbing technician."
+    ],
+    "field": "Construction",
+    "hourlyMin": 800,
+    "hourlyMax": 1100,
+    "monthlyMin": 128000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": "2006-10-01T00:15:50.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025054",
+    "title": "Production Manager",
+    "description": "Oversee manufacturing processes, ensuring production efficiency, quality standards, and meeting deadlines.",
+    "tags": [
+      "Production Management",
+      "Leadership",
+      "Lean Manufacturing",
+      "Quality Control"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Manufacturing, Industrial Engineering, or related field.",
+      "Strong knowledge of production processes and lean methodologies.",
+      "Experience with ERP systems (e.g., SAP, Oracle).",
+      "5+ years of experience in a manufacturing leadership role."
+    ],
+    "field": "Manufacturing",
+    "hourlyMin": 400,
+    "hourlyMax": 1100,
+    "monthlyMin": 64000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 5,
+    "internship": true,
+    "dateAdded": "2001-03-18T01:36:34.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025055",
+    "title": "Quality Assurance Specialist",
+    "description": "Inspect and ensure that products meet quality and safety standards through testing and auditing processes.",
+    "tags": [
+      "Quality Assurance",
+      "ISO Standards",
+      "Testing",
+      "Attention to Detail"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Quality Assurance, Engineering, or related fields.",
+      "Familiarity with ISO 9001 and other quality management systems.",
+      "Experience with quality control tools and methods.",
+      "2+ years of experience in quality assurance."
+    ],
+    "field": "Manufacturing",
+    "hourlyMin": 700,
+    "hourlyMax": 1000,
+    "monthlyMin": 112000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": "2012-11-07T14:22:33.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025056",
+    "title": "Industrial Engineer",
+    "description": "Improve production efficiency by designing systems and processes that reduce waste and maximize output.",
+    "tags": [
+      "Industrial Engineering",
+      "Process Improvement",
+      "Lean Manufacturing",
+      "Six Sigma"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Industrial Engineering or related fields.",
+      "Strong knowledge of lean and Six Sigma methodologies.",
+      "Experience with process optimization tools.",
+      "3+ years of experience in manufacturing environments."
+    ],
+    "field": "Manufacturing",
+    "hourlyMin": 700,
+    "hourlyMax": 1100,
+    "monthlyMin": 98000,
+    "monthlyMax": 154000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 5,
+    "internship": true,
+    "dateAdded": "2024-11-16T20:12:58.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025057",
+    "title": "Manufacturing Technician",
+    "description": "Operate and monitor manufacturing equipment, ensuring adherence to production guidelines and safety protocols.",
+    "tags": [
+      "Machine Operation",
+      "Safety Compliance",
+      "Production Monitoring",
+      "Technical Skills"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience with operating and maintaining manufacturing equipment.",
+      "Strong technical and troubleshooting skills.",
+      "1+ years of manufacturing experience preferred."
+    ],
+    "field": "Manufacturing",
+    "hourlyMin": 500,
+    "hourlyMax": 1200,
+    "monthlyMin": 40000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2000-09-05T04:12:31.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025058",
+    "title": "Process Engineer",
+    "description": "Develop and implement manufacturing processes to improve efficiency, quality, and safety.",
+    "tags": [
+      "Process Engineering",
+      "Lean Manufacturing",
+      "Problem Solving",
+      "Technical Skills"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Engineering, Manufacturing, or related field.",
+      "Strong understanding of process optimization and lean principles.",
+      "Experience with manufacturing process design and improvement.",
+      "3+ years of experience in process engineering."
+    ],
+    "field": "Manufacturing",
+    "hourlyMin": 400,
+    "hourlyMax": 900,
+    "monthlyMin": 32000,
+    "monthlyMax": 72000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 5,
+    "internship": true,
+    "dateAdded": "2001-01-07T20:27:41.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025059",
+    "title": "Electronics Technician",
+    "description": "Assemble, test, and repair electronic components and systems in manufacturing operations.",
+    "tags": [
+      "Electronics",
+      "Assembly",
+      "Troubleshooting",
+      "Soldering"
+    ],
+    "requirements": [
+      "Associate degree in Electronics or related field.",
+      "Experience with soldering and assembling electronic components.",
+      "Strong troubleshooting and diagnostic skills.",
+      "1+ years of experience in an electronics manufacturing environment."
+    ],
+    "field": "Manufacturing",
+    "hourlyMin": 700,
+    "hourlyMax": 800,
+    "monthlyMin": 56000,
+    "monthlyMax": 64000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": "2006-09-16T21:52:16.000Z"
+  },
+  {
+    "_id": "6756b991946638310002505a",
+    "title": "Real Estate Agent",
+    "description": "Assist clients in buying, selling, and renting properties, providing guidance throughout the process.",
+    "tags": [
+      "Property Sales",
+      "Client Management",
+      "Negotiation",
+      "Market Analysis"
+    ],
+    "requirements": [
+      "Real estate license in the relevant state or country.",
+      "Strong communication and negotiation skills.",
+      "Knowledge of local real estate markets.",
+      "1+ years of experience in real estate sales preferred."
+    ],
+    "field": "Real estate",
+    "hourlyMin": 400,
+    "hourlyMax": 1100,
+    "monthlyMin": 64000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 4,
+    "internship": false,
+    "dateAdded": "2008-09-29T06:19:36.000Z"
+  },
+  {
+    "_id": "6756b991946638310002505b",
+    "title": "Property Manager",
+    "description": "Oversee the daily operations of residential and commercial properties, including maintenance and tenant relations.",
+    "tags": [
+      "Property Management",
+      "Tenant Relations",
+      "Maintenance Oversight",
+      "Budgeting"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Business, Real Estate, or related field preferred.",
+      "Experience with property management software (e.g., Yardi, AppFolio).",
+      "Strong problem-solving and organizational skills.",
+      "2+ years of experience in property management."
+    ],
+    "field": "Real estate",
+    "hourlyMin": 500,
+    "hourlyMax": 900,
+    "monthlyMin": 40000,
+    "monthlyMax": 72000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": false,
+    "dateAdded": "2019-10-29T07:39:35.000Z"
+  },
+  {
+    "_id": "6756b991946638310002505c",
+    "title": "Real Estate Appraiser",
+    "description": "Assess property values by conducting research and site inspections to determine market worth.",
+    "tags": [
+      "Property Valuation",
+      "Market Research",
+      "Report Writing",
+      "Analytical Skills"
+    ],
+    "requirements": [
+      "State certification or licensure as a real estate appraiser.",
+      "Strong knowledge of appraisal techniques and market trends.",
+      "Attention to detail and analytical skills.",
+      "2+ years of appraisal experience."
+    ],
+    "field": "Real estate",
+    "hourlyMin": 400,
+    "hourlyMax": 800,
+    "monthlyMin": 64000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2021-02-04T04:58:58.000Z"
+  },
+  {
+    "_id": "6756b991946638310002505d",
+    "title": "Real Estate Marketing Specialist",
+    "description": "Develop and execute marketing strategies to promote properties and attract clients.",
+    "tags": [
+      "Marketing",
+      "Digital Advertising",
+      "Social Media",
+      "SEO"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Marketing, Communications, or related field.",
+      "Proficiency in digital marketing tools and platforms.",
+      "Experience with real estate marketing campaigns.",
+      "2+ years of experience in marketing."
+    ],
+    "field": "Real estate",
+    "hourlyMin": 400,
+    "hourlyMax": 900,
+    "monthlyMin": 32000,
+    "monthlyMax": 72000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2023-01-01T14:31:38.000Z"
+  },
+  {
+    "_id": "6756b991946638310002505e",
+    "title": "Real Estate Investment Analyst",
+    "description": "Evaluate potential real estate investments by analyzing market trends, property performance, and financial data.",
+    "tags": [
+      "Investment Analysis",
+      "Financial Modeling",
+      "Market Trends",
+      "Data Analysis"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Finance, Economics, or Real Estate.",
+      "Strong analytical and financial modeling skills.",
+      "Knowledge of real estate markets and investment strategies.",
+      "2+ years of experience in real estate investment analysis."
+    ],
+    "field": "Real estate",
+    "hourlyMin": 700,
+    "hourlyMax": 800,
+    "monthlyMin": 112000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": "2008-10-07T15:11:22.000Z"
+  },
+  {
+    "_id": "6756b991946638310002505f",
+    "title": "Commercial Real Estate Broker",
+    "description": "Facilitate transactions for commercial properties, helping clients buy, sell, or lease office, retail, or industrial spaces.",
+    "tags": [
+      "Commercial Real Estate",
+      "Sales",
+      "Client Management",
+      "Market Analysis"
+    ],
+    "requirements": [
+      "Commercial real estate license.",
+      "Strong negotiation and communication skills.",
+      "Knowledge of commercial property markets.",
+      "3+ years of experience in commercial real estate."
+    ],
+    "field": "Real estate",
+    "hourlyMin": 800,
+    "hourlyMax": 1200,
+    "monthlyMin": 64000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 4,
+    "internship": false,
+    "dateAdded": "2024-09-07T00:27:42.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025060",
+    "title": "Real Estate Developer",
+    "description": "Oversee the planning, design, and construction of real estate projects from inception to completion.",
+    "tags": [
+      "Real Estate Development",
+      "Project Management",
+      "Budgeting",
+      "Construction"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Real Estate, Architecture, or Business.",
+      "Experience with project management software.",
+      "Knowledge of zoning laws and regulations.",
+      "5+ years of experience in real estate development."
+    ],
+    "field": "Real estate",
+    "hourlyMin": 400,
+    "hourlyMax": 1200,
+    "monthlyMin": 32000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": false,
+    "dateAdded": "2003-12-20T12:50:39.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025061",
+    "title": "Real Estate Lawyer",
+    "description": "Provide legal advice and representation in property transactions, disputes, and zoning matters.",
+    "tags": [
+      "Legal Advice",
+      "Contract Drafting",
+      "Negotiation",
+      "Real Estate Law"
+    ],
+    "requirements": [
+      "Juris Doctor (JD) degree and Bar membership.",
+      "Specialization in real estate law.",
+      "Strong negotiation and contract drafting skills.",
+      "3+ years of experience as a real estate attorney."
+    ],
+    "field": "Real estate",
+    "hourlyMin": 700,
+    "hourlyMax": 1000,
+    "monthlyMin": 56000,
+    "monthlyMax": 80000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": false,
+    "dateAdded": "2007-10-25T10:41:31.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025062",
+    "title": "Automotive Technician",
+    "description": "Inspect, repair, and maintain motor vehicles, ensuring safety and optimal performance.",
+    "tags": [
+      "Vehicle Repair",
+      "Diagnostics",
+      "Maintenance",
+      "Customer Service"
+    ],
+    "requirements": [
+      "Certification in Automotive Service Excellence (ASE) or equivalent.",
+      "Strong knowledge of vehicle systems and repair techniques.",
+      "Experience with diagnostic tools and equipment.",
+      "1-3 years of experience in automotive repair."
+    ],
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles",
+    "hourlyMin": 600,
+    "hourlyMax": 1200,
+    "monthlyMin": 84000,
+    "monthlyMax": 168000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": "2000-02-02T02:04:21.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025063",
+    "title": "Parts Sales Representative",
+    "description": "Sell automotive parts to retail and wholesale customers, providing excellent service and advice.",
+    "tags": [
+      "Sales",
+      "Customer Service",
+      "Automotive Knowledge",
+      "Inventory Management"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Knowledge of automotive parts and systems.",
+      "Strong communication and interpersonal skills.",
+      "Experience in sales or customer service preferred."
+    ],
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles",
+    "hourlyMin": 400,
+    "hourlyMax": 800,
+    "monthlyMin": 32000,
+    "monthlyMax": 64000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": "2012-12-31T14:01:52.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025064",
+    "title": "Fleet Maintenance Manager",
+    "description": "Oversee the repair and maintenance of a fleet of vehicles, ensuring minimal downtime and cost efficiency.",
+    "tags": [
+      "Fleet Management",
+      "Maintenance",
+      "Scheduling",
+      "Budgeting"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Automotive Management or related field preferred.",
+      "Experience in fleet maintenance or vehicle management.",
+      "Strong organizational and leadership skills.",
+      "3+ years of experience in fleet maintenance."
+    ],
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles",
+    "hourlyMin": 700,
+    "hourlyMax": 800,
+    "monthlyMin": 112000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": false,
+    "dateAdded": "2001-11-30T23:12:24.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025065",
+    "title": "Retail Store Manager - Automotive Parts",
+    "description": "Manage daily operations of an automotive parts retail store, ensuring excellent customer service and inventory control.",
+    "tags": [
+      "Retail Management",
+      "Inventory Management",
+      "Sales",
+      "Team Leadership"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Business or related field preferred.",
+      "Experience in retail management, especially in automotive parts.",
+      "Strong leadership and organizational skills.",
+      "3+ years of experience in retail management."
+    ],
+    "field": "Wholesale and retail trade; repair and maintenance of motor vehicles",
+    "hourlyMin": 600,
+    "hourlyMax": 1000,
+    "monthlyMin": 96000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2013-10-21T02:40:37.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025066",
+    "title": "Logistics Coordinator",
+    "description": "Plan and oversee transportation and storage of goods to ensure efficient supply chain operations.",
+    "tags": [
+      "Logistics",
+      "Supply Chain Management",
+      "Scheduling",
+      "Coordination"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Logistics, Business, or related field.",
+      "Experience with logistics software (e.g., SAP, Oracle).",
+      "Strong organizational and multitasking skills.",
+      "2+ years of experience in logistics."
+    ],
+    "field": "Transportation and Storage",
+    "hourlyMin": 400,
+    "hourlyMax": 1000,
+    "monthlyMin": 56000,
+    "monthlyMax": 140000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2003-04-20T10:35:27.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025067",
+    "title": "Fleet Manager",
+    "description": "Manage a fleet of vehicles, ensuring proper maintenance, compliance, and cost efficiency.",
+    "tags": [
+      "Fleet Management",
+      "Maintenance",
+      "Scheduling",
+      "Regulatory Compliance"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Logistics or related field preferred.",
+      "Experience in fleet or transportation management.",
+      "Knowledge of maintenance protocols and regulations.",
+      "3+ years of experience in fleet management."
+    ],
+    "field": "Transportation and Storage",
+    "hourlyMin": 500,
+    "hourlyMax": 1200,
+    "monthlyMin": 40000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": "2018-05-29T07:16:18.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025068",
+    "title": "Cargo Handler",
+    "description": "Load, unload, and move cargo safely and efficiently in warehouses or transportation hubs.",
+    "tags": [
+      "Manual Labor",
+      "Safety Compliance",
+      "Teamwork",
+      "Efficiency"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience in cargo handling or warehouse work preferred.",
+      "Ability to lift heavy items and operate equipment.",
+      "Knowledge of safety standards is a plus."
+    ],
+    "field": "Transportation and Storage",
+    "hourlyMin": 800,
+    "hourlyMax": 1000,
+    "monthlyMin": 64000,
+    "monthlyMax": 80000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2007-10-09T12:50:42.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025069",
+    "title": "Air Freight Specialist",
+    "description": "Coordinate and manage air freight shipments to ensure timely delivery and compliance with regulations.",
+    "tags": [
+      "Air Freight",
+      "Logistics",
+      "Customer Service",
+      "Regulatory Compliance"
+    ],
+    "requirements": [
+      "High school diploma or equivalent; Bachelor’s degree preferred.",
+      "Experience with air freight logistics and documentation.",
+      "Strong organizational and multitasking skills.",
+      "Knowledge of international shipping regulations."
+    ],
+    "field": "Transportation and Storage",
+    "hourlyMin": 600,
+    "hourlyMax": 1000,
+    "monthlyMin": 96000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": "2021-03-11T07:29:35.000Z"
+  },
+  {
+    "_id": "6756b991946638310002506a",
+    "title": "Customs Broker",
+    "description": "Ensure imported and exported goods comply with customs regulations and manage clearance processes.",
+    "tags": [
+      "Customs Compliance",
+      "International Trade",
+      "Documentation",
+      "Customer Service"
+    ],
+    "requirements": [
+      "Customs Broker License (if required in your region).",
+      "Knowledge of import/export regulations and procedures.",
+      "Strong attention to detail and documentation skills.",
+      "Experience in logistics or freight forwarding is a plus."
+    ],
+    "field": "Transportation and Storage",
+    "hourlyMin": 500,
+    "hourlyMax": 1000,
+    "monthlyMin": 80000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": false,
+    "dateAdded": "2016-03-27T10:24:56.000Z"
+  },
+  {
+    "_id": "6756b991946638310002506b",
+    "title": "Rail Operations Manager",
+    "description": "Oversee rail transport operations, ensuring safety, efficiency, and on-time delivery.",
+    "tags": [
+      "Rail Operations",
+      "Safety Compliance",
+      "Logistics",
+      "Team Management"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Transportation Management, Logistics, or related field.",
+      "Experience with rail transport and logistics operations.",
+      "Strong leadership and organizational skills.",
+      "3+ years of experience in rail operations management."
+    ],
+    "field": "Transportation and Storage",
+    "hourlyMin": 700,
+    "hourlyMax": 1100,
+    "monthlyMin": 112000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2000-01-19T05:49:12.000Z"
+  },
+  {
+    "_id": "6756b991946638310002506c",
+    "title": "Dispatch Coordinator",
+    "description": "Schedule and dispatch vehicles or personnel to fulfill transportation requests efficiently.",
+    "tags": [
+      "Dispatching",
+      "Scheduling",
+      "Communication",
+      "Problem Solving"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience in dispatching or transportation coordination.",
+      "Strong multitasking and communication skills.",
+      "Knowledge of dispatch software is a plus."
+    ],
+    "field": "Transportation and Storage",
+    "hourlyMin": 500,
+    "hourlyMax": 1100,
+    "monthlyMin": 80000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 5,
+    "internship": false,
+    "dateAdded": "2024-08-07T10:21:45.000Z"
+  },
+  {
+    "_id": "6756b991946638310002506d",
+    "title": "Receptionist",
+    "description": "Greet visitors, manage phone calls, and handle front desk operations in a professional manner.",
+    "tags": [
+      "Customer Service",
+      "Front Desk",
+      "Organization",
+      "Multitasking"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience in customer service or front desk roles preferred.",
+      "Proficiency in office software and phone systems.",
+      "Strong interpersonal and organizational skills."
+    ],
+    "field": "Administrative and Support Activities",
+    "hourlyMin": 800,
+    "hourlyMax": 800,
+    "monthlyMin": 64000,
+    "monthlyMax": 64000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": "2016-02-12T21:42:48.000Z"
+  },
+  {
+    "_id": "6756b991946638310002506e",
+    "title": "Financial Analyst",
+    "description": "Analyze financial data and provide insights to support decision-making and improve company performance.",
+    "tags": [
+      "Financial Analysis",
+      "Budgeting",
+      "Forecasting",
+      "Data Interpretation"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Finance, Accounting, or related field.",
+      "Proficiency in financial modeling and analysis tools (e.g., Excel, Tableau).",
+      "Strong analytical and problem-solving skills.",
+      "2+ years of experience in financial analysis."
+    ],
+    "field": "Finance and Insurance",
+    "hourlyMin": 600,
+    "hourlyMax": 1100,
+    "monthlyMin": 84000,
+    "monthlyMax": 154000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": false,
+    "dateAdded": "2006-07-23T13:21:41.000Z"
+  },
+  {
+    "_id": "6756b991946638310002506f",
+    "title": "Investment Advisor",
+    "description": "Provide financial planning advice and investment recommendations to clients.",
+    "tags": [
+      "Investment Strategy",
+      "Client Relations",
+      "Market Research",
+      "Financial Planning"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Finance, Economics, or related field.",
+      "Certification as a Certified Financial Planner (CFP) or equivalent is preferred.",
+      "Strong knowledge of investment products and markets.",
+      "2+ years of experience in financial advising."
+    ],
+    "field": "Finance and Insurance",
+    "hourlyMin": 700,
+    "hourlyMax": 1200,
+    "monthlyMin": 112000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 5,
+    "internship": false,
+    "dateAdded": "2024-05-01T16:22:45.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025070",
+    "title": "Insurance Claims Examiner",
+    "description": "Examine insurance claims, evaluate the validity of claims, and process settlements for policyholders.",
+    "tags": [
+      "Claims Processing",
+      "Insurance",
+      "Risk Management",
+      "Documentation"
+    ],
+    "requirements": [
+      "High school diploma or equivalent; Bachelor’s degree preferred.",
+      "Experience in claims processing or insurance-related roles.",
+      "Strong attention to detail and analytical skills.",
+      "Knowledge of insurance policies and regulations."
+    ],
+    "field": "Finance and Insurance",
+    "hourlyMin": 600,
+    "hourlyMax": 1000,
+    "monthlyMin": 96000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": false,
+    "dateAdded": "2022-05-21T00:10:16.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025071",
+    "title": "Mortgage Loan Officer",
+    "description": "Help clients obtain mortgage loans by advising on loan options, processing applications, and ensuring timely approvals.",
+    "tags": [
+      "Mortgage",
+      "Loan Processing",
+      "Client Relations",
+      "Real Estate"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Finance, Business, or related field.",
+      "Experience in mortgage lending or real estate finance.",
+      "Excellent communication and negotiation skills.",
+      "Knowledge of mortgage products and financial regulations."
+    ],
+    "field": "Finance and Insurance",
+    "hourlyMin": 400,
+    "hourlyMax": 1200,
+    "monthlyMin": 56000,
+    "monthlyMax": 168000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": "2008-05-10T00:01:28.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025072",
+    "title": "Software Developer",
+    "description": "Design, develop, and maintain software applications tailored to client needs.",
+    "tags": [
+      "Software Development",
+      "Programming",
+      "Agile",
+      "Problem Solving"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Computer Science or related field.",
+      "Proficiency in programming languages (e.g., Python, Java, C#).",
+      "Experience with Agile methodologies.",
+      "2+ years of software development experience."
+    ],
+    "field": "Information and Communication",
+    "hourlyMin": 800,
+    "hourlyMax": 1100,
+    "monthlyMin": 64000,
+    "monthlyMax": 88000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2005-09-18T13:02:28.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025073",
+    "title": "Data Analyst",
+    "description": "Analyze data to help organizations make informed business decisions.",
+    "tags": [
+      "Data Analysis",
+      "SQL",
+      "Visualization",
+      "Problem Solving"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Data Science, Statistics, or related field.",
+      "Proficiency in data analysis tools (e.g., Excel, Tableau, R).",
+      "Experience with SQL and database management.",
+      "1+ years of experience in data analytics."
+    ],
+    "field": "Information and Communication",
+    "hourlyMin": 500,
+    "hourlyMax": 1000,
+    "monthlyMin": 80000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2020-12-22T13:07:30.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025074",
+    "title": "Network Administrator",
+    "description": "Manage and maintain an organization's computer networks to ensure uptime and security.",
+    "tags": [
+      "Networking",
+      "IT Support",
+      "Security",
+      "Troubleshooting"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Information Technology or related field.",
+      "Experience with network hardware and software.",
+      "Strong troubleshooting and problem-solving skills.",
+      "2+ years of experience in network administration."
+    ],
+    "field": "Information and Communication",
+    "hourlyMin": 400,
+    "hourlyMax": 1100,
+    "monthlyMin": 64000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": "2007-02-01T05:35:23.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025075",
+    "title": "Digital Marketing Specialist",
+    "description": "Develop and execute digital campaigns to increase online visibility and sales.",
+    "tags": [
+      "SEO",
+      "Social Media Marketing",
+      "Content Creation",
+      "Analytics"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Marketing, Communications, or related field.",
+      "Proficiency in digital marketing tools (e.g., Google Analytics, AdWords).",
+      "Experience with social media platforms and content creation.",
+      "2+ years of experience in digital marketing."
+    ],
+    "field": "Information and Communication",
+    "hourlyMin": 500,
+    "hourlyMax": 900,
+    "monthlyMin": 80000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2010-04-19T05:24:29.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025076",
+    "title": "Hotel Manager",
+    "description": "Oversee daily hotel operations, ensuring guest satisfaction and efficient service.",
+    "tags": [
+      "Management",
+      "Guest Relations",
+      "Operations",
+      "Budgeting"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Hospitality Management or related field.",
+      "Strong leadership and organizational skills.",
+      "Experience with hotel management software.",
+      "3+ years of experience in hospitality management."
+    ],
+    "field": "Accommodation and Hospitality",
+    "hourlyMin": 700,
+    "hourlyMax": 1000,
+    "monthlyMin": 112000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": "2016-11-08T02:17:22.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025077",
+    "title": "Chef",
+    "description": "Plan and prepare high-quality meals while managing kitchen staff and inventory.",
+    "tags": [
+      "Cooking",
+      "Kitchen Management",
+      "Creativity",
+      "Food Safety"
+    ],
+    "requirements": [
+      "Culinary degree or equivalent training.",
+      "Experience in menu planning and inventory management.",
+      "Strong leadership and creative skills.",
+      "3+ years of experience as a chef."
+    ],
+    "field": "Accommodation and Hospitality",
+    "hourlyMin": 700,
+    "hourlyMax": 1100,
+    "monthlyMin": 112000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": "2015-07-14T16:33:17.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025078",
+    "title": "Front Desk Agent",
+    "description": "Handle guest check-ins and check-outs, answer inquiries, and provide exceptional customer service.",
+    "tags": [
+      "Customer Service",
+      "Problem Solving",
+      "Multitasking",
+      "Communication"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience in hospitality or customer service preferred.",
+      "Proficiency with reservation software is a plus.",
+      "Strong interpersonal skills."
+    ],
+    "field": "Accommodation and Hospitality",
+    "hourlyMin": 500,
+    "hourlyMax": 1200,
+    "monthlyMin": 80000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": "2019-02-27T14:28:38.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025079",
+    "title": "Network Administrator",
+    "description": "Manage and maintain the company’s computer networks to ensure smooth and secure operations.",
+    "tags": [
+      "Networking",
+      "IT Support",
+      "System Maintenance",
+      "Security"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Information Technology or related field.",
+      "Experience in network administration and troubleshooting.",
+      "Knowledge of networking protocols and security systems.",
+      "Certifications such as CCNA or CompTIA Network+ are a plus."
+    ],
+    "field": "Information and Communication",
+    "hourlyMin": 800,
+    "hourlyMax": 800,
+    "monthlyMin": 128000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 4,
+    "internship": true,
+    "dateAdded": "2024-12-07T03:44:22.000Z"
+  },
+  {
+    "_id": "6756b991946638310002507a",
+    "title": "Content Writer",
+    "description": "Create engaging written content for websites, blogs, social media, and other digital platforms.",
+    "tags": [
+      "Writing",
+      "Content Creation",
+      "SEO",
+      "Creativity"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Journalism, Communications, or related field.",
+      "Experience in writing and content creation.",
+      "Familiarity with SEO best practices and keyword research.",
+      "Excellent writing, editing, and proofreading skills."
+    ],
+    "field": "Information and Communication",
+    "hourlyMin": 800,
+    "hourlyMax": 800,
+    "monthlyMin": 112000,
+    "monthlyMax": 112000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": "2012-07-01T22:32:13.000Z"
+  },
+  {
+    "_id": "6756b991946638310002507b",
+    "title": "Digital Marketing Specialist",
+    "description": "Develop and implement online marketing strategies to drive traffic, engagement, and conversions.",
+    "tags": [
+      "Digital Marketing",
+      "SEO",
+      "PPC",
+      "Social Media"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Marketing, Communications, or related field.",
+      "Experience with digital marketing tools and platforms (e.g., Google Analytics, Facebook Ads).",
+      "Strong understanding of SEO and SEM.",
+      "Ability to analyze marketing data and adjust strategies accordingly."
+    ],
+    "field": "Information and Communication",
+    "hourlyMin": 600,
+    "hourlyMax": 1000,
+    "monthlyMin": 84000,
+    "monthlyMax": 140000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 4,
+    "internship": true,
+    "dateAdded": "2017-03-12T01:36:28.000Z"
+  },
+  {
+    "_id": "6756b991946638310002507c",
+    "title": "Hotel Front Desk Manager",
+    "description": "Manage the front desk operations, ensuring excellent customer service and smooth check-in/check-out processes.",
+    "tags": [
+      "Customer Service",
+      "Hotel Management",
+      "Guest Relations",
+      "Leadership"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Hospitality Management or related field.",
+      "Experience in hotel or front desk management.",
+      "Strong communication and leadership skills.",
+      "Ability to manage a team and handle guest inquiries."
+    ],
+    "field": "Accommodation and Hospitality",
+    "hourlyMin": 500,
+    "hourlyMax": 1100,
+    "monthlyMin": 80000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": "2019-01-08T12:05:26.000Z"
+  },
+  {
+    "_id": "6756b991946638310002507d",
+    "title": "Housekeeping Supervisor",
+    "description": "Oversee housekeeping staff to ensure cleanliness and maintenance of guest rooms and common areas.",
+    "tags": [
+      "Housekeeping",
+      "Team Management",
+      "Organization",
+      "Customer Service"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience in housekeeping or hospitality management.",
+      "Strong organizational and leadership skills.",
+      "Ability to train and supervise a team."
+    ],
+    "field": "Accommodation and Hospitality",
+    "hourlyMin": 800,
+    "hourlyMax": 1200,
+    "monthlyMin": 128000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": false,
+    "dateAdded": "2003-07-04T08:28:46.000Z"
+  },
+  {
+    "_id": "6756b991946638310002507e",
+    "title": "Event Coordinator",
+    "description": "Plan and coordinate events, ensuring all aspects such as venue, catering, and entertainment are in place for a seamless experience.",
+    "tags": [
+      "Event Planning",
+      "Client Relations",
+      "Logistics",
+      "Organization"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Hospitality, Event Management, or related field.",
+      "Experience in event planning or coordination.",
+      "Strong organizational and communication skills.",
+      "Ability to work under tight deadlines and manage multiple tasks."
+    ],
+    "field": "Accommodation and Hospitality",
+    "hourlyMin": 600,
+    "hourlyMax": 1100,
+    "monthlyMin": 84000,
+    "monthlyMax": 154000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": "2005-11-23T02:00:06.000Z"
+  },
+  {
+    "_id": "6756b991946638310002507f",
+    "title": "Farm Manager",
+    "description": "Oversee farm operations, manage crops, livestock, and personnel to ensure productivity and sustainability.",
+    "tags": [
+      "Farm Management",
+      "Agriculture",
+      "Sustainability",
+      "Team Management"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Agriculture, Horticulture, or related field.",
+      "Experience in farm management or agriculture operations.",
+      "Strong leadership and organizational skills.",
+      "Knowledge of sustainable farming practices and crop/livestock management."
+    ],
+    "field": "Agriculture, Forestry, Fishing",
+    "hourlyMin": 500,
+    "hourlyMax": 1200,
+    "monthlyMin": 40000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": "2013-05-05T14:32:14.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025080",
+    "title": "Soil Scientist",
+    "description": "Study the properties of soil and its relationship to plant growth to develop sustainable farming practices.",
+    "tags": [
+      "Soil Science",
+      "Agriculture",
+      "Environmental Science",
+      "Research"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Soil Science, Agriculture, or related field.",
+      "Experience in soil analysis and sustainable land management.",
+      "Strong research and analytical skills.",
+      "Knowledge of soil conservation and fertility management techniques."
+    ],
+    "field": "Agriculture, Forestry, Fishing",
+    "hourlyMin": 500,
+    "hourlyMax": 1000,
+    "monthlyMin": 80000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": "2010-05-23T14:20:32.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025081",
+    "title": "Irrigation Specialist",
+    "description": "Design and manage irrigation systems to optimize water usage and support sustainable agricultural practices.",
+    "tags": [
+      "Irrigation",
+      "Water Management",
+      "Agriculture",
+      "Sustainability"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Agricultural Engineering, Water Management, or related field.",
+      "Experience in designing and maintaining irrigation systems.",
+      "Knowledge of water conservation and irrigation technologies.",
+      "Strong problem-solving and project management skills."
+    ],
+    "field": "Agriculture, Forestry, Fishing",
+    "hourlyMin": 400,
+    "hourlyMax": 1200,
+    "monthlyMin": 56000,
+    "monthlyMax": 168000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": "2017-01-25T22:03:58.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025082",
+    "title": "Wastewater Treatment Technician",
+    "description": "Monitor and maintain wastewater treatment processes to ensure compliance with environmental standards.",
+    "tags": [
+      "Wastewater",
+      "Environmental Compliance",
+      "Technician",
+      "Water Treatment"
+    ],
+    "requirements": [
+      "High school diploma or equivalent; certification in wastewater treatment preferred.",
+      "Experience in wastewater treatment or environmental services.",
+      "Strong knowledge of water quality standards and regulations.",
+      "Ability to operate and maintain wastewater treatment equipment."
+    ],
+    "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
+    "hourlyMin": 700,
+    "hourlyMax": 900,
+    "monthlyMin": 112000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2011-05-19T17:49:27.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025083",
+    "title": "Solid Waste Manager",
+    "description": "Oversee the collection, disposal, and recycling of solid waste to ensure proper waste management and environmental protection.",
+    "tags": [
+      "Waste Management",
+      "Environmental Protection",
+      "Recycling",
+      "Public Health"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Environmental Science, Waste Management, or related field.",
+      "Experience in solid waste management or municipal services.",
+      "Knowledge of waste disposal, recycling processes, and regulations.",
+      "Strong leadership and organizational skills."
+    ],
+    "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
+    "hourlyMin": 600,
+    "hourlyMax": 1200,
+    "monthlyMin": 48000,
+    "monthlyMax": 96000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2015-06-06T21:41:26.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025084",
+    "title": "Hydrologist",
+    "description": "Study the distribution, movement, and properties of water in the environment to support water management and conservation efforts.",
+    "tags": [
+      "Hydrology",
+      "Water Resources",
+      "Research",
+      "Environmental Science"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Hydrology, Environmental Science, or related field.",
+      "Experience in water resources management or hydrological research.",
+      "Strong analytical and research skills.",
+      "Knowledge of water conservation techniques and environmental regulations."
+    ],
+    "field": "Water Supply; Activities Related to Waste Water, Waste and Sanitation",
+    "hourlyMin": 700,
+    "hourlyMax": 1200,
+    "monthlyMin": 112000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": "2015-12-08T06:25:15.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025085",
+    "title": "Occupational Therapist",
+    "description": "Assist patients in developing or regaining the skills necessary for daily living and working after illness, injury, or surgery.",
+    "tags": [
+      "Occupational Therapy",
+      "Patient Care",
+      "Healthcare",
+      "Rehabilitation"
+    ],
+    "requirements": [
+      "Bachelor’s or Master’s degree in Occupational Therapy.",
+      "Licensure as an Occupational Therapist.",
+      "Experience in clinical or rehabilitation settings.",
+      "Strong interpersonal and communication skills."
+    ],
+    "field": "Health and Social Care",
+    "hourlyMin": 500,
+    "hourlyMax": 900,
+    "monthlyMin": 70000,
+    "monthlyMax": 126000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": "2020-02-18T23:19:56.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025086",
+    "title": "Caregiver",
+    "description": "Provide personal care and assistance to individuals with physical or mental disabilities, helping them with daily activities.",
+    "tags": [
+      "Caregiving",
+      "Personal Care",
+      "Elderly Care",
+      "Assistance"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience in caregiving or healthcare roles.",
+      "Compassionate, patient, and reliable.",
+      "Ability to handle physical tasks such as lifting or assisting with mobility."
+    ],
+    "field": "Health and Social Care",
+    "hourlyMin": 700,
+    "hourlyMax": 900,
+    "monthlyMin": 98000,
+    "monthlyMax": 126000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": "2014-11-23T06:43:55.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025087",
+    "title": "Energy Auditor",
+    "description": "Conduct assessments of buildings and facilities to evaluate energy consumption and recommend improvements for energy efficiency.",
+    "tags": [
+      "Energy Audit",
+      "Efficiency",
+      "Sustainability",
+      "Engineering"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Environmental Engineering, Energy Management, or related field.",
+      "Experience with energy auditing and analysis.",
+      "Knowledge of energy-efficient technologies and practices.",
+      "Strong analytical and communication skills."
+    ],
+    "field": "Electricity, Gas, Steam and Air Conditioning Supply and Distribution",
+    "hourlyMin": 600,
+    "hourlyMax": 900,
+    "monthlyMin": 48000,
+    "monthlyMax": 72000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2014-12-06T16:33:23.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025088",
+    "title": "Gas Plant Operator",
+    "description": "Operate and monitor the systems that control the distribution of natural gas, ensuring safe and efficient operations.",
+    "tags": [
+      "Gas Operations",
+      "Plant Management",
+      "Safety",
+      "Utilities"
+    ],
+    "requirements": [
+      "High school diploma or equivalent.",
+      "Experience in gas plant operations or similar industrial settings.",
+      "Knowledge of safety standards and regulations.",
+      "Ability to monitor and control complex systems."
+    ],
+    "field": "Electricity, Gas, Steam and Air Conditioning Supply and Distribution",
+    "hourlyMin": 400,
+    "hourlyMax": 1100,
+    "monthlyMin": 32000,
+    "monthlyMax": 88000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": "2023-01-17T23:04:48.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025089",
+    "title": "Power Systems Technician",
+    "description": "Install, maintain, and repair electrical equipment used for power generation, transmission, and distribution.",
+    "tags": [
+      "Power Systems",
+      "Electrical",
+      "Utilities",
+      "Maintenance"
+    ],
+    "requirements": [
+      "Associate’s degree in Electrical Engineering Technology or related field.",
+      "Experience in power systems maintenance or similar field.",
+      "Knowledge of electrical systems and safety protocols.",
+      "Strong troubleshooting and repair skills."
+    ],
+    "field": "Electricity, Gas, Steam and Air Conditioning Supply and Distribution",
+    "hourlyMin": 400,
+    "hourlyMax": 900,
+    "monthlyMin": 56000,
+    "monthlyMax": 126000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2022-06-08T16:06:32.000Z"
+  },
+  {
+    "_id": "6756b991946638310002508a",
+    "title": "Data Analyst",
+    "description": "Analyze and interpret complex data sets to provide actionable insights for business decision-making.",
+    "tags": [
+      "Data Analysis",
+      "Statistics",
+      "Business Intelligence",
+      "Research"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Data Science, Statistics, or related field.",
+      "Experience with data analysis tools like Excel, SQL, or Python.",
+      "Strong analytical and problem-solving skills.",
+      "Ability to communicate complex data to non-technical stakeholders."
+    ],
+    "field": "Other",
+    "hourlyMin": 700,
+    "hourlyMax": 1200,
+    "monthlyMin": 98000,
+    "monthlyMax": 168000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": "2019-06-27T10:16:32.000Z"
+  },
+  {
+    "_id": "6756b991946638310002508b",
+    "title": "Museum Curator",
+    "description": "Manage and oversee collections, exhibitions, and educational programs at a museum or cultural institution.",
+    "tags": [
+      "Curation",
+      "Museums",
+      "Arts",
+      "Education"
+    ],
+    "requirements": [
+      "Master’s degree in Art History, Museum Studies, or related field.",
+      "Experience in curating exhibits or managing museum collections.",
+      "Strong knowledge of art history and cultural heritage.",
+      "Ability to work with museum staff and engage visitors."
+    ],
+    "field": "Cultural, Entertainment and Leisure Activities",
+    "hourlyMin": 500,
+    "hourlyMax": 1200,
+    "monthlyMin": 80000,
+    "monthlyMax": 192000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": "2016-04-12T18:42:35.000Z"
+  },
+  {
+    "_id": "6756b991946638310002508c",
+    "title": "IT Support Specialist",
+    "description": "Provide technical support and troubleshooting assistance to employees and clients regarding software and hardware issues.",
+    "tags": [
+      "IT Support",
+      "Technology",
+      "Troubleshooting",
+      "Customer Service"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Computer Science, Information Technology, or related field.",
+      "Experience in IT support or technical troubleshooting.",
+      "Strong knowledge of computer systems and networking.",
+      "Excellent communication and customer service skills."
+    ],
+    "field": "Other",
+    "hourlyMin": 800,
+    "hourlyMax": 1000,
+    "monthlyMin": 64000,
+    "monthlyMax": 80000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": "2016-10-07T04:52:13.000Z"
+  },
+  {
+    "_id": "6756b991946638310002508d",
+    "title": "Operations Manager",
+    "description": "Manage day-to-day operations of a company or department, ensuring processes are efficient and goals are met.",
+    "tags": [
+      "Operations",
+      "Management",
+      "Efficiency",
+      "Leadership"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Business Administration or related field.",
+      "Proven experience in operations management.",
+      "Strong leadership and organizational skills.",
+      "Ability to solve problems quickly and make decisions under pressure."
+    ],
+    "field": "Other",
+    "hourlyMin": 700,
+    "hourlyMax": 1000,
+    "monthlyMin": 112000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 5,
+    "internship": false,
+    "dateAdded": "2022-08-23T09:09:19.000Z"
+  },
+  {
+    "_id": "6756b991946638310002508e",
+    "title": "Legal Assistant",
+    "description": "Support legal teams by managing case files, conducting research, and preparing legal documents.",
+    "tags": [
+      "Legal",
+      "Assistance",
+      "Research",
+      "Documentation"
+    ],
+    "requirements": [
+      "Associate’s degree in Paralegal Studies or related field.",
+      "Experience in a legal or law firm environment.",
+      "Strong organizational and research skills.",
+      "Proficiency with legal documentation and case management systems."
+    ],
+    "field": "Other",
+    "hourlyMin": 400,
+    "hourlyMax": 800,
+    "monthlyMin": 64000,
+    "monthlyMax": 128000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2019-04-17T01:57:00.000Z"
+  },
+  {
+    "_id": "6756b991946638310002508f",
+    "title": "Public Health Administrator",
+    "description": "Manage public health programs and services, ensuring effective delivery of health care services to the community.",
+    "tags": [
+      "Public Health",
+      "Administration",
+      "Healthcare",
+      "Government"
+    ],
+    "requirements": [
+      "Bachelor’s or Master’s degree in Public Health, Healthcare Administration, or related field.",
+      "Experience in managing healthcare services or public health programs.",
+      "Strong leadership, organizational, and budget management skills.",
+      "Knowledge of healthcare policies and regulatory requirements."
+    ],
+    "field": "Public administration and defense; compulsory social security",
+    "hourlyMin": 400,
+    "hourlyMax": 1100,
+    "monthlyMin": 64000,
+    "monthlyMax": 176000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 4,
+    "internship": true,
+    "dateAdded": "2018-04-05T05:31:30.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025090",
+    "title": "Social Security Officer",
+    "description": "Assist citizens in understanding and accessing their social security benefits, ensuring compliance with policies and regulations.",
+    "tags": [
+      "Social Security",
+      "Public Services",
+      "Government",
+      "Support"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Social Sciences, Public Administration, or related field.",
+      "Experience in social services or public sector roles.",
+      "Strong interpersonal and communication skills.",
+      "Knowledge of social security systems and regulations."
+    ],
+    "field": "Public administration and defense; compulsory social security",
+    "hourlyMin": 500,
+    "hourlyMax": 800,
+    "monthlyMin": 70000,
+    "monthlyMax": 112000,
+    "hours": 140,
+    "homeOffice": true,
+    "homeOfficeCount": 2,
+    "internship": true,
+    "dateAdded": "2010-07-23T13:09:45.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025091",
+    "title": "Government Compliance Officer",
+    "description": "Ensure government departments adhere to all regulatory and compliance requirements, conducting audits and assessments as needed.",
+    "tags": [
+      "Compliance",
+      "Government",
+      "Audit",
+      "Regulations"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Law, Public Administration, or related field.",
+      "Experience in compliance monitoring or regulatory roles.",
+      "Strong knowledge of governmental policies and legal frameworks.",
+      "Excellent attention to detail and communication skills."
+    ],
+    "field": "Public administration and defense; compulsory social security",
+    "hourlyMin": 800,
+    "hourlyMax": 900,
+    "monthlyMin": 128000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": false,
+    "dateAdded": "2020-02-12T15:51:03.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025092",
+    "title": "Geologist",
+    "description": "Conduct geological surveys and research to evaluate mineral deposits and support mining operations.",
+    "tags": [
+      "Geology",
+      "Mining",
+      "Research",
+      "Environmental Science"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Geology or related field.",
+      "Experience in geological surveying and mineral exploration.",
+      "Strong analytical and research skills.",
+      "Knowledge of environmental impact assessments and mining regulations."
+    ],
+    "field": "Mining and quarrying",
+    "hourlyMin": 400,
+    "hourlyMax": 1000,
+    "monthlyMin": 64000,
+    "monthlyMax": 160000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": false,
+    "dateAdded": "2008-12-14T23:03:52.000Z"
+  },
+  {
+    "_id": "6756b9919466383100025093",
+    "title": "Safety Officer (Mining)",
+    "description": "Oversee safety protocols and risk management in mining operations, ensuring the well-being of workers and compliance with safety standards.",
+    "tags": [
+      "Safety",
+      "Mining",
+      "Regulations",
+      "Compliance"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Occupational Health and Safety or related field.",
+      "Experience in mining safety or industrial safety roles.",
+      "Knowledge of mining safety regulations and risk assessment techniques.",
+      "Strong communication and training skills."
+    ],
+    "field": "Mining and quarrying",
+    "hourlyMin": 600,
+    "hourlyMax": 1100,
+    "monthlyMin": 48000,
+    "monthlyMax": 88000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 3,
+    "internship": true,
+    "dateAdded": "2012-05-29T09:29:20.000Z"
+  },
+  {
+    "_id": "6756b9929466383100025094",
+    "title": "Mining Technician",
+    "description": "Support mining engineers and geologists by performing technical tasks related to the operation and maintenance of mining equipment.",
+    "tags": [
+      "Mining",
+      "Technology",
+      "Maintenance",
+      "Operations"
+    ],
+    "requirements": [
+      "Associate’s degree in Mining Technology or related field.",
+      "Experience with mining equipment and technology.",
+      "Strong technical and mechanical skills.",
+      "Ability to work in a physically demanding environment."
+    ],
+    "field": "Mining and quarrying",
+    "hourlyMin": 600,
+    "hourlyMax": 900,
+    "monthlyMin": 96000,
+    "monthlyMax": 144000,
+    "hours": 160,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": "2013-12-10T11:50:02.000Z"
+  },
+  {
+    "_id": "6756b9929466383100025095",
+    "title": "Blasting Supervisor",
+    "description": "Supervise and oversee blasting operations in mining and quarrying projects, ensuring compliance with safety and environmental standards.",
+    "tags": [
+      "Blasting",
+      "Mining",
+      "Operations",
+      "Safety"
+    ],
+    "requirements": [
+      "Bachelor’s degree in Mining Engineering, Geology, or related field.",
+      "Experience in managing blasting operations in mining environments.",
+      "Knowledge of explosives handling, safety protocols, and regulatory requirements.",
+      "Strong leadership and problem-solving skills."
+    ],
+    "field": "Mining and quarrying",
+    "hourlyMin": 800,
+    "hourlyMax": 800,
+    "monthlyMin": 64000,
+    "monthlyMax": 64000,
+    "hours": 80,
+    "homeOffice": true,
+    "homeOfficeCount": 1,
+    "internship": true,
+    "dateAdded": "2007-11-18T01:19:02.000Z"
   }
 ]

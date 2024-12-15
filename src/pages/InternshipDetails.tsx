@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "@/components/ui/link";
 import { useInternshipDetails } from "@/hooks/useInternshipDetails";
-import { JobPosting } from "@/hooks/useJobPostings";
 import {
   Building2,
   Calendar,
@@ -14,6 +13,9 @@ import {
 } from "lucide-react";
 import { useParams } from "react-router-dom";
 import { toast } from "sonner";
+import { Database } from "@/types/supabase";
+
+type JobPosting = Database["public"]["Tables"]["job_postings"]["Row"];
 
 export default function InternshipDetails() {
   const { id } = useParams<{ id: string }>();
@@ -48,14 +50,18 @@ export default function InternshipDetails() {
       {internship.requirements && internship.requirements.length > 0 && (
         <RequirementsSection internship={internship} />
       )}
-      {internship.tags && internship.tags.length > 0 && (
-        <TechnologiesSection internship={internship} />
-      )}
     </div>
   );
 }
 
 function HeaderSection({ internship }: { internship: JobPosting }) {
+  function hoursPerWeek() {
+    if (internship.hours === 80) {
+      return "Full-time";
+    }
+    return "Part-time";
+  }
+
   return (
     <Card className="border-2 border-primary/10">
       <CardContent className="pt-6">
@@ -72,16 +78,20 @@ function HeaderSection({ internship }: { internship: JobPosting }) {
               </Link>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-2">
-              <div className="flex items-center gap-2 text-foreground">
+            <div className="grid grid-cols-1 gap-y-2">
+              <div className="flex items-center gap-2 text-muted-foreground">
                 <Clock className="w-4 h-4" />
-                <span>Full-time</span>
+                <span>
+                  {internship.hours === 80 ? "Full-time" : "Part-time"}
+                </span>
               </div>
-              <div className="flex items-center gap-2 text-foreground">
-                <MapPin className="w-4 h-4 shrink-0" />
-                <span>Remote</span>
-              </div>
-              <div className="flex items-center gap-2 text-foreground">
+              {internship.home_office && (
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <MapPin className="w-4 h-4 shrink-0" />
+                  <span>Remote</span>
+                </div>
+              )}
+              <div className="flex items-center gap-2 text-muted-foreground">
                 <Calendar className="w-4 h-4" />
                 <span>
                   Posted {new Date(internship.created_at).toLocaleDateString()}
@@ -141,29 +151,6 @@ function RequirementsSection({ internship }: { internship: JobPosting }) {
             </li>
           ))}
         </ul>
-      </CardContent>
-    </Card>
-  );
-}
-
-function TechnologiesSection({ internship }: { internship: JobPosting }) {
-  return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Technologies</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <div className="flex flex-wrap gap-2">
-          {internship.tags?.map((tech) => (
-            <Badge
-              key={tech}
-              variant="secondary"
-              className="text-base px-3 py-1"
-            >
-              {tech}
-            </Badge>
-          ))}
-        </div>
       </CardContent>
     </Card>
   );

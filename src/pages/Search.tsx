@@ -44,7 +44,7 @@ import { toast } from "sonner";
 export default function SearchPage() {
   return (
     <div className="container mx-auto py-8">
-      <Background3D />
+      {/* <Background3D /> */}
 
       {/* Header */}
       <div className="mb-6">

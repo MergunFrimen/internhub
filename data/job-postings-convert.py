@@ -32,13 +32,17 @@ def convert_job_posting_to_csv(json_data: List[Dict[Any, Any]], output_file: str
         'requirements',
         'created_at',
         'updated_at',
-        'deleted_at'
+        'deleted_at',
+        'home_office',
+        'hours',
     ]
-    
-    current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     
     rows = []
     for posting in json_data:
+        date_added = posting.get('dateAdded', None)
+        if date_added is not None and isinstance(date_added, int):
+            date_added = datetime.utcfromtimestamp(date_added / 1000)
+        print(date_added)
         row = {
             'id': str(uuid.uuid4()),
             'external_id': posting.get('_id', ''),
@@ -47,9 +51,11 @@ def convert_job_posting_to_csv(json_data: List[Dict[Any, Any]], output_file: str
             'description': posting.get('description', ''),
             'tags': json.dumps(posting.get('tags', []), ensure_ascii=False),
             'requirements': json.dumps(posting.get('requirements', []), ensure_ascii=False),
-            'created_at': current_time,
-            'updated_at': current_time,
-            'deleted_at': None
+            'created_at': date_added,
+            'updated_at': date_added,
+            'deleted_at': None,
+            'home_office': posting.get('homeOffice', None),
+            'hours': posting.get('hours', None),
         }
         rows += [row]
     

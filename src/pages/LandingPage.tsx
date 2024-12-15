@@ -49,13 +49,13 @@ export default function LandingPage() {
           <h1 className="text-5xl font-bold text-foreground mb-6">
             Find Your Perfect Internship
           </h1>
-          <p className="text-xl text-foreground mb-8">
+          <p className="text-xl text-muted-foreground mb-8">
             Connect with leading companies and kickstart your career.
           </p>
 
           {/* Search Bar */}
           <div className="relative max-w-2xl mx-auto">
-            <Search className="absolute w-5 h-5 left-2 top-2 text-foreground" />
+            <Search className="absolute w-5 h-5 left-2 top-2 text-muted-foreground" />
             <Input
               type="text"
               placeholder="Search for internships..."
@@ -72,17 +72,21 @@ export default function LandingPage() {
 
       {/* Featured Internships */}
       <div className="container mx-auto px-4 py-12">
-        <h2 className="text-2xl font-bold mb-6">Featured Internships</h2>
+        <h2 className="text-2xl font-bold mb-6 text-foreground">
+          Featured Internships
+        </h2>
         <div className="grid md:grid-cols-3 gap-6">
           {featuredInternships.map((internship) => (
             <div
               key={internship.id}
-              className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+              className="bg-card p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer border"
               onClick={() => navigate(`/internships/${internship.id}`)}
             >
-              <h3 className="font-semibold mb-2">{internship.role}</h3>
-              <p className="text-foreground">{internship.company}</p>
-              <p className="text-foreground text-sm mt-2">
+              <h3 className="font-semibold mb-2 text-foreground">
+                {internship.role}
+              </h3>
+              <p className="text-muted-foreground">{internship.company}</p>
+              <p className="text-muted-foreground text-sm mt-2">
                 {internship.location}
               </p>
             </div>
@@ -91,20 +95,22 @@ export default function LandingPage() {
       </div>
 
       {/* Example Profile Section */}
-      <div className="container mx-auto px-4 py-12 border-t">
+      <div className="container mx-auto px-4 py-12 border-t border-border">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold mb-2">Stand Out to Companies</h2>
-            <p className="text-foreground">
+            <h2 className="text-2xl font-bold mb-2 text-foreground">
+              Stand Out to Companies
+            </h2>
+            <p className="text-muted-foreground">
               Create your professional profile and get noticed by top companies
             </p>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
+          <div className="bg-card rounded-xl shadow-lg p-6 md:p-8 border">
             <div className="flex flex-col md:flex-row items-center gap-8">
               {/* Profile Preview */}
               <div className="flex-1 w-full md:w-auto">
-                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 space-y-4">
+                <div className="bg-background rounded-lg p-6 space-y-4 border">
                   <div className="flex items-center gap-4">
                     <div className="bg-primary text-primary-foreground rounded-full p-6 text-xl font-bold">
                       {exampleProfile.name
@@ -113,13 +119,15 @@ export default function LandingPage() {
                         .join("")}
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg">
+                      <h3 className="font-semibold text-lg text-foreground">
                         {exampleProfile.name}
                       </h3>
-                      <p className="text-foreground">{exampleProfile.title}</p>
+                      <p className="text-muted-foreground">
+                        {exampleProfile.title}
+                      </p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-2 text-foreground">
+                  <div className="flex items-center gap-2 text-muted-foreground">
                     <GraduationCap className="w-4 h-4" />
                     <span>{exampleProfile.university}</span>
                   </div>
@@ -127,7 +135,7 @@ export default function LandingPage() {
                     {exampleProfile.skills.map((skill, index) => (
                       <span
                         key={index}
-                        className="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                        className="bg-secondary text-secondary-foreground text-sm px-3 py-1 rounded-full"
                       >
                         {skill}
                       </span>
@@ -138,21 +146,27 @@ export default function LandingPage() {
 
               {/* Call to Action */}
               <div className="flex-1 text-center md:text-left">
-                <h3 className="text-xl font-bold mb-4">
+                <h3 className="text-xl font-bold mb-4 text-foreground">
                   Create Your Professional Profile
                 </h3>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-center gap-2">
-                    <UserCircle className="w-5 h-5 text-blue-600" />
-                    <span>Showcase your skills and experience</span>
+                    <UserCircle className="w-5 h-5 text-primary" />
+                    <span className="text-muted-foreground">
+                      Showcase your skills and experience
+                    </span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <Building2 className="w-5 h-5 text-blue-600" />
-                    <span>Get discovered by top companies</span>
+                    <Building2 className="w-5 h-5 text-primary" />
+                    <span className="text-muted-foreground">
+                      Get discovered by top companies
+                    </span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <ArrowRight className="w-5 h-5 text-blue-600" />
-                    <span>Stand out from other candidates</span>
+                    <ArrowRight className="w-5 h-5 text-primary" />
+                    <span className="text-muted-foreground">
+                      Stand out from other candidates
+                    </span>
                   </li>
                 </ul>
                 <div className="space-x-4">

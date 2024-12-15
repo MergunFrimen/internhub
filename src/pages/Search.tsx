@@ -1,9 +1,7 @@
-import Pagination from "@/components/Pagination";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { ResizablePanel, ResizablePanelGroup } from "@/components/ui/resizable";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   Select,
@@ -41,10 +39,20 @@ import {
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
+import {
+  JobPosting,
+  JobPostingsFilters,
+  SortingParams,
+} from "@/hooks/useJobPostings";
+import { Badge } from "@/components/ui/badge";
+import { Skeleton } from "@/components/ui/skeleton";
+import PaginationControls from "@/components/Pagination";
+import Background3D from "@/components/Background3d";
 
 export default function SearchPage() {
   return (
     <div className="container mx-auto py-8">
+      <Background3D />
       <div className="mb-6">
         <h1 className="text-3xl font-bold mb-2">Search Internships</h1>
         <p className="text-muted-foreground">
@@ -208,7 +216,7 @@ export function MobileSearchLayout({
             </SheetContent>
           </Sheet>
 
-          <Pagination
+          <PaginationControls
             currentPage={pagination.page}
             totalPages={Math.ceil(
               (jobPostingsResponse?.count || 0) / pagination.pageSize
@@ -240,11 +248,14 @@ export function DesktopSearchLayout({
   handleCloseDetails,
 }: LayoutProps) {
   return (
-    <ResizablePanelGroup
-      direction="horizontal"
-      className="min-h-[600px] rounded-lg"
-    >
-      <ResizablePanel defaultSize={60}>
+    <div className="flex">
+      {/* Main content area */}
+      <div
+        className={cn(
+          "flex-1 min-w-0",
+          isDetailsPanelOpen ? "max-w-[60%]" : "w-full"
+        )}
+      >
         <div className="mb-6">
           <SearchFiltersSheet
             filters={filters}
@@ -258,12 +269,7 @@ export function DesktopSearchLayout({
 
         {/* Results */}
         {isLoading ? (
-          <div
-            className={cn(
-              "grid grid-cols-1 md:grid-cols-2 gap-4",
-              !!isDetailsPanelOpen && "md:grid-cols-1"
-            )}
-          >
+          <div className="grid grid-cols-1 gap-4">
             {[1, 2, 3, 4].map((i) => (
               <Skeleton key={i} className="h-48 bg-muted" />
             ))}
@@ -276,12 +282,7 @@ export function DesktopSearchLayout({
             </div>
 
             {/* Grid container for cards */}
-            <div
-              className={cn(
-                "grid grid-cols-1 md:grid-cols-2 gap-4",
-                !!isDetailsPanelOpen && "md:grid-cols-1 lg:grid-cols-2"
-              )}
-            >
+            <div className="grid grid-cols-2 gap-4">
               {jobPostingsResponse?.data.map((posting) => (
                 <JobPostingCard
                   key={posting.id}
@@ -292,7 +293,7 @@ export function DesktopSearchLayout({
               ))}
             </div>
 
-            <Pagination
+            <PaginationControls
               currentPage={pagination.page}
               totalPages={Math.ceil(
                 (jobPostingsResponse?.count || 0) / pagination.pageSize
@@ -303,33 +304,39 @@ export function DesktopSearchLayout({
             />
           </div>
         )}
-      </ResizablePanel>
+      </div>
 
       {/* Details Panel */}
       {isDetailsPanelOpen && (
-        <ResizablePanel defaultSize={40}>
-          <div className="relative h-full">
-            <ScrollArea className="h-full">
-              {selectedPosting && (
-                <div className="p-6">
-                  <div className="flex justify-end items-start">
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      onClick={handleCloseDetails}
-                    >
-                      <X className="w-4 h-4" />
-                    </Button>
-                  </div>
+        <div className="w-[40%] pl-6">
+          <div className="sticky top-6">
+            <div className="relative">
+              <ScrollArea className="h-[calc(100vh-6rem)]">
+                {selectedPosting ? (
+                  <div className="pr-6">
+                    <div className="flex justify-end items-start mb-4">
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        onClick={handleCloseDetails}
+                      >
+                        <X className="w-4 h-4" />
+                      </Button>
+                    </div>
 
-                  <JobDetails posting={selectedPosting} />
-                </div>
-              )}
-            </ScrollArea>
+                    <JobDetails posting={selectedPosting} />
+                  </div>
+                ) : (
+                  <div className="flex items-center justify-center h-full text-muted-foreground">
+                    Select a job posting to view details
+                  </div>
+                )}
+              </ScrollArea>
+            </div>
           </div>
-        </ResizablePanel>
+        </div>
       )}
-    </ResizablePanelGroup>
+    </div>
   );
 }
 
@@ -363,8 +370,8 @@ export function JobPostingCard({
               </div>
             </div>
             <Button variant="secondary" size="icon" asChild>
-              <Link to={`/internships/${posting.id}`}>
-                <ArrowRight className="w-4 h-4" />
+              <Link to={`/internships/${posting.id}`} className="min-w-9">
+                <ArrowRight className="w-4 h-4 min-w-4" />
               </Link>
             </Button>
           </div>
@@ -483,16 +490,12 @@ function SearchFiltersSheet({
   );
 }
 
-interface JobDetailsProps {
-  posting: JobPosting;
-}
-
 export function JobDetails({ posting }: { posting: JobPosting }) {
   return (
     <div className="space-y-6">
       <Card className="border-2 border-primary/10">
         <CardContent className="pt-6">
-          <div className="flex flex-col md:flex-row gap-6">
+          <div className="flex flex-col gap-6">
             <div className="flex-grow space-y-4">
               <div className="space-y-2">
                 <h2 className="text-2xl font-bold">{posting.title}</h2>
@@ -536,9 +539,22 @@ export function JobDetails({ posting }: { posting: JobPosting }) {
               )}
             </div>
 
-            <div className="flex flex-col gap-4 md:items-end">
-              <Button size="lg" className="w-full md:w-auto" asChild>
+            <div className="flex flex-col lg:flex-row gap-2">
+              <Button
+                variant="default"
+                size="lg"
+                className="w-full md:w-auto"
+                asChild
+              >
                 <Link to={`/internships/${posting.id}`}>Apply Now</Link>
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="w-full md:w-auto"
+                asChild
+              >
+                <Link to={`/internships/${posting.id}`}>View Offer</Link>
               </Button>
             </div>
           </div>
@@ -576,15 +592,6 @@ export function JobDetails({ posting }: { posting: JobPosting }) {
     </div>
   );
 }
-
-// types.ts
-import {
-  JobPosting,
-  JobPostingsFilters,
-  SortingParams,
-} from "@/hooks/useJobPostings";
-import { Badge } from "@/components/ui/badge";
-import { Skeleton } from "@/components/ui/skeleton";
 
 export interface LayoutProps {
   filters: JobPostingsFilters;

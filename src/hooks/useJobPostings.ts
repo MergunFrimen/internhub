@@ -1,7 +1,8 @@
 import { supabaseClient } from "@/lib/supabase-client";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { type PostgrestError } from "@supabase/supabase-js";
 import { Database } from "@/types/supabase";
+import { useEffect } from "react";
 
 export type JobPosting = Database["public"]["Tables"]["job_postings"]["Row"];
 
@@ -39,60 +40,97 @@ export interface JobPostingsResponse {
   error: PostgrestError | null;
 }
 
+async function fetchJobPostings({
+  filters,
+  pagination,
+  sorting,
+}: UseJobPostingsParams) {
+  try {
+    let query = supabaseClient
+      .from("job_postings")
+      .select("*", { count: "exact" })
+      .is("deleted_at", null);
+
+    if (filters) {
+      if (filters.field) {
+        query = query.eq("field", filters.field);
+      }
+      if (filters.type) {
+        query = query.eq("type", filters.type);
+      }
+      if (filters.search) {
+        query = query.or(
+          `title.ilike.%${filters.search}%,description.ilike.%${filters.search}%`
+        );
+      }
+    }
+
+    // Apply sorting
+    query = query.order(sorting.field, {
+      ascending: sorting.direction === "ascending",
+    });
+
+    // Apply pagination
+    const from = pagination.page * pagination.pageSize;
+    const to = from + pagination.pageSize - 1;
+    query = query.range(from, to);
+
+    // Execute query
+    const { data, error, count } = await query;
+
+    if (error) {
+      throw error;
+    }
+
+    return {
+      data: data || [],
+      count: count || 0,
+      error: null,
+    };
+  } catch (error) {
+    console.error("Error fetching job postings:", error);
+    throw error;
+  }
+}
+
 export function useJobPostings({
   filters,
   pagination,
   sorting,
 }: UseJobPostingsParams) {
-  return useQuery<JobPostingsResponse, PostgrestError>({
-    queryKey: ["jobPostings", filters, pagination, sorting],
-    queryFn: async () => {
-      try {
-        let query = supabaseClient
-          .from("job_postings")
-          .select("*", { count: "exact" })
-          .is("deleted_at", null);
+  const queryClient = useQueryClient();
+  const queryKey = ["jobPostings", filters, pagination, sorting];
 
-        if (filters) {
-          if (filters.field) {
-            query = query.eq("field", filters.field);
-          }
-          if (filters.type) {
-            query = query.eq("type", filters.type);
-          }
-          if (filters.search) {
-            query = query.or(
-              `title.ilike.%${filters.search}%,description.ilike.%${filters.search}%`
-            );
-          }
-        }
-
-        // Apply sorting
-        query = query.order(sorting.field, {
-          ascending: sorting.direction === "ascending",
-        });
-
-        // Apply pagination
-        const from = pagination.page * pagination.pageSize;
-        const to = from + pagination.pageSize - 1;
-        query = query.range(from, to);
-
-        // Execute query
-        const { data, error, count } = await query;
-
-        if (error) {
-          throw error;
-        }
-
-        return {
-          data: data,
-          count: count || 0,
-          error: null,
-        };
-      } catch (error) {
-        console.error("Error fetching job postings:", error);
-        throw error;
-      }
-    },
+  const result = useQuery<JobPostingsResponse, PostgrestError>({
+    queryKey,
+    queryFn: () => fetchJobPostings({ filters, pagination, sorting }),
+    staleTime: 1000 * 60 * 5, // Consider data fresh for 5 minutes
   });
+
+  // Prefetch next page
+  const prefetchNextPage = async () => {
+    const nextPage = pagination.page + 1;
+    const totalPages = Math.ceil((result.data?.count || 0) / pagination.pageSize);
+
+    if (nextPage < totalPages) {
+      await queryClient.prefetchQuery({
+        queryKey: ["jobPostings", filters, { ...pagination, page: nextPage }, sorting],
+        queryFn: () =>
+          fetchJobPostings({
+            filters,
+            pagination: { ...pagination, page: nextPage },
+            sorting,
+          }),
+      });
+    }
+  };
+
+  // Start prefetching when the current page data is loaded
+  useEffect(() => {
+    if (result.data) {
+      prefetchNextPage();
+    }
+  }, [result.data, pagination.page]);
+
+  return result;
 }

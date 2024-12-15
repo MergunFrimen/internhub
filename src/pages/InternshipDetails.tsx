@@ -1,17 +1,18 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Link } from "@/components/ui/link";
+import { CustomLink } from "@/components/ui/link";
 import { useInternshipDetails } from "@/hooks/useInternshipDetails";
 import {
   Building2,
   Calendar,
   CheckCircle,
   Clock,
+  CornerUpLeft,
   Loader2,
   MapPin,
 } from "lucide-react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { toast } from "sonner";
 import { Database } from "@/types/supabase";
 
@@ -45,6 +46,12 @@ export default function InternshipDetails() {
 
   return (
     <div className="container mx-auto py-8 px-4 space-y-6">
+      <Button variant="secondary" className="w-full md:w-auto" asChild>
+        <Link to="/search">
+          <CornerUpLeft className="w-4 h-4" />
+          <span>Back to search</span>
+        </Link>
+      </Button>
       <HeaderSection internship={internship} />
       <DescriptionSection internship={internship} />
       {internship.requirements && internship.requirements.length > 0 && (
@@ -62,13 +69,13 @@ function HeaderSection({ internship }: { internship: JobPosting }) {
           <div className="flex-grow space-y-4">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold">{internship.title}</h1>
-              <Link
+              <CustomLink
                 to={`/companies/${internship.id}`}
                 className="flex items-center gap-x-3"
               >
                 <Building2 className="w-6 h-6 shrink-0" />
                 <span className="text-lg">{internship.field}</span>
-              </Link>
+              </CustomLink>
             </div>
 
             <div className="grid grid-cols-1 gap-y-2">

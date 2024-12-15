@@ -55,7 +55,7 @@ export interface LinkProps
   className?: string;
 }
 
-const Link = forwardRef<HTMLAnchorElement, LinkProps>(
+const CustomLink = forwardRef<HTMLAnchorElement, LinkProps>(
   (
     {
       className,
@@ -97,6 +97,6 @@ const Link = forwardRef<HTMLAnchorElement, LinkProps>(
     );
   }
 );
-Link.displayName = "Link";
+CustomLink.displayName = "Link";
 
-export { Link, linkVariants };
+export { CustomLink, linkVariants };

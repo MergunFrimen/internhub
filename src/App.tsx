@@ -11,7 +11,7 @@ import CompanyProfile from "./pages/CompanyProfile";
 import InternshipDetails from "./pages/InternshipDetails";
 import LandingPage from "./pages/LandingPage";
 import NotFound from "./pages/NotFound";
-import Search from "./pages/Search";
+import SearchPage from "./pages/Search";
 import UserProfile from "./pages/UserProfile";
 import Logout from "./pages/Auth/Logout";
 import WorkInProgress from "./pages/WorkInProgress";
@@ -26,7 +26,7 @@ export function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/search" element={<Search />} />
+          <Route path="/search" element={<SearchPage />} />
           <Route path="/internships/:id" element={<InternshipDetails />} />
           <Route path="/companies/:id" element={<CompanyProfile />} />
           <Route path="/profiles/:id" element={<UserProfile />} />

@@ -100,8 +100,8 @@ export default function SearchPage() {
 
       {/* Results */}
       {isLoading ? (
-        <div className="space-y-4">
-          {[1, 2, 3].map((i) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {[1, 2, 3, 4].map((i) => (
             <Card key={i}>
               <Skeleton className="h-48" />
             </Card>
@@ -114,7 +114,8 @@ export default function SearchPage() {
             Found {jobPostingsResponse?.count || 0} internships
           </div>
 
-          <div className="space-y-4">
+          {/* Grid container for cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {jobPostingsResponse?.data.map((posting) => (
               <JobPostingCard key={posting.id} posting={posting} />
             ))}
@@ -138,7 +139,7 @@ export default function SearchPage() {
 function JobPostingCard({ posting }: { posting: JobPosting }) {
   return (
     <Link to={`/internships/${posting.id}`}>
-      <Card className="hover:shadow-md transition-shadow">
+      <Card className="bg-primary-foreground hover:ring-4 hover:shadow-md transition-shadow h-full">
         <CardContent className="pt-6">
           <div className="space-y-4">
             <div className="flex justify-between items-start">
@@ -149,7 +150,7 @@ function JobPostingCard({ posting }: { posting: JobPosting }) {
                   <span>{posting.field}</span>
                 </div>
               </div>
-              <Button variant="ghost" size="icon">
+              <Button variant="secondary" size="icon">
                 <ArrowRight className="w-4 h-4" />
               </Button>
             </div>
@@ -193,7 +194,7 @@ function SearchFiltersSheet({
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline" className="gap-2">
+        <Button variant="default" className="gap-2">
           <Filter className="w-4 h-4" />
           Filters & Sort
         </Button>

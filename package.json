@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "repopack": "npx repomix --ignore \"src/components/ui/*,data/*\" --copy --output repopack.txt && rm -f repopack.txt"
+    "repopack": "npx repomix --ignore \"data/*\" --copy --output repopack.txt && rm -f repopack.txt"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

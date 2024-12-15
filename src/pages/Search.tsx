@@ -17,7 +17,11 @@ import {
   PaginationParams,
   SortingParams,
   useJobPostings,
-} from "@/hooks/use-postings";
+} from "@/hooks/useJobPostings";
+import { usePagination } from "@/hooks/usePagination";
+import { useSearchFilters } from "@/hooks/useSearchFilters";
+import { useSearchResults } from "@/hooks/useSearchResults";
+import { useSorting } from "@/hooks/useSorting";
 import {
   ArrowRight,
   ArrowUpDown,
@@ -26,83 +30,32 @@ import {
   Filter,
   Search as SearchIcon,
 } from "lucide-react";
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
 
 export default function Search() {
-  const [filters, setFilters] = useState<JobPostingsFilters>({});
-  const [pagination, setPagination] = useState<PaginationParams>({
-    page: 0,
-    pageSize: 10,
-  });
-  const [sorting, setSorting] = useState<SortingParams>({
-    field: "created_at",
-    direction: "descending",
-  });
+  const { filters, handleSearchChange, handleFilterChange } =
+    useSearchFilters();
+  const { pagination, handlePageChange, handlePageSizeChange } =
+    usePagination();
+  const { sorting, handleSortChange } = useSorting();
 
   const {
     data: jobPostingsResponse,
     isLoading,
     error,
     refetch,
-    isError,
   } = useJobPostings({
     filters,
     pagination,
     sorting,
   });
 
-  console.log("error", error);
-  console.log("isError", isError);
+  useSearchResults(filters, pagination, sorting, refetch);
 
   if (error) {
     toast.error("Error loading internships");
   }
-
-  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFilters((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleFilterChange = (field: string, value: string) => {
-    setFilters((prev) => ({
-      ...prev,
-      [field]: value,
-    }));
-    // Reset pagination when filters change
-    setPagination((prev) => ({
-      ...prev,
-      page: 0,
-    }));
-  };
-
-  const handleSortChange = (value: string) => {
-    const [field, direction] = value.split("-");
-    setSorting({
-      field: field as SortingParams["field"],
-      direction: direction as SortingParams["direction"],
-    });
-  };
-
-  const handlePageSizeChange = (newSize: number) => {
-    setPagination({
-      page: 0, // Reset to first page when changing page size
-      pageSize: newSize,
-    });
-  };
-
-  // Debounce search
-  useEffect(() => {
-    const timer = setTimeout(async () => {
-      await refetch();
-    }, 300);
-
-    return () => clearTimeout(timer);
-  }, [filters, sorting, pagination, refetch]);
 
   return (
     <div className="container mx-auto py-8 px-4">
@@ -128,9 +81,7 @@ export default function Search() {
               postings={jobPostingsResponse?.data || []}
               pagination={pagination}
               totalCount={jobPostingsResponse?.count || 0}
-              onPageChange={(page) =>
-                setPagination((prev) => ({ ...prev, page }))
-              }
+              onPageChange={handlePageChange}
               onPageSizeChange={handlePageSizeChange}
             />
           )}

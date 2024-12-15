@@ -42,7 +42,6 @@ def convert_job_posting_to_csv(json_data: List[Dict[Any, Any]], output_file: str
         if date_added is not None and isinstance(date_added, str):
             continue
         date_added = datetime.utcfromtimestamp(date_added / 1000)
-        print(date_added)
         row = {
             'id': posting.get('_id', ''),
             'field': posting.get('field', ''),

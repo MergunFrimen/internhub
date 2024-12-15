@@ -36,74 +36,38 @@ export type Database = {
     Tables: {
       companies: {
         Row: {
-          address: string | null
           city: string | null
           created_at: string | null
           deleted_at: string | null
-          employees_max: number | null
-          employees_min: number | null
-          external_id: string
-          foundation: number | null
           id: string
           industry: string | null
-          internship: boolean | null
-          internship_date: string | null
-          internship_type: string | null
           latitude: number | null
           longitude: number | null
           name: string
-          open_positions: number | null
-          rank: number | null
-          turnover_max: number | null
-          turnover_min: number | null
           updated_at: string | null
           website: string | null
         }
         Insert: {
-          address?: string | null
           city?: string | null
           created_at?: string | null
           deleted_at?: string | null
-          employees_max?: number | null
-          employees_min?: number | null
-          external_id: string
-          foundation?: number | null
-          id?: string
+          id: string
           industry?: string | null
-          internship?: boolean | null
-          internship_date?: string | null
-          internship_type?: string | null
           latitude?: number | null
           longitude?: number | null
           name: string
-          open_positions?: number | null
-          rank?: number | null
-          turnover_max?: number | null
-          turnover_min?: number | null
           updated_at?: string | null
           website?: string | null
         }
         Update: {
-          address?: string | null
           city?: string | null
           created_at?: string | null
           deleted_at?: string | null
-          employees_max?: number | null
-          employees_min?: number | null
-          external_id?: string
-          foundation?: number | null
           id?: string
           industry?: string | null
-          internship?: boolean | null
-          internship_date?: string | null
-          internship_type?: string | null
           latitude?: number | null
           longitude?: number | null
           name?: string
-          open_positions?: number | null
-          rank?: number | null
-          turnover_max?: number | null
-          turnover_min?: number | null
           updated_at?: string | null
           website?: string | null
         }
@@ -111,6 +75,7 @@ export type Database = {
       }
       job_postings: {
         Row: {
+          company_id: string
           created_at: string
           deleted_at: string | null
           description: string
@@ -124,6 +89,7 @@ export type Database = {
           updated_at: string
         }
         Insert: {
+          company_id?: string
           created_at?: string
           deleted_at?: string | null
           description: string
@@ -137,6 +103,7 @@ export type Database = {
           updated_at?: string
         }
         Update: {
+          company_id?: string
           created_at?: string
           deleted_at?: string | null
           description?: string
@@ -149,7 +116,15 @@ export type Database = {
           title?: string
           updated_at?: string
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "job_postings_company_id_fkey"
+            columns: ["company_id"]
+            isOneToOne: false
+            referencedRelation: "companies"
+            referencedColumns: ["id"]
+          },
+        ]
       }
     }
     Views: {

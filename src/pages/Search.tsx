@@ -506,7 +506,7 @@ function SearchFiltersSheet({
 export function JobDetails({ posting }: { posting: JobPosting }) {
   return (
     <div className="space-y-6 ">
-      <Card className="border-2 border-primary/10 bg-primary-foreground">
+      <Card className="border-2 border-primary/10 border-none">
         <CardContent className="pt-6">
           <div className="flex flex-col gap-6">
             <div className="flex-grow space-y-4">
@@ -582,7 +582,7 @@ export function JobDetails({ posting }: { posting: JobPosting }) {
         </CardContent>
       </Card>
 
-      <Card className="bg-primary-foreground">
+      <Card className="border-none">
         <CardHeader>
           <CardTitle>Description</CardTitle>
         </CardHeader>
@@ -594,7 +594,7 @@ export function JobDetails({ posting }: { posting: JobPosting }) {
       </Card>
 
       {posting.requirements && posting.requirements.length > 0 && (
-        <Card className="bg-primary-foreground">
+        <Card className="border-none">
           <CardHeader>
             <CardTitle>Requirements</CardTitle>
           </CardHeader>

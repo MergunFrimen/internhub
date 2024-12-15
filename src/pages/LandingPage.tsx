@@ -15,27 +15,6 @@ import { Separator } from "@/components/ui/separator";
 export default function LandingPage() {
   const navigate = useNavigate();
 
-  const featuredInternships = [
-    {
-      id: 1,
-      role: "Software Development Intern",
-      company: "TechCorp",
-      location: "Remote",
-    },
-    {
-      id: 2,
-      role: "Data Science Intern",
-      company: "DataTech",
-      location: "Hybrid",
-    },
-    {
-      id: 3,
-      role: "UI/UX Design Intern",
-      company: "DesignCo",
-      location: "On-site",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -67,52 +46,63 @@ export default function LandingPage() {
         </div>
       </div>
 
-      {/* Featured Internships */}
-      <div className="container mx-auto px-4 py-24">
-        <div className="space-y-12">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold text-foreground">
-              Featured Internships
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Explore our hand-picked opportunities
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {featuredInternships.map((internship) => (
-              <FeaturedInternship key={internship.id} {...internship} />
-            ))}
-          </div>
-        </div>
-      </div>
+      <FeaturedInternshipsSection />
 
       <Separator
         orientation="horizontal"
         className="container mx-auto border-2"
       />
 
-      {/* Example Profile Section */}
-      <div className="container mx-auto px-4 py-24">
-        <div className="max-w-4xl mx-auto space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl font-bold text-foreground">
-              Stand Out to Companies
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Create your professional profile and get noticed by top companies
-              looking for talented individuals like you
-            </p>
-          </div>
+      <ProfileExampleSection />
+    </div>
+  );
+}
 
-          <ProfileExample />
+function FeaturedInternshipsSection() {
+  const featuredInternships = [
+    {
+      id: 1,
+      role: "Software Development Intern",
+      company: "TechCorp",
+      location: "Remote",
+    },
+    {
+      id: 2,
+      role: "Data Science Intern",
+      company: "DataTech",
+      location: "Hybrid",
+    },
+    {
+      id: 3,
+      role: "UI/UX Design Intern",
+      company: "DesignCo",
+      location: "On-site",
+    },
+  ];
+
+  return (
+    <div className="container mx-auto px-4 py-24">
+      <div className="space-y-12">
+        <div className="space-y-2">
+          <h2 className="text-3xl font-bold text-foreground">
+            Featured Internships
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            Explore our hand-picked opportunities
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {featuredInternships.map((internship) => (
+            <FeaturedInternships key={internship.id} {...internship} />
+          ))}
         </div>
       </div>
     </div>
   );
 }
 
-function FeaturedInternship({
+function FeaturedInternships({
   id,
   role,
   company,
@@ -149,6 +139,26 @@ function FeaturedInternship({
   );
 }
 
+function ProfileExampleSection() {
+  return (
+    <div className="container mx-auto px-4 py-24">
+      <div className="max-w-4xl mx-auto space-y-12">
+        <div className="text-center space-y-4">
+          <h2 className="text-3xl font-bold text-foreground">
+            Stand Out to Companies
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Create your professional profile and get noticed by top companies
+            looking for talented individuals like you
+          </p>
+        </div>
+
+        <ProfileExample />
+      </div>
+    </div>
+  );
+}
+
 function ProfileExample() {
   const navigate = useNavigate();
 
@@ -157,26 +167,25 @@ function ProfileExample() {
     title: "Computer Science Student",
     university: "Faculty of Informatics, MUNI",
     skills: ["React", "TypeScript", "Node.js"],
-    imageUrl: "/api/placeholder/400/400",
   };
 
   return (
     <Card className="border-2">
-      <CardContent className="p-8 md:p-12">
-        <div className="flex flex-col md:flex-row items-center gap-12">
+      <CardContent className="p-6 md:p-12">
+        <div className="flex flex-col lg:flex-row gap-8">
           {/* Profile Preview */}
-          <div className="flex-1 w-full md:w-auto">
+          <div className="w-full lg:w-1/2">
             <Card className="bg-primary-foreground">
-              <CardContent className="p-8 space-y-6">
-                <div className="flex items-center gap-6">
-                  <div className="bg-primary text-primary-foreground rounded-full p-8 text-2xl font-bold">
+              <CardContent className="p-6 space-y-6">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
+                  <div className="bg-primary text-primary-foreground rounded-full p-6 sm:p-8 text-xl sm:text-2xl font-bold shrink-0">
                     {exampleProfile.name
                       .split(" ")
                       .map((n) => n[0])
                       .join("")}
                   </div>
-                  <div className="space-y-1">
-                    <h3 className="font-semibold text-xl text-foreground">
+                  <div className="space-y-1 text-center sm:text-left">
+                    <h3 className="font-semibold text-lg sm:text-xl text-foreground">
                       {exampleProfile.name}
                     </h3>
                     <p className="text-muted-foreground">
@@ -185,14 +194,16 @@ function ProfileExample() {
                   </div>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
-                  <GraduationCap className="w-5 h-5" />
-                  <span>{exampleProfile.university}</span>
+                  <GraduationCap className="w-5 h-5 shrink-0" />
+                  <span className="text-sm sm:text-base">
+                    {exampleProfile.university}
+                  </span>
                 </div>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap justify-center sm:justify-start gap-2">
                   {exampleProfile.skills.map((skill, index) => (
                     <span
                       key={index}
-                      className="bg-secondary text-secondary-foreground text-sm px-4 py-1.5 rounded-full"
+                      className="bg-secondary text-secondary-foreground text-sm px-3 py-1 rounded-full"
                     >
                       {skill}
                     </span>
@@ -203,49 +214,46 @@ function ProfileExample() {
           </div>
 
           {/* Call to Action */}
-          <div className="flex-1 text-center md:text-left">
-            <div className="space-y-8">
-              <h3 className="text-2xl font-bold text-foreground">
-                Create Your Professional Profile
-              </h3>
-              <ul className="space-y-4">
-                <li className="flex items-center gap-3">
-                  <UserCircle className="w-6 h-6 text-primary shrink-0" />
-                  <span className="text-muted-foreground">
-                    Showcase your skills and experience
-                  </span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <Building2 className="w-6 h-6 text-primary shrink-0" />
-                  <span className="text-muted-foreground">
-                    Get discovered by top companies
-                  </span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <ArrowRight className="w-6 h-6 text-primary shrink-0" />
-                  <span className="text-muted-foreground">
-                    Stand out from other candidates
-                  </span>
-                </li>
-              </ul>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  onClick={() => navigate("/profile/example/view")}
-                  variant="outline"
-                  className="flex-1"
-                  size="lg"
-                >
-                  View Example Profile
-                </Button>
-                <Button
-                  onClick={() => navigate("/register")}
-                  variant="default"
-                  className="flex-1"
-                  size="lg"
-                >
-                  Create Your Profile
-                </Button>
-              </div>
+          <div className="flex flex-col w-full lg:w-1/2 space-y-6">
+            <h3 className="text-xl sm:text-2xl font-bold text-foreground text-center lg:text-left">
+              Create Your Professional Profile
+            </h3>
+            <ul className="space-y-4">
+              <li className="flex items-center gap-3">
+                <UserCircle className="w-5 h-5 text-primary shrink-0" />
+                <span className="text-sm sm:text-base text-muted-foreground">
+                  Showcase your skills and experience
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Building2 className="w-5 h-5 text-primary shrink-0" />
+                <span className="text-sm sm:text-base text-muted-foreground">
+                  Get discovered by top companies
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <ArrowRight className="w-5 h-5 text-primary shrink-0" />
+                <span className="text-sm sm:text-base text-muted-foreground">
+                  Stand out from other candidates
+                </span>
+              </li>
+            </ul>
+            {/* <div className="hidden lg:block lg:grow"></div> */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button
+                onClick={() => navigate("/profile/example/view")}
+                variant="outline"
+                className="w-full"
+              >
+                View Example Profile
+              </Button>
+              <Button
+                onClick={() => navigate("/register")}
+                variant="default"
+                className="w-full"
+              >
+                Create Your Profile
+              </Button>
             </div>
           </div>
         </div>

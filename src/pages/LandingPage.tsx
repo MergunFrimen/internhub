@@ -106,7 +106,7 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="bg-card rounded-xl shadow-lg p-6 md:p-8 border">
+          <div className="bg-card rounded-xl shadow-lg p-6 md:p-8">
             <div className="flex flex-col md:flex-row items-center gap-8">
               {/* Profile Preview */}
               <div className="flex-1 w-full md:w-auto">
@@ -172,14 +172,11 @@ export default function LandingPage() {
                 <div className="space-x-4">
                   <Button
                     onClick={() => navigate("/profile/example/view")}
-                    variant="default"
+                    variant="outline"
                   >
                     View Example Profile
                   </Button>
-                  <Button
-                    onClick={() => navigate("/register")}
-                    variant="outline"
-                  >
+                  <Button onClick={() => navigate("/wip")} variant="default">
                     Create Your Profile
                   </Button>
                 </div>

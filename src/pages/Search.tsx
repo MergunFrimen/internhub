@@ -1,6 +1,6 @@
 import Pagination from "@/components/Pagination";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { ResizablePanel, ResizablePanelGroup } from "@/components/ui/resizable";
@@ -29,10 +29,12 @@ import { cn } from "@/lib/utils";
 import {
   ArrowRight,
   ArrowUpDown,
-  Badge,
   Building2,
   Calendar,
+  CheckCircle,
+  Clock,
   Filter,
+  MapPin,
   Search,
   X,
 } from "lucide-react";
@@ -43,16 +45,12 @@ import { toast } from "sonner";
 export default function SearchPage() {
   return (
     <div className="container mx-auto py-8">
-      {/* <Background3D /> */}
-
-      {/* Header */}
       <div className="mb-6">
         <h1 className="text-3xl font-bold mb-2">Search Internships</h1>
         <p className="text-muted-foreground">
           Find the perfect internship opportunity
         </p>
       </div>
-
       <Layout />
     </div>
   );
@@ -94,7 +92,7 @@ function Layout() {
 
   const handleCloseDetails = () => {
     setSelectedPosting(null);
-    setIsDetailsPanelOpen(false);
+    // setIsDetailsPanelOpen(false);
   };
 
   const sharedProps = {
@@ -180,7 +178,7 @@ export function MobileSearchLayout({
             open={!!selectedPosting}
             onOpenChange={(open) => !open && handleCloseDetails()}
           >
-            <SheetContent side="bottom" className="h-[80vh]">
+            <SheetContent side="bottom" className="h-[100vh]">
               <ScrollArea className="h-full">
                 {selectedPosting && (
                   <div className="space-y-6">
@@ -244,71 +242,67 @@ export function DesktopSearchLayout({
   return (
     <ResizablePanelGroup
       direction="horizontal"
-      className="min-h-[600px] rounded-lg border"
+      className="min-h-[600px] rounded-lg"
     >
-      {/* Search Panel */}
-      <ResizablePanel defaultSize={selectedPosting ? 60 : 100}>
-        <div className="p-6">
-          {/* Search Controls */}
-          <div className="mb-6">
-            <SearchFiltersSheet
-              filters={filters}
-              sorting={sorting}
-              onSearchChange={handleSearchChange}
-              onFilterChange={handleFilterChange}
-              onSortChange={handleSortChange}
-              side="left"
-            />
-          </div>
+      <ResizablePanel defaultSize={60}>
+        <div className="mb-6">
+          <SearchFiltersSheet
+            filters={filters}
+            sorting={sorting}
+            onSearchChange={handleSearchChange}
+            onFilterChange={handleFilterChange}
+            onSortChange={handleSortChange}
+            side="left"
+          />
+        </div>
 
-          {/* Results */}
-          {isLoading ? (
+        {/* Results */}
+        {isLoading ? (
+          <div
+            className={cn(
+              "grid grid-cols-1 md:grid-cols-2 gap-4",
+              !!isDetailsPanelOpen && "md:grid-cols-1"
+            )}
+          >
+            {[1, 2, 3, 4].map((i) => (
+              <Skeleton key={i} className="h-48 bg-muted" />
+            ))}
+          </div>
+        ) : (
+          <div className="space-y-6">
+            {/* Result Count */}
+            <div className="text-sm text-muted-foreground">
+              Found {jobPostingsResponse?.count || 0} internships
+            </div>
+
+            {/* Grid container for cards */}
             <div
               className={cn(
                 "grid grid-cols-1 md:grid-cols-2 gap-4",
-                !!isDetailsPanelOpen && "md:grid-cols-1"
+                !!isDetailsPanelOpen && "md:grid-cols-1 lg:grid-cols-2"
               )}
             >
-              {[1, 2, 3, 4].map((i) => (
-                <Card key={i} className="h-48 animate-pulse bg-muted" />
+              {jobPostingsResponse?.data.map((posting) => (
+                <JobPostingCard
+                  key={posting.id}
+                  posting={posting}
+                  isSelected={selectedPosting?.id === posting.id}
+                  onClick={() => handlePostingClick(posting)}
+                />
               ))}
             </div>
-          ) : (
-            <div className="space-y-6">
-              {/* Result Count */}
-              <div className="text-sm text-muted-foreground">
-                Found {jobPostingsResponse?.count || 0} internships
-              </div>
 
-              {/* Grid container for cards */}
-              <div
-                className={cn(
-                  "grid grid-cols-1 md:grid-cols-2 gap-4",
-                  !!isDetailsPanelOpen && "md:grid-cols-1 lg:grid-cols-2"
-                )}
-              >
-                {jobPostingsResponse?.data.map((posting) => (
-                  <JobPostingCard
-                    key={posting.id}
-                    posting={posting}
-                    isSelected={selectedPosting?.id === posting.id}
-                    onClick={() => handlePostingClick(posting)}
-                  />
-                ))}
-              </div>
-
-              <Pagination
-                currentPage={pagination.page}
-                totalPages={Math.ceil(
-                  (jobPostingsResponse?.count || 0) / pagination.pageSize
-                )}
-                pageSize={pagination.pageSize}
-                onPageChange={handlePageChange}
-                onPageSizeChange={handlePageSizeChange}
-              />
-            </div>
-          )}
-        </div>
+            <Pagination
+              currentPage={pagination.page}
+              totalPages={Math.ceil(
+                (jobPostingsResponse?.count || 0) / pagination.pageSize
+              )}
+              pageSize={pagination.pageSize}
+              onPageChange={handlePageChange}
+              onPageSizeChange={handlePageSizeChange}
+            />
+          </div>
+        )}
       </ResizablePanel>
 
       {/* Details Panel */}
@@ -318,25 +312,14 @@ export function DesktopSearchLayout({
             <ScrollArea className="h-full">
               {selectedPosting && (
                 <div className="p-6">
-                  <div className="flex justify-between items-start mb-6">
-                    <div>
-                      <h2 className="text-2xl font-bold mb-2">
-                        {selectedPosting.title}
-                      </h2>
-                      <div className="flex items-center gap-2 text-muted-foreground">
-                        <Building2 className="w-4 h-4" />
-                        <span>{selectedPosting.field}</span>
-                      </div>
-                    </div>
-                    <div className="flex gap-2">
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        onClick={handleCloseDetails}
-                      >
-                        <X className="w-4 h-4" />
-                      </Button>
-                    </div>
+                  <div className="flex justify-end items-start">
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      onClick={handleCloseDetails}
+                    >
+                      <X className="w-4 h-4" />
+                    </Button>
                   </div>
 
                   <JobDetails posting={selectedPosting} />
@@ -504,46 +487,92 @@ interface JobDetailsProps {
   posting: JobPosting;
 }
 
-export function JobDetails({ posting }: JobDetailsProps) {
+export function JobDetails({ posting }: { posting: JobPosting }) {
   return (
     <div className="space-y-6">
-      <div>
-        <Label className="text-lg mb-2">Description</Label>
-        <p className="text-muted-foreground">{posting.description}</p>
-      </div>
+      <Card className="border-2 border-primary/10">
+        <CardContent className="pt-6">
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="flex-grow space-y-4">
+              <div className="space-y-2">
+                <h2 className="text-2xl font-bold">{posting.title}</h2>
+                <div className="flex items-center gap-x-3">
+                  <Building2 className="w-6 h-6 shrink-0" />
+                  <span className="text-lg">{posting.field}</span>
+                </div>
+              </div>
 
-      {posting.requirements && (
-        <div>
-          <Label className="text-lg mb-2">Requirements</Label>
-          <ul className="list-disc list-inside space-y-1">
-            {posting.requirements.map((req, index) => (
-              <li key={index} className="text-muted-foreground">
-                {req}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+              <div className="grid grid-cols-1 gap-y-2">
+                {posting.hours && (
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <Clock className="w-4 h-4" />
+                    <span>
+                      {posting.hours === 80 ? "Full-time" : "Part-time"}
+                    </span>
+                  </div>
+                )}
+                {posting.home_office && (
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <MapPin className="w-4 h-4 shrink-0" />
+                    <span>Remote</span>
+                  </div>
+                )}
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <Calendar className="w-4 h-4" />
+                  <span>
+                    Posted {new Date(posting.created_at).toLocaleDateString()}
+                  </span>
+                </div>
+              </div>
 
-      {posting.tags && (
-        <div>
-          <Label className="text-lg mb-2">Technologies</Label>
-          <div className="flex flex-wrap gap-2">
-            {posting.tags.map((tag, index) => (
-              <Badge key={index}>{tag}</Badge>
-            ))}
+              {posting.tags && (
+                <div className="flex flex-wrap gap-2">
+                  {posting.tags.map((tag) => (
+                    <Badge key={tag} variant="secondary">
+                      {tag}
+                    </Badge>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div className="flex flex-col gap-4 md:items-end">
+              <Button size="lg" className="w-full md:w-auto" asChild>
+                <Link to={`/internships/${posting.id}`}>Apply Now</Link>
+              </Button>
+            </div>
           </div>
-        </div>
-      )}
+        </CardContent>
+      </Card>
 
-      <div className="flex flex-col gap-y-2 pt-4">
-        <Button variant="default" className="w-full" asChild>
-          <Link to={`/internships/${posting.id}`}>Apply Now</Link>
-        </Button>
-        <Button variant="outline" className="w-full" asChild>
-          <Link to={`/internships/${posting.id}`}>View Full Details</Link>
-        </Button>
-      </div>
+      <Card>
+        <CardHeader>
+          <CardTitle>Description</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-foreground leading-relaxed">
+            {posting.description}
+          </p>
+        </CardContent>
+      </Card>
+
+      {posting.requirements && posting.requirements.length > 0 && (
+        <Card>
+          <CardHeader>
+            <CardTitle>Requirements</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="space-y-3">
+              {posting.requirements.map((req, index) => (
+                <li key={index} className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                  <span className="text-foreground">{req}</span>
+                </li>
+              ))}
+            </ul>
+          </CardContent>
+        </Card>
+      )}
     </div>
   );
 }
@@ -554,6 +583,8 @@ import {
   JobPostingsFilters,
   SortingParams,
 } from "@/hooks/useJobPostings";
+import { Badge } from "@/components/ui/badge";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export interface LayoutProps {
   filters: JobPostingsFilters;

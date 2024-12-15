@@ -42,7 +42,6 @@ import { Link } from "react-router-dom";
 import { toast } from "sonner";
 
 export default function SearchPage() {
-  console.log("rerender");
   return (
     <div className="container mx-auto py-8">
       <Background3D />

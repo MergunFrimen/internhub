@@ -10,7 +10,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 import Background3D from "@/components/Background3d";
 
 export default function LandingPage() {
@@ -18,10 +17,6 @@ export default function LandingPage() {
     <div className="min-h-screen">
       <HeroSection />
       <FeaturedInternshipsSection />
-      <Separator
-        orientation="horizontal"
-        className="container mx-auto border-2"
-      />
       <ProfileExampleSection />
     </div>
   );
@@ -56,6 +51,13 @@ function HeroSection() {
             }}
           />
         </div>
+        <Button
+          size="lg"
+          className="px-8 py-6 text-lg"
+          onClick={() => navigate("/search")}
+        >
+          Browse Internships
+        </Button>
       </div>
     </>
   );

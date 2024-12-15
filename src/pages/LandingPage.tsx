@@ -66,22 +66,22 @@ function HeroSection() {
 function FeaturedInternshipsSection() {
   const featuredInternships = [
     {
-      id: 1,
-      role: "Software Development Intern",
-      company: "TechCorp",
-      location: "Remote",
+      id: "6756b9369466383100024fa4",
+      role: "Data Scientist",
+      company: "TODO",
+      location: "TODO",
     },
     {
-      id: 2,
-      role: "Data Science Intern",
-      company: "DataTech",
-      location: "Hybrid",
+      id: "6756b9369466383100024fa5",
+      role: "Environmental Consultant",
+      company: "TODO",
+      location: "TODO",
     },
     {
-      id: 3,
-      role: "UI/UX Design Intern",
-      company: "DesignCo",
-      location: "On-site",
+      id: "6756b9369466383100024fa7",
+      role: "IT Business Analyst",
+      company: "TODO",
+      location: "TODO",
     },
   ];
 

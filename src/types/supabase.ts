@@ -114,7 +114,6 @@ export type Database = {
           created_at: string
           deleted_at: string | null
           description: string
-          external_id: string
           field: string
           home_office: boolean | null
           hours: number | null
@@ -128,11 +127,10 @@ export type Database = {
           created_at?: string
           deleted_at?: string | null
           description: string
-          external_id?: string
           field: string
           home_office?: boolean | null
           hours?: number | null
-          id?: string
+          id: string
           requirements?: string[] | null
           tags?: string[] | null
           title: string
@@ -142,7 +140,6 @@ export type Database = {
           created_at?: string
           deleted_at?: string | null
           description?: string
-          external_id?: string
           field?: string
           home_office?: boolean | null
           hours?: number | null

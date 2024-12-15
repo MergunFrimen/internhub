@@ -24,7 +24,6 @@ def read_json_file(input_file: str) -> Dict[Any, Any]:
 def convert_job_posting_to_csv(json_data: List[Dict[Any, Any]], output_file: str) -> None:
     headers = [
         'id',
-        'external_id',
         'field',
         'title',
         'description',
@@ -45,8 +44,7 @@ def convert_job_posting_to_csv(json_data: List[Dict[Any, Any]], output_file: str
         date_added = datetime.utcfromtimestamp(date_added / 1000)
         print(date_added)
         row = {
-            'id': str(uuid.uuid4()),
-            'external_id': posting.get('_id', ''),
+            'id': posting.get('_id', ''),
             'field': posting.get('field', ''),
             'title': posting.get('title', ''),
             'description': posting.get('description', ''),

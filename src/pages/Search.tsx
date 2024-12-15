@@ -34,6 +34,7 @@ import {
   Filter,
   MapPin,
   Search,
+  SquareArrowOutUpRightIcon,
   X,
 } from "lucide-react";
 import { useState } from "react";
@@ -185,8 +186,9 @@ export function MobileSearchLayout({
           <Sheet
             open={!!selectedPosting}
             onOpenChange={(open) => !open && handleCloseDetails()}
+            modal
           >
-            <SheetContent side="bottom" className="h-[100vh]">
+            <SheetContent side="bottom" className="h-[90vh]">
               <ScrollArea className="h-full">
                 {selectedPosting && (
                   <div className="space-y-6">
@@ -200,13 +202,13 @@ export function MobileSearchLayout({
                           <span>{selectedPosting.field}</span>
                         </div>
                       </div>
-                      <Button
+                      {/* <Button
                         variant="ghost"
                         size="icon"
                         onClick={handleCloseDetails}
                       >
                         <X className="w-4 h-4" />
-                      </Button>
+                      </Button> */}
                     </div>
 
                     <JobDetails posting={selectedPosting} />
@@ -369,11 +371,11 @@ export function JobPostingCard({
                 <span>{posting.field}</span>
               </div>
             </div>
-            <Button variant="secondary" size="icon" asChild>
+            {/* <Button variant="secondary" size="icon" asChild>
               <Link to={`/internships/${posting.id}`} className="min-w-9">
                 <ArrowRight className="w-4 h-4 min-w-4" />
               </Link>
-            </Button>
+            </Button> */}
           </div>
 
           <p className="text-foreground line-clamp-2">{posting.description}</p>
@@ -539,7 +541,7 @@ export function JobDetails({ posting }: { posting: JobPosting }) {
               )}
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-2">
+            <div className="flex flex-col items-center lg:flex-row gap-2">
               <Button
                 variant="default"
                 size="lg"
@@ -549,12 +551,15 @@ export function JobDetails({ posting }: { posting: JobPosting }) {
                 Apply Now
               </Button>
               <Button
-                variant="outline"
-                size="lg"
+                variant="ghost"
+                size="default"
                 className="w-full md:w-auto"
                 asChild
               >
-                <Link to={`/internships/${posting.id}`}>View Offer</Link>
+                <Link to={`/internships/${posting.id}`}>
+                  <SquareArrowOutUpRightIcon className="w-4 h-4" />
+                  <span>View Details</span>
+                </Link>
               </Button>
             </div>
           </div>

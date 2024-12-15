@@ -1,8 +1,8 @@
 import { supabaseClient } from "@/lib/supabase-client";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { type PostgrestError } from "@supabase/supabase-js";
-import { Database } from "@/types/supabase";
 import { useEffect } from "react";
+import { Database } from "@/types/supabase";
 
 export type JobPosting = Database["public"]["Tables"]["job_postings"]["Row"];
 

@@ -18,6 +18,7 @@ import {
   Star,
   Trophy,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import { toast } from "sonner";
 
 export default function UserProfile() {
@@ -109,7 +110,7 @@ export default function UserProfile() {
             <div className="flex-grow space-y-4">
               {/* Profile Header */}
               <div className="flex items-center gap-4">
-                <div className="bg-primary-foreground text-primary rounded-full p-8 text-3xl font-bold">
+                <div className="bg-secondary text-foreground rounded-full p-8 text-3xl font-bold">
                   {`${profile.firstName[0]}${profile.lastName[0]}`}
                 </div>
                 <div>
@@ -159,8 +160,10 @@ export default function UserProfile() {
               >
                 <Download className="w-4 h-4" /> Download CV
               </Button>
-              <Button className="gap-2">
-                <MessageCircleMore className="w-4 h-4" /> Contact
+              <Button className="gap-2" asChild>
+                <Link to="/chat">
+                  <MessageCircleMore className="w-4 h-4" /> Contact
+                </Link>
               </Button>
             </div>
           </div>

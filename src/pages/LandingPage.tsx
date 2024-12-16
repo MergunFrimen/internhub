@@ -178,11 +178,8 @@ function ProfileExample() {
             <Card className="bg-primary-foreground">
               <CardContent className="p-4 md:p-8 space-y-4 md:space-y-6">
                 <div className="flex flex-row items-center gap-4 lg:gap-6">
-                  <div className="bg-primary text-primary-foreground rounded-full p-6 md:p-8 text-xl md:text-2xl font-bold">
-                    {exampleProfile.name
-                      .split(" ")
-                      .map((n) => n[0])
-                      .join("")}
+                  <div className="bg-secondary text-foreground rounded-full p-8 text-3xl font-bold">
+                    JD
                   </div>
                   <div className="space-y-1">
                     <h3 className="font-semibold text-lg md:text-xl text-foreground">

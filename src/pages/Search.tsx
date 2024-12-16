@@ -1,3 +1,9 @@
+import Background3D from "@/components/Background3d";
+import {
+  default as Pagination,
+  default as PaginationControls,
+} from "@/components/Pagination";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -17,54 +23,34 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { Skeleton } from "@/components/ui/skeleton";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { useJobPostings } from "@/hooks/useJobPostings";
+import { useAvailableFields } from "@/hooks/useAvailableFields";
+import {
+  JobPosting,
+  JobPostingsFilters,
+  SortingParams,
+  useJobPostings,
+} from "@/hooks/useJobPostings";
 import { usePagination } from "@/hooks/usePagination";
 import { useSearchFilters } from "@/hooks/useSearchFilters";
 import { useSearchResults } from "@/hooks/useSearchResults";
 import { useSorting } from "@/hooks/useSorting";
 import { cn } from "@/lib/utils";
+import { is } from "@react-three/fiber/dist/declarations/src/core/utils";
 import {
-  ArrowUpDown,
   Building2,
   Calendar,
-  Check,
   CheckCircle,
-  ChevronsUpDown,
   Clock,
   Filter,
   MapPin,
   Search,
   SquareArrowOutUpRightIcon,
-  X,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
-import {
-  JobPosting,
-  JobPostingsFilters,
-  SortingParams,
-} from "@/hooks/useJobPostings";
-import { Badge } from "@/components/ui/badge";
-import { Skeleton } from "@/components/ui/skeleton";
-import PaginationControls from "@/components/Pagination";
-import Background3D from "@/components/Background3d";
-import Pagination from "@/components/Pagination";
-import { useAvailableFields } from "@/hooks/useAvailableFields";
-import { useAvailableTags } from "@/hooks/useAvailableTags";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-} from "@/components/ui/command";
 
 export default function SearchPage() {
   return (
@@ -133,25 +119,7 @@ function Layout() {
   const [selectedPosting, setSelectedPosting] = useState<JobPosting | null>(
     null
   );
-  const [isDetailsPanelOpen, setIsDetailsPanelOpen] = useState(true);
-
-  // // Add this effect to select the first result when data loads
-  // useEffect(() => {
-  //   if (
-  //     jobPostingsResponse?.data &&
-  //     jobPostingsResponse.data.length > 0 &&
-  //     !selectedPosting
-  //   ) {
-  //     setSelectedPosting(jobPostingsResponse.data[0]);
-  //   }
-  //   // Hide details panel when there are no results
-  //   if (jobPostingsResponse?.data && jobPostingsResponse.data.length === 0) {
-  //     setSelectedPosting(null);
-  //     setIsDetailsPanelOpen(false);
-  //   }
-  // }, [jobPostingsResponse?.data]);
-
-  // Auto-select first result on desktop
+  const [isDetailsPanelOpen, setIsDetailsPanelOpen] = useState(false);
   useEffect(() => {
     if (
       !isMobile &&
@@ -458,15 +426,6 @@ function SearchFiltersSheet({
 }: SearchFiltersSheetProps) {
   const { data: availableFields, isLoading: isLoadingFields } =
     useAvailableFields();
-  const { data: availableTags, isLoading: isLoadingTags } = useAvailableTags();
-
-  const handleTagClick = (tag: string) => {
-    const currentTags = filters.tags || [];
-    const newTags = currentTags.includes(tag)
-      ? currentTags.filter((t) => t !== tag)
-      : [...currentTags, tag];
-    onFilterChange("tags", newTags);
-  };
 
   return (
     <Sheet>

@@ -16,6 +16,7 @@ import Logout from "./pages/Auth/Logout";
 import WorkInProgress from "./pages/WorkInProgress";
 import { Login } from "./pages/Auth/Login";
 import { Register } from "./pages/Auth/Register";
+import ChatPage from "./pages/ChatPage";
 
 export function App() {
   return (
@@ -28,27 +29,14 @@ export function App() {
           <Route path="/internships" element={<SearchPage />} />
           <Route path="/internships/:id" element={<InternshipDetails />} />
           <Route path="/profiles/:id" element={<UserProfile />} />
-        </Route>
-
-        <Route element={<MainLayout />}>
-          <Route
-            path="/auth-test"
-            element={
-              <ProtectedRoute>
-                <ProtectedPageTest />
-              </ProtectedRoute>
-            }
-          />
+          <Route path="/chat" element={<ChatPage />} />
+          <Route path="/profile/example/view" element={<UserProfile />} />
         </Route>
 
         <Route element={<AuthLayout />}>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/logout" element={<Logout />} />
-        </Route>
-
-        <Route element={<MainLayout />}>
-          <Route path="/profile/example/view" element={<UserProfile />} />
         </Route>
 
         <Route path="/wip" element={<WorkInProgress />} />

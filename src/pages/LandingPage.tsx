@@ -241,15 +241,8 @@ function ProfileExample() {
               </ul>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button
-                  onClick={() => navigate("/register")}
-                  variant="default"
-                  className="w-full md:flex-1"
-                >
-                  Create Your Profile
-                </Button>
-                <Button
                   onClick={() => navigate("/profile/example/view")}
-                  variant="outline"
+                  variant="default"
                   className="w-full md:flex-1"
                 >
                   View Example Profile

@@ -5,8 +5,6 @@ import MainLayout from "./layouts/MainLayout";
 
 import ScrollToTop from "./components/ScrollToTop";
 
-import ProtectedPageTest from "./pages/Auth/ProtectedPageTest";
-import ProtectedRoute from "./pages/Auth/ProtectedRoute";
 import InternshipDetails from "./pages/InternshipDetails";
 import LandingPage from "./pages/LandingPage";
 import NotFound from "./pages/NotFound";

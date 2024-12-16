@@ -37,9 +37,9 @@ export default function Chat() {
   };
 
   // Scroll to bottom whenever messages change
-  useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
+  // useEffect(() => {
+  //   scrollToBottom();
+  // }, [messages]);
 
   // Fetch initial messages
   useEffect(() => {

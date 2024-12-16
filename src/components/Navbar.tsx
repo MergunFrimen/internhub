@@ -23,7 +23,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          {isAuthenticated ? (
+          {/* {isAuthenticated ? (
             <AccountMenu />
           ) : (
             <Button variant="default" asChild>
@@ -32,7 +32,7 @@ export default function Navbar() {
                 Log In
               </Link>
             </Button>
-          )}
+          )} */}
         </div>
       </div>
     </nav>

@@ -170,7 +170,7 @@ function ProfileExample() {
   };
 
   return (
-    <Card className="border-none">
+    <Card className="border-none shadow-none">
       <CardContent className="p-4 md:p-12">
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
           {/* Profile Preview */}

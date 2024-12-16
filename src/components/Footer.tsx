@@ -16,7 +16,7 @@ export default function Footer() {
       <span className="text-sm text-foreground">
         For educational purposes only.
       </span>
-      <Button variant="default" size="sm">
+      <Button variant="secondary" size="sm">
         <Link to="/chat">Leave a review</Link>
       </Button>
     </footer>

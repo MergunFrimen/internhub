@@ -9,10 +9,10 @@
       <rect x="0" y="0" width="32" height="32" rx="8"/>
     </clipPath>
   </defs>
-  
+
   <!-- Gradient Background -->
   <rect width="32" height="32" fill="url(#grad)" clip-path="url(#rounded)"/>
-  
+
   <!-- Decorative Arc -->
   <path d="M 8 20 A 12 12 0 0 1 24 20" 
         fill="none" 
@@ -20,26 +20,37 @@
         stroke-width="3" 
         stroke-linecap="round"
         opacity="0.3"/>
-  
+
   <!-- Main Arc -->
   <path d="M 6 16 A 14 14 0 0 1 26 16" 
         fill="none" 
         stroke="white" 
         stroke-width="3" 
         stroke-linecap="round"/>
-  
+
   <!-- Star/Spark -->
   <circle cx="16" cy="12" r="2" fill="white"/>
   <circle cx="16" cy="12" r="4" fill="white" opacity="0.3"/>
-  
+
   <!-- Connection Points -->
   <circle cx="6" cy="16" r="2" fill="white"/>
   <circle cx="26" cy="16" r="2" fill="white"/>
-  
+
   <!-- Rising Path -->
   <path d="M 12 24 L 20 14" 
         stroke="white" 
         stroke-width="3" 
         stroke-linecap="round"
         opacity="0.8"/>
+
+  <!-- Christmas Hat -->
+  <!-- Red Triangle -->
+  <path d="M 12 8 L 16 2 L 20 8 Z" 
+        fill="#e11d48"/>
+
+  <!-- White Brim -->
+  <ellipse cx="16" cy="8" rx="5" ry="1.5" fill="white"/>
+
+  <!-- White Pom-Pom -->
+  <circle cx="16" cy="2" r="1" fill="white"/>
 </svg>

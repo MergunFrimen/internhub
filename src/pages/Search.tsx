@@ -28,7 +28,9 @@ import {
   ArrowUpDown,
   Building2,
   Calendar,
+  Check,
   CheckCircle,
+  ChevronsUpDown,
   Clock,
   Filter,
   MapPin,
@@ -51,6 +53,18 @@ import Background3D from "@/components/Background3d";
 import Pagination from "@/components/Pagination";
 import { useAvailableFields } from "@/hooks/useAvailableFields";
 import { useAvailableTags } from "@/hooks/useAvailableTags";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+} from "@/components/ui/command";
 
 export default function SearchPage() {
   return (
@@ -445,13 +459,21 @@ function SearchFiltersSheet({
   const { data: availableFields, isLoading: isLoadingFields } =
     useAvailableFields();
   const { data: availableTags, isLoading: isLoadingTags } = useAvailableTags();
+  const [open, setOpen] = useState(false);
 
-  const handleTagClick = (tag: string) => {
+  const handleTagSelect = (tag: string) => {
     const currentTags = filters.tags || [];
-    const newTags = currentTags.includes(tag)
-      ? currentTags.filter((t) => t !== tag)
-      : [...currentTags, tag];
-    onFilterChange("tags", newTags);
+    if (!currentTags.includes(tag)) {
+      onFilterChange("tags", [...currentTags, tag]);
+    }
+  };
+
+  const handleTagRemove = (tagToRemove: string) => {
+    const currentTags = filters.tags || [];
+    onFilterChange(
+      "tags",
+      currentTags.filter((tag) => tag !== tagToRemove)
+    );
   };
 
   return (
@@ -541,30 +563,78 @@ function SearchFiltersSheet({
             </div>
 
             {/* Tags Filter */}
-            <div className="space-y-2">
+            <div className="space-y-4">
               <Label>Tags</Label>
-              <div className="flex flex-wrap gap-2">
-                {!isLoadingTags &&
-                  availableTags?.map((tag) => (
-                    <Badge
-                      key={tag}
-                      variant={
-                        filters.tags?.includes(tag) ? "default" : "secondary"
-                      }
-                      className={cn(
-                        "cursor-pointer hover:opacity-80",
-                        filters.tags?.includes(tag) &&
-                          "hover:bg-primary hover:text-primary-foreground"
-                      )}
-                      onClick={() => handleTagClick(tag)}
-                    >
-                      {tag}
-                      {filters.tags?.includes(tag) && (
-                        <X className="ml-1 h-3 w-3" />
-                      )}
-                    </Badge>
-                  ))}
-              </div>
+
+              {/* Tags Combobox */}
+              <Popover open={open} onOpenChange={setOpen}>
+                <PopoverTrigger asChild>
+                  <Button
+                    variant="outline"
+                    role="combobox"
+                    aria-expanded={open}
+                    className="w-full justify-between"
+                    disabled={isLoadingTags}
+                  >
+                    Add tags...
+                    <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                  </Button>
+                </PopoverTrigger>
+                <PopoverContent className="p-0">
+                  <Command>
+                    <CommandInput placeholder="Search tags..." />
+                    <CommandEmpty>No tags found.</CommandEmpty>
+                    <CommandGroup>
+                      {[].map((tag) => (
+                        <CommandItem
+                          key={tag}
+                          onSelect={() => {
+                            handleTagSelect(tag);
+                            setOpen(false);
+                          }}
+                        >
+                          <Check
+                            className={cn(
+                              "mr-2 h-4 w-4",
+                              (filters.tags || []).includes(tag)
+                                ? "opacity-100"
+                                : "opacity-0"
+                            )}
+                          />
+                          {tag}
+                        </CommandItem>
+                      ))}
+                    </CommandGroup>
+                  </Command>
+                </PopoverContent>
+              </Popover>
+
+              {/* Selected Tags */}
+              {/* {filters.tags && filters.tags.length > 0 && (
+                <div className="space-y-2">
+                  <Label className="text-sm text-muted-foreground">
+                    Selected Tags
+                  </Label>
+                  <div className="flex flex-wrap gap-2">
+                    {filters.tags.map((tag) => (
+                      <Badge
+                        key={tag}
+                        variant="secondary"
+                        className="px-3 py-1"
+                      >
+                        {tag}
+                        <button
+                          className="ml-2 ring-offset-background rounded-full outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+                          onClick={() => handleTagRemove(tag)}
+                        >
+                          <X className="h-3 w-3" />
+                          <span className="sr-only">Remove {tag}</span>
+                        </button>
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              )} */}
             </div>
           </div>
         </ScrollArea>

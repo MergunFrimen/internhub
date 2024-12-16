@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -20,6 +20,7 @@ export default function Chat() {
   const [username, setUsername] = useState<string>("");
   const [isSettingUsername, setIsSettingUsername] = useState(false);
   const [tempUsername, setTempUsername] = useState("");
+  const messagesEndRef = useRef<HTMLDivElement>(null);
 
   // Load username from localStorage
   useEffect(() => {
@@ -30,6 +31,15 @@ export default function Chat() {
       setIsSettingUsername(true);
     }
   }, []);
+
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  // Scroll to bottom whenever messages change
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
 
   // Fetch initial messages
   useEffect(() => {
@@ -71,14 +81,6 @@ export default function Chat() {
       supabaseClient.removeChannel(channel);
     };
   }, []);
-
-  // Auto-scroll to bottom when new messages arrive
-  useEffect(() => {
-    const scrollArea = document.querySelector(".scroll-area-viewport");
-    if (scrollArea) {
-      scrollArea.scrollTop = scrollArea.scrollHeight;
-    }
-  }, [messages]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -138,7 +140,7 @@ export default function Chat() {
   }
 
   return (
-    <Card className="w-full max-w-2xl mx-auto border-none">
+    <Card className="w-full max-w-2xl mx-auto border-none shadow-none">
       <CardHeader className="flex flex-row items-center justify-between px-0">
         <div className="flex items-center gap-2">
           <span className="text-sm text-muted-foreground">Chatting as:</span>
@@ -176,6 +178,7 @@ export default function Chat() {
                 <p>{message.content}</p>
               </div>
             ))}
+            <div ref={messagesEndRef} />
           </div>
         </ScrollArea>
 

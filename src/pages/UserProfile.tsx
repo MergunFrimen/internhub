@@ -104,7 +104,7 @@ export default function UserProfile() {
   return (
     <div className="container mx-auto py-8 space-y-6">
       {/* Hero Section */}
-      <Card className="border-none">
+      <Card className="border-none shadow-none">
         <CardContent className="pt-6">
           <div className="flex flex-col md:flex-row gap-6">
             <div className="flex-grow space-y-4">
@@ -185,7 +185,7 @@ export default function UserProfile() {
 
         <TabsContent value="overview" className="space-y-6">
           {/* About */}
-          <Card className="border-none">
+          <Card className="border-none shadow-none">
             <CardHeader>
               <CardTitle>About</CardTitle>
             </CardHeader>
@@ -195,7 +195,7 @@ export default function UserProfile() {
           </Card>
 
           {/* Skills */}
-          <Card className="border-none">
+          <Card className="border-none shadow-none">
             <CardHeader>
               <CardTitle>Skills</CardTitle>
             </CardHeader>
@@ -221,7 +221,7 @@ export default function UserProfile() {
           </Card>
 
           {/* Projects */}
-          <Card className="border-none">
+          <Card className="border-none shadow-none">
             <CardHeader>
               <CardTitle>Featured Projects</CardTitle>
             </CardHeader>
@@ -275,7 +275,7 @@ export default function UserProfile() {
 
         <TabsContent value="experience" className="space-y-6">
           {/* Work Experience */}
-          <Card className="border-none">
+          <Card className="border-none shadow-none">
             <CardHeader>
               <CardTitle>Work Experience</CardTitle>
             </CardHeader>
@@ -313,7 +313,7 @@ export default function UserProfile() {
 
         <TabsContent value="education" className="space-y-6">
           {/* Education */}
-          <Card className="border-none">
+          <Card className="border-none shadow-none">
             <CardHeader>
               <CardTitle>Education</CardTitle>
             </CardHeader>

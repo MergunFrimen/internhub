@@ -239,7 +239,7 @@ function ProfileExample() {
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button
                   onClick={() => navigate("/profile/example/view")}
-                  variant="default"
+                  variant="secondary"
                   className="w-full md:flex-1"
                 >
                   View Example Profile

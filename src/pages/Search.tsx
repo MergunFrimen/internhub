@@ -430,7 +430,7 @@ function SearchFiltersSheet({
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="default" className="gap-2">
+        <Button variant="secondary" className="gap-2">
           <Filter className="w-4 h-4" />
           Filters & Sort
         </Button>

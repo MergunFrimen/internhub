@@ -27,9 +27,10 @@ export function App() {
           <Route path="/internships" element={<SearchPage />} />
           <Route path="/internships/:id" element={<InternshipDetails />} />
           <Route path="/profiles/:id" element={<UserProfile />} />
-          <Route path="/chat" element={<ChatPage />} />
           <Route path="/profile/example/view" element={<UserProfile />} />
         </Route>
+
+        <Route path="/chat" element={<ChatPage />} />
 
         <Route element={<AuthLayout />}>
           <Route path="/login" element={<Login />} />

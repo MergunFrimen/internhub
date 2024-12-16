@@ -49,6 +49,8 @@ import { Skeleton } from "@/components/ui/skeleton";
 import PaginationControls from "@/components/Pagination";
 import Background3D from "@/components/Background3d";
 import Pagination from "@/components/Pagination";
+import { useAvailableFields } from "@/hooks/useAvailableFields";
+import { useAvailableTags } from "@/hooks/useAvailableTags";
 
 export default function SearchPage() {
   return (
@@ -280,7 +282,6 @@ export function DesktopSearchLayout({
   handlePageChange,
   handlePageSizeChange,
   handlePostingClick,
-  handleCloseDetails,
 }: LayoutProps) {
   const hasResults =
     jobPostingsResponse?.data && jobPostingsResponse.data.length > 0;
@@ -360,7 +361,7 @@ export function DesktopSearchLayout({
             <div className="relative">
               <ScrollArea className="h-[calc(100vh-6rem)]">
                 {selectedPosting ? (
-                    <JobDetails posting={selectedPosting} />
+                  <JobDetails posting={selectedPosting} />
                 ) : (
                   jobPostingsResponse?.count !== 0 && (
                     <div className="flex items-center justify-center h-full text-muted-foreground">
@@ -428,7 +429,7 @@ interface SearchFiltersSheetProps {
   filters: JobPostingsFilters;
   sorting: SortingParams;
   onSearchChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onFilterChange: (field: string, value: string) => void;
+  onFilterChange: (field: string, value: string | string[]) => void;
   onSortChange: (value: string) => void;
   side?: "bottom" | "left";
 }
@@ -441,6 +442,18 @@ function SearchFiltersSheet({
   onSortChange,
   side = "left",
 }: SearchFiltersSheetProps) {
+  const { data: availableFields, isLoading: isLoadingFields } =
+    useAvailableFields();
+  const { data: availableTags, isLoading: isLoadingTags } = useAvailableTags();
+
+  const handleTagClick = (tag: string) => {
+    const currentTags = filters.tags || [];
+    const newTags = currentTags.includes(tag)
+      ? currentTags.filter((t) => t !== tag)
+      : [...currentTags, tag];
+    onFilterChange("tags", newTags);
+  };
+
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -457,66 +470,104 @@ function SearchFiltersSheet({
           <SheetTitle>Search Filters</SheetTitle>
         </SheetHeader>
 
-        <div className="space-y-6 py-6">
-          {/* Search Input */}
-          <div className="space-y-2">
-            <Label>Search</Label>
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground h-4 w-4" />
-              <Input
-                placeholder="Search by title, company, or keyword..."
-                className="pl-10"
-                name="search"
-                value={filters.search || ""}
-                onChange={onSearchChange}
-              />
+        <ScrollArea className="h-[calc(100vh-8rem)]">
+          <div className="space-y-6 py-6 pr-6 p-3">
+            {/* Search Input */}
+            <div className="space-y-2">
+              <Label>Search</Label>
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground h-4 w-4" />
+                <Input
+                  placeholder="Search by title, company, or keyword..."
+                  className="pl-10"
+                  name="search"
+                  value={filters.search || ""}
+                  onChange={onSearchChange}
+                />
+              </div>
+            </div>
+
+            {/* Sort Options */}
+            <div className="space-y-2">
+              <Label className="flex items-center gap-2">
+                <ArrowUpDown className="w-4 h-4" />
+                Sort By
+              </Label>
+              <Select
+                value={`${sorting.field}-${sorting.direction}`}
+                onValueChange={onSortChange}
+              >
+                <SelectTrigger>
+                  <SelectValue placeholder="Select sorting" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="created_at-descending">
+                    Most Recent
+                  </SelectItem>
+                  <SelectItem value="created_at-ascending">
+                    Oldest First
+                  </SelectItem>
+                  <SelectItem value="title-ascending">Title A-Z</SelectItem>
+                  <SelectItem value="title-descending">Title Z-A</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
+            {/* Field Filter */}
+            <div className="space-y-2">
+              <Label>Field</Label>
+              <Select
+                value={filters.field || ""}
+                onValueChange={(value) => {
+                  if (value === "all") onFilterChange("field", "");
+                  else onFilterChange("field", value);
+                }}
+                disabled={isLoadingFields}
+              >
+                <SelectTrigger>
+                  <SelectValue placeholder="Select field" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all" className="text-muted-foreground">
+                    All Fields
+                  </SelectItem>
+                  {availableFields?.map((field) => (
+                    <SelectItem key={field} value={field}>
+                      {field}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+
+            {/* Tags Filter */}
+            <div className="space-y-2">
+              <Label>Tags</Label>
+              <div className="flex flex-wrap gap-2">
+                {!isLoadingTags &&
+                  availableTags?.map((tag) => (
+                    <Badge
+                      key={tag}
+                      variant={
+                        filters.tags?.includes(tag) ? "default" : "secondary"
+                      }
+                      className={cn(
+                        "cursor-pointer hover:opacity-80",
+                        filters.tags?.includes(tag) &&
+                          "hover:bg-primary hover:text-primary-foreground"
+                      )}
+                      onClick={() => handleTagClick(tag)}
+                    >
+                      {tag}
+                      {filters.tags?.includes(tag) && (
+                        <X className="ml-1 h-3 w-3" />
+                      )}
+                    </Badge>
+                  ))}
+              </div>
             </div>
           </div>
-
-          {/* Sort Options */}
-          <div className="space-y-2">
-            <Label className="flex items-center gap-2">
-              <ArrowUpDown className="w-4 h-4" />
-              Sort By
-            </Label>
-            <Select
-              value={`${sorting.field}-${sorting.direction}`}
-              onValueChange={onSortChange}
-            >
-              <SelectTrigger>
-                <SelectValue placeholder="Select sorting" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="created_at-descending">
-                  Most Recent
-                </SelectItem>
-                <SelectItem value="created_at-ascending">
-                  Oldest First
-                </SelectItem>
-                <SelectItem value="title-ascending">Title A-Z</SelectItem>
-                <SelectItem value="title-descending">Title Z-A</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-
-          {/* Field Filter */}
-          <div className="space-y-2">
-            <Label>Field</Label>
-            <Select
-              value={filters.field || ""}
-              onValueChange={(value) => onFilterChange("field", value)}
-            >
-              <SelectTrigger>
-                <SelectValue placeholder="Select field" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Industries</SelectItem>
-                <SelectItem value="finance">Finance and Insurance</SelectItem>
-                <SelectItem value="other">Other</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-        </div>
+        </ScrollArea>
       </SheetContent>
     </Sheet>
   );

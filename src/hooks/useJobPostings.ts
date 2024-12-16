@@ -18,6 +18,7 @@ export interface JobPostingsFilters {
   field?: string;
   type?: string;
   search?: string;
+  tags?: string[];
 }
 
 export interface PaginationParams {
@@ -64,6 +65,10 @@ async function fetchJobPostings({
         query = query.or(
           `title.ilike.%${filters.search}%,description.ilike.%${filters.search}%`
         );
+      }
+      // Add tag filtering
+      if (filters.tags && filters.tags.length > 0) {
+        query = query.contains("tags", filters.tags);
       }
     }
 

@@ -503,10 +503,7 @@ function SearchFiltersSheet({
 
             {/* Sort Options */}
             <div className="space-y-2">
-              <Label className="flex items-center gap-2">
-                <ArrowUpDown className="w-4 h-4" />
-                Sort By
-              </Label>
+              <Label>Sort By</Label>
               <Select
                 value={`${sorting.field}-${sorting.direction}`}
                 onValueChange={onSortChange}
@@ -552,33 +549,6 @@ function SearchFiltersSheet({
                   ))}
                 </SelectContent>
               </Select>
-            </div>
-
-            {/* Tags Filter */}
-            <div className="space-y-2">
-              <Label>Tags</Label>
-              <div className="flex flex-wrap gap-2">
-                {!isLoadingTags &&
-                  availableTags?.map((tag) => (
-                    <Badge
-                      key={tag}
-                      variant={
-                        filters.tags?.includes(tag) ? "default" : "secondary"
-                      }
-                      className={cn(
-                        "cursor-pointer hover:opacity-80",
-                        filters.tags?.includes(tag) &&
-                          "hover:bg-primary hover:text-primary-foreground"
-                      )}
-                      onClick={() => handleTagClick(tag)}
-                    >
-                      {tag}
-                      {filters.tags?.includes(tag) && (
-                        <X className="ml-1 h-3 w-3" />
-                      )}
-                    </Badge>
-                  ))}
-              </div>
             </div>
           </div>
         </ScrollArea>
